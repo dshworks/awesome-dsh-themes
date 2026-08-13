@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "themes": [
     {
       "name": "dsh-client-ui-theme",
@@ -64,6 +64,19 @@
       "verifiedAgainst": "0.1.0-rc.5",
       "description": "QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets. Only repo on the dsh-skin topic.",
       "notes": "Not verified as a --dsw-alias-* token override."
+    },
+    {
+      "name": "dsh-nachoneko-theme",
+      "repo": "TheMyceliumOfAntan/dsh-nachoneko-theme",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Nachoneko (甘城猫猫) skin for the dsh Web GUI: #A3D3FF --dsw-static-*/--dsw-alias-* override set, full-screen wallpaper, frosted-glass sidebar/composer/code blocks and a settings-panel corner art, shipped as a self-contained dsh bundle+client plugin.",
+      "notes": "Confirmed --dsw-alias-* override set (deepseek/blue static scales + alias layers); hashed module-class overrides (frame/conversation/composer/settings) are pinned to 0.1.0-rc.6."
     }
   ]
 }

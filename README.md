@@ -23,7 +23,7 @@ The `dsh-theme` GitHub topic is empty. The `dsh-skin` topic has one repo. Zero p
 
 ## Registry
 
-5 entries. Data updated 2026-08-13.
+6 entries. Data updated 2026-08-14.
 
 ### Official
 
@@ -40,6 +40,7 @@ Theme/skin-shaped third-party listings. Unofficial and unverified. None of these
 | Name | Repo | package | Description | Status |
 |---|---|---|---|---|
 | dsh-deep-whale | [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | - | DSH Web whale-girl skin series (maid-atelier). Theme/skin-shaped third-party listing. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
+| dsh-nachoneko-theme | [TheMyceliumOfAntan/dsh-nachoneko-theme](https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme) | - | Nachoneko (甘城猫猫) skin for the dsh Web GUI: #A3D3FF --dsw-static-*/--dsw-alias-* override set, full-screen wallpaper, frosted-glass sidebar/composer/code blocks and a settings-panel corner art, shipped as a self-contained dsh bundle+client plugin. Confirmed --dsw-alias-* override set (deepseek/blue static scales + alias layers); hashed module-class overrides (frame/conversation/composer/settings) are pinned to 0.1.0-rc.6. | 0.1.0-rc.6 (2026-08-14) |
 | dsh-qq2006 | [LaplaceYoung/dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | - | QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets. Only repo on the dsh-skin topic. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
 | dsh-web-ui | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | - | Third-party plugin/skin collection for the dsh Web UI. Skin center routes around the theme-persistence gap. Also listed in awesome-dsh-plugins. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
 | whale-girl | [vlln/whale-girl](https://github.com/vlln/whale-girl) | - | DSH Web GUI desktop-pet plugin (QQ pet form): floating companion. Theme/skin-shaped listing. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
