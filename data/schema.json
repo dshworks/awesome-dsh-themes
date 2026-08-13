@@ -1,0 +1,103 @@
+{
+  "title": "awesome-dsh-themes registry",
+  "type": "object",
+  "required": [
+    "updated",
+    "themes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Registry of dsh themes and --dsw-* token skins. themes.json is source of truth.",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/theme"
+      }
+    }
+  },
+  "$defs": {
+    "theme": {
+      "type": "object",
+      "required": [
+        "name",
+        "repo",
+        "description",
+        "kind",
+        "added",
+        "lastVerified",
+        "verifiedAgainst",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "repo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 320
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280
+        },
+        "verifiedAgainst": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "runtime",
+            "skin"
+          ]
+        },
+        "official": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "unverified",
+            "broken"
+          ]
+        },
+        "added": {
+          "type": "string",
+          "format": "date"
+        },
+        "lastVerified": {
+          "type": "string",
+          "format": "date"
+        },
+        "npm": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "awesome-dsh-themes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Registry of DeepSeek Harness (dsh) themes and --dsw-* token skins. Not affiliated with DeepSeek.",
+  "registry": {
+    "org": "dshworks",
+    "repo": "awesome-dsh-themes"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "render": "node scripts/render.mjs",
+    "render:check": "node scripts/render.mjs --check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "./schema.json",
+  "updated": "2026-08-13",
+  "themes": [
+    {
+      "name": "dsh-client-ui-theme",
+      "repo": "deepseek-ai/deepseek-harness",
+      "path": "packages/client/ui-theme",
+      "official": true,
+      "kind": "runtime",
+      "license": "MIT",
+      "status": "verified",
+      "npm": "@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-13",
+      "lastVerified": "2026-08-13",
+      "verifiedAgainst": "0.1.0-rc.5",
+      "description": "Official ThemeRuntime over --dsw-* tokens (static scale + alias semantic layers); light/dark/system. Five sheets: base, design-platform, scrollbar, gradient-shadow-text, shiki. Third-party themes are an extension point, not a product. Not a theme store."
+    },
+    {
+      "name": "dsh-web-ui",
+      "repo": "zhu1090093659/dsh-web-ui",
+      "official": false,
+      "kind": "skin",
+      "status": "unverified",
+      "added": "2026-08-13",
+      "lastVerified": "2026-08-13",
+      "verifiedAgainst": "0.1.0-rc.5",
+      "description": "Third-party plugin/skin collection for the dsh Web UI. Skin center routes around the theme-persistence gap. Also listed in awesome-dsh-plugins.",
+      "notes": "Not verified as a --dsw-alias-* token override."
+    },
+    {
+      "name": "dsh-deep-whale",
+      "repo": "Small-tailqwq/dsh-deep-whale",
+      "license": "CC-BY-NC-SA-4.0",
+      "official": false,
+      "kind": "skin",
+      "status": "unverified",
+      "added": "2026-08-13",
+      "lastVerified": "2026-08-13",
+      "verifiedAgainst": "0.1.0-rc.5",
+      "description": "DSH Web whale-girl skin series (maid-atelier). Theme/skin-shaped third-party listing.",
+      "notes": "Not verified as a --dsw-alias-* token override."
+    },
+    {
+      "name": "whale-girl",
+      "repo": "vlln/whale-girl",
+      "official": false,
+      "kind": "skin",
+      "status": "unverified",
+      "added": "2026-08-13",
+      "lastVerified": "2026-08-13",
+      "verifiedAgainst": "0.1.0-rc.5",
+      "description": "DSH Web GUI desktop-pet plugin (QQ pet form): floating companion. Theme/skin-shaped listing.",
+      "notes": "Not verified as a --dsw-alias-* token override."
+    },
+    {
+      "name": "dsh-qq2006",
+      "repo": "LaplaceYoung/dsh-qq2006",
+      "official": false,
+      "kind": "skin",
+      "status": "unverified",
+      "added": "2026-08-13",
+      "lastVerified": "2026-08-13",
+      "verifiedAgainst": "0.1.0-rc.5",
+      "description": "QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets. Only repo on the dsh-skin topic.",
+      "notes": "Not verified as a --dsw-alias-* token override."
+    }
+  ]
+}
