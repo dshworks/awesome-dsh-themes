@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 102 entries, 17 with live in-browser previews, 76 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -37,7 +37,7 @@ Theming is ThemeRuntime over `--dsw-*` tokens: a static scale (`--dsw-static-*`)
 
 The ThemeRuntime package is **not a theme store**. Its README says third-party themes are an extension point, not a product — registering one means overriding same-named alias variables, and there is no validation that an override set is complete.
 
-The `dsh-theme` and `dsh-skin` GitHub topics keep growing. A short list is still honest; inventing skins would be worse. No harness themes turned up on gist.
+The `dsh-theme` and `dsh-skin` GitHub topics keep growing; the discovery watch sweeps them and everything here landed as data from a real repo — nothing is invented. Entries marked *verified* were checked against the dsh version in their `verifiedAgainst` field.
 
 ## Runtime
 
@@ -1489,7 +1489,7 @@ dsh plugin --profile web add github:Nagi-ovo/dsh-ads
 
 ## Live gallery
 
-The [deep-seek-universe gallery](https://dshworks.github.io/awesome-dsh-themes/) lives on GitHub Pages (`/docs`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. Themes with a `previewCss` sheet get a **live** badge — Dive opens that skin in a floating window on the gallery (Open full still goes to the full-page preview). Themes without a sheet stay screenshot-only. GitHub strips iframes, so the README uses thumbnails and links.
+The [deep-seek-universe gallery](https://dshworks.github.io/awesome-dsh-themes/) lives on GitHub Pages (`/docs`). Same entries. More water. Search the trench, filter by category / live / verified, sort by Fresh catch, Live first, or A–Z. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. Themes with a `previewCss` sheet get a **live** badge — Dive opens that skin in a floating window on the gallery (Open full still goes to the full-page preview). The ocean backdrop is a random screenshot from the registry itself, credited bottom-right; "Dive again" rerolls it. GitHub strips iframes, so the README uses thumbnails and links.
 
 ## Roadmap
 
