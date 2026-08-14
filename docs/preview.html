@@ -26,7 +26,7 @@
 <body data-ds-dark-theme>
   <div id="root">
     <div class="pI_x6G_frame" data-details-collapsed style="grid-template-columns: 280px minmax(0, 1fr) 0px">
-      <aside class="pI_x6G_sidebarCol">
+      <aside class="pI_x6G_sidebarCol" data-pane="sidebar">
         <div class="hHd-Xa_root">
           <div class="hHd-Xa_logoRow">
             <button class="hHd-Xa_brand" type="button" aria-label="新建会话">
@@ -95,7 +95,7 @@
         </div>
       </aside>
 
-      <main class="pI_x6G_centerCol">
+      <main class="pI_x6G_centerCol" data-pane="conversation">
         <div class="wSkVaW_root" data-phase="hero">
           <div class="wSkVaW_header wSkVaW_headerHidden"></div>
           <div class="wSkVaW_scrollBody">
@@ -140,7 +140,7 @@
         </div>
       </main>
 
-      <div class="pI_x6G_detailsCol"></div>
+      <div class="pI_x6G_detailsCol" data-pane="details"></div>
       <div class="pI_x6G_overlayLayer" data-shell-overlay></div>
     </div>
   </div>
@@ -156,6 +156,7 @@
       <code id="install-cmd"></code>
       <button type="button" class="copy" id="copy-install">Copy</button>
     </p>
+    <span class="live-note" id="live-note" role="status" hidden></span>
   </div>
 
   <script src="themes-embed.js"></script>
@@ -198,9 +199,18 @@
     }
 
     function hostAttrs(css) {
-      const skip = { "ds-dark-theme": 1, "ds-skin": 1, scheme: 1 };
-      for (const m of css.matchAll(/body\[data-([a-z0-9-]+)\]/gi)) {
-        if (!skip[m[1]]) document.body.setAttribute("data-" + m[1], "");
+      // Theme plugins set host attributes from JS at runtime (valueless
+      // body[data-dsh-*] flags and valued ones like body[data-dsh-skin='miku']).
+      // The mock has no plugin runtime, so mirror both forms here.
+      const skip = { "ds-dark-theme": 1, scheme: 1 };
+      const seen = {};
+      for (const m of css.matchAll(/body\[data-([a-z0-9-]+)(?:\s*=\s*['"]?([a-z0-9._-]+)['"]?)?\]/gi)) {
+        const name = m[1].toLowerCase();
+        if (skip[name]) continue;
+        if (!(name in seen) || (!seen[name] && m[2])) seen[name] = m[2] || "";
+      }
+      for (const [name, value] of Object.entries(seen)) {
+        document.body.setAttribute("data-" + name, value);
       }
     }
 
@@ -273,7 +283,13 @@
 
     const css = (theme && theme.previewCss) || params.get("css");
     if (css) {
-      injectOverride(css).catch(() => {});
+      injectOverride(css).catch((err) => {
+        const note = document.getElementById("live-note");
+        if (note) {
+          note.textContent = "live CSS failed to load (" + err.message + ") — showing the stock shell";
+          note.hidden = false;
+        }
+      });
     }
 
     document.querySelectorAll("[data-scheme]").forEach((btn) => {

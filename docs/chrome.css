@@ -108,6 +108,17 @@ html:not([data-scheme="dark"]) .preview-dock .copy {
 
 .preview-dock .install[hidden] { display: none; }
 
+.preview-dock .live-note {
+  flex-basis: 100%;
+  font-size: 11px;
+  line-height: 16px;
+  color: #ffb4a8;
+}
+
+html:not([data-scheme="dark"]) .preview-dock .live-note { color: #b3261e; }
+
+.preview-dock .live-note[hidden] { display: none; }
+
 .preview-dock .install code {
   max-width: 28ch;
   overflow: hidden;
