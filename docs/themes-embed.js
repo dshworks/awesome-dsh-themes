@@ -2383,6 +2383,32 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "preview": "https://raw.githubusercontent.com/shaoqing404/dsh-lulu-theme/main/assets/lulu-compact-sheet.png"
+    },
+    {
+      "name": "dafy-whale-theme",
+      "repo": "DViridescent/dafy-whale-theme",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Ocean-blue DeepSeek Harness skin with swimming fish, rising bubbles, a corner mascot, and token palettes.",
+      "category": "fun",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/main/preview.png"
+    },
+    {
+      "name": "dsh-furina-desk-pet",
+      "repo": "fykuang02/furina-desk-pet",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Floating Furina chibi desk pet for the DeepSeek Harness web GUI, with click effects, affinity levels, and drag.",
+      "category": "companion"
     }
   ]
 };

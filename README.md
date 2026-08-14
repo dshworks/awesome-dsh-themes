@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 176 entries, 27 with live in-browser previews, 146 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 178 entries, 27 with live in-browser previews, 148 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -2043,6 +2043,20 @@ dsh plugin --profile web add github:sereinmono/dsh-desktop-pet
 
 **Repo:** [sereinmono/dsh-desktop-pet](https://github.com/sereinmono/dsh-desktop-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-furina-desk-pet](https://github.com/fykuang02/furina-desk-pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-furina-desk-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-furina-desk-pet preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-furina-desk-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Floating Furina chibi desk pet for the DeepSeek Harness web GUI, with click effects, affinity levels, and drag.
+
+```sh
+dsh plugin --profile web add github:fykuang02/furina-desk-pet
+```
+
+**Repo:** [fykuang02/furina-desk-pet](https://github.com/fykuang02/furina-desk-pet) · **dsh:** 0.1.0-rc.6
+
 ### [dsh-galgame](https://github.com/Lanxing6480/dsh-galgame)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-galgame&scheme=dark"><img src="https://raw.githubusercontent.com/Lanxing6480/dsh-galgame/main/assets/characters/deepseek/portraits/neutral.webp" width="360" alt="dsh-galgame preview"></a>
@@ -2466,6 +2480,20 @@ dsh plugin --profile web add github:vlln/whale-girl
 ## Fun / extras
 
 Gags and extras that restyle the whole Web UI for laughs. Not `--dsw-*` token skins — still part of the dive.
+
+### [dafy-whale-theme](https://github.com/DViridescent/dafy-whale-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dafy-whale-theme&scheme=dark"><img src="https://raw.githubusercontent.com/DViridescent/dafy-whale-theme/main/preview.png" width="360" alt="dafy-whale-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dafy-whale-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Ocean-blue DeepSeek Harness skin with swimming fish, rising bubbles, a corner mascot, and token palettes.
+
+```sh
+dsh plugin --profile web add github:DViridescent/dafy-whale-theme
+```
+
+**Repo:** [DViridescent/dafy-whale-theme](https://github.com/DViridescent/dafy-whale-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-ads](https://github.com/Nagi-ovo/dsh-ads)
 
