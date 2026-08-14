@@ -57,6 +57,13 @@ function section(title, blurb, rows) {
 
 const official = data.themes.filter((t) => t.official);
 const community = data.themes.filter((t) => !t.official);
+const verifiedCommunity = community.filter((t) => t.status === "verified");
+const verifiedLine = verifiedCommunity.length === 0
+  ? "Zero packages are verified as `--dsw-alias-*` token overrides."
+  : `${verifiedCommunity.length} community package${verifiedCommunity.length === 1 ? " is" : "s are"} verified as \`--dsw-alias-*\` token overrides.`;
+const communityBlurb = verifiedCommunity.length === 0
+  ? "Theme/skin-shaped third-party listings. Unofficial and unverified. None of these are confirmed `--dsw-alias-*` override sets."
+  : `Theme/skin-shaped third-party listings. Unofficial. One of these (${esc(verifiedCommunity.map((t) => t.name).join(", "))}) is a confirmed \`--dsw-alias-*\` override set; the rest are unverified skins.`;
 
 const readme = `# awesome-dsh-themes
 
@@ -79,7 +86,7 @@ Official theming is ThemeRuntime over \`--dsw-*\` tokens: a static scale (\`--ds
 
 The official package is **not a theme store**. Its README says third-party themes are an extension point, not a product — registering one means overriding same-named alias variables, and there is no validation that an override set is complete.
 
-The \`dsh-theme\` GitHub topic is empty. The \`dsh-skin\` topic has one repo. Zero packages are verified as \`--dsw-alias-*\` token overrides. A short community section is honest; inventing skins would be worse.
+The \`dsh-theme\` GitHub topic has one repo. The \`dsh-skin\` topic has two. ${verifiedLine} A short community section is honest; inventing skins would be worse.
 
 ## Registry
 
@@ -87,7 +94,7 @@ ${data.themes.length} entries. Data updated ${data.updated}.
 
 ${section("Official", "The first-party ThemeRuntime. Not a marketplace.", official)}
 
-${section("Community", "Theme/skin-shaped third-party listings. Unofficial and unverified. None of these are confirmed \`--dsw-alias-*\` override sets.", community)}
+${section("Community", communityBlurb, community)}
 
 ## Add a theme
 
