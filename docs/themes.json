@@ -1238,6 +1238,33 @@
       "category": "tokens",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/goodpostidea-tech/deepseek-harness-skin/main/docs/coding.png"
+    },
+    {
+      "name": "dsh-eyecare-theme",
+      "repo": "Cocowwy/dsh-plugin-eyecare-theme",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Customizable eye-care palettes for the DeepSeek Harness Web UI.",
+      "category": "tokens",
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-web-theme-packs",
+      "repo": "tzy168/dsh-web-theme-packs",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Web UI theme packs with bundled sheets (Aero Blue, Ink Night, Misty Forest) and a settings-row picker.",
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/tzy168/dsh-web-theme-packs/master/themes/aero-blue/preview.svg",
+      "previewCss": "https://raw.githubusercontent.com/tzy168/dsh-web-theme-packs/master/themes/aero-blue/theme.css"
     }
   ]
 }

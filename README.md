@@ -211,6 +211,20 @@ dsh plugin --profile web add github:chajiuqqq/dsh-claude-theme
 
 **Repo:** [chajiuqqq/dsh-claude-theme](https://github.com/chajiuqqq/dsh-claude-theme) · **dsh:** 0.1.0-rc.6
 
+### [dsh-eyecare-theme](https://github.com/Cocowwy/dsh-plugin-eyecare-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-eyecare-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-eyecare-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-eyecare-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Customizable eye-care palettes for the DeepSeek Harness Web UI.
+
+```sh
+dsh plugin --profile web add github:Cocowwy/dsh-plugin-eyecare-theme
+```
+
+**Repo:** [Cocowwy/dsh-plugin-eyecare-theme](https://github.com/Cocowwy/dsh-plugin-eyecare-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-four-seasons-theme](https://github.com/czj527/dsh-four-seasons-theme)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-four-seasons-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-four-seasons-theme preview"></a>
@@ -660,6 +674,20 @@ dsh plugin --profile web add github:ZeroZ-lab/dsh-web-skins
 ```
 
 **Repo:** [ZeroZ-lab/dsh-web-skins](https://github.com/ZeroZ-lab/dsh-web-skins) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-web-theme-packs](https://github.com/tzy168/dsh-web-theme-packs)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-web-theme-packs&scheme=dark"><img src="https://raw.githubusercontent.com/tzy168/dsh-web-theme-packs/master/themes/aero-blue/preview.svg" width="360" alt="dsh-web-theme-packs preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-web-theme-packs&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Web UI theme packs with bundled sheets (Aero Blue, Ink Night, Misty Forest) and a settings-row picker.
+
+```sh
+dsh plugin --profile web add github:tzy168/dsh-web-theme-packs
+```
+
+**Repo:** [tzy168/dsh-web-theme-packs](https://github.com/tzy168/dsh-web-theme-packs) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-xiaoyao-skins](https://github.com/147228/dsh-xiaoyao-skins)
 
