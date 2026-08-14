@@ -62,8 +62,8 @@
       "added": "2026-08-13",
       "lastVerified": "2026-08-13",
       "verifiedAgainst": "0.1.0-rc.5",
-      "description": "QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets. Only repo on the dsh-skin topic.",
-      "notes": "Not verified as a --dsw-alias-* token override."
+      "description": "QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets.",
+      "notes": "Tagged dsh-skin. Not verified as a --dsw-alias-* token override."
     },
     {
       "name": "dsh-nachoneko-theme",
