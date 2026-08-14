@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 182 entries, 29 with live in-browser previews, 152 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 187 entries, 29 with live in-browser previews, 157 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -490,6 +490,20 @@ dsh plugin --profile web add github:mtaech/dsh-material-you
 ```
 
 **Repo:** [mtaech/dsh-material-you](https://github.com/mtaech/dsh-material-you/tree/HEAD/theme-material-you) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-matugen](https://github.com/Nocehi/dsh-matugen)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-matugen&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-matugen preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-matugen&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Matugen and DankMaterialShell palette bridge for DeepSeek Harness web themes.
+
+```sh
+dsh plugin --profile web add github:Nocehi/dsh-matugen
+```
+
+**Repo:** [Nocehi/dsh-matugen](https://github.com/Nocehi/dsh-matugen) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-miku-skin](https://github.com/stushansusu/dsh-miku-skin)
 
@@ -1521,6 +1535,20 @@ dsh plugin --profile web add github:wanzhiwei5/dsh-skin-amis
 
 **Repo:** [wanzhiwei5/dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis) · **dsh:** 0.1.0-rc.6
 
+### [dsh-skin-appearance](https://github.com/Vim0x3c/dsh-skin-appearance)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-appearance&scheme=dark"><img src="https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/HEAD/assets/screenshots/deepsea-whale.jpg" width="360" alt="dsh-skin-appearance preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-appearance&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Eight built-in DeepSeek Harness appearance presets plus custom wallpaper with opacity and blur.
+
+```sh
+dsh plugin --profile web add github:Vim0x3c/dsh-skin-appearance
+```
+
+**Repo:** [Vim0x3c/dsh-skin-appearance](https://github.com/Vim0x3c/dsh-skin-appearance) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-skin-blue-whale](https://github.com/zenghuizhu69-hub/dsh-skin-blue-whale)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-blue-whale preview"></a>
@@ -2519,6 +2547,34 @@ dsh plugin --profile web add github:vlln/whale-girl
 
 **Repo:** [vlln/whale-girl](https://github.com/vlln/whale-girl) · **License:** MIT · **dsh:** 0.1.0-rc.5
 
+### [whale-girl-plus](https://github.com/Henry91200/whale-girl-plus)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=whale-girl-plus&scheme=dark"><img src="https://raw.githubusercontent.com/Henry91200/whale-girl-plus/HEAD/.dsh-plugin/assets/characters/whale-girl-office/idle.png" width="360" alt="whale-girl-plus preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=whale-girl-plus&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Whale-girl desk pet for DeepSeek Harness with extra outfits, idle animations, and configurable work-rhythm behavior.
+
+```sh
+dsh plugin --profile web add github:Henry91200/whale-girl-plus
+```
+
+**Repo:** [Henry91200/whale-girl-plus](https://github.com/Henry91200/whale-girl-plus) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [yuhao-pet](https://github.com/dlpufan/yuhao-pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=yuhao-pet&scheme=dark"><img src="https://raw.githubusercontent.com/dlpufan/yuhao-pet/HEAD/assets/full.webp" width="360" alt="yuhao-pet preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=yuhao-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Floating Yuhao desk pet for the DeepSeek Harness web GUI, with drag, feed, play, work, and a token-points shop.
+
+```sh
+dsh plugin --profile web add github:dlpufan/yuhao-pet
+```
+
+**Repo:** [dlpufan/yuhao-pet](https://github.com/dlpufan/yuhao-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ## Fun / extras
 
 Gags and extras that restyle the whole Web UI for laughs. Not `--dsw-*` token skins — still part of the dive.
@@ -2592,6 +2648,20 @@ dsh plugin --profile web add github:dsh-pub/dsh-meow-cat
 ```
 
 **Repo:** [dsh-pub/dsh-meow-cat](https://github.com/dsh-pub/dsh-meow-cat) · **License:** MIT · **Package:** [`dsh-meow-cat`](https://www.npmjs.com/package/dsh-meow-cat) · **dsh:** 0.1.0-rc.6
+
+### [dsh-skin-mojing](https://github.com/Gyanano/dsh-skin-mojing)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-mojing&scheme=dark"><img src="https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg" width="360" alt="dsh-skin-mojing preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-mojing&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Oil-painted whale-girl skin for the DeepSeek Harness web UI.
+
+```sh
+dsh plugin --profile web add github:Gyanano/dsh-skin-mojing
+```
+
+**Repo:** [Gyanano/dsh-skin-mojing](https://github.com/Gyanano/dsh-skin-mojing) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [liuli-theme](https://github.com/LilycleHeart/liuli-theme)
 

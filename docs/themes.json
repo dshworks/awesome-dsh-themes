@@ -2462,6 +2462,75 @@
       "description": "Background image and translucent panels for the DeepSeek Harness web UI, with a live settings page.",
       "category": "skin",
       "preview": "https://raw.githubusercontent.com/halosb/dsh-bg-beautify/HEAD/docs/screenshots/demo-1.png"
+    },
+    {
+      "name": "dsh-skin-appearance",
+      "repo": "Vim0x3c/dsh-skin-appearance",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Eight built-in DeepSeek Harness appearance presets plus custom wallpaper with opacity and blur.",
+      "category": "skin",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/HEAD/assets/screenshots/deepsea-whale.jpg"
+    },
+    {
+      "name": "yuhao-pet",
+      "repo": "dlpufan/yuhao-pet",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Floating Yuhao desk pet for the DeepSeek Harness web GUI, with drag, feed, play, work, and a token-points shop.",
+      "category": "companion",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/dlpufan/yuhao-pet/HEAD/assets/full.webp"
+    },
+    {
+      "name": "dsh-matugen",
+      "repo": "Nocehi/dsh-matugen",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Matugen and DankMaterialShell palette bridge for DeepSeek Harness web themes.",
+      "category": "tokens",
+      "license": "MIT"
+    },
+    {
+      "name": "whale-girl-plus",
+      "repo": "Henry91200/whale-girl-plus",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Whale-girl desk pet for DeepSeek Harness with extra outfits, idle animations, and configurable work-rhythm behavior.",
+      "category": "companion",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/Henry91200/whale-girl-plus/HEAD/.dsh-plugin/assets/characters/whale-girl-office/idle.png"
+    },
+    {
+      "name": "dsh-skin-mojing",
+      "repo": "Gyanano/dsh-skin-mojing",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Oil-painted whale-girl skin for the DeepSeek Harness web UI.",
+      "category": "fun",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg"
     }
   ]
 }
