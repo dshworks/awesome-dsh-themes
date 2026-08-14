@@ -57,6 +57,20 @@ ThemeRuntime over --dsw-* tokens (static scale + alias semantic layers); light/d
 
 Community `--dsw-static-*` / `--dsw-alias-*` override sets that restyle the Web UI.
 
+### [chiral-pulse](https://github.com/MoonShadow1976/chiral-pulse)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=chiral-pulse&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="chiral-pulse preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=chiral-pulse&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Death Stranding --dsw-* skin with a BB vital-signs monitor: amber-on-ink palette and a live heartbeat paper feed under the composer.
+
+```sh
+dsh plugin --profile web add github:MoonShadow1976/chiral-pulse
+```
+
+**Repo:** [MoonShadow1976/chiral-pulse](https://github.com/MoonShadow1976/chiral-pulse) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-black-whale](https://github.com/147228/dsh-black-whale)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-black-whale&scheme=dark"><img src="https://raw.githubusercontent.com/147228/dsh-black-whale/main/preview/dark.png" width="360" alt="dsh-black-whale preview"></a>
@@ -70,6 +84,20 @@ dsh plugin --profile web add github:147228/dsh-black-whale
 ```
 
 **Repo:** [147228/dsh-black-whale](https://github.com/147228/dsh-black-whale) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-blur-theme](https://github.com/hashdiana/dsh-blur-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blur-theme&scheme=dark"><img src="https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/main/p1.png" width="360" alt="dsh-blur-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blur-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Frosted-glass --dsw-* theme for the dsh Web UI: floating rounded sidebar, frosted header, floating composer, and a live blur slider.
+
+```sh
+dsh plugin --profile web add github:hashdiana/dsh-blur-theme
+```
+
+**Repo:** [hashdiana/dsh-blur-theme](https://github.com/hashdiana/dsh-blur-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-chat-skin](https://github.com/1m01m0/dsh-chat-skin)
 
@@ -310,6 +338,20 @@ dsh plugin --profile web add github:oil-oil/dsh-theme
 ```
 
 **Repo:** [oil-oil/dsh-theme](https://github.com/oil-oil/dsh-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-blackgold](https://github.com/frostgao/dsh-theme-blackgold)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-blackgold preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Black-gold --dsw-* token theme: gold accents on a black-and-white base, light and dark.
+
+```sh
+dsh plugin --profile web add github:frostgao/dsh-theme-blackgold
+```
+
+**Repo:** [frostgao/dsh-theme-blackgold](https://github.com/frostgao/dsh-theme-blackgold) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-theme-neko](https://github.com/drfccv/dsh-theme-neko)
 
@@ -628,6 +670,20 @@ dsh plugin --profile web add github:Shmilyol/galgame-skin
 ## Companions
 
 Desktop pets and extras that live beside the UI. Not token skins — still part of the dive.
+
+### [dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-kun-like-pet&scheme=dark"><img src="https://raw.githubusercontent.com/liyupi/dsh-kun-like-pet/main/docs/screenshot-working.png" width="360" alt="dsh-kun-like-pet preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-kun-like-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Kun Like desktop pet for the dsh Web UI: a corner companion that switches among 9 animations with the agent work state.
+
+```sh
+dsh plugin --profile web add github:liyupi/dsh-kun-like-pet
+```
+
+**Repo:** [liyupi/dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [whale-girl](https://github.com/vlln/whale-girl)
 
