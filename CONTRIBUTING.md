@@ -17,7 +17,7 @@ if it actually restyles (or companionably lives beside) the dsh Web UI, open a P
 2. Set `official` to `true` only for the first-party ThemeRuntime package.
 3. A real `preview` image URL helps a lot. A screenshot from the running UI,
    not a mock, not a generated product shot.
-4. If you ship a --dsw-* override stylesheet, set `previewCss` so the full-page dsh web preview can wear it. Optional install overrides the derived one-liner. See ROADMAP.md.
+4. If you ship a --dsw-* override stylesheet, set `previewCss` so the live gallery window can wear it. Optional install overrides the derived one-liner. See ROADMAP.md.
 5. Set `category` if you can: `runtime` | `tokens` | `skin` | `companion` | `fun`.
 6. Regenerate and check:
 

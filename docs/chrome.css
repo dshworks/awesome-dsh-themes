@@ -116,3 +116,5 @@ html:not([data-scheme="dark"]) .preview-dock .copy {
   font-size: 11px;
   opacity: 0.85;
 }
+
+html[data-embed] .preview-dock { display: none !important; }

@@ -152,7 +152,7 @@ ${sections}
 
 ## Live gallery
 
-The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. **[Live](${GALLERY})** / Dive opens a full-page dsh web empty-state (real 0.1.0-rc.6 chrome classes + \`--dsw-*\` tokens, plus an override sheet when we have one). GitHub strips iframes, so the README uses thumbnails and links.
+The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. Themes with a \`previewCss\` sheet get a **live** badge — Dive opens that skin in a floating window on the gallery (Open full still goes to the full-page preview). Themes without a sheet stay screenshot-only. GitHub strips iframes, so the README uses thumbnails and links.
 
 ## Roadmap
 

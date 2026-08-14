@@ -236,8 +236,8 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .caustics, .whale, .bubbles span, .heart { animation: none !important; }
-  .card, .btn, .photo { transition: none !important; }
+  .caustics, .whale, .bubbles span, .heart, .porthole-window { animation: none !important; }
+  .card, .btn, .photo, .porthole-window { transition: none !important; }
 }
 
 .scheme { display: inline-flex; gap: 0.4rem; margin-left: auto; }
@@ -277,3 +277,155 @@ h1 {
 .dive:hover, .dive:focus-visible { text-decoration: underline; }
 .meta a { color: var(--cyan); text-decoration: none; }
 .meta a:hover, .meta a:focus-visible { text-decoration: underline; }
+
+.badge.live {
+  background: var(--cyan);
+  color: #032026;
+  border-color: transparent;
+}
+
+body.porthole-open { overflow: hidden; }
+
+.porthole[hidden] { display: none !important; }
+.porthole {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+}
+.porthole-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 6, 13, 0.38);
+}
+.porthole-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1080px, 92vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: hidden;
+  outline: none;
+  animation: porthole-in 0.22s ease;
+}
+.porthole-titlebar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.7rem;
+  padding: 0.55rem 0.75rem;
+  user-select: none;
+  touch-action: none;
+  border-bottom: 1px solid var(--stroke);
+}
+.porthole-dots {
+  display: inline-flex;
+  gap: 6px;
+}
+.porthole-dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+.porthole-dots i:nth-child(1) { background: var(--cyan); }
+.porthole-dots i:nth-child(2) { background: var(--gold); }
+.porthole-dots i:nth-child(3) { background: var(--heart); }
+#porthole-title {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.porthole-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.porthole-actions button,
+.porthole-actions a {
+  appearance: none;
+  border: 1px solid var(--stroke);
+  background: rgba(7, 20, 28, 0.55);
+  color: var(--foam);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.porthole-actions button.is-on,
+.porthole-actions button[aria-pressed="true"] {
+  background: var(--cyan);
+  color: #032026;
+  border-color: transparent;
+}
+.porthole-actions button:focus-visible,
+.porthole-actions a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.porthole-actions [data-close] {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+#porthole-frame {
+  display: block;
+  width: 100%;
+  min-height: 62vh;
+  height: 62vh;
+  border: 0;
+  background: #07141c;
+}
+
+@keyframes porthole-in {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.96); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@media (min-width: 721px) {
+  .porthole-titlebar { cursor: grab; }
+  .porthole-titlebar.is-dragging { cursor: grabbing; }
+}
+
+@media (max-width: 720px) {
+  .porthole-window {
+    left: 0.4rem;
+    top: 0.4rem;
+    right: 0.4rem;
+    bottom: 0.4rem;
+    width: auto;
+    height: auto;
+    transform: none;
+    border-radius: 14px;
+    animation-name: porthole-in-narrow;
+  }
+  .porthole-titlebar { cursor: default; }
+  #porthole-frame {
+    min-height: 0;
+    height: auto;
+    flex: 1;
+  }
+}
+
+@keyframes porthole-in-narrow {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
