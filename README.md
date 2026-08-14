@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 125 entries, 20 with live in-browser previews, 99 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 129 entries, 22 with live in-browser previews, 103 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -351,6 +351,20 @@ dsh plugin --profile web add github:Carpon39038/dsh-image-theme
 
 **Repo:** [Carpon39038/dsh-image-theme](https://github.com/Carpon39038/dsh-image-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-macos-theme](https://github.com/dataizu/dsh-macos-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-macos-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+macOS-style Web theme with Apple colors, frosted chrome, and an underwater whale background.
+
+```sh
+dsh plugin --profile web add github:dataizu/dsh-macos-theme
+```
+
+**Repo:** [dataizu/dsh-macos-theme](https://github.com/dataizu/dsh-macos-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-mamba-theme](https://github.com/wangq32801-dev/dsh-mamba-theme)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-mamba-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-mamba-theme preview"></a>
@@ -507,6 +521,20 @@ dsh plugin --profile web add github:dengxuhui/dsh-skin-diablo-dark
 
 **Repo:** [dengxuhui/dsh-skin-diablo-dark](https://github.com/dengxuhui/dsh-skin-diablo-dark) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-skin-gadgets](https://github.com/Highjobop/dsh-gadgets/tree/HEAD/dsh-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-gadgets&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-gadgets preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-gadgets&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Appearance skin for the Web GUI: 15 light/dark presets, font scaling, and 13 color roles persisted in localStorage.
+
+```sh
+dsh plugin --profile web add github:Highjobop/dsh-gadgets
+```
+
+**Repo:** [Highjobop/dsh-gadgets](https://github.com/Highjobop/dsh-gadgets/tree/HEAD/dsh-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-skin-kawaii2000](https://github.com/shunkwon/dsh-skin-kawaii2000)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-kawaii2000&scheme=dark"><img src="https://raw.githubusercontent.com/shunkwon/dsh-skin-kawaii2000/main/screenshots/dark.png" width="360" alt="dsh-skin-kawaii2000 preview"></a>
@@ -632,6 +660,20 @@ dsh plugin --profile web add github:frostgao/dsh-theme-blackgold
 ```
 
 **Repo:** [frostgao/dsh-theme-blackgold](https://github.com/frostgao/dsh-theme-blackgold) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-matcha-dark-sea](https://github.com/zhangzujian/dsh-theme-matcha-dark-sea)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-matcha-dark-sea&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-matcha-dark-sea preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-matcha-dark-sea&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Matcha Dark Sea token theme for the Web GUI, a dark-only mapping of btop matcha-dark-sea anchors onto --dsw-* tokens.
+
+```sh
+dsh plugin --profile web add github:zhangzujian/dsh-theme-matcha-dark-sea
+```
+
+**Repo:** [zhangzujian/dsh-theme-matcha-dark-sea](https://github.com/zhangzujian/dsh-theme-matcha-dark-sea) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-theme-neko](https://github.com/drfccv/dsh-theme-neko)
 
@@ -1212,6 +1254,20 @@ dsh plugin --profile web add github:Misaki14987/dsh-theme-taffy
 ```
 
 **Repo:** [Misaki14987/dsh-theme-taffy](https://github.com/Misaki14987/dsh-theme-taffy) · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-yourname](https://github.com/elfin1z/dsh-theme-yourname)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-yourname&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-yourname preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-yourname&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Your Name starry-sky Web theme: plum palette, full-page starfield wallpaper, and floating stardust.
+
+```sh
+dsh plugin --profile web add github:elfin1z/dsh-theme-yourname
+```
+
+**Repo:** [elfin1z/dsh-theme-yourname](https://github.com/elfin1z/dsh-theme-yourname) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-thinking-status-customizer](https://github.com/Dbi-Eshuh/dsh-thinking-status-customizer)
 

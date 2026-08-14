@@ -1687,6 +1687,60 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/main/previews/nord.png"
+    },
+    {
+      "name": "dsh-macos-theme",
+      "repo": "dataizu/dsh-macos-theme",
+      "description": "macOS-style Web theme with Apple colors, frosted chrome, and an underwater whale background.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/dataizu/dsh-macos-theme/main/apple-style.css"
+    },
+    {
+      "name": "dsh-theme-matcha-dark-sea",
+      "repo": "zhangzujian/dsh-theme-matcha-dark-sea",
+      "description": "Matcha Dark Sea token theme for the Web GUI, a dark-only mapping of btop matcha-dark-sea anchors onto --dsw-* tokens.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/zhangzujian/dsh-theme-matcha-dark-sea/main/src/theme.css"
+    },
+    {
+      "name": "dsh-theme-yourname",
+      "repo": "elfin1z/dsh-theme-yourname",
+      "description": "Your Name starry-sky Web theme: plum palette, full-page starfield wallpaper, and floating stardust.",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6"
+    },
+    {
+      "name": "dsh-skin-gadgets",
+      "repo": "Highjobop/dsh-gadgets",
+      "description": "Appearance skin for the Web GUI: 15 light/dark presets, font scaling, and 13 color roles persisted in localStorage.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "path": "dsh-skin"
     }
   ]
 };
