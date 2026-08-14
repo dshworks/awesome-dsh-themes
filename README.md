@@ -71,6 +71,20 @@ dsh plugin --profile web add github:147228/dsh-black-whale
 
 **Repo:** [147228/dsh-black-whale](https://github.com/147228/dsh-black-whale) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-chat-skin](https://github.com/1m01m0/dsh-chat-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-chat-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-chat-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-chat-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Client plugin with six gradient presets, custom wallpaper, and a Settings General skin card.
+
+```sh
+dsh plugin --profile web add github:1m01m0/dsh-chat-skin
+```
+
+**Repo:** [1m01m0/dsh-chat-skin](https://github.com/1m01m0/dsh-chat-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-claude-theme](https://github.com/chajiuqqq/dsh-claude-theme)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-claude-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-claude-theme preview"></a>
@@ -99,6 +113,20 @@ dsh plugin --profile web add github:czj527/dsh-four-seasons-theme
 
 **Repo:** [czj527/dsh-four-seasons-theme](https://github.com/czj527/dsh-four-seasons-theme) · **dsh:** 0.1.0-rc.6
 
+### [dsh-genshin-skin](https://github.com/bupianlizhugui/dsh-genshin-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-genshin-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-genshin-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-genshin-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Snezhnaya Genshin-inspired skin: gold tokens and a snow-palace wallpaper.
+
+```sh
+dsh plugin --profile web add github:bupianlizhugui/dsh-genshin-skin
+```
+
+**Repo:** [bupianlizhugui/dsh-genshin-skin](https://github.com/bupianlizhugui/dsh-genshin-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-miku-skin](https://github.com/stushansusu/dsh-miku-skin)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-miku-skin&scheme=dark"><img src="https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png" width="360" alt="dsh-miku-skin preview"></a>
@@ -112,6 +140,20 @@ dsh plugin --profile web add github:stushansusu/dsh-miku-skin
 ```
 
 **Repo:** [stushansusu/dsh-miku-skin](https://github.com/stushansusu/dsh-miku-skin) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.6
+
+### [dsh-modern-skin](https://github.com/gavinlee9051/dsh-modern-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-modern-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-modern-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-modern-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Modern Agent-client skin for the dsh Web UI with five switchable palettes.
+
+```sh
+dsh plugin --profile web add github:gavinlee9051/dsh-modern-skin
+```
+
+**Repo:** [gavinlee9051/dsh-modern-skin](https://github.com/gavinlee9051/dsh-modern-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-nachoneko-theme](https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme)
 
@@ -128,6 +170,20 @@ dsh plugin --profile web add github:TheMyceliumOfAntan/dsh-nachoneko-theme
 **Repo:** [TheMyceliumOfAntan/dsh-nachoneko-theme](https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 *Confirmed --dsw-alias-* override set (deepseek/blue static scales + alias layers) and boot roster on 0.1.0-rc.6; a fresh main-UI boot stall was reported on one machine -- client.js payload was cut 440KB -> 238KB (wallpaper base64 deduped) in response, and a local no-cache fresh boot reaches the main chat UI, but the stall is not independently re-confirmed fixed. Hashed module-class overrides (frame/conversation/composer/settings) are pinned to 0.1.0-rc.6.*
+
+### [dsh-paper-theme](https://github.com/Baurt-Li/dsh-paper-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-paper-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-paper-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-paper-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Warm paper light theme for the dsh Web UI covering the design tokens. Leaves dark mode alone.
+
+```sh
+dsh plugin --profile web add github:Baurt-Li/dsh-paper-theme
+```
+
+**Repo:** [Baurt-Li/dsh-paper-theme](https://github.com/Baurt-Li/dsh-paper-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-plugin-gouden-leeuw-theme](https://github.com/Andy294753951/dsh-plugin-gouden-leeuw-theme)
 
@@ -156,6 +212,20 @@ dsh plugin --profile web add github:KinGao294/dsh-skin
 ```
 
 **Repo:** [KinGao294/dsh-skin](https://github.com/KinGao294/dsh-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-skin-claude-code](https://github.com/LucasN0820/dsh-skin-claude-code)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-claude-code&scheme=dark"><img src="https://raw.githubusercontent.com/LucasN0820/dsh-skin-claude-code/main/docs/screenshots/skin-dark.png" width="360" alt="dsh-skin-claude-code preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-claude-code&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Claude Code-inspired token skin: warm charcoal and cream surfaces with a terracotta accent.
+
+```sh
+dsh plugin --profile web add github:LucasN0820/dsh-skin-claude-code
+```
+
+**Repo:** [LucasN0820/dsh-skin-claude-code](https://github.com/LucasN0820/dsh-skin-claude-code) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-skin-diablo-dark](https://github.com/dengxuhui/dsh-skin-diablo-dark)
 
@@ -199,6 +269,34 @@ dsh plugin --profile web add github:Yugitan/dsh-skin
 
 **Repo:** [Yugitan/dsh-skin](https://github.com/Yugitan/dsh-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-switcher&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-switcher preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-switcher&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Settings-page skin switcher that lists installed skins and applies one with a click.
+
+```sh
+dsh plugin --profile web add github:zhtx2024/dsh-skin-switcher
+```
+
+**Repo:** [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) · **dsh:** 0.1.0-rc.6
+
+### [dsh-skin-universe](https://github.com/springbrand-lab/dsh-skin-universe)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-universe&scheme=dark"><img src="https://raw.githubusercontent.com/springbrand-lab/dsh-skin-universe/main/docs/screenshots/theme-first-love.png" width="360" alt="dsh-skin-universe preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-universe&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Web extension pack with a five-theme skin center, plus a task board, git graph, remote mobile UI, and a theme-linked desktop pet.
+
+```sh
+dsh plugin --profile web add github:springbrand-lab/dsh-skin-universe
+```
+
+**Repo:** [springbrand-lab/dsh-skin-universe](https://github.com/springbrand-lab/dsh-skin-universe) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.6
+
 ### [dsh-theme](https://github.com/oil-oil/dsh-theme)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme preview"></a>
@@ -226,6 +324,20 @@ dsh plugin --profile web add github:drfccv/dsh-theme-neko
 ```
 
 **Repo:** [drfccv/dsh-theme-neko](https://github.com/drfccv/dsh-theme-neko) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-palettes](https://github.com/RainbowDashy/dsh-theme-palettes)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-palettes&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-palettes preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-palettes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Palette infrastructure for dsh: ships a VS Code Red token palette and a client API for more palettes.
+
+```sh
+dsh plugin --profile web add github:RainbowDashy/dsh-theme-palettes
+```
+
+**Repo:** [RainbowDashy/dsh-theme-palettes](https://github.com/RainbowDashy/dsh-theme-palettes) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-theme-ti](https://github.com/longyu065/dsh-theme-ti)
 
@@ -282,6 +394,20 @@ dsh plugin --profile web add github:whyihaveyou/dsh-themes
 ```
 
 **Repo:** [whyihaveyou/dsh-themes](https://github.com/whyihaveyou/dsh-themes) · **dsh:** 0.1.0-rc.6
+
+### [dsh-ui-skins](https://github.com/edwardyang0011/dsh-ui-skins)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-skins&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-ui-skins preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-skins&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Registers preset color skins as alias-token themes and adds a Skin row to Settings General.
+
+```sh
+dsh plugin --profile web add github:edwardyang0011/dsh-ui-skins
+```
+
+**Repo:** [edwardyang0011/dsh-ui-skins](https://github.com/edwardyang0011/dsh-ui-skins) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-web-client-theme-switcher](https://github.com/yingpanwang/dsh_web_client_theme_switcher)
 
@@ -344,6 +470,20 @@ dsh plugin --profile web add github:suzike/freestyle-dsh-theme
 ## Skins
 
 Theme and skin listings that restyle the dsh Web UI.
+
+### [dsh-capsule-skin](https://github.com/DawnCloud1213/dsh-capsule-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-capsule-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-capsule-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-capsule-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Wallpaper skin with capsule sidebar chrome and wallpaper-derived theme colors.
+
+```sh
+dsh plugin --profile web add github:DawnCloud1213/dsh-capsule-skin
+```
+
+**Repo:** [DawnCloud1213/dsh-capsule-skin](https://github.com/DawnCloud1213/dsh-capsule-skin) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-client-ui-skin-priestess](https://github.com/Sealessland/dsh-client-ui-skin-priestess)
 
@@ -470,6 +610,20 @@ dsh plugin --profile web add github:dancingmemory/dskin
 ```
 
 **Repo:** [dancingmemory/dskin](https://github.com/dancingmemory/dskin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [galgame-skin](https://github.com/Shmilyol/galgame-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=galgame-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="galgame-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=galgame-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Galgame-style Japanese interface skin: dusk curtains, gold corners, falling sakura.
+
+```sh
+dsh plugin --profile web add github:Shmilyol/galgame-skin
+```
+
+**Repo:** [Shmilyol/galgame-skin](https://github.com/Shmilyol/galgame-skin) · **dsh:** 0.1.0-rc.6
 
 ## Companions
 
