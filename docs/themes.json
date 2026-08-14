@@ -373,6 +373,74 @@
       "category": "fun",
       "preview": "https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/screenshot.webp",
       "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-ads"
+    },
+    {
+      "name": "dsh-themes-pack",
+      "repo": "whyihaveyou/dsh-themes",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "151 day/night token skins for the dsh Web UI: game characters, editor palettes, aesthetic styles, holidays, and a few eggs. Migrated from aionui-themes.",
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/whyihaveyou/dsh-themes/main/skins/catppuccin/preview/dark.png",
+      "previewCss": "https://raw.githubusercontent.com/whyihaveyou/dsh-themes/main/skins/catppuccin/src/client/catppuccin.module.css",
+      "install": "dsh plugin --profile web add github:whyihaveyou/dsh-themes"
+    },
+    {
+      "name": "dsh-eva-theme-plugin",
+      "repo": "oceanxuikun/dsh-eva-theme-plugin",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Evangelion-inspired Web UI themes: Unit-00, Unit-01, and Unit-02, with immersive backgrounds and mecha-style chrome.",
+      "category": "skin",
+      "preview": "https://raw.githubusercontent.com/oceanxuikun/dsh-eva-theme-plugin/master/assets/screenshot01.png"
+    },
+    {
+      "name": "dsh-plugin-gouden-leeuw-theme",
+      "repo": "Andy294753951/dsh-plugin-gouden-leeuw-theme",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Gouden Leeuw moonlit sanctuary theme for the dsh Web UI.",
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-gouden-leeuw-theme/main/assets/gouden-leeuw.png",
+      "previewCss": "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-gouden-leeuw-theme/main/src/client/theme.css"
+    },
+    {
+      "name": "dsh-web-client-theme-switcher",
+      "repo": "yingpanwang/dsh_web_client_theme_switcher",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Custom theme switcher for the dsh Web UI: preset solid colors and a custom wallpaper background.",
+      "category": "tokens"
+    },
+    {
+      "name": "dsh-skin-studio",
+      "repo": "Yugitan/dsh-skin",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Skinning plugin for the dsh Web UI: gradient presets, image wallpapers, translucency, and accent colors, persisted in user settings.",
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/Yugitan/dsh-skin/main/screenshots/preview.png"
     }
   ]
 }
