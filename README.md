@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 113 entries, 17 with live in-browser previews, 87 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 116 entries, 17 with live in-browser previews, 90 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -224,6 +224,20 @@ dsh plugin --profile web add github:1m01m0/dsh-chat-skin
 ```
 
 **Repo:** [1m01m0/dsh-chat-skin](https://github.com/1m01m0/dsh-chat-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-classic-colorways](https://github.com/heiyouhu/dsh-themes)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-classic-colorways&scheme=dark"><img src="https://raw.githubusercontent.com/heiyouhu/dsh-themes/main/assets/previews/nord-dark.png" width="360" alt="dsh-classic-colorways preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-classic-colorways&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Appearance skin pack for the DeepSeek Harness Web GUI: Nord, Gruvbox, Solarized, Dracula, and Tokyo Night, each with light and dark variants.
+
+```sh
+dsh plugin --profile web add github:heiyouhu/dsh-themes
+```
+
+**Repo:** [heiyouhu/dsh-themes](https://github.com/heiyouhu/dsh-themes) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-claude-theme](https://github.com/chajiuqqq/dsh-claude-theme)
 
@@ -803,6 +817,20 @@ dsh plugin --profile web add github:147228/dsh-xiaoyao-skins
 
 *Gallery: https://147228.github.io/dsh-xiaoyao-skins/*
 
+### [dsh-zhongguo-themes](https://github.com/nevertoday/dsh-theme-plugin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-zhongguo-themes&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-zhongguo-themes preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-zhongguo-themes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Chinese traditional color theme pack for DeepSeek Harness: 48 anchors times light/dark writing the full --dsw-* token vocabulary.
+
+```sh
+dsh plugin --profile web add github:nevertoday/dsh-theme-plugin
+```
+
+**Repo:** [nevertoday/dsh-theme-plugin](https://github.com/nevertoday/dsh-theme-plugin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [freestyle-dsh-theme](https://github.com/suzike/freestyle-dsh-theme)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=freestyle-dsh-theme&scheme=dark"><img src="https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/main/docs/images/screenshot-designer.png" width="360" alt="freestyle-dsh-theme preview"></a>
@@ -1072,6 +1100,20 @@ dsh plugin --profile web add github:yuyedaidao/dsh-theme
 ```
 
 **Repo:** [yuyedaidao/dsh-theme](https://github.com/yuyedaidao/dsh-theme) · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-switcher-wenjin](https://github.com/Wenjin-111/dsh-theme-switcher)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-switcher-wenjin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-switcher-wenjin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-switcher-wenjin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Theme switcher for the Web UI: glass and retro-paper styles, color presets, light/dark mode, and custom image backgrounds.
+
+```sh
+dsh plugin --profile web add github:Wenjin-111/dsh-theme-switcher
+```
+
+**Repo:** [Wenjin-111/dsh-theme-switcher](https://github.com/Wenjin-111/dsh-theme-switcher) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-theme-taffy](https://github.com/Misaki14987/dsh-theme-taffy)
 
