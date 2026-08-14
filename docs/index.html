@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-scene="glow">
+<body data-scene="glow" data-scheme="dark">
   <a class="skip" href="#gallery">Skip to themes</a>
   <div class="ocean" aria-hidden="true">
     <div class="caustics"></div>
@@ -28,7 +28,7 @@
   <header class="hero">
     <p class="eyebrow">a community dive log · not a store</p>
     <h1>awesome-dsh-themes</h1>
-    <p class="lede">Take a breath. The official runtime is a lantern, not a marketplace. Community skins are handmade lanterns. One of them is a cat. One of them is a whale who just wants to sit on your desktop. Welcome to the deep-seek-universe — unofficial, unaffiliated, and a little in love with the dark water.</p>
+    <p class="lede">Take a breath. The runtime is a lantern. Community skins are handmade lanterns. One of them is a cat. One of them is a whale who just wants to sit on your desktop. Welcome to the deep-seek-universe — a little in love with the dark water.</p>
     <div class="actions">
       <button type="button" id="dive" class="btn primary">Dive again</button>
       <a class="btn ghost" href="https://github.com/dshworks/awesome-dsh-themes">Source</a>
@@ -38,10 +38,14 @@
 
   <nav class="filters" aria-label="Filter themes">
     <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
-    <button type="button" class="chip" data-filter="runtime" aria-pressed="false">Official</button>
-    <button type="button" class="chip" data-filter="tokens" aria-pressed="false">Tokens</button>
+    <button type="button" class="chip" data-filter="runtime" aria-pressed="false">Runtime</button>
+    <button type="button" class="chip" data-filter="tokens" aria-pressed="false">Token skins</button>
     <button type="button" class="chip" data-filter="skin" aria-pressed="false">Skins</button>
     <button type="button" class="chip" data-filter="companion" aria-pressed="false">Companions</button>
+    <span class="scheme" role="group" aria-label="Preview light or dark">
+      <button type="button" class="chip is-on" data-scheme="dark" aria-pressed="true">Dark</button>
+      <button type="button" class="chip" data-scheme="light" aria-pressed="false">Light</button>
+    </span>
   </nav>
 
   <main id="gallery" class="gallery" tabindex="-1"></main>

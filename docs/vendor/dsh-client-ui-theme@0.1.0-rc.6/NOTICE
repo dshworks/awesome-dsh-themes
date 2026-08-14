@@ -1,0 +1,11 @@
+dsh-client-ui-theme
+Copyright 2026 DeepSeek
+
+These five stylesheets (base, design-platform, scrollbar,
+gradient-shadow-text, shiki) are vendored from
+@deepseek-ai/dsh-client-ui-theme@0.1.0-rc.6
+(https://github.com/deepseek-ai/deepseek-harness/tree/HEAD/packages/client/ui-theme).
+
+Licensed under the MIT License. See LICENSE in this directory.
+The above copyright notice and the MIT permission notice are
+included with this copy as required by the license.

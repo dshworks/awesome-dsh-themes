@@ -14,6 +14,7 @@ const CATEGORIES = new Set(["runtime", "tokens", "skin", "companion"]);
 const STATUSES = new Set(["verified", "unverified", "broken"]);
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
+const HTTP = /^https?:\/\//i;
 
 const errors = [];
 for (const k of TOP) if (!(k in data)) errors.push(`registry: missing ${k}`);
@@ -33,6 +34,10 @@ const seen = new Set();
   if (t.kind && !KINDS.has(t.kind)) errors.push(`${at}: bad kind`);
   if (t.category && !CATEGORIES.has(t.category)) errors.push(`${at}: bad category`);
   if (t.preview != null && (typeof t.preview !== "string" || !t.preview.trim())) errors.push(`${at}: bad preview`);
+  if (t.previewCss != null && (typeof t.previewCss !== "string" || !HTTP.test(t.previewCss))) {
+    errors.push(`${at}: bad previewCss`);
+  }
+  if (t.gist != null && (typeof t.gist !== "string" || !t.gist.trim())) errors.push(`${at}: bad gist`);
   if (t.status && !STATUSES.has(t.status)) errors.push(`${at}: bad status`);
   for (const k of ["added", "lastVerified"]) {
     if (t[k] && !DATE.test(t[k])) errors.push(`${at}: bad ${k}`);

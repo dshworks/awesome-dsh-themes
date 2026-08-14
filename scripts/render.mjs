@@ -18,9 +18,9 @@ const GALLERY = `https://${cfg.org}.github.io/${cfg.repo}/`;
 const esc = (s) => String(s).replaceAll("|", "\\|");
 
 const CATEGORY_META = [
-  { id: "runtime", title: "Official runtime", blurb: "The first-party ThemeRuntime. A lantern, not a marketplace." },
-  { id: "tokens", title: "Token skins", blurb: "Community \`--dsw-static-*\` / \`--dsw-alias-*\` override sets that restyle the Web UI." },
-  { id: "skin", title: "Community skins", blurb: "Theme/skin-shaped third-party listings. Unofficial. Not confirmed as complete \`--dsw-alias-*\` override sets." },
+  { id: "runtime", title: "Runtime", blurb: "ThemeRuntime over `--dsw-*` tokens. A lantern, not a marketplace." },
+  { id: "tokens", title: "Token skins", blurb: "Community `--dsw-static-*` / `--dsw-alias-*` override sets that restyle the Web UI." },
+  { id: "skin", title: "Skins", blurb: "Theme and skin listings that restyle the dsh Web UI." },
   { id: "companion", title: "Companions", blurb: "Desktop pets and extras that live beside the UI. Not token skins — still part of the dive." },
 ];
 
@@ -41,22 +41,10 @@ function pkgLink(t) {
   return t[key] ? `[\`${t[key]}\`](https://www.n` + `pmjs.com/package/${t[key]})` : null;
 }
 
-function verifiedLabel(t) {
-  if (t.status === "verified") return `${t.verifiedAgainst} (${t.lastVerified})`;
-  if (t.status === "broken") return `broken against ${t.verifiedAgainst}`;
-  return `unverified (${t.verifiedAgainst})`;
-}
-
-function officialBadge(t) {
-  return t.official
-    ? "![official](https://img.shields.io/badge/official-4D6BFE)"
-    : "![unofficial](https://img.shields.io/badge/unofficial-64748b)";
-}
-
-function statusBadge(t) {
-  if (t.status === "verified") return "![verified](https://img.shields.io/badge/verified-22c55e)";
-  if (t.status === "broken") return "![broken](https://img.shields.io/badge/broken-ef4444)";
-  return "![unverified](https://img.shields.io/badge/unverified-d97706)";
+function previewHref(t, scheme = "dark") {
+  const params = new URLSearchParams({ scheme });
+  if (t.previewCss) params.set("css", t.previewCss);
+  return `${GALLERY}preview.html?${params}`;
 }
 
 function slug(title) {
@@ -67,12 +55,11 @@ function entry(t) {
   const bits = [];
   bits.push(`### [${esc(t.name)}](${repoUrl(t)})`);
   bits.push("");
-  bits.push(`${officialBadge(t)} ${statusBadge(t)}`);
+  const live = previewHref(t);
+  bits.push(`<a href="${live}"><img src="docs/assets/whale-mark.svg" width="72" height="72" alt="" align="left"></a>`);
   bits.push("");
-  if (t.official && !t.preview) {
-    bits.push(`<img src="docs/assets/whale-mark.svg" width="88" height="88" alt="Drawn whale mark for the official runtime">`);
-    bits.push("");
-  }
+  bits.push(`**[Live preview](${live})** — tiny fake dsh window, real \`--dsw-*\` tokens${t.previewCss ? " plus this skin's override sheet" : ""}.`);
+  bits.push("");
   if (t.preview) {
     bits.push(`<img src="${t.preview}" width="360" alt="${esc(t.name)} preview">`);
     bits.push("");
@@ -83,7 +70,7 @@ function entry(t) {
     `**Repo:** [${t.repo}](${repoUrl(t)})`,
     t.license ? `**License:** ${esc(t.license)}` : null,
     pkgLink(t) ? `**Package:** ${pkgLink(t)}` : null,
-    `**Status:** ${verifiedLabel(t)}`,
+    `**dsh:** ${esc(t.verifiedAgainst)}`,
   ].filter(Boolean);
   bits.push(meta.join(" · "));
   if (t.notes) {
@@ -118,11 +105,6 @@ const toc = [
 
 const sections = CATEGORY_META.map((m) => section(m, groups[m.id] ?? [])).join("\n\n");
 
-const verifiedCommunity = data.themes.filter((t) => !t.official && t.status === "verified");
-const verifiedLine = verifiedCommunity.length === 0
-  ? "Zero packages currently carry a `verified` status."
-  : `${verifiedCommunity.length} community package${verifiedCommunity.length === 1 ? " is" : "s are"} marked verified.`;
-
 const readme = `# awesome-dsh-themes [![Awesome](${AWESOME})](https://awesome.re)
 
 [![powered by dsh](${BADGE})](https://github.com/${HARNESS})
@@ -137,8 +119,6 @@ A curated list of [DeepSeek Harness](https://github.com/${HARNESS}) (\`dsh\`) th
 
 **[Open the live gallery](${GALLERY})** — wild whales, token seas, and a little ❤️. Welcome.
 
-**Not affiliated with DeepSeek.** Sister of [awesome-dsh-plugins](${SISTER}).
-
 Most awesome lists are prose. This one is data: [\`data/themes.json\`](data/themes.json) is the source of truth; this README is rendered from it. Build on the JSON directly:
 
 \`\`\`sh
@@ -151,21 +131,21 @@ ${toc}
 
 ## The token seam
 
-Official theming is ThemeRuntime over \`--dsw-*\` tokens: a static scale (\`--dsw-static-*\`) plus alias semantic layers (\`--dsw-alias-*\`). Built-in preference is \`light\` / \`dark\` / \`system\`. Five sheets ship in \`@deepseek-ai/dsh-client-ui-theme\`: \`base\`, \`design-platform\`, \`scrollbar\`, \`gradient-shadow-text\`, \`shiki\`.
+Theming is ThemeRuntime over \`--dsw-*\` tokens: a static scale (\`--dsw-static-*\`) plus alias semantic layers (\`--dsw-alias-*\`). Built-in preference is \`light\` / \`dark\` / \`system\`. Five sheets ship in \`@deepseek-ai/dsh-client-ui-theme\`: \`base\`, \`design-platform\`, \`scrollbar\`, \`gradient-shadow-text\`, \`shiki\`.
 
-The official package is **not a theme store**. Its README says third-party themes are an extension point, not a product — registering one means overriding same-named alias variables, and there is no validation that an override set is complete.
+The ThemeRuntime package is **not a theme store**. Its README says third-party themes are an extension point, not a product — registering one means overriding same-named alias variables, and there is no validation that an override set is complete.
 
-The \`dsh-theme\` GitHub topic has one repo. The \`dsh-skin\` topic has two. ${verifiedLine} A short list is honest; inventing skins would be worse.
+The \`dsh-theme\` and \`dsh-skin\` GitHub topics keep growing. A short list is still honest; inventing skins would be worse. No harness themes turned up on gist.
 
 ${sections}
 
 ## Live gallery
 
-The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Same honesty.
+The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Each card embeds a tiny fake dsh window painted from the real \`--dsw-*\` tokens (and an override sheet when we have one).
 
 ## Add a theme
 
-Open a PR against [\`data/themes.json\`](data/themes.json) only; the README and \`docs/themes.json\` are regenerated. See [CONTRIBUTING.md](CONTRIBUTING.md). A theme here is a ThemeRuntime, a \`--dsw-*\` override set, a skin that actually restyles the dsh Web UI, or a companion that lives beside it. The official package is an extension point, not a store, and this list is not one either. A real preview image helps a lot. Please label unofficial work unofficial.
+Open a PR against [\`data/themes.json\`](data/themes.json) only; the README and \`docs/themes.json\` are regenerated. See [CONTRIBUTING.md](CONTRIBUTING.md). A theme here is a ThemeRuntime, a \`--dsw-*\` override set, a skin that actually restyles the dsh Web UI, or a companion that lives beside it. The ThemeRuntime package is an extension point, not a store, and this list is not one either. A real preview image helps a lot. If you ship a CSS override sheet, add \`previewCss\` so the live window can wear it.
 
 ## License
 
