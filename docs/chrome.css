@@ -149,3 +149,172 @@ body {
   height: 14px;
   fill: currentColor;
 }
+
+/* Full-page live preview (not the old postage-stamp iframe). */
+body.preview-page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100%;
+  height: auto;
+  padding: 0;
+  background:
+    radial-gradient(900px 420px at 75% 15%, rgba(126, 240, 255, 0.12), transparent 55%),
+    linear-gradient(180deg, #1a4058 0%, #08202e 45%, #01060d 100%);
+}
+
+.preview-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding: 0.9rem 1.2rem;
+  background: rgba(6, 22, 34, 0.72);
+  border-bottom: 1px solid rgba(126, 240, 255, 0.18);
+  backdrop-filter: blur(10px);
+  color: #d6f6ff;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+}
+
+.preview-bar .back {
+  color: #7ef0ff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.preview-bar .back:hover,
+.preview-bar .back:focus-visible { text-decoration: underline; }
+
+.preview-bar h1 {
+  font-size: 1.15rem;
+  margin: 0;
+  flex: 1;
+  min-width: 10rem;
+  font-family: "Syne", "Trebuchet MS", sans-serif;
+}
+
+.preview-bar .scheme { display: inline-flex; gap: 0.4rem; margin-left: auto; }
+
+.preview-bar .chip {
+  appearance: none;
+  border: 1px solid rgba(126, 240, 255, 0.22);
+  background: rgba(7, 20, 28, 0.55);
+  color: #d6f6ff;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.preview-bar .chip.is-on,
+.preview-bar .chip[aria-pressed="true"] {
+  background: #7ef0ff;
+  color: #032026;
+  border-color: transparent;
+}
+
+.preview-stage {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 1.4rem 1rem 1.2rem;
+}
+
+body.preview-page .dsh-frame {
+  width: min(1080px, 96vw);
+  height: min(680px, calc(100vh - 240px));
+  min-height: 420px;
+}
+
+body.preview-page .dsh-sidebar {
+  width: 180px;
+  flex-basis: 180px;
+  padding: 16px 12px;
+  gap: 10px;
+}
+
+body.preview-page .dsh-new {
+  height: 36px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+body.preview-page .dsh-session {
+  height: 44px;
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+body.preview-page .dsh-main { padding: 16px; gap: 12px; }
+
+body.preview-page .dsh-bubble,
+body.preview-page .dsh-assistant {
+  font-size: 15px;
+  padding: 10px 14px;
+}
+
+body.preview-page .dsh-composer {
+  min-height: 52px;
+  font-size: 14px;
+  padding: 8px 8px 8px 18px;
+}
+
+body.preview-page .dsh-send { width: 44px; height: 44px; }
+body.preview-page .dsh-send svg { width: 18px; height: 18px; }
+
+.preview-meta {
+  width: min(1080px, 96vw);
+  margin: 0 auto 2.2rem;
+  color: #d6f6ff;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+}
+
+.preview-shot-wrap { margin: 0 0 1rem; }
+.preview-shot-wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(126, 240, 255, 0.22);
+}
+
+.preview-meta .install {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.7rem;
+}
+
+.preview-meta .install code {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
+  overflow: auto;
+  color: #d6f6ff;
+  background: rgba(0, 0, 0, 0.28);
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+}
+
+.preview-meta .copy,
+.preview-page .copy {
+  appearance: none;
+  border: 1px solid rgba(126, 240, 255, 0.22);
+  background: rgba(7, 20, 28, 0.55);
+  color: #7ef0ff;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.preview-meta .copy.is-copied {
+  background: #7ef0ff;
+  color: #032026;
+}
+
+.preview-repo { margin: 0; }
+.preview-repo a { color: #7ef0ff; }

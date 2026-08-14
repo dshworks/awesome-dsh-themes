@@ -1,6 +1,12 @@
 const NACHONEKO = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/screenshot.png";
 const SCENES = ["glow", "abyss", "nachoneko"];
-const CAT_LABEL = { runtime: "runtime", tokens: "tokens", skin: "skins", companion: "companions" };
+const CAT_LABEL = { runtime: "runtime", tokens: "tokens", skin: "skins", companion: "companions", fun: "fun" };
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
 
 function categoryOf(t) {
   if (t.category) return t.category;
@@ -14,32 +20,52 @@ function repoUrl(t) {
   return t.path ? `https://github.com/${t.repo}/tree/HEAD/${t.path}` : `https://github.com/${t.repo}`;
 }
 
-function previewSrc(t, scheme) {
-  const params = new URLSearchParams({ scheme });
-  if (t.previewCss) params.set("css", t.previewCss);
+function liveHref(t, scheme) {
+  const params = new URLSearchParams({ theme: t.name, scheme });
   return `preview.html?${params}`;
 }
 
+function installCmd(t) {
+  if (t.install) return t.install;
+  if (t.official || t.kind === "runtime") return null;
+  return `dsh plugin --profile web add github:${t.repo}`;
+}
+
 function badge(cls, text) {
-  return `<span class="badge ${cls}">${text}</span>`;
+  return `<span class="badge ${cls}">${esc(text)}</span>`;
+}
+
+function whalePlaceholder() {
+  return `<div class="ph" aria-hidden="true">
+    <svg class="ph-whale" viewBox="0 0 240 80">
+      <path d="M8 48c14-18 46-28 86-22 28 4 56 2 80-8 16-6 32-4 40 8 4 6 2 12-6 14-16-4-32 2-48 12-20 14-52 18-84 14C50 64 24 68 8 48z"/>
+      <path d="M214 26c16-16 36-20 56-16-8 12-6 20 4 28-18-4-34 4-50 8-2-8-4-14-10-20z"/>
+      <path d="M70 52c4 12 16 18 32 16-12-8-18-14-20-20z"/>
+      <circle cx="36" cy="42" r="2.2" class="eye"/>
+    </svg>
+    <small>shot coming later</small>
+  </div>`;
 }
 
 function card(t, scheme) {
   const cat = categoryOf(t);
-  const src = previewSrc(t, scheme);
-  const license = t.license ? ` · ${t.license}` : "";
-  const shot = t.preview
-    ? `<a class="shot" href="${t.preview}" rel="noopener">photo</a>`
+  const live = liveHref(t, scheme);
+  const license = t.license ? ` · ${esc(t.license)}` : "";
+  const cmd = installCmd(t);
+  const thumb = t.preview
+    ? `<img src="${esc(t.preview)}" alt="${esc(t.name)} preview" loading="lazy">`
+    : whalePlaceholder();
+  const install = cmd
+    ? `<p class="install"><code>${esc(cmd)}</code><button type="button" class="copy" data-copy="${esc(cmd)}">Copy</button></p>`
     : "";
-  return `<article class="card" data-category="${cat}">
-    <div class="thumb">
-      <iframe class="live-preview" title="${t.name} live preview" src="${src}" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>
-    </div>
+  return `<article class="card" data-category="${esc(cat)}">
+    <a class="thumb" href="${esc(live)}" aria-label="Live preview of ${esc(t.name)}">${thumb}</a>
     <div class="body">
       <div class="badges">${badge("cat", CAT_LABEL[cat] || cat)}</div>
-      <h2><a href="${repoUrl(t)}" rel="noopener">${t.name}</a></h2>
-      <p>${t.description}</p>
-      <p class="meta"><a href="${src}" rel="noopener">Live preview</a> · ${t.verifiedAgainst}${license}${shot ? " · " + shot : ""}</p>
+      <h2><a href="${esc(repoUrl(t))}" rel="noopener">${esc(t.name)}</a></h2>
+      <p>${esc(t.description)}</p>
+      ${install}
+      <p class="meta"><a class="dive" href="${esc(live)}">Dive</a> · ${esc(t.verifiedAgainst)}${license}</p>
     </div>
   </article>`;
 }
@@ -65,17 +91,7 @@ function setScheme(scheme, themes, filter) {
     el.classList.toggle("is-on", on);
     el.setAttribute("aria-pressed", on ? "true" : "false");
   });
-  const frames = [...document.querySelectorAll("iframe.live-preview")];
-  if (!frames.length) {
-    render(themes, filter, scheme);
-    return;
-  }
-  frames.forEach((iframe) => {
-    try { iframe.contentWindow.postMessage({ scheme }, "*"); } catch {}
-    const url = new URL(iframe.getAttribute("src"), location.href);
-    url.searchParams.set("scheme", scheme);
-    iframe.setAttribute("src", url.pathname + url.search);
-  });
+  render(themes, filter, scheme);
 }
 
 function setFilter(btn, themes) {
@@ -122,6 +138,27 @@ function heart(x, y) {
   setTimeout(() => el.remove(), 1100);
 }
 
+async function copyText(text, btn) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    ta.remove();
+  }
+  if (btn) {
+    btn.classList.add("is-copied");
+    btn.textContent = "Copied";
+    setTimeout(() => {
+      btn.classList.remove("is-copied");
+      btn.textContent = "Copy";
+    }, 1400);
+  }
+}
+
 async function loadThemes() {
   if (window.__THEMES__?.themes) return window.__THEMES__;
   const res = await fetch("./themes.json");
@@ -159,8 +196,14 @@ async function boot() {
   document.getElementById("whale").addEventListener("click", (ev) => {
     heart(ev.clientX, ev.clientY);
   });
+  document.getElementById("gallery").addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".copy");
+    if (!btn) return;
+    ev.preventDefault();
+    copyText(btn.dataset.copy || "", btn);
+  });
 }
 
 boot().catch((err) => {
-  document.getElementById("gallery").innerHTML = `<p class="empty">The current dragged us off course. ${err.message}</p>`;
+  document.getElementById("gallery").innerHTML = `<p class="empty">The current dragged us off course. ${esc(err.message)}</p>`;
 });
