@@ -586,6 +586,62 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Wallpaper skin with capsule sidebar chrome and wallpaper-derived theme colors.",
       "category": "skin"
+    },
+    {
+      "name": "dsh-blur-theme",
+      "repo": "hashdiana/dsh-blur-theme",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Frosted-glass --dsw-* theme for the dsh Web UI: floating rounded sidebar, frosted header, floating composer, and a live blur slider.",
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/main/p1.png",
+      "previewCss": "https://raw.githubusercontent.com/hashdiana/dsh-blur-theme/main/src/client/enhancer.module.css"
+    },
+    {
+      "name": "dsh-theme-blackgold",
+      "repo": "frostgao/dsh-theme-blackgold",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Black-gold --dsw-* token theme: gold accents on a black-and-white base, light and dark.",
+      "category": "tokens",
+      "previewCss": "https://raw.githubusercontent.com/frostgao/dsh-theme-blackgold/main/src/client/gold.module.css"
+    },
+    {
+      "name": "chiral-pulse",
+      "repo": "MoonShadow1976/chiral-pulse",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Death Stranding --dsw-* skin with a BB vital-signs monitor: amber-on-ink palette and a live heartbeat paper feed under the composer.",
+      "category": "tokens"
+    },
+    {
+      "name": "dsh-kun-like-pet",
+      "repo": "liyupi/dsh-kun-like-pet",
+      "license": "MIT",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Kun Like desktop pet for the dsh Web UI: a corner companion that switches among 9 animations with the agent work state.",
+      "category": "companion",
+      "preview": "https://raw.githubusercontent.com/liyupi/dsh-kun-like-pet/main/docs/screenshot-working.png"
     }
   ]
 };
