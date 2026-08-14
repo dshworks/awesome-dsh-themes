@@ -2531,6 +2531,35 @@ window.__THEMES__ = {
       "category": "fun",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg"
+    },
+    {
+      "name": "dsh-homepage-skin",
+      "repo": "changan0617/dsh-skin",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Homepage-style chat background for DeepSeek Harness: deep-blue gradient, dot grid, and a digitile whale.",
+      "category": "skin",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/changan0617/dsh-skin/main/harness-bg.css"
+    },
+    {
+      "name": "dsh-skin-yanisuu",
+      "repo": "xassuyge003-ui/dsh-skin-yanisuu",
+      "path": "packages/ui-skin-yanisuu",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Glass wallpaper skin with a left-edge control drawer for blur, rotation, and local uploads.",
+      "category": "tokens",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/xassuyge003-ui/dsh-skin-yanisuu/HEAD/packages/ui-skin-yanisuu/src/client/skin.module.css"
     }
   ]
 };

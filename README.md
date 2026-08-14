@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 187 entries, 29 with live in-browser previews, 157 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 189 entries, 31 with live in-browser previews, 159 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -787,6 +787,20 @@ dsh plugin --profile web add github:springbrand-lab/dsh-skin-universe
 
 **Repo:** [springbrand-lab/dsh-skin-universe](https://github.com/springbrand-lab/dsh-skin-universe) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.6
 
+### [dsh-skin-yanisuu](https://github.com/xassuyge003-ui/dsh-skin-yanisuu/tree/HEAD/packages/ui-skin-yanisuu)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-yanisuu&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-yanisuu preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-yanisuu&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Glass wallpaper skin with a left-edge control drawer for blur, rotation, and local uploads.
+
+```sh
+dsh plugin --profile web add github:xassuyge003-ui/dsh-skin-yanisuu
+```
+
+**Repo:** [xassuyge003-ui/dsh-skin-yanisuu](https://github.com/xassuyge003-ui/dsh-skin-yanisuu/tree/HEAD/packages/ui-skin-yanisuu) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [dsh-skins-harbor](https://github.com/Moeblack/dsh-skins/tree/HEAD/packages/dsh-web-skins)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skins-harbor&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skins-harbor preview"></a>
@@ -1380,6 +1394,20 @@ dsh plugin --profile web add github:lehhair/dsh-home-ui
 ```
 
 **Repo:** [lehhair/dsh-home-ui](https://github.com/lehhair/dsh-home-ui) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.6
+
+### [dsh-homepage-skin](https://github.com/changan0617/dsh-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-homepage-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-homepage-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-homepage-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Homepage-style chat background for DeepSeek Harness: deep-blue gradient, dot grid, and a digitile whale.
+
+```sh
+dsh plugin --profile web add github:changan0617/dsh-skin
+```
+
+**Repo:** [changan0617/dsh-skin](https://github.com/changan0617/dsh-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-local-background](https://github.com/luoyu-xingu/dsh-background)
 
