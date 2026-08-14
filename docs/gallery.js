@@ -2,6 +2,16 @@ const NACHONEKO = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nach
 const SCENES = ["glow", "abyss", "nachoneko"];
 const CAT_LABEL = { runtime: "runtime", tokens: "tokens", skin: "skins", companion: "companions", fun: "fun" };
 
+const porthole = {
+  root: null,
+  win: null,
+  frame: null,
+  title: null,
+  full: null,
+  opener: null,
+  theme: null,
+};
+
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -20,8 +30,13 @@ function repoUrl(t) {
   return t.path ? `https://github.com/${t.repo}/tree/HEAD/${t.path}` : `https://github.com/${t.repo}`;
 }
 
-function liveHref(t, scheme) {
+function hasLive(t) {
+  return Boolean(t.previewCss);
+}
+
+function liveHref(t, scheme, embed) {
   const params = new URLSearchParams({ theme: t.name, scheme });
+  if (embed) params.set("embed", "1");
   return `preview.html?${params}`;
 }
 
@@ -49,23 +64,31 @@ function whalePlaceholder() {
 
 function card(t, scheme) {
   const cat = categoryOf(t);
-  const live = liveHref(t, scheme);
+  const live = hasLive(t);
   const license = t.license ? ` · ${esc(t.license)}` : "";
   const cmd = installCmd(t);
-  const thumb = t.preview
+  const shot = t.preview
     ? `<img src="${esc(t.preview)}" alt="${esc(t.name)} preview" loading="lazy">`
     : whalePlaceholder();
   const install = cmd
     ? `<p class="install"><code>${esc(cmd)}</code><button type="button" class="copy" data-copy="${esc(cmd)}">Copy</button></p>`
     : "";
-  return `<article class="card" data-category="${esc(cat)}">
-    <a class="thumb" href="${esc(live)}" aria-label="Live preview of ${esc(t.name)}">${thumb}</a>
+  const badges = [badge("cat", CAT_LABEL[cat] || cat)];
+  if (live) badges.push(badge("live", "live"));
+  const thumb = live
+    ? `<a class="thumb" href="${esc(liveHref(t, scheme))}" aria-label="Live preview of ${esc(t.name)}">${shot}</a>`
+    : `<div class="thumb">${shot}</div>`;
+  const dive = live
+    ? `<a class="dive" href="${esc(liveHref(t, scheme))}">Dive</a> · `
+    : "";
+  return `<article class="card" data-category="${esc(cat)}" data-theme="${esc(t.name)}"${live ? ' data-live="1"' : ""}>
+    ${thumb}
     <div class="body">
-      <div class="badges">${badge("cat", CAT_LABEL[cat] || cat)}</div>
+      <div class="badges">${badges.join("")}</div>
       <h2><a href="${esc(repoUrl(t))}" rel="noopener">${esc(t.name)}</a></h2>
       <p>${esc(t.description)}</p>
       ${install}
-      <p class="meta"><a class="dive" href="${esc(live)}">Dive</a> · ${esc(t.verifiedAgainst)}${license}</p>
+      <p class="meta">${dive}${esc(t.verifiedAgainst)}${license}</p>
     </div>
   </article>`;
 }
@@ -84,14 +107,19 @@ function currentScheme() {
   return document.body.dataset.scheme === "light" ? "light" : "dark";
 }
 
-function setScheme(scheme, themes, filter) {
+function applySchemeChips(scheme) {
   document.body.dataset.scheme = scheme;
   document.querySelectorAll("[data-scheme]").forEach((el) => {
     const on = el.dataset.scheme === scheme;
     el.classList.toggle("is-on", on);
     el.setAttribute("aria-pressed", on ? "true" : "false");
   });
+}
+
+function setScheme(scheme, themes, filter) {
+  applySchemeChips(scheme);
   render(themes, filter, scheme);
+  if (porthole.theme) syncPorthole(scheme);
 }
 
 function setFilter(btn, themes) {
@@ -166,6 +194,130 @@ async function loadThemes() {
   return res.json();
 }
 
+function syncPorthole(scheme) {
+  const theme = porthole.theme;
+  if (!theme) return;
+  porthole.title.textContent = theme.name;
+  porthole.full.href = liveHref(theme, scheme);
+  porthole.frame.title = `Live theme preview — ${theme.name}`;
+  porthole.frame.src = liveHref(theme, scheme, true);
+}
+
+function resetPortholePos() {
+  const win = porthole.win;
+  win.style.left = "";
+  win.style.top = "";
+  win.style.right = "";
+  win.style.bottom = "";
+  win.style.transform = "";
+}
+
+function openPorthole(theme, opener) {
+  porthole.theme = theme;
+  porthole.opener = opener;
+  resetPortholePos();
+  syncPorthole(currentScheme());
+  porthole.root.hidden = false;
+  document.body.classList.add("porthole-open");
+  porthole.win.focus();
+}
+
+function closePorthole() {
+  if (!porthole.root || porthole.root.hidden) return;
+  const opener = porthole.opener;
+  const name = porthole.theme?.name;
+  porthole.root.hidden = true;
+  porthole.frame.src = "";
+  porthole.theme = null;
+  porthole.opener = null;
+  document.body.classList.remove("porthole-open");
+  let target = opener && document.contains(opener) ? opener : null;
+  if (!target && name) {
+    target = document.querySelector(`[data-theme="${CSS.escape(name)}"] .dive, [data-theme="${CSS.escape(name)}"] a.thumb`);
+  }
+  if (target) target.focus();
+}
+
+function bindPortholeDrag() {
+  const bar = porthole.root.querySelector(".porthole-titlebar");
+  const win = porthole.win;
+  let dragging = false;
+  let startX = 0;
+  let startY = 0;
+  let startLeft = 0;
+  let startTop = 0;
+
+  function narrow() {
+    return window.matchMedia("(max-width: 720px)").matches;
+  }
+
+  bar.addEventListener("pointerdown", (ev) => {
+    if (ev.button !== 0) return;
+    if (ev.target.closest("button, a")) return;
+    if (narrow()) return;
+    const rect = win.getBoundingClientRect();
+    win.style.left = `${rect.left}px`;
+    win.style.top = `${rect.top}px`;
+    win.style.right = "auto";
+    win.style.bottom = "auto";
+    win.style.transform = "none";
+    startX = ev.clientX;
+    startY = ev.clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+    dragging = true;
+    porthole.frame.style.pointerEvents = "none";
+    bar.classList.add("is-dragging");
+    bar.setPointerCapture(ev.pointerId);
+  });
+
+  bar.addEventListener("pointermove", (ev) => {
+    if (!dragging) return;
+    const w = win.offsetWidth;
+    const h = win.offsetHeight;
+    const left = Math.min(Math.max(0, startLeft + ev.clientX - startX), Math.max(0, window.innerWidth - w));
+    const top = Math.min(Math.max(0, startTop + ev.clientY - startY), Math.max(0, window.innerHeight - h));
+    win.style.left = `${left}px`;
+    win.style.top = `${top}px`;
+  });
+
+  function endDrag() {
+    if (!dragging) return;
+    dragging = false;
+    porthole.frame.style.pointerEvents = "";
+    bar.classList.remove("is-dragging");
+  }
+
+  bar.addEventListener("pointerup", endDrag);
+  bar.addEventListener("pointercancel", endDrag);
+}
+
+function bindPorthole() {
+  porthole.root = document.getElementById("porthole");
+  porthole.win = porthole.root.querySelector(".porthole-window");
+  porthole.frame = document.getElementById("porthole-frame");
+  porthole.title = document.getElementById("porthole-title");
+  porthole.full = document.getElementById("porthole-full");
+
+  porthole.root.addEventListener("click", (ev) => {
+    if (ev.target.closest("[data-close]")) {
+      closePorthole();
+      return;
+    }
+    const schemeBtn = ev.target.closest("[data-scheme]");
+    if (schemeBtn) {
+      applySchemeChips(schemeBtn.dataset.scheme);
+      syncPorthole(schemeBtn.dataset.scheme);
+    }
+  });
+
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") closePorthole();
+  });
+
+  bindPortholeDrag();
+}
+
 async function boot() {
   bubbles();
   setScene(SCENES[Math.floor(Math.random() * SCENES.length)]);
@@ -174,6 +326,7 @@ async function boot() {
   const themes = data.themes || [];
   let filter = "all";
   render(themes, filter, "dark");
+  bindPorthole();
   const chips = [...document.querySelectorAll(".chip[data-filter]")];
   chips.forEach((btn) => btn.addEventListener("click", () => {
     filter = btn.dataset.filter;
@@ -189,7 +342,7 @@ async function boot() {
     filter = next.dataset.filter;
     setFilter(next, themes);
   });
-  document.querySelectorAll("[data-scheme]").forEach((btn) => {
+  document.querySelectorAll(".filters [data-scheme]").forEach((btn) => {
     btn.addEventListener("click", () => setScheme(btn.dataset.scheme, themes, filter));
   });
   document.getElementById("dive").addEventListener("click", diveAgain);
@@ -198,9 +351,20 @@ async function boot() {
   });
   document.getElementById("gallery").addEventListener("click", (ev) => {
     const btn = ev.target.closest(".copy");
-    if (!btn) return;
+    if (btn) {
+      ev.preventDefault();
+      copyText(btn.dataset.copy || "", btn);
+      return;
+    }
+    const link = ev.target.closest(".dive, a.thumb");
+    if (!link) return;
+    const cardEl = link.closest(".card");
+    if (!cardEl || cardEl.dataset.live !== "1") return;
+    if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
     ev.preventDefault();
-    copyText(btn.dataset.copy || "", btn);
+    const theme = themes.find((t) => t.name === cardEl.dataset.theme);
+    if (!theme || !hasLive(theme)) return;
+    openPorthole(theme, link);
   });
 }
 

@@ -59,6 +59,24 @@
     </p>
   </footer>
 
+
+  <div id="porthole" class="porthole" hidden>
+    <div class="porthole-backdrop" data-close></div>
+    <div class="porthole-window" role="dialog" aria-modal="true" aria-labelledby="porthole-title" tabindex="-1">
+      <div class="porthole-titlebar">
+        <span class="porthole-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <strong id="porthole-title">theme name</strong>
+        <div class="porthole-actions">
+          <button type="button" data-scheme="dark" class="is-on" aria-pressed="true">Dark</button>
+          <button type="button" data-scheme="light" aria-pressed="false">Light</button>
+          <a id="porthole-full" href="#">Open full</a>
+          <button type="button" data-close aria-label="Close">×</button>
+        </div>
+      </div>
+      <iframe id="porthole-frame" title="Live theme preview"></iframe>
+    </div>
+  </div>
+
   <script src="themes-embed.js"></script>
   <script src="gallery.js"></script>
 </body>

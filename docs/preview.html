@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dsh theme preview</title>
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.dataset.embed = "";
+    }
+  </script>
   <link rel="icon" href="vendor/dsh-web-chrome@0.1.0-rc.6/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/base.css">
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/design-platform.css">
