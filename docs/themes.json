@@ -2370,6 +2370,19 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "license": "MIT",
       "npm": "dsh-meow-cat"
+    },
+    {
+      "name": "dsh-lulu-theme",
+      "repo": "shaoqing404/dsh-lulu-theme",
+      "description": "Capybara Lulu skin for the dsh web UI: cream-coffee light and warm-night dark token palettes, plus a corner pet with wave and sway animations.",
+      "kind": "skin",
+      "category": "fun",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "preview": "https://raw.githubusercontent.com/shaoqing404/dsh-lulu-theme/main/assets/lulu-compact-sheet.png"
     }
   ]
 }
