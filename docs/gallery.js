@@ -1,6 +1,15 @@
-const NACHONEKO = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/screenshot.png";
-const SCENES = ["glow", "abyss", "nachoneko"];
+const GRADIENT_SCENES = ["glow", "abyss"];
 const CAT_LABEL = { runtime: "runtime", tokens: "tokens", skin: "skins", companion: "companions", fun: "fun" };
+
+const state = {
+  filter: "all",
+  query: "",
+  sort: "newest",
+  liveOnly: false,
+  verifiedOnly: false,
+  themes: [],
+  scene: null,
+};
 
 const porthole = {
   root: null,
@@ -75,6 +84,7 @@ function card(t, scheme) {
     : "";
   const badges = [badge("cat", CAT_LABEL[cat] || cat)];
   if (live) badges.push(badge("live", "live"));
+  if (t.status === "verified") badges.push(badge("verified", "verified"));
   const thumb = live
     ? `<a class="thumb" href="${esc(liveHref(t, scheme))}" aria-label="Live preview of ${esc(t.name)}">${shot}</a>`
     : `<div class="thumb">${shot}</div>`;
@@ -93,13 +103,47 @@ function card(t, scheme) {
   </article>`;
 }
 
-function render(themes, filter, scheme) {
+const SORTS = {
+  newest: (a, b) => String(b.added || "").localeCompare(String(a.added || "")) || a.name.localeCompare(b.name),
+  name: (a, b) => a.name.localeCompare(b.name),
+  live: (a, b) => (hasLive(b) - hasLive(a)) || SORTS.newest(a, b),
+};
+
+function applyView() {
+  const q = state.query.trim().toLowerCase();
+  const rows = state.themes.filter((t) => {
+    if (state.filter !== "all" && categoryOf(t) !== state.filter) return false;
+    if (state.liveOnly && !hasLive(t)) return false;
+    if (state.verifiedOnly && t.status !== "verified") return false;
+    if (q) {
+      const hay = `${t.name} ${t.description || ""} ${t.repo || ""}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  rows.sort(SORTS[state.sort] || SORTS.newest);
+  return rows;
+}
+
+function renderStats(shown) {
+  const el = document.getElementById("stats");
+  if (!el) return;
+  const all = state.themes;
+  const filtered = shown.length !== all.length;
+  el.textContent = filtered
+    ? `${shown.length} of ${all.length} lanterns`
+    : `${all.length} lanterns · ${all.filter(hasLive).length} live · ${all.filter((t) => t.status === "verified").length} verified`;
+}
+
+function render() {
   const root = document.getElementById("gallery");
-  const rows = themes.filter((t) => filter === "all" || categoryOf(t) === filter);
+  const rows = applyView();
+  renderStats(rows);
   if (!rows.length) {
     root.innerHTML = `<p class="empty">Nothing in this trench yet. The sea is young.</p>`;
     return;
   }
+  const scheme = currentScheme();
   root.innerHTML = rows.map((t) => card(t, scheme)).join("");
 }
 
@@ -116,31 +160,41 @@ function applySchemeChips(scheme) {
   });
 }
 
-function setScheme(scheme, themes, filter) {
+function setScheme(scheme) {
   applySchemeChips(scheme);
-  render(themes, filter, scheme);
+  render();
   if (porthole.theme) syncPorthole(scheme);
 }
 
-function setFilter(btn, themes) {
-  document.querySelectorAll(".chip[data-filter]").forEach((el) => {
-    const on = el === btn;
-    el.classList.toggle("is-on", on);
-    el.setAttribute("aria-pressed", on ? "true" : "false");
-  });
-  render(themes, btn.dataset.filter, currentScheme());
+function scenePool() {
+  // Gradient moods plus every theme in the registry that ships a screenshot:
+  // the backdrop is always something real from the sea floor.
+  const shots = state.themes.filter((t) => t.preview);
+  return [...GRADIENT_SCENES.map((g) => ({ kind: "gradient", key: g })),
+          ...shots.map((t) => ({ kind: "shot", key: `shot:${t.name}`, theme: t }))];
 }
 
-function setScene(name) {
-  document.body.dataset.scene = name;
+function setScene(scene) {
+  state.scene = scene;
   const photo = document.getElementById("photo");
-  photo.style.backgroundImage = name === "nachoneko" ? `url("${NACHONEKO}")` : "";
+  const credit = document.getElementById("backdrop-credit");
+  if (scene.kind === "shot") {
+    document.body.dataset.scene = "shot";
+    photo.style.backgroundImage = `url("${scene.theme.preview}")`;
+    credit.textContent = `🌊 backdrop: ${scene.theme.name}`;
+    credit.href = repoUrl(scene.theme);
+    credit.hidden = false;
+  } else {
+    document.body.dataset.scene = scene.key;
+    photo.style.backgroundImage = "";
+    credit.hidden = true;
+  }
 }
 
 function diveAgain() {
-  const cur = document.body.dataset.scene;
-  const rest = SCENES.filter((s) => s !== cur);
-  setScene(rest[Math.floor(Math.random() * rest.length)]);
+  const pool = scenePool().filter((s) => s.key !== state.scene?.key);
+  if (!pool.length) return;
+  setScene(pool[Math.floor(Math.random() * pool.length)]);
 }
 
 function bubbles() {
@@ -318,19 +372,35 @@ function bindPorthole() {
   bindPortholeDrag();
 }
 
+function markPressed(group, btn) {
+  group.forEach((el) => {
+    const on = el === btn;
+    el.classList.toggle("is-on", on);
+    el.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+}
+
+function toggleChip(btn) {
+  const on = btn.getAttribute("aria-pressed") !== "true";
+  btn.classList.toggle("is-on", on);
+  btn.setAttribute("aria-pressed", on ? "true" : "false");
+  return on;
+}
+
 async function boot() {
   bubbles();
-  setScene(SCENES[Math.floor(Math.random() * SCENES.length)]);
   document.body.dataset.scheme = "dark";
   const data = await loadThemes();
-  const themes = data.themes || [];
-  let filter = "all";
-  render(themes, filter, "dark");
+  state.themes = data.themes || [];
+  diveAgain();
+  render();
   bindPorthole();
+
   const chips = [...document.querySelectorAll(".chip[data-filter]")];
   chips.forEach((btn) => btn.addEventListener("click", () => {
-    filter = btn.dataset.filter;
-    setFilter(btn, themes);
+    state.filter = btn.dataset.filter;
+    markPressed(chips, btn);
+    render();
   }));
   document.querySelector(".filters").addEventListener("keydown", (ev) => {
     if (ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") return;
@@ -339,11 +409,39 @@ async function boot() {
     ev.preventDefault();
     const next = chips[(i + (ev.key === "ArrowRight" ? 1 : chips.length - 1)) % chips.length];
     next.focus();
-    filter = next.dataset.filter;
-    setFilter(next, themes);
+    state.filter = next.dataset.filter;
+    markPressed(chips, next);
+    render();
   });
+
+  const sorts = [...document.querySelectorAll(".chip[data-sort]")];
+  sorts.forEach((btn) => btn.addEventListener("click", () => {
+    state.sort = btn.dataset.sort;
+    markPressed(sorts, btn);
+    render();
+  }));
+
+  document.getElementById("only-live").addEventListener("click", (ev) => {
+    state.liveOnly = toggleChip(ev.currentTarget);
+    render();
+  });
+  document.getElementById("only-verified").addEventListener("click", (ev) => {
+    state.verifiedOnly = toggleChip(ev.currentTarget);
+    render();
+  });
+
+  const search = document.getElementById("search");
+  let searchTimer = 0;
+  search.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.query = search.value;
+      render();
+    }, 120);
+  });
+
   document.querySelectorAll(".filters [data-scheme]").forEach((btn) => {
-    btn.addEventListener("click", () => setScheme(btn.dataset.scheme, themes, filter));
+    btn.addEventListener("click", () => setScheme(btn.dataset.scheme));
   });
   document.getElementById("dive").addEventListener("click", diveAgain);
   document.getElementById("whale").addEventListener("click", (ev) => {
@@ -362,7 +460,7 @@ async function boot() {
     if (!cardEl || cardEl.dataset.live !== "1") return;
     if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
     ev.preventDefault();
-    const theme = themes.find((t) => t.name === cardEl.dataset.theme);
+    const theme = state.themes.find((t) => t.name === cardEl.dataset.theme);
     if (!theme || !hasLive(theme)) return;
     openPorthole(theme, link);
   });

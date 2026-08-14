@@ -36,20 +36,36 @@
     </div>
   </header>
 
-  <nav class="filters" aria-label="Filter themes">
-    <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
-    <button type="button" class="chip" data-filter="runtime" aria-pressed="false">Runtime</button>
-    <button type="button" class="chip" data-filter="tokens" aria-pressed="false">Token skins</button>
-    <button type="button" class="chip" data-filter="skin" aria-pressed="false">Skins</button>
-    <button type="button" class="chip" data-filter="companion" aria-pressed="false">Companions</button>
-    <button type="button" class="chip" data-filter="fun" aria-pressed="false">Fun</button>
-    <span class="scheme" role="group" aria-label="Preview light or dark">
-      <button type="button" class="chip is-on" data-scheme="dark" aria-pressed="true">Dark</button>
-      <button type="button" class="chip" data-scheme="light" aria-pressed="false">Light</button>
-    </span>
+  <nav class="filters" aria-label="Filter and sort themes">
+    <div class="frow">
+      <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="runtime" aria-pressed="false">Runtime</button>
+      <button type="button" class="chip" data-filter="tokens" aria-pressed="false">Token skins</button>
+      <button type="button" class="chip" data-filter="skin" aria-pressed="false">Skins</button>
+      <button type="button" class="chip" data-filter="companion" aria-pressed="false">Companions</button>
+      <button type="button" class="chip" data-filter="fun" aria-pressed="false">Fun</button>
+      <span class="divider" aria-hidden="true"></span>
+      <button type="button" class="chip" id="only-live" aria-pressed="false">⚡ Live</button>
+      <button type="button" class="chip" id="only-verified" aria-pressed="false">✓ Verified</button>
+      <span class="scheme" role="group" aria-label="Preview light or dark">
+        <button type="button" class="chip is-on" data-scheme="dark" aria-pressed="true">Dark</button>
+        <button type="button" class="chip" data-scheme="light" aria-pressed="false">Light</button>
+      </span>
+    </div>
+    <div class="frow">
+      <input type="search" id="search" class="search" placeholder="Search the trench — name, vibe, repo…" aria-label="Search themes">
+      <span class="sorts" role="group" aria-label="Sort themes">
+        <button type="button" class="chip is-on" data-sort="newest" aria-pressed="true">Fresh catch</button>
+        <button type="button" class="chip" data-sort="live" aria-pressed="false">Live first</button>
+        <button type="button" class="chip" data-sort="name" aria-pressed="false">A–Z</button>
+      </span>
+      <span class="stats" id="stats" aria-live="polite"></span>
+    </div>
   </nav>
 
   <main id="gallery" class="gallery" tabindex="-1"></main>
+
+  <a id="backdrop-credit" class="backdrop-credit" rel="noopener" hidden></a>
 
   <footer class="foot">
     <p>Not affiliated with DeepSeek. <span aria-hidden="true">❤️</span> for the people who make lanterns anyway.</p>
