@@ -2409,6 +2409,59 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Floating Furina chibi desk pet for the DeepSeek Harness web GUI, with click effects, affinity levels, and drag.",
       "category": "companion"
+    },
+    {
+      "name": "liuli-theme",
+      "repo": "LilycleHeart/liuli-theme",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "DenpaPush-style glass theme for the DeepSeek Harness web UI, with M3 dynamic color, wallpaper material, and day/night palettes.",
+      "category": "fun",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/LilycleHeart/liuli-theme/HEAD/src/client/denpa.css"
+    },
+    {
+      "name": "dsh-theme-triptych",
+      "repo": "iMocking/dsh-theme-triptych",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Appearance pack for DeepSeek Harness with NEXUS, COMIKET, and IRONCORE editions, wallpapers, and a sidebar switcher.",
+      "category": "tokens"
+    },
+    {
+      "name": "dsh-deepsea-theme",
+      "repo": "i1j/dsh-deepsea-theme",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Deep Sea dark token theme for the DeepSeek Harness web UI, overriding --dsw-alias and --dsw-static tokens.",
+      "category": "tokens",
+      "license": "MIT",
+      "previewCss": "https://raw.githubusercontent.com/i1j/dsh-deepsea-theme/HEAD/src/client/deepsea.css"
+    },
+    {
+      "name": "dsh-bg-beautify",
+      "repo": "halosb/dsh-bg-beautify",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Background image and translucent panels for the DeepSeek Harness web UI, with a live settings page.",
+      "category": "skin",
+      "preview": "https://raw.githubusercontent.com/halosb/dsh-bg-beautify/HEAD/docs/screenshots/demo-1.png"
     }
   ]
 }
