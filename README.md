@@ -71,6 +71,20 @@ dsh plugin --profile web add github:MoonShadow1976/chiral-pulse
 
 **Repo:** [MoonShadow1976/chiral-pulse](https://github.com/MoonShadow1976/chiral-pulse) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [claude-parchment-theme](https://github.com/RayYeung1989/claude-parchment-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=claude-parchment-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="claude-parchment-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=claude-parchment-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Claude-style parchment theme for the Web UI: warm paper palette, terracotta accents, serif titles, and full DSW token coverage.
+
+```sh
+dsh plugin --profile web add github:RayYeung1989/claude-parchment-theme
+```
+
+**Repo:** [RayYeung1989/claude-parchment-theme](https://github.com/RayYeung1989/claude-parchment-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
 ### [deepseek-harness-plugin-image-skin](https://github.com/fufankeji/deepseek-harness-plugin-image-skin)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=deepseek-harness-plugin-image-skin&scheme=dark"><img src="https://raw.githubusercontent.com/fufankeji/deepseek-harness-plugin-image-skin/main/.github/assets/readme/hero.png" width="360" alt="deepseek-harness-plugin-image-skin preview"></a>
@@ -140,6 +154,20 @@ dsh plugin --profile web add github:ahren112/ds-image-skin
 ```
 
 **Repo:** [ahren112/ds-image-skin](https://github.com/ahren112/ds-image-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-angelina-themes](https://github.com/bilbillm/deepseek-harness-angelina-themes)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-angelina-themes&scheme=dark"><img src="https://raw.githubusercontent.com/bilbillm/deepseek-harness-angelina-themes/main/src/assets/angelina-light-hero.webp" width="360" alt="dsh-angelina-themes preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-angelina-themes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Angelina light and dark glass themes with restrained parallax for the DeepSeek Harness Web UI.
+
+```sh
+dsh plugin --profile web add github:bilbillm/deepseek-harness-angelina-themes
+```
+
+**Repo:** [bilbillm/deepseek-harness-angelina-themes](https://github.com/bilbillm/deepseek-harness-angelina-themes) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-aurora](https://github.com/wenliang9527/dsh-themes/tree/HEAD/plugins/dsh-aurora/persist)
 
@@ -422,6 +450,20 @@ dsh plugin --profile web add github:shunkwon/dsh-skin-kawaii2000
 ```
 
 **Repo:** [shunkwon/dsh-skin-kawaii2000](https://github.com/shunkwon/dsh-skin-kawaii2000) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-skin-plugin](https://github.com/ylqit/dsh-skin-plugin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-plugin&scheme=dark"><img src="https://raw.githubusercontent.com/ylqit/dsh-skin-plugin/master/themes/pikachu/assets/backdrop-light.webp" width="360" alt="dsh-skin-plugin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-plugin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Synchronized component skins and a visual theme studio for the Web UI, with bundled palettes such as Pikachu, Bulbasaur, and Squirtle.
+
+```sh
+dsh plugin --profile web add github:ylqit/dsh-skin-plugin
+```
+
+**Repo:** [ylqit/dsh-skin-plugin](https://github.com/ylqit/dsh-skin-plugin) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-skin-studio](https://github.com/Yugitan/dsh-skin)
 
@@ -919,6 +961,34 @@ dsh plugin --profile web add github:LaplaceYoung/dsh-qq2006
 
 **Repo:** [LaplaceYoung/dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.5
 
+### [dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-amis&scheme=dark"><img src="https://raw.githubusercontent.com/wanzhiwei5/dsh-skin-amis/main/preview/light.png" width="360" alt="dsh-skin-amis preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-amis&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Wuthering Waves Amis-inspired Web GUI skin: cherry-pink and white gradients, neon machine accents, and frosted-glass panels.
+
+```sh
+dsh plugin --profile web add github:wanzhiwei5/dsh-skin-amis
+```
+
+**Repo:** [wanzhiwei5/dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis) · **dsh:** 0.1.0-rc.6
+
+### [dsh-theme-bgimage](https://github.com/yuyedaidao/dsh-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-bgimage&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-bgimage preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-bgimage&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Web UI background-image plugin: paste a URL or pick a local image under Settings, with sharpness and overlay-opacity controls.
+
+```sh
+dsh plugin --profile web add github:yuyedaidao/dsh-theme
+```
+
+**Repo:** [yuyedaidao/dsh-theme](https://github.com/yuyedaidao/dsh-theme) · **dsh:** 0.1.0-rc.6
+
 ### [dsh-theme-taffy](https://github.com/Misaki14987/dsh-theme-taffy)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-taffy&scheme=dark"><img src="https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/main/assets/art-light.jpg" width="360" alt="dsh-theme-taffy preview"></a>
@@ -974,6 +1044,48 @@ dsh plugin --profile web add github:Junt184/dsh-ui-beautify
 ```
 
 **Repo:** [Junt184/dsh-ui-beautify](https://github.com/Junt184/dsh-ui-beautify) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-ui-beautify-zalpha](https://github.com/Zalpha263/dsh-ui-beautify)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-beautify-zalpha&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-ui-beautify-zalpha preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-beautify-zalpha&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Web UI beautify client plugin with color presets for the main area, sidebar, message bubbles, and send button.
+
+```sh
+dsh plugin --profile web add github:Zalpha263/dsh-ui-beautify
+```
+
+**Repo:** [Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-uplink-skin](https://github.com/cavaljames/dsh-uplink-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-uplink-skin&scheme=dark"><img src="https://raw.githubusercontent.com/cavaljames/dsh-uplink-skin/master/preview/dark.svg" width="360" alt="dsh-uplink-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-uplink-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+
+Uplink cyberpunk Web skin: indigo night, neon cyan/magenta, CRT scanlines, glass panels, and a terminal-style composer placeholder.
+
+```sh
+dsh plugin --profile web add github:cavaljames/dsh-uplink-skin
+```
+
+**Repo:** [cavaljames/dsh-uplink-skin](https://github.com/cavaljames/dsh-uplink-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-visual-skin](https://github.com/HuggingFries/dsh-skin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-visual-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-visual-skin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-visual-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Visual customization for the Web UI: localized wallpapers, theme management, and conversation readability controls.
+
+```sh
+dsh plugin --profile web add github:HuggingFries/dsh-skin
+```
+
+**Repo:** [HuggingFries/dsh-skin](https://github.com/HuggingFries/dsh-skin) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-wallpaper-skin](https://github.com/ddbj-hub/dsh-wallpaper-skin)
 
@@ -1314,6 +1426,20 @@ dsh plugin --profile web add github:lglglglgy/dsh-whale-pet
 ```
 
 **Repo:** [lglglglgy/dsh-whale-pet](https://github.com/lglglglgy/dsh-whale-pet) · **dsh:** 0.1.0-rc.6
+
+### [emoji-desktop-pet](https://github.com/Gcsimple/Emoji_Desktop_Pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=emoji-desktop-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="emoji-desktop-pet preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=emoji-desktop-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Draggable emoji desktop pet for the Web UI, built as a dynamic Cordis plugin.
+
+```sh
+dsh plugin --profile web add github:Gcsimple/Emoji_Desktop_Pet
+```
+
+**Repo:** [Gcsimple/Emoji_Desktop_Pet](https://github.com/Gcsimple/Emoji_Desktop_Pet) · **dsh:** 0.1.0-rc.6
 
 ### [harness-pet](https://github.com/cakeni/harness-pet)
 
