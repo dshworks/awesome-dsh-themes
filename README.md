@@ -19,7 +19,7 @@ Official theming is ThemeRuntime over `--dsw-*` tokens: a static scale (`--dsw-s
 
 The official package is **not a theme store**. Its README says third-party themes are an extension point, not a product — registering one means overriding same-named alias variables, and there is no validation that an override set is complete.
 
-The `dsh-theme` GitHub topic has one repo. The `dsh-skin` topic has two. 1 community package is verified as `--dsw-alias-*` token overrides. A short community section is honest; inventing skins would be worse.
+The `dsh-theme` GitHub topic has one repo. The `dsh-skin` topic has two. Zero packages are verified as `--dsw-alias-*` token overrides. A short community section is honest; inventing skins would be worse.
 
 ## Registry
 
@@ -35,12 +35,12 @@ The first-party ThemeRuntime. Not a marketplace.
 
 ### Community
 
-Theme/skin-shaped third-party listings. Unofficial. One of these (dsh-nachoneko-theme) is a confirmed `--dsw-alias-*` override set; the rest are unverified skins.
+Theme/skin-shaped third-party listings. Unofficial and unverified. None of these are confirmed `--dsw-alias-*` override sets.
 
 | Name | Repo | package | Description | Status |
 |---|---|---|---|---|
 | dsh-deep-whale | [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | - | DSH Web whale-girl skin series (maid-atelier). Theme/skin-shaped third-party listing. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
-| dsh-nachoneko-theme | [TheMyceliumOfAntan/dsh-nachoneko-theme](https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme) | - | Nachoneko (甘城猫猫) skin for the dsh Web GUI: #A3D3FF --dsw-static-*/--dsw-alias-* override set, full-screen wallpaper, frosted-glass sidebar/composer/code blocks and a settings-panel corner art, shipped as a self-contained dsh bundle+client plugin. Confirmed --dsw-alias-* override set (deepseek/blue static scales + alias layers); hashed module-class overrides (frame/conversation/composer/settings) are pinned to 0.1.0-rc.6. | 0.1.0-rc.6 (2026-08-14) |
+| dsh-nachoneko-theme | [TheMyceliumOfAntan/dsh-nachoneko-theme](https://github.com/TheMyceliumOfAntan/dsh-nachoneko-theme) | - | Nachoneko (甘城猫猫) skin for the dsh Web GUI: #A3D3FF --dsw-static-*/--dsw-alias-* override set, full-screen wallpaper, frosted-glass sidebar/composer/code blocks and a settings-panel corner art, shipped as a self-contained dsh bundle+client plugin. Confirmed --dsw-alias-* override set (deepseek/blue static scales + alias layers) and boot roster on 0.1.0-rc.6; a fresh main-UI boot stall was reported on one machine -- client.js payload was cut 440KB -> 238KB (wallpaper base64 deduped) in response, and a local no-cache fresh boot reaches the main chat UI, but the stall is not independently re-confirmed fixed. Hashed module-class overrides (frame/conversation/composer/settings) are pinned to 0.1.0-rc.6. | unverified (0.1.0-rc.6) |
 | dsh-qq2006 | [LaplaceYoung/dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | - | QQ2006 skin plugin: registers a qq2006 theme, mirrors body[data-ds-skin], ships a global skin sheet and assets. Tagged dsh-skin. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
 | dsh-web-ui | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | - | Third-party plugin/skin collection for the dsh Web UI. Skin center routes around the theme-persistence gap. Also listed in awesome-dsh-plugins. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
 | whale-girl | [vlln/whale-girl](https://github.com/vlln/whale-girl) | - | DSH Web GUI desktop-pet plugin (QQ pet form): floating companion. Theme/skin-shaped listing. Not verified as a --dsw-alias-* token override. | unverified (0.1.0-rc.5) |
