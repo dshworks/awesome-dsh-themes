@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 175 entries, 27 with live in-browser previews, 145 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 176 entries, 27 with live in-browser previews, 146 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -2494,6 +2494,20 @@ dsh plugin --profile web add github:AKS1st/dsh-cyber-particle
 ```
 
 **Repo:** [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) · **License:** MIT · **Package:** [`cyber-particle`](https://www.npmjs.com/package/cyber-particle) · **dsh:** 0.1.0-rc.6
+
+### [dsh-lulu-theme](https://github.com/shaoqing404/dsh-lulu-theme)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-lulu-theme&scheme=dark"><img src="https://raw.githubusercontent.com/shaoqing404/dsh-lulu-theme/main/assets/lulu-compact-sheet.png" width="360" alt="dsh-lulu-theme preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-lulu-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Capybara Lulu skin for the dsh web UI: cream-coffee light and warm-night dark token palettes, plus a corner pet with wave and sway animations.
+
+```sh
+dsh plugin --profile web add github:shaoqing404/dsh-lulu-theme
+```
+
+**Repo:** [shaoqing404/dsh-lulu-theme](https://github.com/shaoqing404/dsh-lulu-theme) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-meow-cat](https://github.com/dsh-pub/dsh-meow-cat)
 
