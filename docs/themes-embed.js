@@ -2299,6 +2299,77 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "license": "BSD-3-Clause",
       "npm": "@your-scope/dsh-plugin-template"
+    },
+    {
+      "name": "dsh-wallpaper-chinarxq",
+      "repo": "chinaRXQ/dsh-wallpaper",
+      "description": "Wallpaper skin for the DeepSeek Harness web UI: image background with opacity, mask, and blur controls.",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-wallpaper"
+    },
+    {
+      "name": "dsh-plugin-webui-bg",
+      "repo": "z827439974/dsh-background-plugin",
+      "description": "Pick a local image as the dsh web UI background with a theme-matched translucent mask; persistence is browser-local.",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-plugin-webui-bg"
+    },
+    {
+      "name": "dsh-whale-background",
+      "repo": "tuogusa/dsh-whale-background",
+      "description": "Deep-sea whale-girl wallpaper with a translucent app surface for the DeepSeek Harness web UI.",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-whale-background"
+    },
+    {
+      "name": "dsh-theme-cyberpunk",
+      "repo": "dlpufan/dsh-theme-cyberpunk",
+      "description": "Neon cyberpunk appearance for the dsh web surface: RGB ambient lighting, CRT scanlines, and a cyan/magenta/violet token palette.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "path": "dsh-theme-cyberpunk",
+      "npm": "dsh-theme-cyberpunk"
+    },
+    {
+      "name": "dsh-meow-cat",
+      "repo": "dsh-pub/dsh-meow-cat",
+      "description": "A cat runs across the bottom of the DeepSeek Harness web UI with a synthesized meow when a conversation turn ends.",
+      "kind": "skin",
+      "category": "fun",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-meow-cat"
     }
   ]
 };
