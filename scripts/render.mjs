@@ -65,7 +65,7 @@ function entry(t) {
   const thumb = t.preview || "docs/assets/whale-mark.svg";
   bits.push(`<a href="${live}"><img src="${thumb}" width="360" alt="${esc(t.name)} preview"></a>`);
   bits.push("");
-  bits.push(`**[Live preview](${live})** — full-page fake dsh window, real \`--dsw-*\` tokens${t.previewCss ? " plus this skin's override sheet" : ""}.`);
+  bits.push(`**[Live preview](${live})** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + \`--dsw-*\` tokens)${t.previewCss ? " plus this skin's override sheet" : ""}.`);
   bits.push("");
   bits.push(esc(t.description));
   bits.push("");
@@ -152,7 +152,7 @@ ${sections}
 
 ## Live gallery
 
-The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. **[Live](${GALLERY})** / Dive opens a full-page fake dsh window (real \`--dsw-*\` tokens, plus an override sheet when we have one). GitHub strips iframes, so the README uses thumbnails and links.
+The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. **[Live](${GALLERY})** / Dive opens a full-page dsh web empty-state (real 0.1.0-rc.6 chrome classes + \`--dsw-*\` tokens, plus an override sheet when we have one). GitHub strips iframes, so the README uses thumbnails and links.
 
 ## Roadmap
 

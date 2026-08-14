@@ -1,320 +1,118 @@
-/* Mini dsh window chrome. Our class names only — never hashed module classes. */
+/* Preview-page glue only. Hashed module classes live in vendor/dsh-web-chrome.
+   .preview-dock is ours so the overlay stays readable on any skin. */
 
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html, body {
-  margin: 0;
-  min-height: 100%;
+html, body, #root {
   height: 100%;
+  margin: 0;
 }
 
 html { color-scheme: light; }
 html[data-scheme="dark"] { color-scheme: dark; }
 
 body {
-  display: grid;
-  place-items: center;
-  padding: 10px;
   font-family: var(--dsw-font-family);
   color: var(--dsw-alias-label-primary);
-  background-color: var(--dsw-alias-bg-base);
-}
-
-.dsh-frame {
-  width: 240px;
-  height: 176px;
-  display: flex;
-  overflow: hidden;
-  border-radius: 14px;
   background: var(--dsw-alias-bg-base);
-  color: var(--dsw-alias-label-primary);
-  box-shadow: var(--dsw-shadow-lv2);
-}
-
-.dsh-sidebar {
-  width: 72px;
-  flex: 0 0 72px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 8px 6px;
-  background: var(--dsw-specific-sidebar-fill);
-  border-right: 1px solid var(--dsw-alias-border-l1);
-}
-
-.dsh-new {
-  appearance: none;
-  border: 0;
-  height: 22px;
-  border-radius: 8px;
-  background: var(--dsw-alias-button-elevated-fill);
-  color: var(--dsw-alias-label-primary);
-  font: inherit;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  cursor: default;
-}
-
-.dsh-session {
-  height: 28px;
-  border-radius: 8px;
-  padding: 4px 6px;
-  font-size: 8px;
-  line-height: 1.2;
-  color: var(--dsw-alias-label-secondary);
-  background: var(--dsw-specific-sidebar-nav-item-hover, transparent);
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
-.dsh-session.is-on {
-  color: var(--dsw-alias-label-primary);
-  background: var(--dsw-specific-sidebar-nav-item-active);
+.preview-wordmark {
+  height: 24px;
+  width: auto;
+  color: inherit;
+  display: block;
 }
 
-.dsh-main {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 8px 8px 7px;
-  gap: 7px;
-}
-
-.dsh-thread {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-height: 0;
-}
-
-.dsh-bubble {
-  align-self: flex-end;
-  max-width: 92%;
-  padding: 6px 10px;
-  border-radius: 22px;
-  background: var(--dsw-specific-bubble);
-  color: var(--dsw-alias-label-primary);
-  font-size: 9px;
-  line-height: 1.35;
-}
-
-.dsh-assistant {
-  align-self: flex-start;
-  max-width: 96%;
-  padding: 2px 2px;
-  color: var(--dsw-alias-label-primary);
-  font-size: 9px;
-  line-height: 1.4;
-}
-
-.dsh-composer {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 36px;
-  padding: 4px 4px 4px 12px;
-  border-radius: 22px;
-  background: var(--dsw-specific-input-major);
-  border: 1px solid var(--dsw-alias-border-l2-darkmode-thin);
-  box-shadow: var(--dsw-shadow-lv2);
-  color: var(--dsw-alias-label-tertiary);
-  font-size: 9px;
-}
-
-.dsh-composer span { flex: 1; min-width: 0; }
-
-.dsh-send {
-  appearance: none;
-  border: 0;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
-  border-radius: 50%;
-  background: var(--dsw-alias-button-info-fill);
-  color: var(--dsw-alias-label-primary-inverted, #fff);
-  cursor: default;
-  display: grid;
-  place-items: center;
-  padding: 0;
-}
-
-.dsh-send svg {
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
-}
-
-/* Full-page live preview (not the old postage-stamp iframe). */
-body.preview-page {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  min-height: 100%;
-  height: auto;
-  padding: 0;
-  background:
-    radial-gradient(900px 420px at 75% 15%, rgba(126, 240, 255, 0.12), transparent 55%),
-    linear-gradient(180deg, #1a4058 0%, #08202e 45%, #01060d 100%);
-}
-
-.preview-bar {
+.preview-dock {
+  position: fixed;
+  z-index: 40;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem 1rem;
-  padding: 0.9rem 1.2rem;
-  background: rgba(6, 22, 34, 0.72);
-  border-bottom: 1px solid rgba(126, 240, 255, 0.18);
-  backdrop-filter: blur(10px);
-  color: #d6f6ff;
-  font-family: "Nunito", "Segoe UI", sans-serif;
+  gap: 8px 12px;
+  max-width: min(720px, calc(100vw - 24px));
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(12, 16, 22, 0.72);
+  color: #f4f7fb;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  font-family: var(--dsw-font-family);
+  font-size: 13px;
+  line-height: 20px;
+  pointer-events: auto;
 }
 
-.preview-bar .back {
-  color: #7ef0ff;
+html:not([data-scheme="dark"]) .preview-dock {
+  border-color: rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  color: #1a1f27;
+}
+
+.preview-dock a {
+  color: inherit;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 800;
 }
 
-.preview-bar .back:hover,
-.preview-bar .back:focus-visible { text-decoration: underline; }
+.preview-dock a:hover,
+.preview-dock a:focus-visible { text-decoration: underline; }
 
-.preview-bar h1 {
-  font-size: 1.15rem;
+.preview-dock h1 {
   margin: 0;
   flex: 1;
-  min-width: 10rem;
-  font-family: "Syne", "Trebuchet MS", sans-serif;
-}
-
-.preview-bar .scheme { display: inline-flex; gap: 0.4rem; margin-left: auto; }
-
-.preview-bar .chip {
-  appearance: none;
-  border: 1px solid rgba(126, 240, 255, 0.22);
-  background: rgba(7, 20, 28, 0.55);
-  color: #d6f6ff;
-  font: inherit;
-  font-weight: 700;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  cursor: pointer;
-}
-
-.preview-bar .chip.is-on,
-.preview-bar .chip[aria-pressed="true"] {
-  background: #7ef0ff;
-  color: #032026;
-  border-color: transparent;
-}
-
-.preview-stage {
-  flex: 1;
-  display: grid;
-  place-items: center;
-  padding: 1.4rem 1rem 1.2rem;
-}
-
-body.preview-page .dsh-frame {
-  width: min(1080px, 96vw);
-  height: min(680px, calc(100vh - 240px));
-  min-height: 420px;
-}
-
-body.preview-page .dsh-sidebar {
-  width: 180px;
-  flex-basis: 180px;
-  padding: 16px 12px;
-  gap: 10px;
-}
-
-body.preview-page .dsh-new {
-  height: 36px;
-  font-size: 14px;
-  border-radius: 12px;
-}
-
-body.preview-page .dsh-session {
-  height: 44px;
+  min-width: 8rem;
   font-size: 13px;
-  padding: 8px 10px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
-body.preview-page .dsh-main { padding: 16px; gap: 12px; }
-
-body.preview-page .dsh-bubble,
-body.preview-page .dsh-assistant {
-  font-size: 15px;
-  padding: 10px 14px;
-}
-
-body.preview-page .dsh-composer {
-  min-height: 52px;
-  font-size: 14px;
-  padding: 8px 8px 8px 18px;
-}
-
-body.preview-page .dsh-send { width: 44px; height: 44px; }
-body.preview-page .dsh-send svg { width: 18px; height: 18px; }
-
-.preview-meta {
-  width: min(1080px, 96vw);
-  margin: 0 auto 2.2rem;
-  color: #d6f6ff;
-  font-family: "Nunito", "Segoe UI", sans-serif;
-}
-
-.preview-shot-wrap { margin: 0 0 1rem; }
-.preview-shot-wrap img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  border: 1px solid rgba(126, 240, 255, 0.22);
-}
-
-.preview-meta .install {
-  display: flex;
+.preview-dock .scheme,
+.preview-dock .install {
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0 0 0.7rem;
+  gap: 6px;
 }
 
-.preview-meta .install code {
-  flex: 1;
-  min-width: 0;
-  font-size: 0.85rem;
-  overflow: auto;
-  color: #d6f6ff;
-  background: rgba(0, 0, 0, 0.28);
-  padding: 0.45rem 0.7rem;
-  border-radius: 10px;
-}
-
-.preview-meta .copy,
-.preview-page .copy {
+.preview-dock .chip,
+.preview-dock .copy {
   appearance: none;
-  border: 1px solid rgba(126, 240, 255, 0.22);
-  background: rgba(7, 20, 28, 0.55);
-  color: #7ef0ff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
   font: inherit;
-  font-size: 0.8rem;
-  font-weight: 800;
-  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
   border-radius: 999px;
   cursor: pointer;
 }
 
-.preview-meta .copy.is-copied {
-  background: #7ef0ff;
-  color: #032026;
+html:not([data-scheme="dark"]) .preview-dock .chip,
+html:not([data-scheme="dark"]) .preview-dock .copy {
+  border-color: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.04);
 }
 
-.preview-repo { margin: 0; }
-.preview-repo a { color: #7ef0ff; }
+.preview-dock .chip.is-on,
+.preview-dock .chip[aria-pressed="true"],
+.preview-dock .copy.is-copied {
+  background: #4d6bfe;
+  border-color: transparent;
+  color: #fff;
+}
+
+.preview-dock .install[hidden] { display: none; }
+
+.preview-dock .install code {
+  max-width: 28ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  opacity: 0.85;
+}

@@ -1,0 +1,32 @@
+dsh-web-chrome
+Copyright 2026 DeepSeek
+
+These stylesheets and brand marks are extracted from MIT-licensed
+@deepseek-ai packages at 0.1.0-rc.6 (DeepSeek Harness):
+
+  AppFrame.css           @deepseek-ai/dsh-client-ui-layout
+                         (AppFrame.module.css, prefix pI_x6G_)
+  SidebarRoot.css        @deepseek-ai/dsh-client-ui-sidebar
+                         (SidebarRoot.module.css, prefix hHd-Xa_)
+  ConversationRoot.css   @deepseek-ai/dsh-client-ui-conversation
+                         (ConversationRoot.module.css, prefix wSkVaW_)
+  HeroShell.css          @deepseek-ai/dsh-client-ui-conversation
+                         (HeroShell.module.css, prefix pXSMma_)
+  InputBar.css           @deepseek-ai/dsh-client-ui-conversation
+                         (InputBar.module.css, prefix uV2eYG_)
+  WorkspaceRows.css      @deepseek-ai/dsh-client-ui-workspace
+                         (Rows.module.css, prefix YDXeBa_)
+  fish-logo.svg          @deepseek-ai/dsh-client-ui-primitives FishLogo
+  brand-wordmark.svg     @deepseek-ai/dsh-client-ui-primitives BrandWordmark
+  favicon.svg            @deepseek-ai/dsh-web-frontend dist/favicon.svg
+
+Source: https://github.com/deepseek-ai/deepseek-harness
+(packages/client/ui-layout, ui-sidebar, ui-conversation, ui-primitives;
+ apps/web/public/favicon.svg)
+
+Hashed class names are the compiled 0.1.0-rc.6 CSS-module output.
+Do not re-hash. Community skins (nachoneko etc.) target these strings.
+
+Licensed under the MIT License. See LICENSE in this directory.
+The above copyright notice and the MIT permission notice are
+included with this copy as required by the license.
