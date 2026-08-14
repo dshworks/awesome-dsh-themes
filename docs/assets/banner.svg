@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" role="img" aria-label="A whale diving through bioluminescent water">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3d55"/>
+      <stop offset="38%" stop-color="#0b2233"/>
+      <stop offset="100%" stop-color="#02060d"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="78%" cy="18%" r="28%">
+      <stop offset="0%" stop-color="#d6f6ff" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#7ef0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bio" cx="62%" cy="48%" r="34%">
+      <stop offset="0%" stop-color="#7ef0ff" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#7ef0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d6f6ff" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#d6f6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="240" fill="url(#sea)"/>
+  <ellipse cx="750" cy="40" rx="180" ry="70" fill="url(#moon)"/>
+  <ellipse cx="600" cy="110" rx="220" ry="80" fill="url(#bio)"/>
+  <polygon points="410,-8 455,-8 390,240 330,240" fill="url(#ray)"/>
+  <polygon points="500,-8 528,-8 488,240 448,240" fill="url(#ray)"/>
+  <polygon points="560,-8 578,-8 548,240 520,240" fill="url(#ray)"/>
+  <g fill="#7ef0ff" opacity=".55">
+    <circle cx="80" cy="40" r="1.2"/><circle cx="140" cy="70" r="1"/><circle cx="200" cy="30" r="1.4"/>
+    <circle cx="260" cy="90" r="0.9"/><circle cx="320" cy="50" r="1.1"/><circle cx="390" cy="120" r="1"/>
+    <circle cx="470" cy="36" r="1.3"/><circle cx="540" cy="80" r="0.8"/><circle cx="610" cy="24" r="1.1"/>
+    <circle cx="680" cy="64" r="1"/><circle cx="760" cy="100" r="1.2"/><circle cx="840" cy="44" r="0.9"/>
+    <circle cx="900" cy="88" r="1.1"/><circle cx="70" cy="160" r="0.8"/><circle cx="180" cy="200" r="1"/>
+    <circle cx="300" cy="210" r="0.7"/><circle cx="880" cy="190" r="1"/><circle cx="820" cy="160" r="0.8"/>
+  </g>
+  <g fill="#f6d58a" opacity=".35">
+    <circle cx="230" cy="48" r="1.2"/><circle cx="710" cy="30" r="1"/><circle cx="430" cy="200" r="0.9"/>
+  </g>
+  <g fill="#071018" opacity=".94">
+    <path d="M120 150c40-32 130-50 240-42 90 7 180 0 260-12 50-8 90-4 120 14 15 10 18 22 8 30-28-8-58-2-88 12-50 22-130 30-210 24-80-8-180 0-250 4-30 2-50-10-80-30z"/>
+    <path d="M740 110c40-40 90-54 140-50-16 28-14 48 8 70-40-10-78 8-120 16-4-14-8-24-28-36z"/>
+    <path d="M300 155c10 30 40 46 80 44-32-18-50-36-58-50z"/>
+  </g>
+  <circle cx="200" cy="136" r="3" fill="#7ef0ff" opacity=".75"/>
+  <g fill="#071018" opacity=".55">
+    <path d="M70 188c16-10 40-14 62-8 14 4 28 2 40-4 8 10-2 16-16 20-20 6-46 8-70 4-10-2-16-6-16-12z"/>
+  </g>
+  <text x="48" y="44" fill="#d6f6ff" font-family="Georgia, serif" font-size="22" opacity=".72">deep-seek-universe</text>
+</svg>

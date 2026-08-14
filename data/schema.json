@@ -96,6 +96,20 @@
         "npm": {
           "type": "string",
           "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "runtime",
+            "tokens",
+            "skin",
+            "companion"
+          ],
+          "description": "Gallery/README grouping. kind stays runtime|skin; category is the public shelf."
+        },
+        "preview": {
+          "type": "string",
+          "minLength": 1,
+          "description": "URL of a real preview image. Never a mock or invented screenshot."
         }
       }
     }
