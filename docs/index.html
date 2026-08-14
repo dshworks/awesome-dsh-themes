@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>awesome-dsh-themes — dive the deep-seek-universe</title>
+  <meta name="description" content="A welcoming gallery of DeepSeek Harness themes and --dsw-* token skins. Not affiliated with DeepSeek.">
+  <link rel="icon" href="assets/whale-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-scene="glow">
+  <a class="skip" href="#gallery">Skip to themes</a>
+  <div class="ocean" aria-hidden="true">
+    <div class="caustics"></div>
+    <div class="photo" id="photo"></div>
+    <div class="mist"></div>
+    <svg class="whale" viewBox="0 0 240 80" id="whale">
+      <path d="M8 48c14-18 46-28 86-22 28 4 56 2 80-8 16-6 32-4 40 8 4 6 2 12-6 14-16-4-32 2-48 12-20 14-52 18-84 14C50 64 24 68 8 48z"/>
+      <path d="M214 26c16-16 36-20 56-16-8 12-6 20 4 28-18-4-34 4-50 8-2-8-4-14-10-20z"/>
+      <path d="M70 52c4 12 16 18 32 16-12-8-18-14-20-20z"/>
+      <circle cx="36" cy="42" r="2.2" class="eye"/>
+    </svg>
+    <div class="bubbles" id="bubbles"></div>
+  </div>
+  <header class="hero">
+    <p class="eyebrow">a community dive log · not a store</p>
+    <h1>awesome-dsh-themes</h1>
+    <p class="lede">Take a breath. The official runtime is a lantern, not a marketplace. Community skins are handmade lanterns. One of them is a cat. One of them is a whale who just wants to sit on your desktop. Welcome to the deep-seek-universe — unofficial, unaffiliated, and a little in love with the dark water.</p>
+    <div class="actions">
+      <button type="button" id="dive" class="btn primary">Dive again</button>
+      <a class="btn ghost" href="https://github.com/dshworks/awesome-dsh-themes">Source</a>
+      <a class="btn ghost" href="https://github.com/dshworks/awesome-dsh-themes#contents">The list</a>
+    </div>
+  </header>
+
+  <nav class="filters" aria-label="Filter themes">
+    <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="chip" data-filter="runtime" aria-pressed="false">Official</button>
+    <button type="button" class="chip" data-filter="tokens" aria-pressed="false">Tokens</button>
+    <button type="button" class="chip" data-filter="skin" aria-pressed="false">Skins</button>
+    <button type="button" class="chip" data-filter="companion" aria-pressed="false">Companions</button>
+  </nav>
+
+  <main id="gallery" class="gallery" tabindex="-1"></main>
+
+  <footer class="foot">
+    <p>Not affiliated with DeepSeek. <span aria-hidden="true">❤️</span> for the people who make lanterns anyway.</p>
+    <p>
+      Sister: <a href="https://github.com/dshworks/awesome-dsh-plugins">awesome-dsh-plugins</a>
+      · Source: <a href="https://github.com/dshworks/awesome-dsh-themes">awesome-dsh-themes</a>
+    </p>
+  </footer>
+
+  <script src="themes-embed.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

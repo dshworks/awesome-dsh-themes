@@ -1,4 +1,4 @@
-{
+window.__THEMES__ = {
   "$schema": "./schema.json",
   "updated": "2026-08-14",
   "themes": [
@@ -86,4 +86,4 @@
       "preview": "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/screenshot.png"
     }
   ]
-}
+};
