@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 162 entries, 27 with live in-browser previews, 132 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 166 entries, 27 with live in-browser previews, 136 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -210,6 +210,20 @@ dsh plugin --profile web add github:147228/dsh-black-whale
 ```
 
 **Repo:** [147228/dsh-black-whale](https://github.com/147228/dsh-black-whale) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-blue-whale preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Official DeepSeek Chat blue-whale default skin for DeepSeek Harness. Light and dark follow the built-in appearance; brand tokens use #4D6BFE.
+
+```sh
+dsh plugin --profile web add github:starslittle/dsh-blue-whale
+```
+
+**Repo:** [starslittle/dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) · **License:** MIT · **Package:** [`dsh-blue-whale`](https://www.npmjs.com/package/dsh-blue-whale) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-blur-theme](https://github.com/hashdiana/dsh-blur-theme)
 
@@ -1171,6 +1185,20 @@ dsh plugin --profile web add github:manjiayu20071022/dsh-ui-background
 
 **Repo:** [manjiayu20071022/dsh-ui-background](https://github.com/manjiayu20071022/dsh-ui-background) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-bgwall](https://github.com/hubo980205/dsh-bgwall-plugin)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-bgwall&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-bgwall preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-bgwall&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+背景图片墙 (Background Wall)：把 DeepSeek Harness Web 界面背景换成任意图片（远程 URL 或服务器本地文件），支持透明度、模糊与铺放方式调节。控制面板位于「设置 → 背景图片」。
+
+```sh
+dsh plugin --profile web add github:hubo980205/dsh-bgwall-plugin
+```
+
+**Repo:** [hubo980205/dsh-bgwall-plugin](https://github.com/hubo980205/dsh-bgwall-plugin) · **License:** MIT · **Package:** [`dsh-bgwall-plugin`](https://www.npmjs.com/package/dsh-bgwall-plugin) · **dsh:** 0.1.0-rc.6
+
 ### [dsh-capsule-skin](https://github.com/DawnCloud1213/dsh-capsule-skin)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-capsule-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-capsule-skin preview"></a>
@@ -1931,6 +1959,20 @@ dsh plugin --profile web add github:sereinmono/dsh-desktop-pet
 
 **Repo:** [sereinmono/dsh-desktop-pet](https://github.com/sereinmono/dsh-desktop-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-galgame](https://github.com/Lanxing6480/dsh-galgame)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-galgame&scheme=dark"><img src="https://raw.githubusercontent.com/Lanxing6480/dsh-galgame/main/assets/characters/deepseek/portraits/neutral.webp" width="360" alt="dsh-galgame preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-galgame&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+GalGame mode for the dsh web GUI: a third conversation view tab (after 轨迹) that renders the real agent session as a visual-novel stage — whale-girl (DeepSeek) portrait with diff switching + draggab...
+
+```sh
+dsh plugin --profile web add github:Lanxing6480/dsh-galgame
+```
+
+**Repo:** [Lanxing6480/dsh-galgame](https://github.com/Lanxing6480/dsh-galgame) · **License:** MIT · **Package:** [`@lanxing/dsh-galgame`](https://www.npmjs.com/package/@lanxing/dsh-galgame) · **dsh:** 0.1.0-rc.6
+
 ### [dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-kun-like-pet&scheme=dark"><img src="https://raw.githubusercontent.com/liyupi/dsh-kun-like-pet/main/docs/screenshot-working.png" width="360" alt="dsh-kun-like-pet preview"></a>
@@ -2252,6 +2294,20 @@ dsh plugin --profile web add github:aceice01/dsh-whale-pet
 ```
 
 **Repo:** [aceice01/dsh-whale-pet](https://github.com/aceice01/dsh-whale-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-whale-pet-rongzi5](https://github.com/rongzi5/dsh-whale-pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-pet-rongzi5&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-whale-pet-rongzi5 preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-pet-rongzi5&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Frame-wide 3D whale desktop pet with edge habitat, hover reactions, and smooth shape-aware dragging
+
+```sh
+dsh plugin --profile web add github:rongzi5/dsh-whale-pet
+```
+
+**Repo:** [rongzi5/dsh-whale-pet](https://github.com/rongzi5/dsh-whale-pet) · **License:** MIT · **Package:** [`@deepseek-ai/dsh-client-ui-whale-pet`](https://www.npmjs.com/package/@deepseek-ai/dsh-client-ui-whale-pet) · **dsh:** 0.1.0-rc.6
 
 ### [emoji-desktop-pet](https://github.com/Gcsimple/Emoji_Desktop_Pet)
 

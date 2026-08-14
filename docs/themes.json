@@ -2186,6 +2186,63 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "license": "MIT",
       "npm": "@dsh-external/dsh-client-ui-skin-claude"
+    },
+    {
+      "name": "dsh-blue-whale",
+      "repo": "starslittle/dsh-blue-whale",
+      "description": "Official DeepSeek Chat blue-whale default skin for DeepSeek Harness. Light and dark follow the built-in appearance; brand tokens use #4D6BFE.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-blue-whale"
+    },
+    {
+      "name": "dsh-galgame",
+      "repo": "Lanxing6480/dsh-galgame",
+      "description": "GalGame mode for the dsh web GUI: a third conversation view tab (after 轨迹) that renders the real agent session as a visual-novel stage — whale-girl (DeepSeek) portrait with diff switching + draggab...",
+      "kind": "skin",
+      "category": "companion",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/Lanxing6480/dsh-galgame/main/assets/characters/deepseek/portraits/neutral.webp",
+      "npm": "@lanxing/dsh-galgame"
+    },
+    {
+      "name": "dsh-bgwall",
+      "repo": "hubo980205/dsh-bgwall-plugin",
+      "description": "背景图片墙 (Background Wall)：把 DeepSeek Harness Web 界面背景换成任意图片（远程 URL 或服务器本地文件），支持透明度、模糊与铺放方式调节。控制面板位于「设置 → 背景图片」。",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-bgwall-plugin"
+    },
+    {
+      "name": "dsh-whale-pet-rongzi5",
+      "repo": "rongzi5/dsh-whale-pet",
+      "description": "Frame-wide 3D whale desktop pet with edge habitat, hover reactions, and smooth shape-aware dragging",
+      "kind": "skin",
+      "category": "companion",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "@deepseek-ai/dsh-client-ui-whale-pet"
     }
   ]
 }
