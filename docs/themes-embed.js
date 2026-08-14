@@ -2243,6 +2243,62 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "license": "MIT",
       "npm": "@deepseek-ai/dsh-client-ui-whale-pet"
+    },
+    {
+      "name": "dsh-skin-blue-whale",
+      "repo": "zenghuizhu69-hub/dsh-skin-blue-whale",
+      "description": "蓝鲸跃海皮肤 —— 为 dsh Web UI 打造的极简深海蓝鲸主题：官网同款蓝白流动海水渐变背景、跃出海面的官方蓝鲸 logo、主页/会话双场景自适应，以及整套蓝鲸配色的界面令牌。",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-skin-blue-whale"
+    },
+    {
+      "name": "dsh-pet-live2d",
+      "repo": "YilunLi-999/dsh-pet-live2d",
+      "description": "Desktop-pet companion for the DSH web GUI: hatch Codex-compatible sprite pets from an image, render them in the shell.overlay slot, and react to session state.",
+      "kind": "skin",
+      "category": "companion",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-pet"
+    },
+    {
+      "name": "dsh-plugin-background-image",
+      "repo": "Voyage-He/dsh-plugin-background-image",
+      "description": "DeepSeek Harness 界面背景图片插件：网络/本地图片与预设渐变背景，支持开关、透明度调节、沉浸式全屏或仅对话区域显示。",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "npm": "dsh-plugin-background-image"
+    },
+    {
+      "name": "dsh-pet-johlin",
+      "repo": "johlin/dsh-pet",
+      "description": "Standalone Cordis plugin template for DeepSeek Harness",
+      "kind": "skin",
+      "category": "companion",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "BSD-3-Clause",
+      "npm": "@your-scope/dsh-plugin-template"
     }
   ]
 };
