@@ -239,3 +239,17 @@ h1 {
   .caustics, .whale, .bubbles span, .heart { animation: none !important; }
   .card, .btn, .photo { transition: none !important; }
 }
+
+.scheme { display: inline-flex; gap: 0.4rem; margin-left: auto; }
+.thumb iframe.live-preview {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #07141c;
+}
+.thumb { aspect-ratio: 5 / 4; }
+.shot { color: var(--cyan); text-decoration: none; }
+.shot:hover, .shot:focus-visible { text-decoration: underline; }
+.meta a { color: var(--cyan); text-decoration: none; }
+.meta a:hover, .meta a:focus-visible { text-decoration: underline; }

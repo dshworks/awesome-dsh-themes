@@ -110,6 +110,16 @@
           "type": "string",
           "minLength": 1,
           "description": "URL of a real preview image. Never a mock or invented screenshot."
+        },
+        "previewCss": {
+          "type": "string",
+          "minLength": 1,
+          "description": "URL of a --dsw-* override stylesheet for the live preview iframe."
+        },
+        "gist": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional gist id or URL for a gist-hosted theme."
         }
       }
     }

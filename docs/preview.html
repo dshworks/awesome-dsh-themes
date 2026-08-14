@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dsh theme preview</title>
+  <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/base.css">
+  <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/design-platform.css">
+  <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/scrollbar.css">
+  <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/gradient-shadow-text.css">
+  <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/shiki.css">
+  <link rel="stylesheet" href="chrome.css">
+</head>
+<body>
+  <div class="dsh-frame" aria-hidden="true">
+    <aside class="dsh-sidebar">
+      <button type="button" class="dsh-new" tabindex="-1">New</button>
+      <div class="dsh-session is-on">token sea</div>
+      <div class="dsh-session">whale watch</div>
+    </aside>
+    <div class="dsh-main">
+      <div class="dsh-thread">
+        <div class="dsh-bubble">paint the ocean</div>
+        <div class="dsh-assistant">Lanterns are lit.</div>
+      </div>
+      <div class="dsh-composer">
+        <span>Ask the whale…</span>
+        <button type="button" class="dsh-send" tabindex="-1" aria-label="Send">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.2 8.2 13 2.6l-3.4 11.2-2.1-4.2-4.3-1.4z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const NACHONEKO_BG = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/nachoneko-bg.jpg";
+    const params = new URLSearchParams(location.search);
+
+    function applyScheme(scheme) {
+      const dark = scheme === "dark";
+      document.documentElement.dataset.scheme = dark ? "dark" : "light";
+      document.documentElement.style.colorScheme = dark ? "dark" : "light";
+      if (dark) document.body.setAttribute("data-ds-dark-theme", "");
+      else document.body.removeAttribute("data-ds-dark-theme");
+    }
+
+    function rewriteOverride(css) {
+      return css.replace(/url\(\s*(['"]?)\/nachoneko-bg\.jpg\1\s*\)/g, 'url("' + NACHONEKO_BG + '")');
+    }
+
+    function hostAttrs(css) {
+      const skip = { "ds-dark-theme": 1, "ds-skin": 1, scheme: 1 };
+      for (const m of css.matchAll(/body\[data-([a-z0-9-]+)\]/gi)) {
+        if (!skip[m[1]]) document.body.setAttribute("data-" + m[1], "");
+      }
+    }
+
+    function preferSheetUrl(raw) {
+      try {
+        const u = new URL(raw, location.href);
+        return u.href;
+      } catch {
+        return null;
+      }
+    }
+
+    async function injectOverride(url) {
+      const href = preferSheetUrl(url);
+      if (!href || !/^https?:$/i.test(new URL(href).protocol)) return;
+      const res = await fetch(href);
+      if (!res.ok) throw new Error("override " + res.status);
+      const css = rewriteOverride(await res.text());
+      const style = document.createElement("style");
+      style.setAttribute("data-preview-override", href);
+      style.textContent = css;
+      document.head.appendChild(style);
+      hostAttrs(css);
+    }
+
+    applyScheme(params.get("scheme") === "light" ? "light" : "dark");
+
+    const css = params.get("css");
+    if (css) {
+      injectOverride(css).catch(() => {
+        /* tokens-only preview still works */
+      });
+    }
+
+    window.addEventListener("message", (ev) => {
+      const scheme = ev.data && ev.data.scheme;
+      if (scheme === "dark" || scheme === "light") applyScheme(scheme);
+    });
+  </script>
+</body>
+</html>

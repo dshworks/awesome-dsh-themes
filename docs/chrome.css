@@ -1,0 +1,151 @@
+/* Mini dsh window chrome. Our class names only — never hashed module classes. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+html { color-scheme: light; }
+html[data-scheme="dark"] { color-scheme: dark; }
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  font-family: var(--dsw-font-family);
+  color: var(--dsw-alias-label-primary);
+  background-color: var(--dsw-alias-bg-base);
+}
+
+.dsh-frame {
+  width: 240px;
+  height: 176px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--dsw-alias-bg-base);
+  color: var(--dsw-alias-label-primary);
+  box-shadow: var(--dsw-shadow-lv2);
+}
+
+.dsh-sidebar {
+  width: 72px;
+  flex: 0 0 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 6px;
+  background: var(--dsw-specific-sidebar-fill);
+  border-right: 1px solid var(--dsw-alias-border-l1);
+}
+
+.dsh-new {
+  appearance: none;
+  border: 0;
+  height: 22px;
+  border-radius: 8px;
+  background: var(--dsw-alias-button-elevated-fill);
+  color: var(--dsw-alias-label-primary);
+  font: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: default;
+}
+
+.dsh-session {
+  height: 28px;
+  border-radius: 8px;
+  padding: 4px 6px;
+  font-size: 8px;
+  line-height: 1.2;
+  color: var(--dsw-alias-label-secondary);
+  background: var(--dsw-specific-sidebar-nav-item-hover, transparent);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dsh-session.is-on {
+  color: var(--dsw-alias-label-primary);
+  background: var(--dsw-specific-sidebar-nav-item-active);
+}
+
+.dsh-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px 7px;
+  gap: 7px;
+}
+
+.dsh-thread {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+}
+
+.dsh-bubble {
+  align-self: flex-end;
+  max-width: 92%;
+  padding: 6px 10px;
+  border-radius: 22px;
+  background: var(--dsw-specific-bubble);
+  color: var(--dsw-alias-label-primary);
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.dsh-assistant {
+  align-self: flex-start;
+  max-width: 96%;
+  padding: 2px 2px;
+  color: var(--dsw-alias-label-primary);
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.dsh-composer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 4px 4px 4px 12px;
+  border-radius: 22px;
+  background: var(--dsw-specific-input-major);
+  border: 1px solid var(--dsw-alias-border-l2-darkmode-thin);
+  box-shadow: var(--dsw-shadow-lv2);
+  color: var(--dsw-alias-label-tertiary);
+  font-size: 9px;
+}
+
+.dsh-composer span { flex: 1; min-width: 0; }
+
+.dsh-send {
+  appearance: none;
+  border: 0;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  background: var(--dsw-alias-button-info-fill);
+  color: var(--dsw-alias-label-primary-inverted, #fff);
+  cursor: default;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.dsh-send svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}

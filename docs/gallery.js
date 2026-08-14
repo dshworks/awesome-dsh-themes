@@ -1,5 +1,6 @@
 const NACHONEKO = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/screenshot.png";
 const SCENES = ["glow", "abyss", "nachoneko"];
+const CAT_LABEL = { runtime: "runtime", tokens: "tokens", skin: "skins", companion: "companions" };
 
 function categoryOf(t) {
   if (t.category) return t.category;
@@ -13,84 +14,77 @@ function repoUrl(t) {
   return t.path ? `https://github.com/${t.repo}/tree/HEAD/${t.path}` : `https://github.com/${t.repo}`;
 }
 
-function hash(s) {
-  let h = 0;
-  for (const ch of s) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  return h;
-}
-
-async function loadThemes() {
-  if (window.__THEMES__?.themes) return window.__THEMES__;
-  const res = await fetch("./themes.json");
-  if (!res.ok) throw new Error("themes.json missing");
-  return res.json();
-}
-
-function placeholder(t) {
-  const h = hash(t.name);
-  const a = 190 + (h % 40);
-  const b = 200 + ((h >> 5) % 40);
-  const label = t.official ? "official runtime" : (categoryOf(t) === "companion" ? "companion" : "no screenshot yet");
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Drawn placeholder for ${t.name}">
-    <defs>
-      <linearGradient id="bg${h}" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="hsl(${a},45%,16%)"/>
-        <stop offset="100%" stop-color="hsl(${b},40%,8%)"/>
-      </linearGradient>
-    </defs>
-    <rect width="640" height="400" fill="url(#bg${h})"/>
-    <circle cx="480" cy="90" r="70" fill="#7ef0ff" opacity=".12"/>
-    <path fill="#071018" opacity=".88" d="M90 230c40-40 130-58 230-42 70 10 140 4 200-16 30-10 60-6 74 16-40-4-78 16-120 34-70 30-170 40-260 28-60-8-110 2-150 12-16 4-24-8-14-32z"/>
-    <path fill="#071018" opacity=".88" d="M594 188c28-28 62-34 96-26-10 20-8 32 8 46-30-6-58 8-84 16-4-12-8-22-20-36z"/>
-    <circle cx="160" cy="210" r="5" fill="#7ef0ff" opacity=".7"/>
-    <text x="40" y="350" fill="#d6f6ff" font-size="28" font-family="Syne, Trebuchet MS, sans-serif" font-weight="800">${t.name}</text>
-    <text x="40" y="378" fill="#9bb8c6" font-size="16" font-family="Nunito, sans-serif">${label}</text>
-  </svg>`;
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+function previewSrc(t, scheme) {
+  const params = new URLSearchParams({ scheme });
+  if (t.previewCss) params.set("css", t.previewCss);
+  return `preview.html?${params}`;
 }
 
 function badge(cls, text) {
   return `<span class="badge ${cls}">${text}</span>`;
 }
 
-function card(t) {
+function card(t, scheme) {
   const cat = categoryOf(t);
-  const official = t.official ? badge("official", "official") : badge("unofficial", "unofficial");
-  const status = badge(t.status || "unverified", t.status || "unverified");
-  const catBadge = badge("cat", cat);
-  const src = t.preview || placeholder(t);
-  const alt = t.preview ? `${t.name} preview` : `Drawn whale placeholder for ${t.name}`;
+  const src = previewSrc(t, scheme);
   const license = t.license ? ` · ${t.license}` : "";
+  const shot = t.preview
+    ? `<a class="shot" href="${t.preview}" rel="noopener">photo</a>`
+    : "";
   return `<article class="card" data-category="${cat}">
-    <a class="thumb" href="${repoUrl(t)}" rel="noopener">
-      <img src="${src}" alt="${alt}" width="640" height="400" loading="lazy">
-    </a>
+    <div class="thumb">
+      <iframe class="live-preview" title="${t.name} live preview" src="${src}" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>
+    </div>
     <div class="body">
-      <div class="badges">${official}${status}${catBadge}</div>
+      <div class="badges">${badge("cat", CAT_LABEL[cat] || cat)}</div>
       <h2><a href="${repoUrl(t)}" rel="noopener">${t.name}</a></h2>
       <p>${t.description}</p>
-      <p class="meta">${t.status === "verified" ? t.verifiedAgainst : "unverified (" + t.verifiedAgainst + ")"}${license}</p>
+      <p class="meta"><a href="${src}" rel="noopener">Live preview</a> · ${t.verifiedAgainst}${license}${shot ? " · " + shot : ""}</p>
     </div>
   </article>`;
 }
 
-function render(themes, filter) {
+function render(themes, filter, scheme) {
   const root = document.getElementById("gallery");
   const rows = themes.filter((t) => filter === "all" || categoryOf(t) === filter);
   if (!rows.length) {
     root.innerHTML = `<p class="empty">Nothing in this trench yet. The sea is young.</p>`;
     return;
   }
-  root.innerHTML = rows.map(card).join("");
+  root.innerHTML = rows.map((t) => card(t, scheme)).join("");
+}
+
+function currentScheme() {
+  return document.body.dataset.scheme === "light" ? "light" : "dark";
+}
+
+function setScheme(scheme, themes, filter) {
+  document.body.dataset.scheme = scheme;
+  document.querySelectorAll("[data-scheme]").forEach((el) => {
+    const on = el.dataset.scheme === scheme;
+    el.classList.toggle("is-on", on);
+    el.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  const frames = [...document.querySelectorAll("iframe.live-preview")];
+  if (!frames.length) {
+    render(themes, filter, scheme);
+    return;
+  }
+  frames.forEach((iframe) => {
+    try { iframe.contentWindow.postMessage({ scheme }, "*"); } catch {}
+    const url = new URL(iframe.getAttribute("src"), location.href);
+    url.searchParams.set("scheme", scheme);
+    iframe.setAttribute("src", url.pathname + url.search);
+  });
 }
 
 function setFilter(btn, themes) {
-  document.querySelectorAll(".chip").forEach((el) => {
+  document.querySelectorAll(".chip[data-filter]").forEach((el) => {
     const on = el === btn;
     el.classList.toggle("is-on", on);
     el.setAttribute("aria-pressed", on ? "true" : "false");
   });
-  render(themes, btn.dataset.filter);
+  render(themes, btn.dataset.filter, currentScheme());
 }
 
 function setScene(name) {
@@ -128,14 +122,26 @@ function heart(x, y) {
   setTimeout(() => el.remove(), 1100);
 }
 
+async function loadThemes() {
+  if (window.__THEMES__?.themes) return window.__THEMES__;
+  const res = await fetch("./themes.json");
+  if (!res.ok) throw new Error("themes.json missing");
+  return res.json();
+}
+
 async function boot() {
   bubbles();
   setScene(SCENES[Math.floor(Math.random() * SCENES.length)]);
+  document.body.dataset.scheme = "dark";
   const data = await loadThemes();
   const themes = data.themes || [];
-  render(themes, "all");
-  const chips = [...document.querySelectorAll(".chip")];
-  chips.forEach((btn) => btn.addEventListener("click", () => setFilter(btn, themes)));
+  let filter = "all";
+  render(themes, filter, "dark");
+  const chips = [...document.querySelectorAll(".chip[data-filter]")];
+  chips.forEach((btn) => btn.addEventListener("click", () => {
+    filter = btn.dataset.filter;
+    setFilter(btn, themes);
+  }));
   document.querySelector(".filters").addEventListener("keydown", (ev) => {
     if (ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") return;
     const i = chips.indexOf(document.activeElement);
@@ -143,7 +149,11 @@ async function boot() {
     ev.preventDefault();
     const next = chips[(i + (ev.key === "ArrowRight" ? 1 : chips.length - 1)) % chips.length];
     next.focus();
+    filter = next.dataset.filter;
     setFilter(next, themes);
+  });
+  document.querySelectorAll("[data-scheme]").forEach((btn) => {
+    btn.addEventListener("click", () => setScheme(btn.dataset.scheme, themes, filter));
   });
   document.getElementById("dive").addEventListener("click", diveAgain);
   document.getElementById("whale").addEventListener("click", (ev) => {
