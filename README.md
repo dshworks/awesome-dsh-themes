@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 166 entries, 27 with live in-browser previews, 136 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 170 entries, 27 with live in-browser previews, 140 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -1367,6 +1367,20 @@ dsh plugin --profile web add github:gameswu/dsh-plugin-background
 
 **Repo:** [gameswu/dsh-plugin-background](https://github.com/gameswu/dsh-plugin-background) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+### [dsh-plugin-background-image](https://github.com/Voyage-He/dsh-plugin-background-image)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-background-image&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-plugin-background-image preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-background-image&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DeepSeek Harness 界面背景图片插件：网络/本地图片与预设渐变背景，支持开关、透明度调节、沉浸式全屏或仅对话区域显示。
+
+```sh
+dsh plugin --profile web add github:Voyage-He/dsh-plugin-background-image
+```
+
+**Repo:** [Voyage-He/dsh-plugin-background-image](https://github.com/Voyage-He/dsh-plugin-background-image) · **License:** MIT · **Package:** [`dsh-plugin-background-image`](https://www.npmjs.com/package/dsh-plugin-background-image) · **dsh:** 0.1.0-rc.6
+
 ### [dsh-plugin-image-wallpaper](https://github.com/CaoNing3212/dsh-plugin-image-wallpaper)
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-image-wallpaper&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-plugin-image-wallpaper preview"></a>
@@ -1436,6 +1450,20 @@ dsh plugin --profile web add github:wanzhiwei5/dsh-skin-amis
 ```
 
 **Repo:** [wanzhiwei5/dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis) · **dsh:** 0.1.0-rc.6
+
+### [dsh-skin-blue-whale](https://github.com/zenghuizhu69-hub/dsh-skin-blue-whale)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-blue-whale preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+蓝鲸跃海皮肤 —— 为 dsh Web UI 打造的极简深海蓝鲸主题：官网同款蓝白流动海水渐变背景、跃出海面的官方蓝鲸 logo、主页/会话双场景自适应，以及整套蓝鲸配色的界面令牌。
+
+```sh
+dsh plugin --profile web add github:zenghuizhu69-hub/dsh-skin-blue-whale
+```
+
+**Repo:** [zenghuizhu69-hub/dsh-skin-blue-whale](https://github.com/zenghuizhu69-hub/dsh-skin-blue-whale) · **License:** MIT · **Package:** [`dsh-skin-blue-whale`](https://www.npmjs.com/package/dsh-skin-blue-whale) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-skin-engine](https://github.com/xylt369/dsh-skin-engine)
 
@@ -2084,6 +2112,34 @@ dsh plugin --profile web add github:FlytoMAYDAY80/dsh-pet
 ```
 
 **Repo:** [FlytoMAYDAY80/dsh-pet](https://github.com/FlytoMAYDAY80/dsh-pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+### [dsh-pet-johlin](https://github.com/johlin/dsh-pet)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-johlin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-johlin preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-johlin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Standalone Cordis plugin template for DeepSeek Harness
+
+```sh
+dsh plugin --profile web add github:johlin/dsh-pet
+```
+
+**Repo:** [johlin/dsh-pet](https://github.com/johlin/dsh-pet) · **License:** BSD-3-Clause · **Package:** [`@your-scope/dsh-plugin-template`](https://www.npmjs.com/package/@your-scope/dsh-plugin-template) · **dsh:** 0.1.0-rc.6
+
+### [dsh-pet-live2d](https://github.com/YilunLi-999/dsh-pet-live2d)
+
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-live2d&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-live2d preview"></a>
+
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-live2d&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Desktop-pet companion for the DSH web GUI: hatch Codex-compatible sprite pets from an image, render them in the shell.overlay slot, and react to session state.
+
+```sh
+dsh plugin --profile web add github:YilunLi-999/dsh-pet-live2d
+```
+
+**Repo:** [YilunLi-999/dsh-pet-live2d](https://github.com/YilunLi-999/dsh-pet-live2d) · **License:** MIT · **Package:** [`dsh-pet`](https://www.npmjs.com/package/dsh-pet) · **dsh:** 0.1.0-rc.6
 
 ### [dsh-pet-maid](https://github.com/skylar-fei/dsh-wechat-maid/tree/HEAD/packages/dsh-pet-maid)
 
