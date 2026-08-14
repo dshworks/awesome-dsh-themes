@@ -1527,6 +1527,46 @@
       "category": "companion",
       "path": "packages/dsh-codex-pet",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-classic-colorways",
+      "repo": "heiyouhu/dsh-themes",
+      "description": "Appearance skin pack for the DeepSeek Harness Web GUI: Nord, Gruvbox, Solarized, Dracula, and Tokyo Night, each with light and dark variants.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/heiyouhu/dsh-themes/main/assets/previews/nord-dark.png"
+    },
+    {
+      "name": "dsh-zhongguo-themes",
+      "repo": "nevertoday/dsh-theme-plugin",
+      "description": "Chinese traditional color theme pack for DeepSeek Harness: 48 anchors times light/dark writing the full --dsw-* token vocabulary.",
+      "kind": "skin",
+      "category": "tokens",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-theme-switcher-wenjin",
+      "repo": "Wenjin-111/dsh-theme-switcher",
+      "description": "Theme switcher for the Web UI: glass and retro-paper styles, color presets, light/dark mode, and custom image backgrounds.",
+      "kind": "skin",
+      "category": "skin",
+      "official": false,
+      "status": "verified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "license": "MIT"
     }
   ]
 }
