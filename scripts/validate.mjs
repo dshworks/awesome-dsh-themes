@@ -10,7 +10,7 @@ const data = JSON.parse(readFileSync(join(ROOT, "data/themes.json"), "utf8"));
 const TOP = ["updated", "themes"];
 const REQ = ["name", "repo", "description", "kind", "added", "lastVerified", "verifiedAgainst", "status"];
 const KINDS = new Set(["runtime", "skin"]);
-const CATEGORIES = new Set(["runtime", "tokens", "skin", "companion"]);
+const CATEGORIES = new Set(["runtime", "tokens", "skin", "companion", "fun"]);
 const STATUSES = new Set(["verified", "unverified", "broken"]);
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
@@ -38,6 +38,7 @@ const seen = new Set();
     errors.push(`${at}: bad previewCss`);
   }
   if (t.gist != null && (typeof t.gist !== "string" || !t.gist.trim())) errors.push(`${at}: bad gist`);
+  if (t.install != null && (typeof t.install !== "string" || !t.install.trim())) errors.push(`${at}: bad install`);
   if (t.status && !STATUSES.has(t.status)) errors.push(`${at}: bad status`);
   for (const k of ["added", "lastVerified"]) {
     if (t[k] && !DATE.test(t[k])) errors.push(`${at}: bad ${k}`);

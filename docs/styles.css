@@ -241,15 +241,39 @@ h1 {
 }
 
 .scheme { display: inline-flex; gap: 0.4rem; margin-left: auto; }
-.thumb iframe.live-preview {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-  background: #07141c;
+.thumb { aspect-ratio: 16 / 10; }
+.thumb a, a.thumb { color: inherit; text-decoration: none; }
+.ph-whale {
+  width: 70%; max-width: 220px; height: auto;
+  fill: #071018; opacity: 0.85;
+  filter: drop-shadow(0 0 12px rgba(126, 240, 255, 0.2));
 }
-.thumb { aspect-ratio: 5 / 4; }
-.shot { color: var(--cyan); text-decoration: none; }
-.shot:hover, .shot:focus-visible { text-decoration: underline; }
+.ph-whale .eye { fill: #7ef0ff; }
+.install {
+  display: flex; align-items: center; gap: 0.4rem;
+  margin: 0.15rem 0 0;
+}
+.install code {
+  flex: 1; min-width: 0;
+  font-size: 0.72rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  color: var(--foam);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.28rem 0.5rem;
+  border-radius: 8px;
+}
+.copy {
+  appearance: none;
+  border: 1px solid var(--stroke);
+  background: rgba(7, 20, 28, 0.55);
+  color: var(--cyan);
+  font: inherit; font-size: 0.72rem; font-weight: 800;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.copy.is-copied { background: var(--cyan); color: #032026; }
+.dive { color: var(--cyan); text-decoration: none; font-weight: 800; }
+.dive:hover, .dive:focus-visible { text-decoration: underline; }
 .meta a { color: var(--cyan); text-decoration: none; }
 .meta a:hover, .meta a:focus-visible { text-decoration: underline; }

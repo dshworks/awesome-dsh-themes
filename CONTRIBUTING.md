@@ -17,8 +17,8 @@ if it actually restyles (or companionably lives beside) the dsh Web UI, open a P
 2. Set `official` to `true` only for the first-party ThemeRuntime package.
 3. A real `preview` image URL helps a lot. A screenshot from the running UI,
    not a mock, not a generated product shot.
-4. If you ship a --dsw-* override stylesheet, set `previewCss` so the live window can wear it.
-5. Set `category` if you can: `runtime` | `tokens` | `skin` | `companion`.
+4. If you ship a --dsw-* override stylesheet, set `previewCss` so the full-page live window can wear it. Optional install overrides the derived one-liner. See ROADMAP.md.
+5. Set `category` if you can: `runtime` | `tokens` | `skin` | `companion` | `fun`.
 6. Regenerate and check:
 
    ```sh
@@ -39,7 +39,8 @@ This list is small on purpose. An entry must be one of:
 2. A `--dsw-static-*` / `--dsw-alias-*` override set that restyles the dsh
    Web UI, or
 3. A skin that actually restyles that UI (plugin, sheet, or asset pack), or
-4. A companion / extra that lives beside the UI (desktop pet, etc.).
+4. A companion / extra that lives beside the UI (desktop pet, etc.), or
+5. A fun extra that restyles the whole Web UI for laughs (not a token skin).
 
 Not a theme: a renamed template, a VS Code / DSCode color theme, or a repo
 that only rides a GitHub topic. Do not invent entries to fill a section.

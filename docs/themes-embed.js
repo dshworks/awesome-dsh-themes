@@ -27,7 +27,8 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-13",
       "verifiedAgainst": "0.1.0-rc.5",
       "description": "Third-party plugin/skin collection for the dsh Web UI. Skin center routes around the theme-persistence gap. Also listed in awesome-dsh-plugins.",
-      "category": "skin"
+      "category": "skin",
+      "preview": "https://raw.githubusercontent.com/zhu1090093659/dsh-web-ui/main/docs/screenshots/13-hero-main.png"
     },
     {
       "name": "dsh-deep-whale",
@@ -54,7 +55,8 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.5",
       "description": "DSH Web GUI desktop-pet plugin (QQ pet form): floating companion. Theme/skin-shaped listing.",
       "category": "companion",
-      "license": "MIT"
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/vlln/whale-girl/main/docs/preview/idle.gif"
     },
     {
       "name": "dsh-qq2006",
@@ -237,7 +239,8 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "dsh theme studio: OKLCH theme proposals and a designer that persists across restarts.",
-      "category": "tokens"
+      "category": "tokens",
+      "preview": "https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/main/docs/images/screenshot-designer.png"
     },
     {
       "name": "dsh-four-seasons-theme",
@@ -356,6 +359,20 @@ window.__THEMES__ = {
       "description": "Taffy-themed skin for the dsh Web UI (我不是雏草姬).",
       "category": "skin",
       "preview": "https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/main/assets/art-light.jpg"
+    },
+    {
+      "name": "dsh-ads",
+      "repo": "Nagi-ovo/dsh-ads",
+      "official": false,
+      "kind": "skin",
+      "status": "unverified",
+      "added": "2026-08-14",
+      "lastVerified": "2026-08-14",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "2005-portal gag plugin that restyles the whole Web UI with fake ads — sidebar banners, in-thread plugs, corner popups. Not a --dsw-* token skin.",
+      "category": "fun",
+      "preview": "https://raw.githubusercontent.com/Nagi-ovo/dsh-ads/main/assets/screenshot.webp",
+      "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-ads"
     }
   ]
 };

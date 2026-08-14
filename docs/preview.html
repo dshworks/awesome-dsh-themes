@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dsh theme preview</title>
+  <link rel="icon" href="assets/whale-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/base.css">
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/design-platform.css">
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/scrollbar.css">
@@ -11,26 +15,50 @@
   <link rel="stylesheet" href="vendor/dsh-client-ui-theme@0.1.0-rc.6/shiki.css">
   <link rel="stylesheet" href="chrome.css">
 </head>
-<body>
-  <div class="dsh-frame" aria-hidden="true">
-    <aside class="dsh-sidebar">
-      <button type="button" class="dsh-new" tabindex="-1">New</button>
-      <div class="dsh-session is-on">token sea</div>
-      <div class="dsh-session">whale watch</div>
-    </aside>
-    <div class="dsh-main">
-      <div class="dsh-thread">
-        <div class="dsh-bubble">paint the ocean</div>
-        <div class="dsh-assistant">Lanterns are lit.</div>
-      </div>
-      <div class="dsh-composer">
-        <span>Ask the whale…</span>
-        <button type="button" class="dsh-send" tabindex="-1" aria-label="Send">
-          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.2 8.2 13 2.6l-3.4 11.2-2.1-4.2-4.3-1.4z"/></svg>
-        </button>
+<body class="preview-page">
+  <header class="preview-bar">
+    <a class="back" href="index.html">← Gallery</a>
+    <h1 id="theme-title">theme preview</h1>
+    <span class="scheme" role="group" aria-label="Preview light or dark">
+      <button type="button" class="chip is-on" data-scheme="dark" aria-pressed="true">Dark</button>
+      <button type="button" class="chip" data-scheme="light" aria-pressed="false">Light</button>
+    </span>
+  </header>
+
+  <main class="preview-stage">
+    <div class="dsh-frame" aria-hidden="true">
+      <aside class="dsh-sidebar">
+        <button type="button" class="dsh-new" tabindex="-1">New</button>
+        <div class="dsh-session is-on">token sea</div>
+        <div class="dsh-session">whale watch</div>
+      </aside>
+      <div class="dsh-main">
+        <div class="dsh-thread">
+          <div class="dsh-bubble">paint the ocean</div>
+          <div class="dsh-assistant">Lanterns are lit.</div>
+        </div>
+        <div class="dsh-composer">
+          <span>Ask the whale…</span>
+          <button type="button" class="dsh-send" tabindex="-1" aria-label="Send">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.2 8.2 13 2.6l-3.4 11.2-2.1-4.2-4.3-1.4z"/></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <section class="preview-meta" id="preview-meta" hidden>
+    <p class="preview-shot-wrap" id="shot-wrap" hidden>
+      <img id="source-shot" alt="" width="480">
+    </p>
+    <p class="install" id="install-wrap" hidden>
+      <code id="install-cmd"></code>
+      <button type="button" class="copy" id="copy-install">Copy</button>
+    </p>
+    <p class="preview-repo"><a id="repo-link" rel="noopener" href="#">Source</a></p>
+  </section>
+
+  <script src="themes-embed.js"></script>
   <script>
     const NACHONEKO_BG = "https://raw.githubusercontent.com/TheMyceliumOfAntan/dsh-nachoneko-theme/main/assets/nachoneko-bg.jpg";
     const params = new URLSearchParams(location.search);
@@ -41,6 +69,11 @@
       document.documentElement.style.colorScheme = dark ? "dark" : "light";
       if (dark) document.body.setAttribute("data-ds-dark-theme", "");
       else document.body.removeAttribute("data-ds-dark-theme");
+      document.querySelectorAll("[data-scheme]").forEach((el) => {
+        const on = el.dataset.scheme === scheme;
+        el.classList.toggle("is-on", on);
+        el.setAttribute("aria-pressed", on ? "true" : "false");
+      });
     }
 
     function rewriteOverride(css) {
@@ -69,6 +102,7 @@
       const res = await fetch(href);
       if (!res.ok) throw new Error("override " + res.status);
       const css = rewriteOverride(await res.text());
+      document.querySelectorAll("style[data-preview-override]").forEach((el) => el.remove());
       const style = document.createElement("style");
       style.setAttribute("data-preview-override", href);
       style.textContent = css;
@@ -76,18 +110,86 @@
       hostAttrs(css);
     }
 
-    applyScheme(params.get("scheme") === "light" ? "light" : "dark");
+    function installCmd(t) {
+      if (!t) return null;
+      if (t.install) return t.install;
+      if (t.official || t.kind === "runtime") return null;
+      return "dsh plugin --profile web add github:" + t.repo;
+    }
 
-    const css = params.get("css");
+    function repoUrl(t) {
+      return t.path ? "https://github.com/" + t.repo + "/tree/HEAD/" + t.path : "https://github.com/" + t.repo;
+    }
+
+    async function copyText(text, btn) {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      if (btn) {
+        btn.classList.add("is-copied");
+        btn.textContent = "Copied";
+        setTimeout(() => {
+          btn.classList.remove("is-copied");
+          btn.textContent = "Copy";
+        }, 1400);
+      }
+    }
+
+    function fillMeta(theme) {
+      const meta = document.getElementById("preview-meta");
+      meta.hidden = false;
+      document.getElementById("theme-title").textContent = theme.name;
+      document.title = theme.name + " — live preview";
+      const shot = document.getElementById("source-shot");
+      const wrap = document.getElementById("shot-wrap");
+      if (theme.preview) {
+        shot.src = theme.preview;
+        shot.alt = theme.name + " source shot";
+        wrap.hidden = false;
+      }
+      const cmd = installCmd(theme);
+      const installWrap = document.getElementById("install-wrap");
+      if (cmd) {
+        document.getElementById("install-cmd").textContent = cmd;
+        installWrap.hidden = false;
+        document.getElementById("copy-install").onclick = () => copyText(cmd, document.getElementById("copy-install"));
+      }
+      const link = document.getElementById("repo-link");
+      link.href = repoUrl(theme);
+      link.textContent = theme.repo;
+    }
+
+    const scheme = params.get("scheme") === "light" ? "light" : "dark";
+    applyScheme(scheme);
+
+    const data = window.__THEMES__ || { themes: [] };
+    const name = params.get("theme");
+    const theme = (data.themes || []).find((t) => t.name === name) || null;
+    if (theme) fillMeta(theme);
+
+    const css = (theme && theme.previewCss) || params.get("css");
     if (css) {
       injectOverride(css).catch(() => {
         /* tokens-only preview still works */
       });
     }
 
-    window.addEventListener("message", (ev) => {
-      const scheme = ev.data && ev.data.scheme;
-      if (scheme === "dark" || scheme === "light") applyScheme(scheme);
+    document.querySelectorAll("[data-scheme]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.scheme;
+        applyScheme(next);
+        const url = new URL(location.href);
+        url.searchParams.set("scheme", next);
+        if (theme) url.searchParams.set("theme", theme.name);
+        history.replaceState(null, "", url.pathname + url.search);
+      });
     });
   </script>
 </body>

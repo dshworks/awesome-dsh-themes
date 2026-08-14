@@ -22,6 +22,7 @@ const CATEGORY_META = [
   { id: "tokens", title: "Token skins", blurb: "Community `--dsw-static-*` / `--dsw-alias-*` override sets that restyle the Web UI." },
   { id: "skin", title: "Skins", blurb: "Theme and skin listings that restyle the dsh Web UI." },
   { id: "companion", title: "Companions", blurb: "Desktop pets and extras that live beside the UI. Not token skins — still part of the dive." },
+  { id: "fun", title: "Fun / extras", blurb: "Gags and extras that restyle the whole Web UI for laughs. Not `--dsw-*` token skins — still part of the dive." },
 ];
 
 function categoryOf(t) {
@@ -42,9 +43,14 @@ function pkgLink(t) {
 }
 
 function previewHref(t, scheme = "dark") {
-  const params = new URLSearchParams({ scheme });
-  if (t.previewCss) params.set("css", t.previewCss);
+  const params = new URLSearchParams({ theme: t.name, scheme });
   return `${GALLERY}preview.html?${params}`;
+}
+
+function installCmd(t) {
+  if (t.install) return t.install;
+  if (t.official || t.kind === "runtime") return null;
+  return `dsh plugin --profile web add github:${t.repo}`;
 }
 
 function slug(title) {
@@ -56,16 +62,20 @@ function entry(t) {
   bits.push(`### [${esc(t.name)}](${repoUrl(t)})`);
   bits.push("");
   const live = previewHref(t);
-  bits.push(`<a href="${live}"><img src="docs/assets/whale-mark.svg" width="72" height="72" alt="" align="left"></a>`);
+  const thumb = t.preview || "docs/assets/whale-mark.svg";
+  bits.push(`<a href="${live}"><img src="${thumb}" width="360" alt="${esc(t.name)} preview"></a>`);
   bits.push("");
-  bits.push(`**[Live preview](${live})** — tiny fake dsh window, real \`--dsw-*\` tokens${t.previewCss ? " plus this skin's override sheet" : ""}.`);
+  bits.push(`**[Live preview](${live})** — full-page fake dsh window, real \`--dsw-*\` tokens${t.previewCss ? " plus this skin's override sheet" : ""}.`);
   bits.push("");
-  if (t.preview) {
-    bits.push(`<img src="${t.preview}" width="360" alt="${esc(t.name)} preview">`);
-    bits.push("");
-  }
   bits.push(esc(t.description));
   bits.push("");
+  const cmd = installCmd(t);
+  if (cmd) {
+    bits.push("```sh");
+    bits.push(cmd);
+    bits.push("```");
+    bits.push("");
+  }
   const meta = [
     `**Repo:** [${t.repo}](${repoUrl(t)})`,
     t.license ? `**License:** ${esc(t.license)}` : null,
@@ -100,6 +110,7 @@ const toc = [
   ...CATEGORY_META.map((m) => `- [${m.title}](#${slug(m.title)})`),
   "- [Live gallery](#live-gallery)",
   "- [Add a theme](#add-a-theme)",
+  "- [Roadmap](#roadmap)",
   "- [License](#license)",
 ].join("\n");
 
@@ -141,11 +152,15 @@ ${sections}
 
 ## Live gallery
 
-The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Each card embeds a tiny fake dsh window painted from the real \`--dsw-*\` tokens (and an override sheet when we have one).
+The [deep-seek-universe gallery](${GALLERY}) lives on GitHub Pages (\`/docs\`). Same entries. More water. Cards show a real source-repo shot when we have one, or a drawn whale if we do not. **[Live](${GALLERY})** / Dive opens a full-page fake dsh window (real \`--dsw-*\` tokens, plus an override sheet when we have one). GitHub strips iframes, so the README uses thumbnails and links.
+
+## Roadmap
+
+Shorter install is a [plan](ROADMAP.md), not a fake CLI. Today the real command is already \`dsh plugin --profile web add github:owner/repo\`.
 
 ## Add a theme
 
-Open a PR against [\`data/themes.json\`](data/themes.json) only; the README and \`docs/themes.json\` are regenerated. See [CONTRIBUTING.md](CONTRIBUTING.md). A theme here is a ThemeRuntime, a \`--dsw-*\` override set, a skin that actually restyles the dsh Web UI, or a companion that lives beside it. The ThemeRuntime package is an extension point, not a store, and this list is not one either. A real preview image helps a lot. If you ship a CSS override sheet, add \`previewCss\` so the live window can wear it.
+Open a PR against [\`data/themes.json\`](data/themes.json) only; the README and \`docs/themes.json\` are regenerated. See [CONTRIBUTING.md](CONTRIBUTING.md). A theme here is a ThemeRuntime, a \`--dsw-*\` override set, a skin that actually restyles the dsh Web UI, a companion that lives beside it, or a fun extra. The ThemeRuntime package is an extension point, not a store, and this list is not one either. A real preview image helps a lot. If you ship a CSS override sheet, add \`previewCss\` so the live window can wear it. Optional \`install\` overrides the derived one-liner; see [ROADMAP.md](ROADMAP.md).
 
 ## License
 
