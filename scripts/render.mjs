@@ -14,7 +14,11 @@ const HARNESS = "deepseek-ai/deepseek-harness";
 const BADGE = "https://img.shields.io/badge/powered__by-dsh-4D6BFE?logo=deepseek";
 const AWESOME = "https://awesome.re/badge.svg";
 const SISTER = "https://github.com/dshworks/awesome-dsh-plugins";
-const GALLERY = `https://${cfg.org}.github.io/${cfg.repo}/`;
+// The org's own domain when it has one; GitHub's default host otherwise. Pages
+// serves the project sites under both, but only one of them is the brand, and
+// a canonical pointing at the other is a canonical pointing at a redirect.
+const SITE = cfg.site ?? `https://${cfg.org}.github.io`;
+const GALLERY = `${SITE}/${cfg.repo}/`;
 const esc = (s) => String(s).replaceAll("|", "\\|");
 
 const CATEGORY_META = [
@@ -172,8 +176,39 @@ mkdirSync(docsDir, { recursive: true });
 const themesJson = `${JSON.stringify(data, null, 2)}\n`;
 const themesEmbed = `window.__THEMES__ = ${JSON.stringify(data, null, 2)};\n`;
 
+// The card counts are filled in by the gallery script at runtime, but a
+// crawler and a chat unfurl only ever see the served HTML — so the head has to
+// be rendered from the data too, or it freezes at whatever it said the day it
+// was typed. Everything between the markers is generated; the rest of the page
+// is hand-written.
+const escAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const PAGE_TITLE = "awesome-dsh-themes — dive the deep-seek-universe";
+const PAGE_DESC = `${data.themes.length} DeepSeek Harness themes and --dsw-* token skins, with live previews. Not affiliated with DeepSeek.`;
+const headMeta = [
+  `<meta name="description" content="${escAttr(PAGE_DESC)}">`,
+  `<link rel="canonical" href="${GALLERY}">`,
+  `<meta property="og:type" content="website">`,
+  `<meta property="og:site_name" content="${escAttr(cfg.org)}">`,
+  `<meta property="og:title" content="${escAttr(PAGE_TITLE)}">`,
+  `<meta property="og:description" content="${escAttr(PAGE_DESC)}">`,
+  `<meta property="og:url" content="${GALLERY}">`,
+  `<meta name="twitter:card" content="summary">`,
+  `<meta name="twitter:title" content="${escAttr(PAGE_TITLE)}">`,
+  `<meta name="twitter:description" content="${escAttr(PAGE_DESC)}">`,
+].map((line) => `  ${line}`).join("\n");
+
+const INDEX_REL = "docs/index.html";
+const indexSrc = readFileSync(join(ROOT, INDEX_REL), "utf8");
+const MARKERS = /<!-- render:meta -->[\s\S]*?<!-- \/render:meta -->/;
+if (!MARKERS.test(indexSrc)) {
+  console.error(`render: ${INDEX_REL} is missing the <!-- render:meta --> markers; head cannot be rendered`);
+  process.exit(1);
+}
+const indexBody = indexSrc.replace(MARKERS, `<!-- render:meta -->\n${headMeta}\n  <!-- /render:meta -->`);
+
 const artifacts = [
   { rel: "README.md", body: readme },
+  { rel: INDEX_REL, body: indexBody },
   { rel: "docs/themes.json", body: themesJson },
   { rel: "docs/themes-embed.js", body: themesEmbed },
 ];
