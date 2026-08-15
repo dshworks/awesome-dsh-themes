@@ -462,3 +462,41 @@ body.porthole-open { overflow: hidden; }
   from { opacity: 0; transform: scale(0.96); }
   to { opacity: 1; transform: none; }
 }
+
+/* ---------- shared site bar ----------
+   The same bar dsh.works and the sister registry wear. It is deliberately
+   not in this page's palette: it belongs to the site, not to the reef, and
+   a visitor crossing between surfaces should recognise it unchanged. Black,
+   mono, cyan caret — the house style, stated once per surface. */
+.sitebar {
+  position: sticky; top: 0; z-index: 30;
+  display: flex; align-items: center; gap: 1.25rem;
+  padding: 0.5rem max(1rem, calc((100% - 1120px) / 2));
+  background: rgba(0, 0, 0, 0.86);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #262626;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem; line-height: 1.6;
+}
+.sitebar a { text-decoration: none; }
+.sitebar a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.sitebar-brand { color: #ffffff; font-weight: 700; white-space: nowrap; }
+.sitebar-brand .caret { color: #00c2e9; }
+.sitebar-brand i { color: #9a9a9a; font-style: normal; font-weight: 400; }
+.sitebar-links {
+  display: flex; gap: 1.1rem; margin-left: auto;
+  overflow-x: auto; scrollbar-width: none;
+}
+/* The fade is the affordance for a strip that actually scrolls. Applied
+   unconditionally it just clips the last link on a wide screen, so it is
+   scoped to the widths where the strip really does run out of room. */
+@media (max-width: 40rem) {
+  .sitebar-links {
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 1.25rem), transparent 100%);
+  }
+}
+.sitebar-links::-webkit-scrollbar { display: none; }
+.sitebar-links a { color: #9a9a9a; white-space: nowrap; }
+.sitebar-links a:hover { color: #00c2e9; }
+.sitebar-links a[aria-current="page"] { color: #e8e8e8; }
+.sitebar :focus-visible { outline: 2px solid #00c2e9; outline-offset: 2px; border-radius: 3px; }
