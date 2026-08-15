@@ -6,7 +6,8 @@
   "description": "Registry of DeepSeek Harness (dsh) themes and --dsw-* token skins. Not affiliated with DeepSeek.",
   "registry": {
     "org": "dshworks",
-    "repo": "awesome-dsh-themes"
+    "repo": "awesome-dsh-themes",
+    "site": "https://dsh.works"
   },
   "scripts": {
     "validate": "node scripts/validate.mjs",
