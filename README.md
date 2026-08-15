@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 224 entries, 35 with live in-browser previews, 193 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 224 entries, 39 with live in-browser previews, 193 verified against a dsh release.
 
 **[Open the live gallery](https://dshworks.github.io/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -59,7 +59,7 @@ Community `--dsw-static-*` / `--dsw-alias-*` override sets that restyle the Web 
 
 ### [chiral-pulse](https://github.com/MoonShadow1976/chiral-pulse)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=chiral-pulse&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="chiral-pulse preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=chiral-pulse&scheme=dark"><img src="https://raw.githubusercontent.com/MoonShadow1976/chiral-pulse/HEAD/assets/chiral-pulse-hero.png" width="360" alt="chiral-pulse preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=chiral-pulse&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -115,7 +115,7 @@ bash scripts/install.sh /path/to/deepseek-harness
 
 ### [deepseek-harness-themes](https://github.com/orxz/deepseek-harness-themes/tree/HEAD/packages/ui)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=deepseek-harness-themes&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="deepseek-harness-themes preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=deepseek-harness-themes&scheme=dark"><img src="https://raw.githubusercontent.com/orxz/deepseek-harness-themes/HEAD/screenshots/settings.png" width="360" alt="deepseek-harness-themes preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=deepseek-harness-themes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -185,7 +185,7 @@ dsh plugin --profile web add github:Tkingxiao/dsh-any-background
 
 ### [dsh-aqua](https://github.com/WYH66666666/DSH)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aqua&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-aqua preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aqua&scheme=dark"><img src="https://raw.githubusercontent.com/WYH66666666/DSH/HEAD/assets/2.png" width="360" alt="dsh-aqua preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aqua&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -227,7 +227,7 @@ dsh plugin --profile web add github:147228/dsh-black-whale
 
 ### [dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-blue-whale preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale&scheme=dark"><img src="https://raw.githubusercontent.com/starslittle/dsh-blue-whale/HEAD/docs/compare-brand.png" width="360" alt="dsh-blue-whale preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -255,7 +255,7 @@ dsh plugin --profile web add github:hashdiana/dsh-blur-theme
 
 ### [dsh-catppuccin](https://github.com/zhijun-dai/dsh-Catppuccin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-catppuccin preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin&scheme=dark"><img src="https://raw.githubusercontent.com/zhijun-dai/dsh-Catppuccin/HEAD/assets/preview.webp" width="360" alt="dsh-catppuccin preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -269,7 +269,7 @@ dsh plugin --profile web add github:zhijun-dai/dsh-Catppuccin
 
 ### [dsh-catppuccin-nonamelego](https://github.com/NoNameLeGo/dsh-catppuccin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin-nonamelego&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-catppuccin-nonamelego preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin-nonamelego&scheme=dark"><img src="https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/HEAD/assets/previews/latte.png" width="360" alt="dsh-catppuccin-nonamelego preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-catppuccin-nonamelego&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -325,7 +325,7 @@ dsh plugin --profile web add github:chajiuqqq/dsh-claude-theme
 
 ### [dsh-cyberpunk-theme](https://github.com/ai7603/dsh-cyberpunk-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyberpunk-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-cyberpunk-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyberpunk-theme&scheme=dark"><img src="https://raw.githubusercontent.com/ai7603/dsh-cyberpunk-theme/HEAD/docs/screenshots/session-light.png" width="360" alt="dsh-cyberpunk-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyberpunk-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -339,7 +339,7 @@ dsh plugin --profile web add github:ai7603/dsh-cyberpunk-theme
 
 ### [dsh-deepsea-theme](https://github.com/i1j/dsh-deepsea-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepsea-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-deepsea-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepsea-theme&scheme=dark"><img src="https://raw.githubusercontent.com/i1j/dsh-deepsea-theme/HEAD/assets/plankton-1.0.gif" width="360" alt="dsh-deepsea-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepsea-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -353,7 +353,7 @@ dsh plugin --profile web add github:i1j/dsh-deepsea-theme
 
 ### [dsh-eye-care](https://github.com/Anionex/dsh-eye-care)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-eye-care&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-eye-care preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-eye-care&scheme=dark"><img src="https://raw.githubusercontent.com/Anionex/dsh-eye-care/HEAD/assets/eye-care-light.png" width="360" alt="dsh-eye-care preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-eye-care&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -395,7 +395,7 @@ dsh plugin --profile web add github:czj527/dsh-four-seasons-theme
 
 ### [dsh-genshin-skin](https://github.com/bupianlizhugui/dsh-genshin-skin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-genshin-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-genshin-skin preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-genshin-skin&scheme=dark"><img src="https://raw.githubusercontent.com/bupianlizhugui/dsh-genshin-skin/HEAD/src/client/assets/genshin-snezhnaya.jpeg" width="360" alt="dsh-genshin-skin preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-genshin-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -437,7 +437,7 @@ dsh plugin --profile web add github:Carpon39038/dsh-image-theme
 
 ### [dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liang-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-liang-skin preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liang-skin&scheme=dark"><img src="https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/HEAD/docs/demo.gif" width="360" alt="dsh-liang-skin preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liang-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -451,9 +451,9 @@ dsh plugin --profile web add github:kingOfSoySauce/dsh-liang-skin
 
 ### [dsh-liquid-theme](https://github.com/more-nico/dshLiquidTheme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liquid-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-liquid-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liquid-theme&scheme=dark"><img src="https://raw.githubusercontent.com/more-nico/dshLiquidTheme/HEAD/assets/home.png" width="360" alt="dsh-liquid-theme preview"></a>
 
-**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liquid-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-liquid-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
 macOS-style floating Liquid Glass theme for DeepSeek Harness Web UI
 
@@ -465,7 +465,7 @@ dsh plugin --profile web add github:more-nico/dshLiquidTheme
 
 ### [dsh-macos-theme](https://github.com/dataizu/dsh-macos-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-macos-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark"><img src="https://raw.githubusercontent.com/dataizu/dsh-macos-theme/HEAD/screenshots/whale-animation.gif" width="360" alt="dsh-macos-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -479,7 +479,7 @@ dsh plugin --profile web add github:dataizu/dsh-macos-theme
 
 ### [dsh-mamba-theme](https://github.com/wangq32801-dev/dsh-mamba-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-mamba-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-mamba-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-mamba-theme&scheme=dark"><img src="https://raw.githubusercontent.com/wangq32801-dev/dsh-mamba-theme/HEAD/preview.png" width="360" alt="dsh-mamba-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-mamba-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -565,7 +565,7 @@ dsh plugin --profile web add github:TheMyceliumOfAntan/dsh-nachoneko-theme
 
 ### [dsh-outdoor-theme](https://github.com/Estellalee/dsh-outdoor-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-outdoor-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-outdoor-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-outdoor-theme&scheme=dark"><img src="https://raw.githubusercontent.com/Estellalee/dsh-outdoor-theme/HEAD/screenshots/light-moonrise.png" width="360" alt="dsh-outdoor-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-outdoor-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -607,7 +607,7 @@ dsh plugin --profile web add github:Blaczz/dsh-paper-theme
 
 ### [dsh-plugin-colorscheme](https://github.com/Civitasv/dsh-plugin-colorscheme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-colorscheme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-plugin-colorscheme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-colorscheme&scheme=dark"><img src="https://raw.githubusercontent.com/Civitasv/dsh-plugin-colorscheme/HEAD/docs/screenshots/catppuccin-mocha.png" width="360" alt="dsh-plugin-colorscheme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-colorscheme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -677,7 +677,7 @@ dsh plugin --profile web add github:LucasN0820/dsh-skin-claude-code
 
 ### [dsh-skin-claude-code-le-soleil](https://github.com/le-soleil-se-couche/dsh-skin-claude-code)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-claude-code-le-soleil&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-claude-code-le-soleil preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-claude-code-le-soleil&scheme=dark"><img src="https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/HEAD/preview/dark.png" width="360" alt="dsh-skin-claude-code-le-soleil preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-claude-code-le-soleil&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -691,7 +691,7 @@ dsh plugin --profile web add github:le-soleil-se-couche/dsh-skin-claude-code
 
 ### [dsh-skin-diablo-dark](https://github.com/dengxuhui/dsh-skin-diablo-dark)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-diablo-dark&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-diablo-dark preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-diablo-dark&scheme=dark"><img src="https://raw.githubusercontent.com/dengxuhui/dsh-skin-diablo-dark/HEAD/preview/dark.png" width="360" alt="dsh-skin-diablo-dark preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-diablo-dark&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -747,7 +747,7 @@ dsh plugin --profile web add github:ylqit/dsh-skin-plugin
 
 ### [dsh-skin-sakura](https://github.com/leo-aba/dsh-skins/tree/HEAD/skins/sakura)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-sakura&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-sakura preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-sakura&scheme=dark"><img src="https://raw.githubusercontent.com/leo-aba/dsh-skins/HEAD/imgs/RemielleDan.png" width="360" alt="dsh-skin-sakura preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-sakura&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -817,7 +817,7 @@ dsh plugin --profile web add github:xassuyge003-ui/dsh-skin-yanisuu
 
 ### [dsh-skins-harbor](https://github.com/Moeblack/dsh-skins/tree/HEAD/packages/dsh-web-skins)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skins-harbor&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skins-harbor preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skins-harbor&scheme=dark"><img src="https://raw.githubusercontent.com/Moeblack/dsh-skins/HEAD/docs/images/skin-harbor.jpg" width="360" alt="dsh-skins-harbor preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skins-harbor&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -845,7 +845,7 @@ dsh plugin --profile web add github:oil-oil/dsh-theme
 
 ### [dsh-theme-blackgold](https://github.com/frostgao/dsh-theme-blackgold)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-blackgold preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark"><img src="https://raw.githubusercontent.com/frostgao/dsh-theme-blackgold/HEAD/screenshots/light.png" width="360" alt="dsh-theme-blackgold preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -957,7 +957,7 @@ dsh plugin --profile web add github:longyu065/dsh-theme-ti
 
 ### [dsh-theme-triptych](https://github.com/iMocking/dsh-theme-triptych)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-triptych&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-triptych preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-triptych&scheme=dark"><img src="https://raw.githubusercontent.com/iMocking/dsh-theme-triptych/HEAD/assets/image_nexus.jpg" width="360" alt="dsh-theme-triptych preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-triptych&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -967,7 +967,7 @@ Appearance pack for DeepSeek Harness with NEXUS, COMIKET, and IRONCORE editions,
 dsh plugin --profile web add github:iMocking/dsh-theme-triptych
 ```
 
-**Repo:** [iMocking/dsh-theme-triptych](https://github.com/iMocking/dsh-theme-triptych) · **dsh:** 0.1.0-rc.6
+**Repo:** [iMocking/dsh-theme-triptych](https://github.com/iMocking/dsh-theme-triptych) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-theme-vscode-red](https://github.com/RainbowDashy/dsh-theme-vscode-red)
 
@@ -985,7 +985,7 @@ dsh plugin --profile web add github:RainbowDashy/dsh-theme-vscode-red
 
 ### [dsh-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-xp&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-xp preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-xp&scheme=dark"><img src="https://raw.githubusercontent.com/SamizuHM/dsh-client-ui-theme-xp/HEAD/docs/screenshot.png" width="360" alt="dsh-theme-xp preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-xp&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -999,7 +999,7 @@ dsh plugin --profile web add github:SamizuHM/dsh-client-ui-theme-xp
 
 ### [dsh-themes](https://github.com/MangMax/dsh-themes)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-themes preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes&scheme=dark"><img src="https://raw.githubusercontent.com/MangMax/dsh-themes/HEAD/assets/screenshot.png" width="360" alt="dsh-themes preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1027,7 +1027,7 @@ dsh plugin --profile web add github:whyihaveyou/dsh-themes
 
 ### [dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance/tree/HEAD/packages/client/ui-appearance)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-appearance&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-ui-appearance preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-appearance&scheme=dark"><img src="https://raw.githubusercontent.com/TQSY114514/dsh-ui-appearance/HEAD/docs/screenshot-wallpaper.png" width="360" alt="dsh-ui-appearance preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-appearance&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1099,7 +1099,7 @@ dsh plugin --profile web add github:yingpanwang/dsh_web_client_theme_switcher
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-web-skins&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-web-skins preview"></a>
 
-**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-web-skins&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-web-skins&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
 21 editor-inspired --dsw-* theme families for the dsh Web UI (Gruvbox, Catppuccin, Dracula, Solarized, Tokyo Night, and more), each with light and dark.
 
@@ -1141,7 +1141,7 @@ dsh plugin --profile web add github:147228/dsh-xiaoyao-skins
 
 ### [dsh-zhongguo-themes](https://github.com/nevertoday/dsh-theme-plugin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-zhongguo-themes&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-zhongguo-themes preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-zhongguo-themes&scheme=dark"><img src="https://raw.githubusercontent.com/nevertoday/dsh-theme-plugin/HEAD/docs/img/panel-light.png" width="360" alt="dsh-zhongguo-themes preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-zhongguo-themes&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1439,7 +1439,7 @@ dsh plugin --profile web add github:yuemingyue1119-lune/dsh-chat-skin
 
 ### [dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-client-ui-skin-claude&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-client-ui-skin-claude preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-client-ui-skin-claude&scheme=dark"><img src="https://raw.githubusercontent.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude/HEAD/preview/light.png" width="360" alt="dsh-client-ui-skin-claude preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-client-ui-skin-claude&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1525,7 +1525,7 @@ dsh plugin --profile web add github:Small-tailqwq/dsh-deep-whale
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepseek-ui-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-deepseek-ui-skin preview"></a>
 
-**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepseek-ui-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-deepseek-ui-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
 Minimal navy DeepSeek Web UI skin with light/dark and a left-to-right looping particle stream along the bottom.
 
@@ -1567,7 +1567,7 @@ dsh plugin --profile web add github:oceanxuikun/dsh-eva-theme-plugin
 
 <a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-home-ui&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-home-ui preview"></a>
 
-**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-home-ui&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+**[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-home-ui&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
 Home-feed visual refinement: sidebar palette unified with the conversation and a soft gradient hairline.
 
@@ -1635,7 +1635,7 @@ dsh plugin --profile web add github:wuzhong962-alt/dsh-matrix-theme
 
 ### [dsh-naiwa-theme](https://github.com/DevourerM/dsh-naiwa-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-naiwa-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-naiwa-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-naiwa-theme&scheme=dark"><img src="https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/HEAD/assets/naiwa-laugh-mark.png" width="360" alt="dsh-naiwa-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-naiwa-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -1649,7 +1649,7 @@ dsh plugin --profile web add github:DevourerM/dsh-naiwa-theme
 
 ### [dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-oh-my-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-oh-my-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-oh-my-theme&scheme=dark"><img src="https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/HEAD/docs/assets/md-preview.png" width="360" alt="dsh-oh-my-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-oh-my-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1663,7 +1663,7 @@ dsh plugin --profile web add github:zhxqc/dsh-oh-my-theme
 
 ### [dsh-pixel-ui](https://github.com/zhang66633/dsh-pixel-ui)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pixel-ui&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pixel-ui preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pixel-ui&scheme=dark"><img src="https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/HEAD/assets/screenshot-paper-chat.png" width="360" alt="dsh-pixel-ui preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pixel-ui&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1691,7 +1691,7 @@ dsh plugin --profile web add github:gameswu/dsh-plugin-background
 
 ### [dsh-plugin-background-image](https://github.com/Voyage-He/dsh-plugin-background-image)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-background-image&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-plugin-background-image preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-background-image&scheme=dark"><img src="https://raw.githubusercontent.com/Voyage-He/dsh-plugin-background-image/HEAD/demo/screenshot-2.png" width="360" alt="dsh-plugin-background-image preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-plugin-background-image&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1733,7 +1733,7 @@ dsh plugin --profile web add github:z827439974/dsh-background-plugin
 
 ### [dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-qq2006&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-qq2006 preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-qq2006&scheme=dark"><img src="https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/HEAD/assets/screenshots/qq2006-window-view.webp" width="360" alt="dsh-qq2006 preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-qq2006&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1761,7 +1761,7 @@ dsh plugin --profile web add github:LeemanCheung/dsh-qq2007-skin
 
 ### [dsh-rhodes-angelina](https://github.com/FlowerWater1019/Angelina-dsh-plugin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-rhodes-angelina&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-rhodes-angelina preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-rhodes-angelina&scheme=dark"><img src="https://raw.githubusercontent.com/FlowerWater1019/Angelina-dsh-plugin/HEAD/assets/angelina-mellow-wish.png" width="360" alt="dsh-rhodes-angelina preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-rhodes-angelina&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1775,7 +1775,7 @@ dsh plugin --profile web add github:FlowerWater1019/Angelina-dsh-plugin
 
 ### [dsh-skin-alphacoders](https://github.com/sakka6868/dsh-skin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-alphacoders&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-alphacoders preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-alphacoders&scheme=dark"><img src="https://raw.githubusercontent.com/sakka6868/dsh-skin/HEAD/docs/preview-main.png" width="360" alt="dsh-skin-alphacoders preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-alphacoders&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1817,7 +1817,7 @@ dsh plugin --profile web add github:Vim0x3c/dsh-skin-appearance
 
 ### [dsh-skin-blue-whale](https://github.com/zenghuizhu69-hub/dsh-skin-blue-whale)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-blue-whale preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark"><img src="https://raw.githubusercontent.com/zenghuizhu69-hub/dsh-skin-blue-whale/HEAD/screenshots/work.png" width="360" alt="dsh-skin-blue-whale preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-skin-blue-whale&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -1901,7 +1901,7 @@ dsh plugin --profile web add github:abab-team/dsh-skins
 
 ### [dsh-theme-background-center](https://github.com/syOPV/dsh-theme-background-center)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-background-center&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-background-center preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-background-center&scheme=dark"><img src="https://raw.githubusercontent.com/syOPV/dsh-theme-background-center/HEAD/assets/screenshot.jpg" width="360" alt="dsh-theme-background-center preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-background-center&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2013,7 +2013,7 @@ dsh plugin --profile web add github:lgYanami/dsh-theme-yanami-sky
 
 ### [dsh-theme-yourname](https://github.com/elfin1z/dsh-theme-yourname)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-yourname&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-yourname preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-yourname&scheme=dark"><img src="https://raw.githubusercontent.com/elfin1z/dsh-theme-yourname/HEAD/assets/sidebar.png" width="360" alt="dsh-theme-yourname preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-theme-yourname&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2027,7 +2027,7 @@ dsh plugin --profile web add github:elfin1z/dsh-theme-yourname
 
 ### [dsh-themes-people-ai](https://github.com/95384/DSH-themes-people-ai)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes-people-ai&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-themes-people-ai preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes-people-ai&scheme=dark"><img src="https://raw.githubusercontent.com/95384/DSH-themes-people-ai/HEAD/assets/background.jpg" width="360" alt="dsh-themes-people-ai preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-themes-people-ai&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2041,7 +2041,7 @@ dsh plugin --profile web add github:95384/DSH-themes-people-ai
 
 ### [dsh-thinking-status-customizer](https://github.com/Dbi-Eshuh/dsh-thinking-status-customizer)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-thinking-status-customizer&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-thinking-status-customizer preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-thinking-status-customizer&scheme=dark"><img src="https://raw.githubusercontent.com/Dbi-Eshuh/dsh-thinking-status-customizer/HEAD/assets/settings-preview.png" width="360" alt="dsh-thinking-status-customizer preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-thinking-status-customizer&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2135,11 +2135,11 @@ Visual customization for the Web UI: localized wallpapers, theme management, and
 dsh plugin --profile web add github:HuggingFries/dsh-skin
 ```
 
-**Repo:** [HuggingFries/dsh-skin](https://github.com/HuggingFries/dsh-skin) · **dsh:** 0.1.0-rc.6
+**Repo:** [HuggingFries/dsh-skin](https://github.com/HuggingFries/dsh-skin) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-wallpaper](https://github.com/Gao-Yee/dsh-wallpaper)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wallpaper&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-wallpaper preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wallpaper&scheme=dark"><img src="https://raw.githubusercontent.com/Gao-Yee/dsh-wallpaper/HEAD/screenshots/screenshot-2.jpg" width="360" alt="dsh-wallpaper preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wallpaper&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -2293,7 +2293,7 @@ dsh plugin --profile web add github:dataizu/dsh-whale-aqua-theme
 
 ### [dsh-whale-background](https://github.com/tuogusa/dsh-whale-background)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-background&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-whale-background preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-background&scheme=dark"><img src="https://raw.githubusercontent.com/tuogusa/dsh-whale-background/HEAD/assets/wallpaper.jpg" width="360" alt="dsh-whale-background preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-background&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2307,7 +2307,7 @@ dsh plugin --profile web add github:tuogusa/dsh-whale-background
 
 ### [dsh-wx-skin](https://github.com/wangxilhy23/dsh-wx-skin)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wx-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-wx-skin preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wx-skin&scheme=dark"><img src="https://raw.githubusercontent.com/wangxilhy23/dsh-wx-skin/HEAD/assets/demo1.png" width="360" alt="dsh-wx-skin preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-wx-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -2377,7 +2377,7 @@ dsh plugin --profile web add github:Shmilyol/galgame-skin
 
 ### [kaori-theme](https://github.com/Bonny0430/kaori-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=kaori-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="kaori-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=kaori-theme&scheme=dark"><img src="https://raw.githubusercontent.com/Bonny0430/kaori-theme/HEAD/images/03-mockup-a.png" width="360" alt="kaori-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=kaori-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
@@ -2437,7 +2437,7 @@ Desktop pets and extras that live beside the UI. Not token skins — still part 
 
 ### [dsh-aemeath-pet](https://github.com/culture-flask/dsh-aemeath-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aemeath-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-aemeath-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aemeath-pet&scheme=dark"><img src="https://raw.githubusercontent.com/culture-flask/dsh-aemeath-pet/HEAD/assets/spritesheet-v2-r2.webp" width="360" alt="dsh-aemeath-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-aemeath-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2451,7 +2451,7 @@ dsh plugin --profile web add github:culture-flask/dsh-aemeath-pet
 
 ### [dsh-answer-pet](https://github.com/Nanki-nn/dsh-answer-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-answer-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-answer-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-answer-pet&scheme=dark"><img src="https://raw.githubusercontent.com/Nanki-nn/dsh-answer-pet/HEAD/assets/dsh-answer-pet-demo.gif" width="360" alt="dsh-answer-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-answer-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2465,7 +2465,7 @@ dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet
 
 ### [dsh-blue-whale-maid](https://github.com/yuxino/dsh-blue-whale-maid)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale-maid&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-blue-whale-maid preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale-maid&scheme=dark"><img src="https://raw.githubusercontent.com/yuxino/dsh-blue-whale-maid/HEAD/assets/spritesheet.webp" width="360" alt="dsh-blue-whale-maid preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-blue-whale-maid&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2535,7 +2535,7 @@ dsh plugin --profile web add github:zhulin025/LaoA-dshGF
 
 ### [dsh-dafeiyu](https://github.com/QCYTSN/dsh-dafeiyu)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-dafeiyu&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-dafeiyu preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-dafeiyu&scheme=dark"><img src="https://raw.githubusercontent.com/QCYTSN/dsh-dafeiyu/HEAD/docs/images/dsh-bigfish-settings.png" width="360" alt="dsh-dafeiyu preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-dafeiyu&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2545,7 +2545,7 @@ Desktop-native BigFish companion driven by DeepSeek Harness session events.
 dsh plugin --profile web add github:QCYTSN/dsh-dafeiyu
 ```
 
-**Repo:** [QCYTSN/dsh-dafeiyu](https://github.com/QCYTSN/dsh-dafeiyu) · **dsh:** 0.1.0-rc.6
+**Repo:** [QCYTSN/dsh-dafeiyu](https://github.com/QCYTSN/dsh-dafeiyu) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [dsh-deepseek-girl-pet](https://github.com/f0909172434/dsh-deepseek-girl-pet)
 
@@ -2563,7 +2563,7 @@ dsh plugin --profile web add github:f0909172434/dsh-deepseek-girl-pet
 
 ### [dsh-desk-pet](https://github.com/anneheartrecord/dsh-desk-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desk-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-desk-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desk-pet&scheme=dark"><img src="https://raw.githubusercontent.com/anneheartrecord/dsh-desk-pet/HEAD/assets/source/threadcore/sleeping/01.png" width="360" alt="dsh-desk-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desk-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2591,7 +2591,7 @@ dsh plugin --profile web add github:crabossss/dsh-desktop-pet
 
 ### [dsh-desktop-pet-sereinmono](https://github.com/sereinmono/dsh-desktop-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desktop-pet-sereinmono&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-desktop-pet-sereinmono preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desktop-pet-sereinmono&scheme=dark"><img src="https://raw.githubusercontent.com/sereinmono/dsh-desktop-pet/HEAD/assets/pets/text/spritesheet.webp" width="360" alt="dsh-desktop-pet-sereinmono preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-desktop-pet-sereinmono&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2605,7 +2605,7 @@ dsh plugin --profile web add github:sereinmono/dsh-desktop-pet
 
 ### [dsh-furina-desk-pet](https://github.com/fykuang02/furina-desk-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-furina-desk-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-furina-desk-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-furina-desk-pet&scheme=dark"><img src="https://raw.githubusercontent.com/fykuang02/furina-desk-pet/HEAD/assets/source/furina-shocked.webp" width="360" alt="dsh-furina-desk-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-furina-desk-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2647,7 +2647,7 @@ dsh plugin --profile web add github:liyupi/dsh-kun-like-pet
 
 ### [dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-live2d-pets&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-live2d-pets preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-live2d-pets&scheme=dark"><img src="https://raw.githubusercontent.com/cyanfish-x/dsh-live2d-pets/HEAD/docs/media/hero.jpg" width="360" alt="dsh-live2d-pets preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-live2d-pets&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2675,7 +2675,7 @@ dsh plugin --profile web add github:PC2005-cloud/dsh-pet
 
 ### [dsh-meep](https://github.com/omdsh-dev/dsh-meep)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-meep&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-meep preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-meep&scheme=dark"><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-meep/HEAD/pet/expressions/gif/meep/meep.gif" width="360" alt="dsh-meep preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-meep&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2689,7 +2689,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-meep
 
 ### [dsh-nailong-desktop-pet](https://github.com/2002yxy/dsh-nailong-desktop-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-nailong-desktop-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-nailong-desktop-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-nailong-desktop-pet&scheme=dark"><img src="https://raw.githubusercontent.com/2002yxy/dsh-nailong-desktop-pet/HEAD/native/assets/presets/deepseek-whale-atlas.png" width="360" alt="dsh-nailong-desktop-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-nailong-desktop-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2717,7 +2717,7 @@ dsh plugin --profile web add github:zealot00/dsh-pet
 
 ### [dsh-pet-corner](https://github.com/omdsh-dev/dsh-pet-corner)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-corner&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-corner preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-corner&scheme=dark"><img src="https://raw.githubusercontent.com/omdsh-dev/dsh-pet-corner/HEAD/assets/cat_sleep%402x.png" width="360" alt="dsh-pet-corner preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-corner&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2731,7 +2731,7 @@ dsh plugin --profile web add github:omdsh-dev/dsh-pet-corner
 
 ### [dsh-pet-flytomayday](https://github.com/FlytoMAYDAY80/dsh-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-flytomayday&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-flytomayday preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-flytomayday&scheme=dark"><img src="https://raw.githubusercontent.com/FlytoMAYDAY80/dsh-pet/HEAD/pixel-src-hd/preview-contact-sheet.png" width="360" alt="dsh-pet-flytomayday preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-flytomayday&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2759,7 +2759,7 @@ dsh plugin --profile web add github:johlin/dsh-pet
 
 ### [dsh-pet-live2d](https://github.com/YilunLi-999/dsh-pet-live2d)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-live2d&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-live2d preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-live2d&scheme=dark"><img src="https://raw.githubusercontent.com/YilunLi-999/dsh-pet-live2d/HEAD/frame-strips/all.png" width="360" alt="dsh-pet-live2d preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-live2d&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2773,7 +2773,7 @@ dsh plugin --profile web add github:YilunLi-999/dsh-pet-live2d
 
 ### [dsh-pet-maid](https://github.com/skylar-fei/dsh-wechat-maid/tree/HEAD/packages/dsh-pet-maid)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-maid&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-maid preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-maid&scheme=dark"><img src="https://raw.githubusercontent.com/skylar-fei/dsh-wechat-maid/HEAD/docs/screenshots/%E6%A1%8C%E5%AE%A0%E9%9D%A2%E6%9D%BF.png" width="360" alt="dsh-pet-maid preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-maid&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2787,7 +2787,7 @@ dsh plugin --profile web add github:skylar-fei/dsh-wechat-maid
 
 ### [dsh-pet-mathhyphen](https://github.com/mathhyphen/dsh-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-mathhyphen&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-mathhyphen preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-mathhyphen&scheme=dark"><img src="https://raw.githubusercontent.com/mathhyphen/dsh-pet/HEAD/assets/source/ChatGPT%20Image%202026%E5%B9%B48%E6%9C%8814%E6%97%A5%2021_21_29%20(2).png" width="360" alt="dsh-pet-mathhyphen preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-mathhyphen&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2801,7 +2801,7 @@ dsh plugin --profile web add github:mathhyphen/dsh-pet
 
 ### [dsh-pet-shura](https://github.com/brittanistrehlowll-oss/dsh-pet-shura)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-shura&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-shura preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-shura&scheme=dark"><img src="https://raw.githubusercontent.com/brittanistrehlowll-oss/dsh-pet-shura/HEAD/assets/spritesheet.webp" width="360" alt="dsh-pet-shura preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-shura&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2815,7 +2815,7 @@ dsh plugin --profile web add github:brittanistrehlowll-oss/dsh-pet-shura
 
 ### [dsh-pet-zhuangfangyi](https://github.com/zealot00/dsh-pet-zhuangfangyi)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-zhuangfangyi&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pet-zhuangfangyi preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-zhuangfangyi&scheme=dark"><img src="https://raw.githubusercontent.com/zealot00/dsh-pet-zhuangfangyi/HEAD/assets/pet.png" width="360" alt="dsh-pet-zhuangfangyi preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pet-zhuangfangyi&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2829,7 +2829,7 @@ dsh plugin --profile web add github:zealot00/dsh-pet-zhuangfangyi
 
 ### [dsh-pets](https://github.com/hellosz/dsh-pets)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pets&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-pets preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pets&scheme=dark"><img src="https://raw.githubusercontent.com/hellosz/dsh-pets/HEAD/docs/pikachu-preview.png" width="360" alt="dsh-pets preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-pets&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2871,7 +2871,7 @@ dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-pet-rs
 
 ### [dsh-sprite-pet](https://github.com/skr311/dsh-codex-pet/tree/HEAD/packages/dsh-codex-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-sprite-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-sprite-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-sprite-pet&scheme=dark"><img src="https://raw.githubusercontent.com/skr311/dsh-codex-pet/HEAD/docs/assets/screenshot-webui.png" width="360" alt="dsh-sprite-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-sprite-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2885,7 +2885,7 @@ dsh plugin --profile web add github:skr311/dsh-codex-pet
 
 ### [dsh-ui-desktop-pet](https://github.com/jmctsh/dsh-ui-desktop-pet/tree/HEAD/ui-desktop-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-desktop-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-ui-desktop-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-desktop-pet&scheme=dark"><img src="https://raw.githubusercontent.com/jmctsh/dsh-ui-desktop-pet/HEAD/banner.jpg" width="360" alt="dsh-ui-desktop-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-ui-desktop-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -2969,7 +2969,7 @@ dsh plugin --profile web add github:lglglglgy/dsh-whale-pet
 
 ### [dsh-whale-pet-aceice](https://github.com/aceice01/dsh-whale-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-pet-aceice&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-whale-pet-aceice preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-pet-aceice&scheme=dark"><img src="https://raw.githubusercontent.com/aceice01/dsh-whale-pet/HEAD/docs/social-preview.png" width="360" alt="dsh-whale-pet-aceice preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-whale-pet-aceice&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -3007,11 +3007,11 @@ Draggable emoji desktop pet for the Web UI, built as a dynamic Cordis plugin.
 dsh plugin --profile web add github:Gcsimple/Emoji_Desktop_Pet
 ```
 
-**Repo:** [Gcsimple/Emoji_Desktop_Pet](https://github.com/Gcsimple/Emoji_Desktop_Pet) · **dsh:** 0.1.0-rc.6
+**Repo:** [Gcsimple/Emoji_Desktop_Pet](https://github.com/Gcsimple/Emoji_Desktop_Pet) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
 ### [harness-pet](https://github.com/cakeni/harness-pet)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=harness-pet&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="harness-pet preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=harness-pet&scheme=dark"><img src="https://raw.githubusercontent.com/cakeni/harness-pet/HEAD/assets/whale/whale-animation-v6.webp" width="360" alt="harness-pet preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=harness-pet&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -3099,7 +3099,7 @@ dsh plugin --profile web add github:Nagi-ovo/dsh-ads
 
 ### [dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyber-particle&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-cyber-particle preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyber-particle&scheme=dark"><img src="https://raw.githubusercontent.com/AKS1st/dsh-cyber-particle/HEAD/assets/image_light.png" width="360" alt="dsh-cyber-particle preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=dsh-cyber-particle&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
@@ -3185,7 +3185,7 @@ dsh plugin --profile web add github:gooosie/dsh-whale-bg
 
 ### [liuli-theme](https://github.com/LilycleHeart/liuli-theme)
 
-<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=liuli-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="liuli-theme preview"></a>
+<a href="https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=liuli-theme&scheme=dark"><img src="https://raw.githubusercontent.com/LilycleHeart/liuli-theme/HEAD/docs/preview-color-light.png" width="360" alt="liuli-theme preview"></a>
 
 **[Live preview](https://dshworks.github.io/awesome-dsh-themes/preview.html?theme=liuli-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
 
