@@ -206,11 +206,27 @@ if (!MARKERS.test(indexSrc)) {
 }
 const indexBody = indexSrc.replace(MARKERS, `<!-- render:meta -->\n${headMeta}\n  <!-- /render:meta -->`);
 
+// A counts-only file so a page can quote this registry's size without
+// pulling the whole 128KB of it. dsh.works reads it on load; anything
+// else that wants the numbers gets them for ~100 bytes.
+const stats = {
+  updated: data.updated,
+  themes: data.themes.length,
+  preview: data.themes.filter((t) => t.preview).length,
+  previewCss: data.themes.filter((t) => t.previewCss).length,
+  verifiedAgainst: data.themes
+    .map((t) => t.verifiedAgainst)
+    .filter(Boolean)
+    .sort()
+    .at(-1) ?? null,
+};
+
 const artifacts = [
   { rel: "README.md", body: readme },
   { rel: INDEX_REL, body: indexBody },
   { rel: "docs/themes.json", body: themesJson },
   { rel: "docs/themes-embed.js", body: themesEmbed },
+  { rel: "docs/stats.json", body: `${JSON.stringify(stats, null, 2)}\n` },
 ];
 
 if (process.argv.includes("--check")) {
