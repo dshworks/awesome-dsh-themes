@@ -1,0 +1,10 @@
+{
+  "updated": "2026-08-15",
+  "rejected": [
+    {
+      "repo": "wwxiaoqi/ui-theme-quota-show",
+      "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",
+      "date": "2026-08-15"
+    }
+  ]
+}

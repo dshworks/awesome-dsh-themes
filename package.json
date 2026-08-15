@@ -11,7 +11,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "render": "node scripts/render.mjs",
-    "render:check": "node scripts/render.mjs --check"
+    "render:check": "node scripts/render.mjs --check",
+    "discover": "node scripts/discover.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,0 +1,27 @@
+{
+  "updated": "2026-08-15",
+  "candidates": [
+    {
+      "repo": "BingChanCN/fabric-theme-studio",
+      "stars": 1,
+      "discovered": "2026-08-15"
+    },
+    {
+      "repo": "seekerwxy/dsh-aurora-theme",
+      "stars": 0,
+      "description": "DSH ????:??????? + ??/???? + ??/??????",
+      "discovered": "2026-08-15"
+    },
+    {
+      "repo": "Tkingxiao/dsh-any-background",
+      "stars": 3,
+      "description": "一个自定义主题插件，包括背景图（大小和位置），主界面和设置界面（透明度，色轮全色主题色）插件",
+      "discovered": "2026-08-15"
+    },
+    {
+      "repo": "wangjacks/dsh-hanami-theme",
+      "stars": 0,
+      "discovered": "2026-08-15"
+    }
+  ]
+}

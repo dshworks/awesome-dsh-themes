@@ -45,6 +45,36 @@ This list is small on purpose. An entry must be one of:
 Not a theme: a renamed template, a VS Code / DSCode color theme, or a repo
 that only rides a GitHub topic. Do not invent entries to fill a section.
 
+## The discovery queue
+
+A scheduled workflow ([`.github/workflows/watch.yml`](.github/workflows/watch.yml))
+sweeps the dsh discovery topics and queues theme-shaped finds in
+[`data/candidates.json`](data/candidates.json) on a single reused triage PR.
+Nothing is promoted automatically.
+
+The `dsh-theme` topic held **2** repositories on 2026-08-15, so theme discovery
+cannot rely on it. The sweep reads the general topics and routes by what a repo
+calls itself. That is deliberately name-first: a launcher and a token-balance
+HUD both embed the Web UI and both ship `--dsw-*` CSS, so a stylesheet is not
+evidence of a skin.
+
+Topic sweeps are exhaustive. GitHub caps search at 1000 results per query and
+`dsh-plugin` passed that on 2026-08-14, so the sweep slices by creation date —
+and an over-cap day by star count — until every slice fits. Each topic reports
+`examined N/total`, because a sweep that read part of a topic and a topic that
+went quiet produce the same candidate count.
+
+To triage a candidate: either promote it (open a PR moving it into
+`themes.json`, with a real preview image if one exists in the repo) or record
+it in [`data/rejected.json`](data/rejected.json) with a reason.
+
+**Rejections expire.** A judgment ("this is a desktop wrapper, not a skin") is
+permanent — omit `recheckAfter`. A fact about the day you looked ("no theme
+plugin in the repo yet") is not: give it a `recheckAfter` date and the sweep
+picks the repo up again once it passes. A permanent row for a temporary fact
+buries a project that ships a week later, and only a human deleting the row
+can dig it out.
+
 ## ThemeRuntime is not a store
 
 The ThemeRuntime package is an extension point, not a product. Registering a
