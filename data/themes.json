@@ -2975,6 +2975,73 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Cyberpunk theme for the DeepSeek Harness Web UI",
       "category": "skin"
+    },
+    {
+      "name": "fabric-theme-studio",
+      "repo": "BingChanCN/fabric-theme-studio",
+      "official": false,
+      "kind": "skin",
+      "status": "verified",
+      "npm": "@dsh-do/fabric-theme-studio",
+      "added": "2026-08-15",
+      "lastVerified": "2026-08-15",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Interactive theme studio and personalization showcase for DeepSeek Harness, built on Fabric.",
+      "category": "tokens"
+    },
+    {
+      "name": "dsh-whale-bg",
+      "repo": "gooosie/dsh-whale-bg",
+      "official": false,
+      "kind": "skin",
+      "license": "MIT",
+      "status": "verified",
+      "added": "2026-08-15",
+      "lastVerified": "2026-08-15",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Particle-whale Web UI background with cursor lighting, idle swimming, and scroll-aware fade.",
+      "category": "fun"
+    },
+    {
+      "name": "dsh-aurora-theme",
+      "repo": "seekerwxy/dsh-aurora-theme",
+      "official": false,
+      "kind": "skin",
+      "license": "MIT",
+      "status": "verified",
+      "added": "2026-08-15",
+      "lastVerified": "2026-08-15",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "DSH 动态插件：深黑冷色调主题 + 星网/极光背景 + 动态/静态背景模式开关",
+      "category": "skin"
+    },
+    {
+      "name": "dsh-any-background",
+      "repo": "Tkingxiao/dsh-any-background",
+      "official": false,
+      "kind": "skin",
+      "license": "MIT",
+      "status": "verified",
+      "added": "2026-08-15",
+      "lastVerified": "2026-08-15",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Appearance plugin: custom theme colour via a PS-style colour wheel, background wallpaper with opacity and blur, main and settings surfaces styled separately.",
+      "category": "tokens"
+    },
+    {
+      "name": "dsh-hanami-theme",
+      "repo": "wangjacks/dsh-hanami-theme",
+      "official": false,
+      "kind": "skin",
+      "license": "GPL-3.0",
+      "status": "unverified",
+      "added": "2026-08-15",
+      "lastVerified": "2026-08-15",
+      "verifiedAgainst": "0.1.0-rc.6",
+      "description": "Hanami 花見: six anime colour presets over the 13 official theme tokens, falling-petal ambience, and a Live2D companion with outfit and model switching.",
+      "category": "fun",
+      "install": "In a cordis-preset session: cordis_define with code.client = theme.client.js, then cordis_run the returned pluginId",
+      "notes": "Dynamic Cordis plugin: installed with cordis_define/cordis_run from a 创造模式 (cordis preset) session, not `dsh plugin add`. Session-scoped — a page refresh drops it."
     }
   ]
 }
