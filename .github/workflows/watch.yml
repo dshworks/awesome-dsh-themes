@@ -1,0 +1,106 @@
+# Scheduled theme discovery with a single reused triage PR.
+#
+# Anti-PR-spam design: one fixed branch, rebuilt from fresh main every run,
+# force-pushed, and the existing open PR is retitled instead of opening a
+# duplicate. Zero candidates found means zero pushes and zero PR churn.
+# Candidates only ever land in data/candidates.json; promotion into
+# data/themes.json is a separate, human-reviewed PR.
+#
+# Setup: repo Settings > Actions > General must have "Allow GitHub Actions to
+# create and approve pull requests" enabled, or the pr create step fails.
+
+name: watch
+
+on:
+  schedule:
+    # Twice a day. Themes arrive more slowly than plugins, and the sweep reads
+    # the same big topics, so there is no point running it as often.
+    - cron: "43 3,15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  DISCOVERY_BRANCH: bot/discovery
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # The sweep is ~60 search calls against a 30/min limit. Past 30 minutes it
+    # is stuck, not slow.
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Discover candidates
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          node scripts/discover.mjs 2>&1 | tee /tmp/discover.log
+          # Coverage goes into the PR body: a sweep that read part of a topic
+          # and a topic that went quiet produce the same candidate count.
+          grep -E '^discover: (topic:|[0-9]+ .*over the)' /tmp/discover.log > /tmp/coverage.txt || true
+
+      - name: Validate
+        run: node scripts/validate.mjs
+
+      - name: Publish to the reused triage PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/candidates.json; then
+            echo "no new candidates; leaving the queue and any open PR untouched"
+            exit 0
+          fi
+
+          COUNT=$(node -p "JSON.parse(require('fs').readFileSync('data/candidates.json','utf8')).candidates.length")
+          TITLE="discovery: ${COUNT} theme candidate(s) awaiting triage ($(date -u +%F))"
+          BODY=$(cat <<EOF
+          Automated sweep of the dsh discovery topics, routed by what each repo
+          calls itself. The \`dsh-theme\` topic is nearly empty, so theme
+          discovery cannot rely on it.
+
+          Coverage this run — each topic swept exhaustively, past GitHub's
+          1000-result search cap, by slicing on creation date and star count:
+
+          \`\`\`
+          $(cat /tmp/coverage.txt)
+          \`\`\`
+
+          Triage: for each entry in \`data/candidates.json\`, either promote it
+          (separate PR moving it into \`data/themes.json\` — check it actually
+          skins the UI, and find a real preview image rather than mocking one)
+          or record it in \`data/rejected.json\` with a reason, plus a
+          \`recheckAfter\` date if the rejection is a fact about today rather
+          than a judgment about the project.
+
+          This branch is rebuilt from main and force-pushed on every run, so
+          merge or close whenever; the next run reopens or refreshes it.
+          EOF
+          )
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$DISCOVERY_BRANCH"
+          git add data/candidates.json
+          git commit -m "discovery: refresh theme candidate queue"
+          git push --force origin "$DISCOVERY_BRANCH"
+
+          PR=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$DISCOVERY_BRANCH" \
+            --state open --json number --jq '.[0].number // empty')
+          if [ -n "$PR" ]; then
+            gh pr edit "$PR" --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body "$BODY"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --head "$DISCOVERY_BRANCH" \
+              --base main --title "$TITLE" --body "$BODY"
+          fi
