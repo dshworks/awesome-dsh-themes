@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-18",
   "rejected": [
+    {
+      "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-18",
+      "recheckAfter": "2026-10-02"
+    },
+    {
+      "repo": "uckkk/dsh-color-palette",
+      "reason": "repo tree unreadable at triage time",
+      "date": "2026-08-18",
+      "recheckAfter": "2026-10-02"
+    },
+    {
+      "repo": "wangkaxds/dsh-aurora-wallpaper",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-18",
+      "recheckAfter": "2026-10-02"
+    },
     {
       "repo": "wwxiaoqi/ui-theme-quota-show",
       "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",

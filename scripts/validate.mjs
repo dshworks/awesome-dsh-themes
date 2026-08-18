@@ -51,6 +51,14 @@ const seen = new Set();
   if (t.gist != null && (typeof t.gist !== "string" || !t.gist.trim())) errors.push(`${at}: bad gist`);
   if (t.install != null && (typeof t.install !== "string" || !t.install.trim())) errors.push(`${at}: bad install`);
   if (t.status && !STATUSES.has(t.status)) errors.push(`${at}: bad status`);
+  // `verified` without a receipt is the badge every other directory in this
+  // ecosystem prints and nobody can check. Here it has to name the file.
+  if (t.status === "verified" && !t.evidence) {
+    errors.push(`${at}: status verified without evidence; run scripts/triage.mjs --prove or set status unverified`);
+  }
+  if (t.evidence != null && (typeof t.evidence !== "string" || !t.evidence.includes("#"))) {
+    errors.push(`${at}: evidence must be a path#key string`);
+  }
   for (const k of ["added", "lastVerified"]) {
     if (t[k] && !DATE.test(t[k])) errors.push(`${at}: bad ${k}`);
   }

@@ -64,9 +64,38 @@ and an over-cap day by star count — until every slice fits. Each topic reports
 `examined N/total`, because a sweep that read part of a topic and a topic that
 went quiet produce the same candidate count.
 
-To triage a candidate: either promote it (open a PR moving it into
-`themes.json`, with a real preview image if one exists in the repo) or record
-it in [`data/rejected.json`](data/rejected.json) with a reason.
+To triage a candidate, run the drain:
+
+```sh
+node scripts/triage.mjs --dry-run --report /tmp/t.json   # decide everything, write nothing
+node scripts/triage.mjs                                  # drain the queue
+```
+
+For every queued candidate it tries to **prove a restyle path** by reading the
+repo's own files, and records where the proof was found in `evidence`:
+
+| evidence | what was read |
+|---|---|
+| `package.json#dependencies.@deepseek-ai/dsh-client-ui-theme` | registers with the ThemeRuntime |
+| `package.json#dsh.bundle` | a dsh bundle manifest |
+| `<path>.css#--dsw-tokens` | a stylesheet overriding dsh's design tokens |
+
+The name gate is not re-opened here — `discover.mjs` already routes name-first,
+because a launcher and a token-balance HUD both embed the Web UI and both ship
+`--dsw-*` CSS. This step asks the second question: does the repo carry anything
+that could restyle the UI at all.
+
+A candidate that can be proven becomes an entry carrying its `evidence`; one
+that cannot becomes a dated rejection with a recheck date; one that needs a
+human keeps its place in the queue with a note. Nothing is deleted by a script.
+
+`status: verified` **requires** `evidence` — `validate.mjs` rejects the entry
+otherwise. Re-prove the whole registry with `node scripts/triage.mjs --prove`;
+rows that stop proving drop to `unverified` and keep their place.
+
+You can still promote or reject by hand: open a PR moving the row into
+`themes.json`, or record it in [`data/rejected.json`](data/rejected.json) with
+a reason.
 
 **Rejections expire.** A judgment ("this is a desktop wrapper, not a skin") is
 permanent — omit `recheckAfter`. A fact about the day you looked ("no theme

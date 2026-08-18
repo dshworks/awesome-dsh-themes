@@ -85,6 +85,11 @@
             "broken"
           ]
         },
+        "evidence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "path#key of the file on the repo's default branch that proves the restyle path. Required whenever status is verified."
+        },
         "added": {
           "type": "string",
           "format": "date"

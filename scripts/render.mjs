@@ -85,6 +85,10 @@ function entry(t) {
     t.license ? `**License:** ${esc(t.license)}` : null,
     pkgLink(t) ? `**Package:** ${pkgLink(t)}` : null,
     `**dsh:** ${esc(t.verifiedAgainst)}`,
+    // The receipt is only worth having if a reader can open it. `verified`
+    // with the file kept in a JSON nobody reads is the same unfalsifiable
+    // badge as `verified` with nothing behind it.
+    evidenceLink(t),
   ].filter(Boolean);
   bits.push(meta.join(" · "));
   if (t.notes) {
@@ -92,6 +96,15 @@ function entry(t) {
     bits.push(`*${esc(t.notes)}*`);
   }
   return bits.join("\n");
+}
+
+// `path#key` -> a link straight at the file on the default branch, with the
+// key kept as the label so the reader knows what to look for once there.
+function evidenceLink(t) {
+  if (!t.evidence) return null;
+  const [path, key] = t.evidence.split("#");
+  if (!path || !key) return null;
+  return `**Proof:** [${esc(path)}#${esc(key)}](https://github.com/${t.repo}/blob/HEAD/${path})`;
 }
 
 function section(meta, rows) {
