@@ -1069,12 +1069,13 @@ window.__THEMES__ = {
       "official": false,
       "kind": "skin",
       "category": "companion",
-      "status": "unverified",
+      "status": "broken",
       "added": "2026-08-14",
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "State-driven black and white cyber-girlfriend skins for the DeepSeek Harness web GUI.",
-      "license": "MIT"
+      "license": "MIT",
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-cyber-particle",
@@ -1885,7 +1886,7 @@ window.__THEMES__ = {
       "official": false,
       "kind": "skin",
       "category": "tokens",
-      "status": "verified",
+      "status": "broken",
       "evidence": "package.json#dsh.bundle",
       "added": "2026-08-14",
       "lastVerified": "2026-08-18",
@@ -1893,7 +1894,7 @@ window.__THEMES__ = {
       "description": "Hatsune Miku --dsw-* token skin: blue-purple-magenta gradients, frosted panels, custom wallpaper, light and dark.",
       "license": "BSD-3-Clause",
       "preview": "https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png",
-      "previewCss": "https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/src/client/miku.module.css"
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-minecraft-theme",
@@ -2782,13 +2783,14 @@ window.__THEMES__ = {
       "official": false,
       "kind": "skin",
       "category": "fun",
-      "status": "unverified",
+      "status": "broken",
       "added": "2026-08-14",
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Oil-painted whale-girl skin for the DeepSeek Harness web UI.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg"
+      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg",
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-skin-nebula",
@@ -3264,12 +3266,13 @@ window.__THEMES__ = {
       "official": false,
       "kind": "skin",
       "category": "skin",
-      "status": "unverified",
+      "status": "broken",
       "added": "2026-08-15",
       "lastVerified": "2026-08-15",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DeepSeek Harness 液态玻璃：点一下，整个界面通透起来。透明度随心调，背景图自由换——让你的 Agent 住进风景里。Liquid glass for DeepSeek Harness: one toggle to turn the whole shell translucent, with a live opacity slider and a custom full-page",
-      "license": "MIT"
+      "license": "MIT",
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-theme-machine",
@@ -4566,12 +4569,13 @@ window.__THEMES__ = {
       "official": false,
       "kind": "skin",
       "category": "skin",
-      "status": "unverified",
+      "status": "broken",
       "added": "2026-08-14",
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Galgame-style Japanese interface skin: dusk curtains, gold corners, falling sakura.",
-      "install": "dsh plugin --profile web add github:Shmilyol/galgame-skin"
+      "install": "dsh plugin --profile web add github:Shmilyol/galgame-skin",
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "Genshin-odette-skin-dsh",

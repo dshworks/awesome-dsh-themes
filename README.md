@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 344 entries, 39 with live in-browser previews, 329 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 344 entries, 38 with live in-browser previews, 328 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -719,7 +719,7 @@ dsh plugin --profile web add github:Nocehi/dsh-matugen
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-miku-skin&scheme=dark"><img src="https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png" width="360" alt="dsh-miku-skin preview"></a>
 
-**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-miku-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens) plus this skin's override sheet.
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-miku-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
 Hatsune Miku --dsw-* token skin: blue-purple-magenta gradients, frosted panels, custom wallpaper, light and dark.
 
@@ -728,6 +728,8 @@ dsh plugin --profile web add github:stushansusu/dsh-miku-skin
 ```
 
 **Repo:** [stushansusu/dsh-miku-skin](https://github.com/stushansusu/dsh-miku-skin) · **License:** BSD-3-Clause · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/stushansusu/dsh-miku-skin/blob/HEAD/package.json)
+
+*repository returns 404 as of 2026-08-19*
 
 ### [dsh-modern-skin](https://github.com/gavinlee9051/dsh-modern-skin)
 
@@ -3103,6 +3105,8 @@ dsh plugin --profile web add github:Ultronen/dsh-theme-lab
 
 **Repo:** [Ultronen/dsh-theme-lab](https://github.com/Ultronen/dsh-theme-lab) · **License:** MIT · **dsh:** 0.1.0-rc.6
 
+*repository returns 404 as of 2026-08-19*
+
 ### [dsh-theme-machine](https://github.com/yuqisun/dsh-theme-machine)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-machine&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-machine preview"></a>
@@ -3887,6 +3891,8 @@ dsh plugin --profile web add github:Shmilyol/galgame-skin
 
 **Repo:** [Shmilyol/galgame-skin](https://github.com/Shmilyol/galgame-skin) · **dsh:** 0.1.0-rc.6
 
+*repository returns 404 as of 2026-08-19*
+
 ### [Genshin-odette-skin-dsh](https://github.com/lkdx0220/Genshin-odette-skin-dsh)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=Genshin-odette-skin-dsh&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="Genshin-odette-skin-dsh preview"></a>
@@ -4184,6 +4190,8 @@ dsh plugin --profile web add github:zhulin025/LaoA-dshGF
 ```
 
 **Repo:** [zhulin025/LaoA-dshGF](https://github.com/zhulin025/LaoA-dshGF) · **License:** MIT · **Package:** [`@laoa-ai/dsh-client-ui-cyber-girlfriend`](https://www.npmjs.com/package/@laoa-ai/dsh-client-ui-cyber-girlfriend) · **dsh:** 0.1.0-rc.6
+
+*repository returns 404 as of 2026-08-19*
 
 ### [dsh-dafeiyu](https://github.com/QCYTSN/dsh-dafeiyu)
 
@@ -4848,6 +4856,8 @@ dsh plugin --profile web add github:Gyanano/dsh-skin-mojing
 ```
 
 **Repo:** [Gyanano/dsh-skin-mojing](https://github.com/Gyanano/dsh-skin-mojing) · **License:** MIT · **dsh:** 0.1.0-rc.6
+
+*repository returns 404 as of 2026-08-19*
 
 ### [dsh-whale-bg](https://github.com/gooosie/dsh-whale-bg)
 
