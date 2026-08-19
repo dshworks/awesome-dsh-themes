@@ -1,11 +1,17 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "rejected": [
     {
       "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-18",
       "recheckAfter": "2026-10-02"
+    },
+    {
+      "repo": "PixelGeek325/DSH-High-Contrast-Theme",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-19",
+      "recheckAfter": "2026-10-03"
     },
     {
       "repo": "uckkk/dsh-color-palette",
