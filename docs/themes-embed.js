@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "themes": [
     {
       "name": "ATRI-Theme-DSH",
@@ -98,6 +98,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Animated Web UI background skin with video or still wallpapers, a floating control panel, and built-in WebM clips."
+    },
+    {
+      "name": "deepseek-harness-background",
+      "repo": "HaoyueQin/deepseek-harness-background",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "Custom background image plugin for the DeepSeek Harness web GUI: upload a local picture or paste an image URL, and render it behind the whole app surface with adjustable opacity, scrim, panel transparency and frosted-glass blur."
     },
     {
       "name": "DeepSeek-Harness-Breathing-BG",
@@ -1736,6 +1749,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/shaoqing404/dsh-lulu-theme/main/assets/lulu-compact-sheet.png"
     },
     {
+      "name": "dsh-luvian-ui-wallpaper",
+      "repo": "EnernityLune/dsh-luvian-ui-wallpaper",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "Luvian UI wallpaper theme plugin for DeepSeek Harness web UI. Bring-your-own-assets, stable selector contracts, official theme/slots APIs."
+    },
+    {
       "name": "dsh-macos-theme",
       "repo": "dataizu/dsh-macos-theme",
       "official": false,
@@ -1908,6 +1934,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-19",
       "verifiedAgainst": "0.1.0-rc.7",
       "description": "Minecraft 主题插件（DeepSeek Harness）：方块纹理背景铺满页面、像素字体、MC 风格按钮与点击音效、纹理导入与管理、音乐播放器（16 首 Minecraft 原声 + 本地音乐文件夹）。"
+    },
+    {
+      "name": "dsh-minecraft-theme-edmok",
+      "repo": "EDMOK/dsh-minecraft-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "Hot-pluggable Minecraft Launcher pixel skin for the DeepSeek Harness Web GUI"
     },
     {
       "name": "dsh-modern-skin",
@@ -3050,6 +3089,20 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/Moeblack/dsh-skins/HEAD/docs/images/skin-harbor.jpg"
     },
     {
+      "name": "dsh-spotify-theme",
+      "repo": "msnlyy-rgb/dsh-spotify-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "spotify-theme.css#--dsw-tokens",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "DeepSeek Harness Spotify 风格主题 — 近黑底色、灰阶分层卡片、Spotify 绿 (#1ed760) 点缀的 CSS 主题覆写，含折叠栏加宽与统计卡进度条可选补丁",
+      "preview": "https://raw.githubusercontent.com/msnlyy-rgb/dsh-spotify-theme/HEAD/screenshots/dark.png"
+    },
+    {
       "name": "dsh-sprite-pet",
       "repo": "skr311/dsh-codex-pet",
       "path": "packages/dsh-codex-pet",
@@ -3220,6 +3273,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DeepSeek Harness web theme: the industrial editorial look of the Arknights: Endfield official site — cream paper, ink text, signal-yellow accents, zero radius."
+    },
+    {
+      "name": "dsh-theme-factory",
+      "repo": "satan9394/dsh-theme-factory",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "SQL 优化模式：EXPLAIN 分析、索引策略、N+1 解决、查询改写。受 wshobson/agents（38k MIT）启发。"
     },
     {
       "name": "dsh-theme-firefly",
@@ -3813,6 +3879,19 @@ window.__THEMES__ = {
       "description": "Pixel whale in the session title bar that animates with agent state, spouts on turn complete, and hearts on click.",
       "license": "BSD-3-Clause",
       "preview": "https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/main/docs/dsh-ui-whale-demo.gif"
+    },
+    {
+      "name": "dsh-uiskin-theme",
+      "repo": "chouxiaohuai/dsh-uiskin-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-20",
+      "lastVerified": "2026-08-20",
+      "verifiedAgainst": "0.1.0-rc.8",
+      "description": "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — a static profile bundle. 海洋幻想主题：海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。"
     },
     {
       "name": "dsh-unknown-theme",

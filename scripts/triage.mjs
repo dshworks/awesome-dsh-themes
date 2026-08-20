@@ -35,7 +35,18 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const TODAY = new Date().toISOString().slice(0, 10);
 const TOKEN = process.env.GITHUB_TOKEN ?? "";
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.0-rc.6";
+// The dsh release entries are stamped as verified against. Bump only after
+// re-checking that what this prover reads has not moved.
+//
+// Re-checked against 0.1.0-rc.8 (released 2026-08-19): the `--dsw-*` token
+// stylesheet, packages/client/ui-theme/src/styles/, is byte-identical to rc.7,
+// so every token-override theme in here is checked under the same contract it
+// was checked under before. Skins that target the shell's compiled class names
+// are a different matter — 11 client `.module.css` files changed in rc.8, so
+// those hashes moved and a hash-targeting skin may no longer reach anything.
+// That is why this registry records HOW a theme reaches the UI, not just that
+// it does.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.0-rc.8";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);

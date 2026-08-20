@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 344 entries, 38 with live in-browser previews, 328 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 350 entries, 38 with live in-browser previews, 334 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -645,6 +645,20 @@ dsh plugin --profile web add github:more-nico/dshLiquidTheme
 
 **Repo:** [more-nico/dshLiquidTheme](https://github.com/more-nico/dshLiquidTheme) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/more-nico/dshLiquidTheme/blob/HEAD/package.json)
 
+### [dsh-luvian-ui-wallpaper](https://github.com/EnernityLune/dsh-luvian-ui-wallpaper)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-luvian-ui-wallpaper&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-luvian-ui-wallpaper preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-luvian-ui-wallpaper&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Luvian UI wallpaper theme plugin for DeepSeek Harness web UI. Bring-your-own-assets, stable selector contracts, official theme/slots APIs.
+
+```sh
+dsh plugin --profile web add github:EnernityLune/dsh-luvian-ui-wallpaper
+```
+
+**Repo:** [EnernityLune/dsh-luvian-ui-wallpaper](https://github.com/EnernityLune/dsh-luvian-ui-wallpaper) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/EnernityLune/dsh-luvian-ui-wallpaper/blob/HEAD/package.json)
+
 ### [dsh-macos-theme](https://github.com/dataizu/dsh-macos-theme)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-macos-theme&scheme=dark"><img src="https://raw.githubusercontent.com/dataizu/dsh-macos-theme/HEAD/screenshots/whale-animation.gif" width="360" alt="dsh-macos-theme preview"></a>
@@ -1110,6 +1124,20 @@ dsh plugin --profile web add github:Moeblack/dsh-skins
 ```
 
 **Repo:** [Moeblack/dsh-skins](https://github.com/Moeblack/dsh-skins/tree/HEAD/packages/dsh-web-skins) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [packages/dsh-web-skins/package.json#dependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/Moeblack/dsh-skins/blob/HEAD/packages/dsh-web-skins/package.json)
+
+### [dsh-spotify-theme](https://github.com/msnlyy-rgb/dsh-spotify-theme)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-spotify-theme&scheme=dark"><img src="https://raw.githubusercontent.com/msnlyy-rgb/dsh-spotify-theme/HEAD/screenshots/dark.png" width="360" alt="dsh-spotify-theme preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-spotify-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DeepSeek Harness Spotify 风格主题 — 近黑底色、灰阶分层卡片、Spotify 绿 (#1ed760) 点缀的 CSS 主题覆写，含折叠栏加宽与统计卡进度条可选补丁
+
+```sh
+dsh plugin --profile web add github:msnlyy-rgb/dsh-spotify-theme
+```
+
+**Repo:** [msnlyy-rgb/dsh-spotify-theme](https://github.com/msnlyy-rgb/dsh-spotify-theme) · **dsh:** 0.1.0-rc.8 · **Proof:** [spotify-theme.css#--dsw-tokens](https://github.com/msnlyy-rgb/dsh-spotify-theme/blob/HEAD/spotify-theme.css)
 
 ### [dsh-theme](https://github.com/oil-oil/dsh-theme)
 
@@ -1634,6 +1662,20 @@ dsh plugin --profile web add github:bangbang-PPT/deepseek-harness-animated-skin
 ```
 
 **Repo:** [bangbang-PPT/deepseek-harness-animated-skin](https://github.com/bangbang-PPT/deepseek-harness-animated-skin) · **dsh:** 0.1.0-rc.6
+
+### [deepseek-harness-background](https://github.com/HaoyueQin/deepseek-harness-background)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=deepseek-harness-background&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="deepseek-harness-background preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=deepseek-harness-background&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Custom background image plugin for the DeepSeek Harness web GUI: upload a local picture or paste an image URL, and render it behind the whole app surface with adjustable opacity, scrim, panel transparency and frosted-glass blur.
+
+```sh
+dsh plugin --profile web add github:HaoyueQin/deepseek-harness-background
+```
+
+**Repo:** [HaoyueQin/deepseek-harness-background](https://github.com/HaoyueQin/deepseek-harness-background) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/HaoyueQin/deepseek-harness-background/blob/HEAD/package.json)
 
 ### [DeepSeek-Harness-Breathing-BG](https://github.com/CharserHH/DeepSeek-Harness-Breathing-BG)
 
@@ -2419,6 +2461,20 @@ dsh plugin --profile web add github:SuperLS-X/dsh-minecraft-theme
 
 **Repo:** [SuperLS-X/dsh-minecraft-theme](https://github.com/SuperLS-X/dsh-minecraft-theme) · **dsh:** 0.1.0-rc.7 · **Proof:** [package.json#dsh.bundle](https://github.com/SuperLS-X/dsh-minecraft-theme/blob/HEAD/package.json)
 
+### [dsh-minecraft-theme-edmok](https://github.com/EDMOK/dsh-minecraft-theme)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-minecraft-theme-edmok&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-minecraft-theme-edmok preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-minecraft-theme-edmok&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Hot-pluggable Minecraft Launcher pixel skin for the DeepSeek Harness Web GUI
+
+```sh
+dsh plugin --profile web add github:EDMOK/dsh-minecraft-theme
+```
+
+**Repo:** [EDMOK/dsh-minecraft-theme](https://github.com/EDMOK/dsh-minecraft-theme) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/EDMOK/dsh-minecraft-theme/blob/HEAD/package.json)
+
 ### [dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-mpkg-wallpaper&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-mpkg-wallpaper preview"></a>
@@ -3063,6 +3119,20 @@ dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield
 
 **Repo:** [ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/ymh0000123/dsh-theme-endfield/blob/HEAD/package.json)
 
+### [dsh-theme-factory](https://github.com/satan9394/dsh-theme-factory)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-factory&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-factory preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-factory&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+SQL 优化模式：EXPLAIN 分析、索引策略、N+1 解决、查询改写。受 wshobson/agents（38k MIT）启发。
+
+```sh
+dsh plugin --profile web add github:satan9394/dsh-theme-factory
+```
+
+**Repo:** [satan9394/dsh-theme-factory](https://github.com/satan9394/dsh-theme-factory) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/satan9394/dsh-theme-factory/blob/HEAD/package.json)
+
 ### [dsh-theme-firefly](https://github.com/Liu-ZA-81/dsh-theme-firefly)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-firefly&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-firefly preview"></a>
@@ -3400,6 +3470,20 @@ dsh plugin --profile web add github:Zalpha263/dsh-ui-beautify
 ```
 
 **Repo:** [Zalpha263/dsh-ui-beautify](https://github.com/Zalpha263/dsh-ui-beautify) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/Zalpha263/dsh-ui-beautify/blob/HEAD/package.json)
+
+### [dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-uiskin-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-uiskin-theme preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-uiskin-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — a static profile bundle. 海洋幻想主题：海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。
+
+```sh
+dsh plugin --profile web add github:chouxiaohuai/dsh-uiskin-theme
+```
+
+**Repo:** [chouxiaohuai/dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/chouxiaohuai/dsh-uiskin-theme/blob/HEAD/package.json)
 
 ### [dsh-unknown-theme](https://github.com/ycqaq233/dsh-unknown-theme)
 
