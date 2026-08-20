@@ -1,4 +1,47 @@
 {
-  "updated": "2026-08-19",
-  "candidates": []
+  "updated": "2026-08-20",
+  "candidates": [
+    {
+      "repo": "chouxiaohuai/dsh-uiskin-theme",
+      "stars": 1,
+      "description": "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — static profile bundle. 海洋幻想主题:海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。安装: dsh plugin --profile web add github:chouxiaohuai/uiskin-theme",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "EDMOK/dsh-minecraft-theme",
+      "stars": 2,
+      "description": "Minecraft Launcher 风格的 DeepSeek Harness WebUI 皮肤插件",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "EnernityLune/dsh-luvian-ui-wallpaper",
+      "stars": 0,
+      "description": "Luvian UI wallpaper theme plugin for DeepSeek Harness web UI. Bring-your-own-assets, stable selector contracts, official theme/slots APIs.",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "HaoyueQin/deepseek-harness-background",
+      "stars": 0,
+      "description": "为 DeepSeek Harness Web GUI 添加自定义背景图片：上传本地图片或粘贴图片链接，可调不透明度、遮罩、面板透明与毛玻璃模糊，带实时预览，5% 阻尼滑块松手即存，遮罩自动适配明暗主题。",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "msnlyy-rgb/dsh-spotify-theme",
+      "stars": 0,
+      "description": "DeepSeek Harness Spotify 风格主题 — 近黑底色、灰阶分层卡片、Spotify 绿 (#1ed760) 点缀的 CSS 主题覆写，含折叠栏加宽与统计卡进度条可选补丁",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "Renakoni/awesome-dsh-themes",
+      "stars": 0,
+      "description": "DeepSeek Harness 主题合集，也是 DSH Desk 主题列表的上游仓库。A collection of themes for DeepSeek Harness and the upstream repository for the DSH Desk theme list.",
+      "discovered": "2026-08-20"
+    },
+    {
+      "repo": "satan9394/dsh-theme-factory",
+      "stars": 0,
+      "description": "DSH skill: 主题工厂, 预设主题与视觉统一（受 Anthropic skills Apache-2.0 启发）",
+      "discovered": "2026-08-20"
+    }
+  ]
 }
