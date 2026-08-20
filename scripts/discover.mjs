@@ -33,7 +33,20 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const TOKEN = process.env.GITHUB_TOKEN ?? "";
 const MAX_NEW_PER_RUN = Number(process.env.DISCOVER_MAX_NEW ?? 200);
 const SLUG_RE = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
-const TOPICS = ["dsh-theme", "dsh-plugin", "dsh-plugins"];
+// Widened 2026-08-20, after the sibling registry measured that its own
+// five-topic list was missing 1,058 repositories -- 13% of the real universe --
+// carrying `deepseek-harness` or a bare `dsh`. The same hole was here, plus
+// `dsh-skin`, which is what a Chinese-language skin author is most likely to
+// tag. Re-measure before removing any of these; a topic nobody sweeps and a
+// topic that went quiet produce the same zero.
+const TOPICS = [
+  "dsh-theme",
+  "dsh-skin",
+  "dsh-plugin",
+  "dsh-plugins",
+  "dsh",
+  "deepseek-harness",
+];
 const SEARCH_CAP = 1000;
 const EPOCH = "2020-01-01";
 
@@ -126,6 +139,42 @@ async function sweepRange(base, lo, hi, out) {
   }
 }
 
+// The sibling registry's triage recognises themes and parks them with the note
+// "looks like a theme; belongs in awesome-dsh-themes". Until 2026-08-20 that
+// note had no delivery: 32 such rows sat in the plugins queue reading like a
+// backlog while this registry, which wanted every one of them, never heard.
+// 27 were new here and all 27 proved a restyle path on the first pass.
+//
+// Pulled rather than pushed, deliberately. A push needs a cross-repo token and
+// a workflow in someone else's repo; a fetch of a public file needs neither and
+// cannot break their sweep when ours is down. A failed fetch degrades to "we
+// found nothing this way", never to a wrong rejection.
+const ROUTED_FROM = "https://raw.githubusercontent.com/dshworks/awesome-dsh-plugins/main/data/candidates.json";
+const ROUTED_NOTE = /belongs in awesome-dsh-themes/i;
+
+async function fromRoutedQueue() {
+  try {
+    const res = await fetch(ROUTED_FROM, { signal: AbortSignal.timeout(30000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const { candidates = [] } = await res.json();
+    const routed = candidates.filter((c) => ROUTED_NOTE.test(c.note ?? ""));
+    console.error(`discover: ${routed.length} repo(s) routed here by the plugins registry`);
+    return routed.map((c) => ({
+      repo: c.repo,
+      stars: c.stars ?? 0,
+      description: c.description ?? null,
+      source: "routed-from-plugins",
+      // Their triage already decided this is a theme. Re-applying our own
+      // name-first gate would drop the ones whose repo name says nothing --
+      // which is most background plugins -- so the routing IS the gate.
+      routed: true,
+    }));
+  } catch (err) {
+    console.error(`discover: could not read the plugins queue (${err.message}); routed themes may be missed this run`);
+    return [];
+  }
+}
+
 async function fromTopics() {
   const out = [];
   for (const topic of TOPICS) {
@@ -178,8 +227,16 @@ try {
 } catch (err) {
   console.error(`discover: topic sweep failed: ${err.message}`);
 }
+found.push(...(await fromRoutedQueue()));
 
-found.sort((a, b) => b.stars - a.stars); // a binding cap should keep the biggest
+// Routed rows first, then by stars. A routed row carries no star count of its
+// own worth trusting and would sort to the bottom, where a binding cap eats it
+// -- and a lane that silently loses its entries to the topic sweep is worse
+// than no lane, because it looks like it ran.
+found.sort((x, y) => {
+  if (!!x.routed !== !!y.routed) return x.routed ? -1 : 1;
+  return (y.stars ?? 0) - (x.stars ?? 0);
+});
 
 let added = 0;
 let overflow = 0;
@@ -193,10 +250,14 @@ for (const c of found) {
     if (c.description) existing.description = c.description.slice(0, 200);
     continue;
   }
-  if (!looksLikeATheme(c) || !passesSpamGate(c)) continue;
+  if (!c.routed && !looksLikeATheme(c)) continue; // the sibling's triage already decided
+  if (!passesSpamGate(c)) continue;
   if (added >= MAX_NEW_PER_RUN) { overflow += 1; continue; }
   queue.set(slug, {
     repo: c.repo,
+    // Where a row came from, so the routed lane is visible in the data rather
+    // than inferred from a coincidence of dates.
+    sources: [c.source ?? "github-topic"],
     stars: c.stars,
     ...(c.description ? { description: c.description.slice(0, 200) } : {}),
     discovered: TODAY,
