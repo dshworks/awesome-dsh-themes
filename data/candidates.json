@@ -1,4 +1,15 @@
 {
-  "updated": "2026-08-20",
-  "candidates": []
+  "updated": "2026-08-21",
+  "candidates": [
+    {
+      "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
+      "discovered": "2026-08-20",
+      "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    }
+  ]
 }
