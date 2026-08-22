@@ -1,6 +1,41 @@
 {
-  "updated": "2026-08-21",
+  "updated": "2026-08-22",
   "candidates": [
+    {
+      "repo": "auki-zy/dsh-cursor-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "Per-state mouse cursor theme plugin for DeepSeek Harness (DSH). 18 original preset themes covering 14 UI states, ZIP image pack import/export, hotspot/size editing, and one-click system-level cursor a",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "bruce-hmz/dsh-skin-center",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "dingdongji-hub/dsh-atom-commune-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "原子朋克风格的共产主义公社",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "hanhan1137/theme-coach-dsh",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "theme-coach-dsh: DSH (DeepSeek Harness) adapted UI theme coach - Q&A guided theme design, official-asset wayfinding, palette derivation, contrast checks (based on openclaw-ui-theme-coach v1.5.0)",
+      "discovered": "2026-08-22"
+    },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
@@ -10,6 +45,147 @@
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "hatanokokosa/dsh-colorschemes",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "A DSH ColorScheme Plugin",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "hero-goblins/dsh-macos-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "huabai-flowerwhite/dsh-ui-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "面向 DeepSeek Harness 的 **UI 皮肤插件**：在 UI 下方注入壁纸 / 视频背景，并把 DSH 整个界面（含侧栏）的表面背景烘焙为半透明（毛玻璃）让皮肤透出。支持拖动裁剪缩放、历史皮肤记录与可拖动悬浮窗；自定义皮肤支持网络地址或本地文件。",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "jiangwangyang/dsh-theme-blackhole",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "A black hole theme plugin for the dsh (DeepSeek Harness) Web UI: a WebGL real-time ray-traced Schwarzschild black hole as the application background, paired with a deep-space glass panel palette, swit",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "jinzhengen964-cmyk/dsh-bg-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH web 背景皮肤插件：将 DSH 界面背景替换为本地图片（半屏居中覆盖对话区域，AI 输出卡片不透明）",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "Junhousheng-Serena/celtic-adventure-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "leamonac0823/dsh-cornell-classic-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Cornell notebook workspace for DeepSeek Harness Web UI",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "lengzhanbao/dsh-taffy-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Taffy Live Atelier / 塔菲直播工房 — DSH Web 粉金亚克力主题：浅色花房、深色舞台、粉金对话框与塔菲立绘，可选 Agent 预设。",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "lispking/dsh-qq-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "A QQ NT messenger skin for DeepSeek Harness (dsh). Light and dark share one QQ NT language.",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "lxxz1918/dsh-theme-customizer",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness（DSH）Web 界面自定义主题插件：背景/文字/框线/细节全可视化调整，预设导入导出，持久化保存。",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "megatronyy/dsh-skin-background",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Image-background skin plugin for DeepSeek Harness (dsh): shipped + user wallpapers, custom image URLs, live dim/blur controls",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "njuptlzf/bgx-dynamic-background",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness (DSH) 动态背景切换插件：上传 GIF/静态图与内置纯色调色板，定时丝滑交叉淡入淡出切换页面背景，聊天区自动叠加主题色保护层",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "Sddft97/dsh-client-ui-skin-verdandi",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Aether Gazer Verdandi-inspired skin for the DeepSeek Harness Web UI",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "sujiu0616-art/DSH-CustomWallpapers-Glassmorphism-Theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "dsh可自定义壁纸玻璃风主题",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "ZHOUcourier/dsh-theme-whalegirl",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek-鲸鱼娘 (Whale Girl) theme for the DeepSeek Harness Web UI — ported from DreamSkin ver_cb557ececaa5de3f3dbe: full --dsw-* token remap + ambient wallpaper.",
+      "discovered": "2026-08-22"
+    },
+    {
+      "repo": "znnVSNOOU/dsh-skin-Tlipoca",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-22"
     }
   ]
 }
