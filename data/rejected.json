@@ -1,11 +1,23 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-24",
   "rejected": [
+    {
+      "repo": "hanhan1137/theme-coach-dsh",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-24",
+      "recheckAfter": "2026-10-08"
+    },
     {
       "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-18",
       "recheckAfter": "2026-10-02"
+    },
+    {
+      "repo": "Junhousheng-Serena/celtic-adventure-skin",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-24",
+      "recheckAfter": "2026-10-08"
     },
     {
       "repo": "PixelGeek325/DSH-High-Contrast-Theme",
@@ -18,6 +30,12 @@
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-20",
       "recheckAfter": "2026-10-04"
+    },
+    {
+      "repo": "sujiu0616-art/DSH-CustomWallpapers-Glassmorphism-Theme",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-24",
+      "recheckAfter": "2026-10-08"
     },
     {
       "repo": "uckkk/dsh-color-palette",
