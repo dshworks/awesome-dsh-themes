@@ -123,7 +123,14 @@ const IMAGE = /\.(png|jpe?g|webp|gif)$/i;
 const SHOT = /(screenshot|preview|demo|showcase|hero)/i;
 
 const parse = (t) => { if (!t) return null; try { return JSON.parse(t); } catch { return null; } };
-const depsOf = (p) => Object.keys({ ...(p?.dependencies ?? {}), ...(p?.peerDependencies ?? {}), ...(p?.devDependencies ?? {}) });
+// [section, name] pairs, not bare names: `evidence` is a receipt a reader
+// follows to an exact key, and a skin peer-depends on the client packages it
+// restyles far more often than it depends on them. Writing `#dependencies.X`
+// for all three sections names a path that does not resolve in the file it
+// points at. (Same bug, same fix, as awesome-dsh-plugins' triage.)
+const DEP_SECTIONS = ["dependencies", "peerDependencies", "devDependencies"];
+const depsOf = (p) => DEP_SECTIONS.flatMap(
+  (section) => Object.keys(p?.[section] ?? {}).map((name) => [section, name]));
 
 // A package.json proves a restyle path when it names the ThemeRuntime, or
 // declares a dsh bundle at all — the repo already passed the name gate, so a
@@ -131,18 +138,27 @@ const depsOf = (p) => Object.keys({ ...(p?.dependencies ?? {}), ...(p?.peerDepen
 function proveFromPackage(pkg, path) {
   if (!pkg) return null;
   const deps = depsOf(pkg);
+  const sectionOf = (name) => (deps.find(([, d]) => d === name) || [])[0];
+  const names = deps.map(([, d]) => d);
   // Depending on the ThemeRuntime is the strongest proof a skin can carry:
   // registering with it means overriding same-named alias variables, which is
   // exactly what the `tokens` shelf holds. It does not make the repo a
   // runtime — `kind: runtime` belongs to the first-party extension point
   // alone, and that entry is already listed.
-  if (deps.includes(THEME_RUNTIME)) {
-    return { evidence: `${path}#dependencies.${THEME_RUNTIME}`, why: "registers with ThemeRuntime", tokens: true };
+  if (names.includes(THEME_RUNTIME)) {
+    return {
+      evidence: `${path}#${sectionOf(THEME_RUNTIME)}.${THEME_RUNTIME}`,
+      why: "registers with ThemeRuntime",
+      tokens: true,
+    };
   }
   if (pkg.dsh?.bundle) return { evidence: `${path}#dsh.bundle`, why: "dsh.bundle manifest" };
   if (pkg.dsh) return { evidence: `${path}#dsh.${Object.keys(pkg.dsh).join("+")}`, why: "dsh manifest" };
-  const ds = deps.filter((d) => d.startsWith("@deepseek-ai/"));
-  if (ds.length) return { evidence: `${path}#dependencies.${ds[0]}`, why: `depends on ${ds[0]}` };
+  const ds = deps.filter(([, d]) => d.startsWith("@deepseek-ai/"));
+  if (ds.length) {
+    const [section, name] = ds[0];
+    return { evidence: `${path}#${section}.${name}`, why: `depends on ${name}` };
+  }
   return null;
 }
 
