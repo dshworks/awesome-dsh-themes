@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-24",
-  "themes": 421,
-  "preview": 153,
+  "updated": "2026-08-25",
+  "themes": 439,
+  "preview": 154,
   "previewCss": 38,
   "verifiedAgainst": "0.1.0-rc.6",
   "verifiedSpread": [
@@ -11,7 +11,7 @@
     },
     {
       "version": "0.1.0-rc.8",
-      "count": 77
+      "count": 95
     },
     {
       "version": "0.1.0-rc.7",
