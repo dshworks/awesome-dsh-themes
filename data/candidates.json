@@ -1,6 +1,42 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "candidates": [
+    {
+      "repo": "cdxDNRF/dsh-wishadel-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "dsh主题维什戴尔风格",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "emeryxu1-blip/dsh-matrix-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Black-first Matrix hacker skin for DeepSeek Harness (DSH) Web — live session-powered code rain and readable provider reasoning.",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "Frog755/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Persistent wallpaper plugin for DeepSeek Harness with opacity, blur, and a fixed web origin.",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "fubao885522-debug/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness Web UI 壁纸插件：图片自适应任意屏幕缩放（CSS cover），并自动跟随深浅色主题",
+      "discovered": "2026-08-25"
+    },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
@@ -10,6 +46,87 @@
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "jer67107-cyber/dsh-skin-chengzi",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "橙子 · 深海蓝调 — DSH Web 皮肤中心深海蓝护眼皮肤（Deep sea blue skin for DSH web skin-center）",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "JohnnyTing/dsh-official-homepage-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "复刻 DeepSeek Harness 官方首页主题插件",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "lcohvne-tomorin/dsh-background",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Custom background wallpaper plugin for DeepSeek Harness chat page — upload local image or image link, tune opacity and dark overlay, scope to chat area or full screen.",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "mhwww/DSH-Wallpaper-Engine",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "DeepSeek Harness (dsh) 背景图片插件：内置默认图 / 自定义上传 / Wallpaper Engine 创意工坊一键应用 / 视频壁纸 ffmpeg 高清抽帧",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "mjn96/dsh-rhine-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "明日方舟莱茵生命美术风格的deepseek harness皮肤主题",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "nicecx/dsh-matrix-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Night-friendly Matrix dark-green skin for the DeepSeek Harness web GUI (standalone mirror of upstream dsh-web-ui packages/skins/matrix)",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "SLin-code/dsh-custom-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH自定义壁纸/皮肤插件——Custom wallpapers and translucent skins for DeepSeek Harness Web",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "Slymaster/dsh-theme-lab",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Unofficial modular themes and starter kit for DeepSeek Harness.",
+      "discovered": "2026-08-25"
+    },
+    {
+      "repo": "XiaoluoFoxington/dsh-theme-hacker-terminal",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Hacker-terminal skin for the dsh web GUI: pure black, high-contrast green, right-angle geometry, monospace font, full-width conversation, OLED-safe, scrollbars on Gecko/Blink/WebKit.",
+      "discovered": "2026-08-25"
     }
   ]
 }
