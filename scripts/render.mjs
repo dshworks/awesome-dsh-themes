@@ -222,16 +222,39 @@ const indexBody = indexSrc.replace(MARKERS, `<!-- render:meta -->\n${headMeta}\n
 // A counts-only file so a page can quote this registry's size without
 // pulling the whole 128KB of it. dsh.works reads it on load; anything
 // else that wants the numbers gets them for ~100 bytes.
+// Every dsh release the registry has rows under, biggest share first, ties
+// breaking toward the newer release so a 50/50 split does not read as older
+// than it is.
+//
+// The headline is the release MOST rows were checked under, not the newest one
+// any row carries. Those are the same number only while the registry
+// re-verifies in a single pass, and it does not -- triage stamps the release
+// it ran under, so a handful of new entries under a fresh rc would headline
+// that rc over thousands of rows that say something two releases older. A
+// one-line summary that flatters the tail is the exact move this registry
+// exists to argue against, so the summary follows the mass and the spread is
+// published beside it. dshworks/plugins already computes it this way; this is
+// the source agreeing with its own gallery.
+function verifiedSpreadOf(rows) {
+  const byVersion = new Map();
+  for (const r of rows) {
+    if (!r.verifiedAgainst) continue;
+    byVersion.set(r.verifiedAgainst, (byVersion.get(r.verifiedAgainst) ?? 0) + 1);
+  }
+  return [...byVersion]
+    .map(([version, count]) => ({ version, count }))
+    .sort((a, b) => b.count - a.count || b.version.localeCompare(a.version));
+}
+
+const verifiedSpread = verifiedSpreadOf(data.themes);
+
 const stats = {
   updated: data.updated,
   themes: data.themes.length,
   preview: data.themes.filter((t) => t.preview).length,
   previewCss: data.themes.filter((t) => t.previewCss).length,
-  verifiedAgainst: data.themes
-    .map((t) => t.verifiedAgainst)
-    .filter(Boolean)
-    .sort()
-    .at(-1) ?? null,
+  verifiedAgainst: verifiedSpread[0]?.version ?? null,
+  verifiedSpread,
 };
 
 const artifacts = [
