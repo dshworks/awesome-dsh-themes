@@ -997,7 +997,7 @@ Raiden Inazuma Atelier / 稻妻雷电工房 — violet-gold acrylic DSH Web them
 dsh plugin --profile web add github:lengzhanbao/dsh-raiden-theme
 ```
 
-**Repo:** [lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/lengzhanbao/dsh-raiden-theme/blob/HEAD/package.json)
+**Repo:** [lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/lengzhanbao/dsh-raiden-theme/blob/HEAD/package.json)
 
 ### [dsh-skin](https://github.com/KinGao294/dsh-skin)
 
@@ -1123,7 +1123,7 @@ Skin Lab for the DSH Web GUI: official token browser, live try-on (theme overrid
 dsh plugin --profile web add github:soarGuo/dsh-skin-lab
 ```
 
-**Repo:** [soarGuo/dsh-skin-lab](https://github.com/soarGuo/dsh-skin-lab) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/soarGuo/dsh-skin-lab/blob/HEAD/package.json)
+**Repo:** [soarGuo/dsh-skin-lab](https://github.com/soarGuo/dsh-skin-lab) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/soarGuo/dsh-skin-lab/blob/HEAD/package.json)
 
 ### [dsh-skin-pack](https://github.com/uckkk/dsh-skin-pack)
 
@@ -1165,7 +1165,7 @@ Independent multi-package skin platform for DeepSeek Harness
 dsh plugin --profile web add github:mhdfy1988/dsh-skin-platform
 ```
 
-**Repo:** [mhdfy1988/dsh-skin-platform](https://github.com/mhdfy1988/dsh-skin-platform/tree/HEAD/packages/runtime) · **dsh:** 0.1.0-rc.8 · **Proof:** [packages/runtime/package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/mhdfy1988/dsh-skin-platform/blob/HEAD/packages/runtime/package.json)
+**Repo:** [mhdfy1988/dsh-skin-platform](https://github.com/mhdfy1988/dsh-skin-platform/tree/HEAD/packages/runtime) · **dsh:** 0.1.1-rc.2 · **Proof:** [packages/runtime/package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/mhdfy1988/dsh-skin-platform/blob/HEAD/packages/runtime/package.json)
 
 ### [dsh-skin-plugin](https://github.com/ylqit/dsh-skin-plugin)
 
@@ -1529,7 +1529,7 @@ DSH web plugin: theme customization placed under the built-in Appearance (外观
 dsh plugin --profile web add github:shawnlone/dsh-theme-tuner
 ```
 
-**Repo:** [shawnlone/dsh-theme-tuner](https://github.com/shawnlone/dsh-theme-tuner) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/shawnlone/dsh-theme-tuner/blob/HEAD/package.json)
+**Repo:** [shawnlone/dsh-theme-tuner](https://github.com/shawnlone/dsh-theme-tuner) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/shawnlone/dsh-theme-tuner/blob/HEAD/package.json)
 
 ### [dsh-theme-vscode-red](https://github.com/RainbowDashy/dsh-theme-vscode-red)
 
@@ -1711,7 +1711,7 @@ DSH-Wallpaper: custom background wallpaper (image / local video / Wallpaper Engi
 dsh plugin --profile web add github:mengzhangj/dsh-wallpaper
 ```
 
-**Repo:** [mengzhangj/dsh-wallpaper](https://github.com/mengzhangj/dsh-wallpaper) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/mengzhangj/dsh-wallpaper/blob/HEAD/package.json)
+**Repo:** [mengzhangj/dsh-wallpaper](https://github.com/mengzhangj/dsh-wallpaper) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/mengzhangj/dsh-wallpaper/blob/HEAD/package.json)
 
 ### [dsh-web-background](https://github.com/BruceWu1126/dsh-web-background)
 
@@ -2599,7 +2599,7 @@ Real Madrid dual-mode skin for DeepSeek Harness: Bernabéu night stadium for dar
 dsh plugin --profile web add github:alexfengrui/dsh-client-ui-skin-real-madrid
 ```
 
-**Repo:** [alexfengrui/dsh-client-ui-skin-real-madrid](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid/blob/HEAD/package.json)
+**Repo:** [alexfengrui/dsh-client-ui-skin-real-madrid](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.bundle](https://github.com/alexfengrui/dsh-client-ui-skin-real-madrid/blob/HEAD/package.json)
 
 ### [dsh-client-ui-skin-verdandi](https://github.com/Sddft97/dsh-client-ui-skin-verdandi)
 
@@ -3607,7 +3607,7 @@ dsh plugin --profile web add github:Xliecc/dsh-session-theme
 dsh plugin --profile web add github:Ddamage/dsh-shunshun-wallpaper
 ```
 
-**Repo:** [Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/Ddamage/dsh-shunshun-wallpaper/blob/HEAD/package.json)
+**Repo:** [Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.bundle](https://github.com/Ddamage/dsh-shunshun-wallpaper/blob/HEAD/package.json)
 
 ### [dsh-simple-background](https://github.com/RunCross/dsh-simple-background)
 
@@ -3999,7 +3999,7 @@ Settings skin switcher for the dsh web GUI: lists installed skins (bundles shipp
 dsh plugin --profile web add github:aminuosi/dsh-skin-switcher
 ```
 
-**Repo:** [aminuosi/dsh-skin-switcher](https://github.com/aminuosi/dsh-skin-switcher) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/aminuosi/dsh-skin-switcher/blob/HEAD/package.json)
+**Repo:** [aminuosi/dsh-skin-switcher](https://github.com/aminuosi/dsh-skin-switcher) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.bundle](https://github.com/aminuosi/dsh-skin-switcher/blob/HEAD/package.json)
 
 ### [dsh-skin-switcher-tsdfy](https://github.com/tsdfy/dsh-skin-switcher)
 
@@ -4841,7 +4841,7 @@ DeepSeek Harness 网页界面独立壁纸背景插件：内置壁纸 / 自定义
 dsh plugin --profile web add github:nishuoyang/dsh-wallpaper-bg
 ```
 
-**Repo:** [nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#dsh.bundle](https://github.com/nishuoyang/dsh-wallpaper-bg/blob/HEAD/package.json)
+**Repo:** [nishuoyang/dsh-wallpaper-bg](https://github.com/nishuoyang/dsh-wallpaper-bg) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.bundle](https://github.com/nishuoyang/dsh-wallpaper-bg/blob/HEAD/package.json)
 
 ### [dsh-wallpaper-chinarxq](https://github.com/chinaRXQ/dsh-wallpaper)
 

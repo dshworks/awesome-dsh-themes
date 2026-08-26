@@ -1130,7 +1130,7 @@ window.__THEMES__ = {
       "evidence": "package.json#dsh.bundle",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Real Madrid dual-mode skin for DeepSeek Harness: Bernabéu night stadium for dark, white-kit pinstripes with crest and 1902 layers for light. Unofficial fan work."
     },
     {
@@ -3115,7 +3115,7 @@ window.__THEMES__ = {
       "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Raiden Inazuma Atelier / 稻妻雷电工房 — violet-gold acrylic DSH Web theme: light conservatory & dark electro stage, Raiden overlays, optional agent preset."
     },
     {
@@ -3181,7 +3181,7 @@ window.__THEMES__ = {
       "evidence": "package.json#dsh.bundle",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "顺顺壁纸：GIF 壁纸（主题融合、突出度控制）+ B站音乐播放器（B站链接下载添加、删除、音量、进度条、单曲/列表/随机循环、侧栏迷你播放器、设置与播放列表持久化）"
     },
     {
@@ -3521,7 +3521,7 @@ window.__THEMES__ = {
       "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Skin Lab for the DSH Web GUI: official token browser, live try-on (theme override layers), theme freeze, spectrum presets with SVG backdrops and custom backdrop upload for skin authors. Everything is a plugin."
     },
     {
@@ -3669,7 +3669,7 @@ window.__THEMES__ = {
       "evidence": "packages/runtime/package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Independent multi-package skin platform for DeepSeek Harness"
     },
     {
@@ -3833,7 +3833,7 @@ window.__THEMES__ = {
       "evidence": "package.json#dsh.bundle",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Settings skin switcher for the dsh web GUI: lists installed skins (bundles shipping skin.json), lets the user pick one, and applies it on the next page refresh through the profile patch layer's live reload"
     },
     {
@@ -4621,7 +4621,7 @@ window.__THEMES__ = {
       "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "DSH web plugin: theme customization placed under the built-in Appearance (外观) settings. It reuses the Appearance light/dark switch and lets you adjust accent / background / foreground / contrast for the active theme, applied live through DSH theme token overrides."
     },
     {
@@ -5127,7 +5127,7 @@ window.__THEMES__ = {
       "evidence": "package.json#dsh.bundle",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "DeepSeek Harness 网页界面独立壁纸背景插件：内置壁纸 / 自定义上传 / Wallpaper Engine 壁纸库（只读）三种来源，支持图片、视频、场景预览渲染与遮罩·模糊·亮度·安全放大调节。"
     },
     {
@@ -5325,7 +5325,7 @@ window.__THEMES__ = {
       "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-26",
       "lastVerified": "2026-08-26",
-      "verifiedAgainst": "0.1.0-rc.8",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "DSH-Wallpaper: custom background wallpaper (image / local video / Wallpaper Engine sync) + system font picker for the DSH web UI. Pure client + host plugin, no DSH core modifications."
     },
     {

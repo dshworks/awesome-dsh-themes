@@ -11,11 +11,15 @@
     },
     {
       "version": "0.1.0-rc.8",
-      "count": 104
+      "count": 95
     },
     {
       "version": "0.1.0-rc.7",
       "count": 19
+    },
+    {
+      "version": "0.1.1-rc.2",
+      "count": 9
     }
   ]
 }
