@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-26",
   "rejected": [
     {
       "repo": "hanhan1137/theme-coach-dsh",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-24",
-      "recheckAfter": "2026-10-08"
+      "date": "2026-08-26",
+      "recheckAfter": "2026-10-10"
     },
     {
       "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
@@ -42,6 +42,12 @@
       "reason": "repo tree unreadable at triage time",
       "date": "2026-08-18",
       "recheckAfter": "2026-10-02"
+    },
+    {
+      "repo": "vanhungbui-11/dsh-wallpaper-bridge",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-26",
+      "recheckAfter": "2026-10-10"
     },
     {
       "repo": "wangkaxds/dsh-aurora-wallpaper",

@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "themes": [
     {
       "name": "arknits-background-plugin",
@@ -1119,6 +1119,19 @@ window.__THEMES__ = {
       "description": "Priestess dual-theme skin for the dsh Web UI: night portrait with graphite glass, light portrait with cool-white glass.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/Sealessland/dsh-client-ui-skin-priestess/main/assets/priestess-dark.webp"
+    },
+    {
+      "name": "dsh-client-ui-skin-real-madrid",
+      "repo": "alexfengrui/dsh-client-ui-skin-real-madrid",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Real Madrid dual-mode skin for DeepSeek Harness: Bernabéu night stadium for dark, white-kit pinstripes with crest and 1902 layers for light. Unofficial fan work."
     },
     {
       "name": "dsh-client-ui-skin-verdandi",
@@ -3093,6 +3106,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/LeemanCheung/dsh-qq2007-skin/HEAD/docs/screenshot.png"
     },
     {
+      "name": "dsh-raiden-theme",
+      "repo": "lengzhanbao/dsh-raiden-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Raiden Inazuma Atelier / 稻妻雷电工房 — violet-gold acrylic DSH Web theme: light conservatory & dark electro stage, Raiden overlays, optional agent preset."
+    },
+    {
       "name": "dsh-rhine-theme",
       "repo": "mjn96/dsh-rhine-theme",
       "official": false,
@@ -3144,6 +3170,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-21",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "DSH web plugin: show every session's theme in the left sidebar on open — warms the session projection cache at startup so session.list carries titles for cold sessions."
+    },
+    {
+      "name": "dsh-shunshun-wallpaper",
+      "repo": "Ddamage/dsh-shunshun-wallpaper",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "顺顺壁纸：GIF 壁纸（主题融合、突出度控制）+ B站音乐播放器（B站链接下载添加、删除、音量、进度条、单曲/列表/随机循环、侧栏迷你播放器、设置与播放列表持久化）"
     },
     {
       "name": "dsh-simple-background",
@@ -3473,6 +3512,19 @@ window.__THEMES__ = {
       "description": "DeepSeek Harness (DSH) skin toolbox: ten built-in wallpaper skins, a live tuning panel inside DSH settings, and a DIY generator that turns your own image or video into a skin."
     },
     {
+      "name": "dsh-skin-lab",
+      "repo": "soarGuo/dsh-skin-lab",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Skin Lab for the DSH Web GUI: official token browser, live try-on (theme override layers), theme freeze, spectrum presets with SVG backdrops and custom backdrop upload for skin authors. Everything is a plugin."
+    },
+    {
       "name": "dsh-skin-leg",
       "repo": "lovetpy/dsh-skin-leg",
       "official": false,
@@ -3605,6 +3657,20 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DSH 换肤插件：10 套预设皮肤 + 自然语言换肤 + 自定义背景图片 + 界面控件联动 + 恢复默认，设置 → 通用 →「皮肤」行内切换，settings.yaml 跨设备同步。",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-skin-platform",
+      "repo": "mhdfy1988/dsh-skin-platform",
+      "path": "packages/runtime",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "packages/runtime/package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Independent multi-package skin platform for DeepSeek Harness"
     },
     {
       "name": "dsh-skin-plugin",
@@ -3756,6 +3822,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Settings-page skin switcher that lists installed skins and applies one with a click."
+    },
+    {
+      "name": "dsh-skin-switcher-aminuosi",
+      "repo": "aminuosi/dsh-skin-switcher",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Settings skin switcher for the dsh web GUI: lists installed skins (bundles shipping skin.json), lets the user pick one, and applies it on the next page refresh through the profile patch layer's live reload"
     },
     {
       "name": "dsh-skin-switcher-tsdfy",
@@ -4533,6 +4612,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/iMocking/dsh-theme-triptych/HEAD/assets/image_nexus.jpg"
     },
     {
+      "name": "dsh-theme-tuner",
+      "repo": "shawnlone/dsh-theme-tuner",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH web plugin: theme customization placed under the built-in Appearance (外观) settings. It reuses the Appearance light/dark switch and lets you adjust accent / background / foreground / contrast for the active theme, applied live through DSH theme token overrides."
+    },
+    {
       "name": "dsh-theme-vscode-red",
       "repo": "RainbowDashy/dsh-theme-vscode-red",
       "official": false,
@@ -5026,6 +5118,19 @@ window.__THEMES__ = {
       "description": "Wallpaper Engine ↔ DeepSeek Harness wallpaper sync (display-only): the page background follows the current Wallpaper Engine wallpaper, with a wallpaper_share conversation-view tab (monitor selector, power toggle, focus mode, render-mode toggle, transparency/blur/shadow sliders)"
     },
     {
+      "name": "dsh-wallpaper-bg",
+      "repo": "nishuoyang/dsh-wallpaper-bg",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DeepSeek Harness 网页界面独立壁纸背景插件：内置壁纸 / 自定义上传 / Wallpaper Engine 壁纸库（只读）三种来源，支持图片、视频、场景预览渲染与遮罩·模糊·亮度·安全放大调节。"
+    },
+    {
       "name": "dsh-wallpaper-btq",
       "repo": "B-TQ/dsh-wallpaper",
       "official": false,
@@ -5209,6 +5314,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-19",
       "verifiedAgainst": "0.1.0-rc.7",
       "description": "DeepSeek Harness wallpaper plugin (static dual-face package): host half serves /wallpaper/bing, client half provides the wallpaper settings page and rendering."
+    },
+    {
+      "name": "dsh-wallpaper-mengzhan",
+      "repo": "mengzhangj/dsh-wallpaper",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-26",
+      "lastVerified": "2026-08-26",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH-Wallpaper: custom background wallpaper (image / local video / Wallpaper Engine sync) + system font picker for the DSH web UI. Pure client + host plugin, no DSH core modifications."
     },
     {
       "name": "dsh-wallpaper-rnlao",

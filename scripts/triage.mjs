@@ -38,15 +38,25 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // The dsh release entries are stamped as verified against. Bump only after
 // re-checking that what this prover reads has not moved.
 //
-// Re-checked against 0.1.0-rc.8 (released 2026-08-19): the `--dsw-*` token
-// stylesheet, packages/client/ui-theme/src/styles/, is byte-identical to rc.7,
-// so every token-override theme in here is checked under the same contract it
-// was checked under before. Skins that target the shell's compiled class names
-// are a different matter — 11 client `.module.css` files changed in rc.8, so
-// those hashes moved and a hash-targeting skin may no longer reach anything.
-// That is why this registry records HOW a theme reaches the UI, not just that
-// it does.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.0-rc.8";
+// Re-checked against 0.1.1-rc.2 (npm `latest` since 2026-08-21): the `--dsw-*`
+// token stylesheet, packages/client/ui-theme/src/styles/, is byte-identical to
+// rc.8, and @deepseek-ai/dsh-client-ui-theme keeps its name, so every
+// token-override theme in here is checked under the contract it was checked
+// under before. Skins that target the shell's compiled class names are the
+// other half, and six client `.module.css` files moved between the two tags:
+//
+//   ui-conversation/.../chat/AssistantMarkdown.module.css
+//   ui-conversation/.../chat/ChatView.module.css
+//   ui-conversation/.../skeleton/ConversationRoot.module.css
+//   ui-primitives/src/markdown/MarkdownText.module.css
+//   ui-subagent/.../SubagentHeaderLineage.module.css
+//   ui-user-questions/.../QuestionComposer.module.css
+//
+// Their hashes moved, so a hash-targeting skin aimed at any of those six may
+// no longer reach anything. That is why this registry records HOW a theme
+// reaches the UI and not just that it does: the bump is safe for the token
+// lane and explicitly is not a re-verification of the hash lane.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.1-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
