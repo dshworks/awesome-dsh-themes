@@ -1,6 +1,31 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "candidates": [
+    {
+      "repo": "alexfengrui/dsh-client-ui-skin-real-madrid",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Real Madrid dual-mode skin for DeepSeek Harness: Bernabeu night stadium (dark) and white-kit pinstripes (light). Unofficial fan work.",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "aminuosi/dsh-skin-switcher",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "Ddamage/dsh-shunshun-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-26"
+    },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
@@ -10,6 +35,68 @@
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "lengzhanbao/dsh-raiden-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Raiden Inazuma Atelier / 稻妻雷电工房 — DSH Web 紫金亚克力主题（独立于 Taffy）",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "mengzhangj/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH-Wallpaper background wallpaper and system font picker plugin for DSH Desktop. Plugin source only, no DSH core.",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "mhdfy1988/dsh-skin-platform",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Independent multi-package skin platform for DeepSeek Harness",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "nishuoyang/dsh-wallpaper-bg",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness Web UI Standalone Wallpaper Background Plugin: Three sources including built-in wallpapers, custom uploads, and Wallpaper Engine library (read-only). Supports image, video, and scene ",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "shawnlone/dsh-theme-tuner",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "soarGuo/dsh-skin-lab",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Skin Lab for the DSH Web GUI: token browser, live try-on, theme freeze, spectrum presets with SVG backdrops, custom backdrop upload. Everything is a plugin.",
+      "discovered": "2026-08-26"
+    },
+    {
+      "repo": "vanhungbui-11/dsh-wallpaper-bridge",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Wallpaper Engine bridge for DeepSeek Harness (DSH) on Windows",
+      "discovered": "2026-08-26"
     }
   ]
 }
