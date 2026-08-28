@@ -1,6 +1,12 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-28",
   "rejected": [
+    {
+      "repo": "GitNoHup/macaron-theme",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-08-28",
+      "recheckAfter": "2026-10-12"
+    },
     {
       "repo": "hanhan1137/theme-coach-dsh",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",

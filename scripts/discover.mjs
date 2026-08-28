@@ -149,17 +149,50 @@ async function sweepRange(base, lo, hi, out) {
 // a workflow in someone else's repo; a fetch of a public file needs neither and
 // cannot break their sweep when ours is down. A failed fetch degrades to "we
 // found nothing this way", never to a wrong rejection.
+//
+// Read from two files, because the queue was never the right home for this.
+// A routed repo is one the sibling has DECIDED -- it belongs here, not there --
+// yet parking it in their queue kept it counted as undecided in the coverage
+// figure they publish, and it sat there forever because their triage never
+// decides it. data/routed-to-themes.json is the decision written down. The
+// queue stays as a fallback so the lane keeps working while both sides land,
+// and because a routed row that is somehow only in the queue is still a row we
+// want.
+const ROUTED_LIST = "https://raw.githubusercontent.com/dshworks/awesome-dsh-plugins/main/data/routed-to-themes.json";
 const ROUTED_FROM = "https://raw.githubusercontent.com/dshworks/awesome-dsh-plugins/main/data/candidates.json";
 const ROUTED_NOTE = /belongs in awesome-dsh-themes/i;
 
+async function readJson(url) {
+  const res = await fetch(url, { signal: AbortSignal.timeout(30000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
 async function fromRoutedQueue() {
+  const seen = new Map();
   try {
-    const res = await fetch(ROUTED_FROM, { signal: AbortSignal.timeout(30000) });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const { candidates = [] } = await res.json();
-    const routed = candidates.filter((c) => ROUTED_NOTE.test(c.note ?? ""));
-    console.error(`discover: ${routed.length} repo(s) routed here by the plugins registry`);
-    return routed.map((c) => ({
+    const { repos = [] } = await readJson(ROUTED_LIST);
+    for (const r of repos) seen.set(r.repo.toLowerCase(), r);
+    console.error(`discover: ${seen.size} repo(s) on the plugins registry's routing list`);
+  } catch (err) {
+    console.error(`discover: no routing list (${err.message}); falling back to their queue alone`);
+  }
+  try {
+    const { candidates = [] } = await readJson(ROUTED_FROM);
+    let extra = 0;
+    for (const c of candidates) {
+      if (!ROUTED_NOTE.test(c.note ?? "")) continue;
+      if (seen.has(c.repo.toLowerCase())) continue;
+      seen.set(c.repo.toLowerCase(), c);
+      extra += 1;
+    }
+    if (extra) console.error(`discover: ${extra} more routed repo(s) found only in their queue`);
+  } catch (err) {
+    console.error(`discover: could not read the plugins queue (${err.message}); routed themes may be missed this run`);
+  }
+  const routed = [...seen.values()];
+  console.error(`discover: ${routed.length} repo(s) routed here by the plugins registry`);
+  return routed.map((c) => ({
       repo: c.repo,
       stars: c.stars ?? 0,
       description: c.description ?? null,
@@ -169,10 +202,6 @@ async function fromRoutedQueue() {
       // which is most background plugins -- so the routing IS the gate.
       routed: true,
     }));
-  } catch (err) {
-    console.error(`discover: could not read the plugins queue (${err.message}); routed themes may be missed this run`);
-    return [];
-  }
 }
 
 async function fromTopics() {

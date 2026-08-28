@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-08-26",
+  "updated": "2026-08-28",
   "themes": [
     {
       "name": "arknits-background-plugin",
@@ -299,6 +299,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/JueMing2049/deepseek-skin-studio/HEAD/docs/images/galaxy.png"
     },
     {
+      "name": "deepseek-style-theme",
+      "repo": "Lichtspur/deepseek-style-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DeepSeek official-home style theme: fluid particle background, glass sidebar, glass composer, frosted header, running-subagent progress panel, and DeepSeek brand link for the dsh web GUI"
+    },
+    {
       "name": "dhs-theme-plugin",
       "repo": "kongxiangyiren/dhs-theme-plugin",
       "official": false,
@@ -434,6 +447,19 @@ window.__THEMES__ = {
       "description": "Amadeus (Steins;Gate 0) static skin for the dsh web GUI: Future Gadget Lab scene + Kurisu portrait layered under the native Harness UI"
     },
     {
+      "name": "dsh-angelina-theme",
+      "repo": "Demigod-cyber/dsh-angelina-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "直到大地变成一颗酸橙 · Angelina 浅蓝主题：持久化主题插件，每次启动自动生效。"
+    },
+    {
       "name": "dsh-angelina-themes",
       "repo": "bilbillm/deepseek-harness-angelina-themes",
       "official": false,
@@ -546,6 +572,19 @@ window.__THEMES__ = {
       "description": "An original high-key prismatic memory theme for the DeepSeek Harness web UI."
     },
     {
+      "name": "dsh-asuka-school-theme",
+      "repo": "Yyyyyylor/dsh-asuka-school-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Asuka School // 02 theme for the DeepSeek Harness web UI."
+    },
+    {
       "name": "dsh-atom-commune-skin",
       "repo": "dingdongji-hub/dsh-atom-commune-skin",
       "official": false,
@@ -611,6 +650,19 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DSH 动态插件：深黑冷色调主题 + 星网/极光背景 + 动态/静态背景模式开关",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-ayaka-theme",
+      "repo": "l-vM2k/dsh-ayaka-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "companion",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Kamisato Ayaka ice-bloom theme + desktop pet for DeepSeek Harness Web Client"
     },
     {
       "name": "dsh-background",
@@ -763,6 +815,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-24",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "Custom background image for the DeepSeek Harness web UI (theme token overlay + settings card)"
+    },
+    {
+      "name": "dsh-bg-plugin",
+      "repo": "xiaoxingyuemiao/dsh-bg-plugin",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH 自定义背景插件：为 DSH Web GUI 应用远程 URL 图片或本地图片作为背景，支持清晰度/压暗/模糊调节，设置面板保持默认外观。"
     },
     {
       "name": "dsh-bg-skin",
@@ -1298,6 +1363,32 @@ window.__THEMES__ = {
       "description": "A Cornell notebook workspace and task brief for DeepSeek Harness Web UI."
     },
     {
+      "name": "dsh-crimson-theme",
+      "repo": "aze0695/dsh-crimson-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.client",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "CRIMSON 暗夜流火 · 黑红金属质感主题皮肤 for DeepSeek Harness (DSH). Dark obsidian + crimson + gold metallic UI, with a floating control panel (on/off, glow, metal)."
+    },
+    {
+      "name": "dsh-crt-theme",
+      "repo": "WJNCT55555/dsh-crt-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Dual-palette CRT terminal skin for DSH Web: Unit-02 black/red/orange/amber and Unit-01 violet/acid-green instruments with fine CRT meters and scan-striped branding."
+    },
+    {
       "name": "dsh-cursor-theme",
       "repo": "auki-zy/dsh-cursor-theme",
       "official": false,
@@ -1335,6 +1426,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-25",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "Custom wallpapers and translucent skins for DeepSeek Harness Web"
+    },
+    {
+      "name": "dsh-custom-skin-v587d",
+      "repo": "v587d/dsh-custom-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH Web GUI plugin: custom UI/code fonts plus theme selection (palettes ported from dsh-refined: Border / Nord / Twilight / GitHub / Atom One), live settings page, localStorage persistence."
     },
     {
       "name": "dsh-custom-theme-import",
@@ -2257,6 +2361,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/wangq32801-dev/dsh-mamba-theme/HEAD/preview.png"
     },
     {
+      "name": "dsh-march7th-skin",
+      "repo": "fishfromsky/dsh-march7th-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Standalone pluggable March 7th (Honkai: Star Rail) skin for the dsh web GUI: theme tokens, night background, and character art flanking the input. Not part of the default web-app — add this package to a profile bundle to enable."
+    },
+    {
       "name": "dsh-mario-pixel-skin",
       "repo": "EachSheep/dsh-mario-pixel-skin",
       "official": false,
@@ -2434,6 +2551,32 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-20",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "Hot-pluggable Minecraft Launcher pixel skin for the DeepSeek Harness Web GUI"
+    },
+    {
+      "name": "dsh-model-palette",
+      "repo": "Jensen-Yao/dsh-model-palette",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Global model command palette and provider/model configuration panel for DeepSeek Harness, with online capacity presets and optional OpenRouter media tools."
+    },
+    {
+      "name": "dsh-model-palette-quanqqq",
+      "repo": "QuanQQQ/dsh-model-palette",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Dense searchable model palette for DeepSeek Harness Web"
     },
     {
       "name": "dsh-modern-skin",
@@ -3146,6 +3289,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/FlowerWater1019/Angelina-dsh-plugin/HEAD/assets/angelina-mellow-wish.png"
     },
     {
+      "name": "dsh-sakura-theme",
+      "repo": "a1303845406/dsh-sakura-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Sakura Harness brand, icon, font, and Day/Night glass theme for DeepSeek Harness"
+    },
+    {
       "name": "dsh-scenery-background",
       "repo": "soslowsnail/dsh-scenery-background",
       "official": false,
@@ -3255,6 +3411,19 @@ window.__THEMES__ = {
       "description": "Eight built-in DeepSeek Harness appearance presets plus custom wallpaper with opacity and blur.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/HEAD/assets/screenshots/deepsea-whale.jpg"
+    },
+    {
+      "name": "dsh-skin-argentina",
+      "repo": "henrychenhao/dsh-skin-argentina",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "阿根廷·梅西 (Argentina · Messi) web skin for the DeepSeek Harness GUI: celeste/navy/gold alias-token theme, photo & gold backgrounds, roaming #10 badge."
     },
     {
       "name": "dsh-skin-background",
@@ -3442,6 +3611,19 @@ window.__THEMES__ = {
       "license": "MIT"
     },
     {
+      "name": "dsh-skin-galactic-opera",
+      "repo": "xmnathan/dsh-skin-galactic-opera",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Unofficial cinematic space-opera dark skin bundle for the DSH Web GUI."
+    },
+    {
       "name": "dsh-skin-glass",
       "repo": "noexcs/dsh-skin-glass",
       "official": false,
@@ -3510,6 +3692,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-20",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "DeepSeek Harness (DSH) skin toolbox: ten built-in wallpaper skins, a live tuning panel inside DSH settings, and a DIY generator that turns your own image or video into a skin."
+    },
+    {
+      "name": "dsh-skin-koi-pond",
+      "repo": "Kogisune/dsh-skin-koi-pond",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "锦鲤池塘 — Koi Pond theme for the DeepSeek Harness web GUI (Canvas koi pond animation, component-split CSS)"
     },
     {
       "name": "dsh-skin-lab",
@@ -3591,6 +3786,19 @@ window.__THEMES__ = {
       "description": "Native skin marketplace and lifecycle manager for DeepSeek Harness"
     },
     {
+      "name": "dsh-skin-market-kemanai",
+      "repo": "keman-ai/dsh-skin-market",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Skin marketplace inside DSH: search and one-click install community skins from dsh.a2hmarket.ai"
+    },
+    {
       "name": "dsh-skin-mojing",
       "repo": "Gyanano/dsh-skin-mojing",
       "official": false,
@@ -3630,6 +3838,21 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DSH 皮肤合集：苹果风 / 赛博朋克 / 魔兽世界 / 极光 / 暗黑金 / 樱花 / 复古终端 / 深空 共 8 套皮肤，一键切换。8 skins for DeepSeek Harness web UI — Apple, Cyberpunk, Warcraft, Aurora, Black Gold, Sakura, Retro Terminal, Deep Space."
+    },
+    {
+      "name": "dsh-skin-pack-kemanai",
+      "repo": "keman-ai/dsh-skin-pack",
+      "path": "packages/dsh-ai-work-slogan",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "packages/dsh-ai-work-slogan/package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "A full set of skins for DeepSeek Harness — one repository, each theme installable on its own",
+      "preview": "https://raw.githubusercontent.com/keman-ai/dsh-skin-pack/HEAD/packages/dsh-niulai/preview/dark.webp"
     },
     {
       "name": "dsh-skin-pack-yxnas",
@@ -3697,6 +3920,19 @@ window.__THEMES__ = {
       "added": "2026-08-20",
       "lastVerified": "2026-08-20",
       "verifiedAgainst": "0.1.0-rc.8",
+      "description": "Arknights PRTS terminal skin for dsh Web UI — 深色工业终端 / 航空控制台，直角面板 + 硬阴影 + 青强调色"
+    },
+    {
+      "name": "dsh-skin-prts-qinpanwa",
+      "repo": "QinpanWan/dsh-skin-prts",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Arknights PRTS terminal skin for dsh Web UI — 深色工业终端 / 航空控制台，直角面板 + 硬阴影 + 青强调色"
     },
     {
@@ -3994,6 +4230,19 @@ window.__THEMES__ = {
       "description": "光遇·遇境 (Sky: Children of the Light — Home Arena) 主题皮肤 — 星盘上的光之子、烛光与六门星图"
     },
     {
+      "name": "dsh-sky-skin-qinpanwa",
+      "repo": "QinpanWan/dsh-sky-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "光遇·遇境 (Sky: Children of the Light) 主题皮肤 — 七大地图主题(遇境/晨岛/云野/雨林/霞谷/暮土/禁阁)随心切换,设置页一键热切换"
+    },
+    {
       "name": "dsh-spotify-theme",
       "repo": "msnlyy-rgb/dsh-spotify-theme",
       "official": false,
@@ -4049,6 +4298,19 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Live theme editor for dsh: curated --dsw-* palettes and typography controls.",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-theme-aurum",
+      "repo": "fengb3/dsh-theme-aurum",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH 鎏金主题插件:oklch 金粉配色 + 点阵画布 + 浮动卡片侧栏 + 会话栏/会话流/输入坞/工具卡全量接管(未知工具官方图标兜底),图标一律 DSH 官方原版,theme.overrideTokens 常驻 {light,dark} 双色层,零构建 loader 格式"
     },
     {
       "name": "dsh-theme-background-center",
@@ -4107,6 +4369,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-24",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "Black hole theme plugin for the DeepSeek Harness Web UI: WebGL Schwarzschild black hole background with deep-space glass panels, switchable from Settings > General > 主题-黑洞. Install into a web profile: dsh plugin --profile web add <path-to-this-package>"
+    },
+    {
+      "name": "dsh-theme-bside-olivia-lin",
+      "repo": "Leoq-bit/dsh-theme-bside-olivia-lin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "BSide: Olivia Lin (林离) theme for the DeepSeek Harness Web UI — vinyl-warm amber × rainy blue-gray on deep charcoal, preset/uploadable wallpaper with a translucent veil, film-grain and rain overlays, glowing active-session title, full --dsw-* token palette, and a settings card persisted in the Host settings document."
     },
     {
       "name": "dsh-theme-center",
@@ -4204,6 +4479,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-19",
       "verifiedAgainst": "0.1.0-rc.7",
       "description": "Dodger-blue ballpark theme for the DeepSeek Harness web UI — a day and a night palette in LA Dodger blue with baseball-stitch red accents and a nod to #17, plus a settings switcher that remembers your pick."
+    },
+    {
+      "name": "dsh-theme-eink-retro",
+      "repo": "exoticknight/dsh-theme-eink-retro",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "A paper-and-ink client-side theme for DeepSeek Harness with Balanced and Immersive modes."
     },
     {
       "name": "dsh-theme-endfield",
@@ -4526,6 +4814,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "A Stardew Valley themed client plugin for the DeepSeek Harness web surface. Non-commercial fan theme."
+    },
+    {
+      "name": "dsh-theme-studio",
+      "repo": "cherrchen/dsh-theme-studio",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Portable DSH theme overlay plugin: builtin palettes, preview, persistence, and General settings UI"
     },
     {
       "name": "dsh-theme-switch",
@@ -4911,6 +5212,19 @@ window.__THEMES__ = {
       "description": "Draggable Live2D desktop pet floating in the Web UI overlay, with click speech and agent-state linkage.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/jmctsh/dsh-ui-desktop-pet/HEAD/banner.jpg"
+    },
+    {
+      "name": "dsh-ui-liteglass",
+      "repo": "mumuer1024/dsh-ui-liteglass",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "A lightweight appearance plugin for DeepSeek Harness: custom wallpaper, glass-like panel transparency, and accent color. Ships a host half plus a web client half in one npm package."
     },
     {
       "name": "dsh-ui-skin",
@@ -5427,6 +5741,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "SVG water-ball companion: halo color and motion follow agent idle/think/tool/done/error, with size and drag in plugin settings."
+    },
+    {
+      "name": "dsh-we-wallpaper-sync",
+      "repo": "tiger0012/dsh-we-wallpaper-sync",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "把 Wallpaper Engine（小红车，Steam 431960）创意工坊壁纸浏览、搜索、下载并接入 DSH 皮肤中心的可复用技能。"
     },
     {
       "name": "dsh-web-background",
@@ -5986,6 +6313,19 @@ window.__THEMES__ = {
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/LilycleHeart/liuli-theme/HEAD/docs/preview-color-light.png",
       "previewCss": "https://raw.githubusercontent.com/LilycleHeart/liuli-theme/HEAD/src/client/denpa.css"
+    },
+    {
+      "name": "majia7-dsh-skin",
+      "repo": "Carlown/majia7-dsh-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "skin",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-08-28",
+      "lastVerified": "2026-08-28",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "majia7-skin 四档爆改版：an opt-in adaptive reasoning slider skin for DeepSeek Harness"
     },
     {
       "name": "my-skin-for-DeepSeek-Harness",
