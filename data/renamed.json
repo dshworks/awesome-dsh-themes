@@ -1,0 +1,165 @@
+{
+  "_comment": "Repositories that answered under a new name. GitHub's API follows a rename and returns the current full_name, so every prover here keeps passing on a stale `repo` field while discovery meets the same repository under its new name and lists it again. `renames` had their `repo` field updated -- a refresh, not a re-listing. `merged` were the same repository listed twice; the older row survives and the dropped name is kept here so an inbound link is still traceable. `held` are repositories two or more listed themes were renamed into, which is an author archiving both, not a rename, and needs a person. `lastVerified` and `evidence` are never touched: a rename does not move files. Written by scripts/renames.mjs.",
+  "detected": "2026-09-01",
+  "counts": {
+    "renames": 8,
+    "merged": 12,
+    "held": 2
+  },
+  "renames": [
+    {
+      "from": "WYH66666666/DSH",
+      "to": "WYH66666666/DSH-Transparent-UI-Plugin",
+      "ownerChanged": false,
+      "name": "dsh-aqua",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "manjiayu20071022/dsh-ui-background",
+      "to": "MM071022/dsh-ui-background",
+      "ownerChanged": true,
+      "name": "dsh-background-carousel",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "Vulcan626/dsh-pet",
+      "to": "ZhanboHua/dsh-pet",
+      "ownerChanged": true,
+      "name": "dsh-client-ui-pet",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "Voyage-He/dsh-plugin-background-image",
+      "to": "Voyage-He/dsh-background-image",
+      "ownerChanged": false,
+      "name": "dsh-plugin-background-image",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "xylt369/dsh-skin-engine",
+      "to": "xylt369/dsh-open-theme",
+      "ownerChanged": false,
+      "name": "dsh-skin-engine",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "zhu1090093659/dsh-web-ui",
+      "to": "zhu1090093659/dsh-web",
+      "ownerChanged": false,
+      "name": "dsh-web-ui",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "yunfei07/ui-song-theme",
+      "to": "yunfei07/dsh-song-ui",
+      "ownerChanged": false,
+      "name": "ui-song-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "from": "Henry91200/whale-girl-plus",
+      "to": "Henryang777/whale-girl-plus",
+      "ownerChanged": true,
+      "name": "whale-girl-plus",
+      "on": "2026-09-01"
+    }
+  ],
+  "merged": [
+    {
+      "was": "mhwww/dsh-bg-image",
+      "now": "mhwww/DSH-Wallpaper-Engine",
+      "keptName": "dsh-bg-image-mhwww",
+      "droppedName": "DSH-Wallpaper-Engine-mhwww",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "zhijun-dai/dsh-Catppuccin",
+      "now": "zhijun-dai/Catppuccin-dsh-theme",
+      "keptName": "dsh-catppuccin",
+      "droppedName": "Catppuccin-dsh-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "NoNameLeGo/dsh-catppuccin",
+      "now": "NoNameLeGo/dsh-catppuccin-theme",
+      "keptName": "dsh-catppuccin-nonamelego",
+      "droppedName": "dsh-catppuccin-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "i1j/dsh-deepsea-theme",
+      "now": "i1j/dsh-krill-theme",
+      "keptName": "dsh-deepsea-theme",
+      "droppedName": "dsh-krill-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "dataizu/dsh-macos-theme",
+      "now": "dataizu/dsh-whale-aqua-theme",
+      "keptName": "dsh-macos-theme",
+      "droppedName": "dsh-whale-aqua-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "LucasN0820/dsh-skin-claude-code",
+      "now": "lucasx001/dsh-skin-claude-code",
+      "keptName": "dsh-skin-claude-code",
+      "droppedName": "dsh-skin-claude-code-lucasx00",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "Entity-Him/dsh-skin-prts",
+      "now": "QinpanWan/dsh-skin-prts",
+      "keptName": "dsh-skin-prts",
+      "droppedName": "dsh-skin-prts-qinpanwa",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "Entity-Him/dsh-sky-skin",
+      "now": "QinpanWan/dsh-sky-skin",
+      "keptName": "dsh-sky-skin",
+      "droppedName": "dsh-sky-skin-qinpanwa",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "RainbowDashy/dsh-theme-vscode-red",
+      "now": "RainbowDashy/dsh-theme-palettes",
+      "keptName": "dsh-theme-palettes",
+      "droppedName": "dsh-theme-vscode-red",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "chinaRXQ/dsh-wallpaper",
+      "now": "RexCue/dsh-wallpaper",
+      "keptName": "dsh-wallpaper-chinarxq",
+      "droppedName": "dsh-wallpaper-rexcue",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "chouxiaohuai/uiskin-theme",
+      "now": "chouxiaohuai/dsh-uiskin-theme",
+      "keptName": "uiskin-theme",
+      "droppedName": "dsh-uiskin-theme",
+      "on": "2026-09-01"
+    },
+    {
+      "was": "cdxDNRF/wishadel-theme",
+      "now": "cdxDNRF/dsh-wishadel-theme",
+      "keptName": "wishadel-theme",
+      "droppedName": "dsh-wishadel-theme",
+      "on": "2026-09-01"
+    }
+  ],
+  "held": [
+    {
+      "from": "crack-time/dsh-client-ui-skin-cottage",
+      "to": "crack-time/dsh-archive",
+      "why": "two or more listed themes were renamed into this one repository; that is an archive, not a rename"
+    },
+    {
+      "from": "crack-time/dsh-web-ui-skin",
+      "to": "crack-time/dsh-archive",
+      "why": "two or more listed themes were renamed into this one repository; that is an archive, not a rename"
+    }
+  ]
+}

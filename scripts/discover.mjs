@@ -243,6 +243,26 @@ const file = read("data/candidates.json");
 const rejectedFile = read("data/rejected.json");
 
 const known = new Set(registry.themes.map((t) => t.repo.toLowerCase()));
+
+// A renamed repository is already listed -- under its new name. GitHub's
+// search index carries the current slug and its API follows the old one, so
+// without this the old slug comes back as a find every run and triage proves
+// it, because it really is a theme and really does install. That is how one
+// theme became two rows twelve times over. Both ends of every recorded move go
+// in: the old slug so it is never re-queued, the new one because a row that
+// only `renames.mjs` has seen is still a row we have.
+try {
+  const moved = read("data/renamed.json");
+  let n = 0;
+  for (const r of [...(moved.renames ?? []), ...(moved.merged ?? [])]) {
+    for (const slug of [r.from, r.to, r.was, r.now]) {
+      if (slug && !known.has(slug.toLowerCase())) { known.add(slug.toLowerCase()); n += 1; }
+    }
+  }
+  if (n) console.error(`discover: excluding ${n} slug(s) recorded as renamed`);
+} catch {
+  // No renames recorded yet.
+}
 const rejected = new Set(
   rejectedFile.rejected
     .filter((r) => !r.recheckAfter || r.recheckAfter > TODAY)
