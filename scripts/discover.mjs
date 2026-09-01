@@ -27,6 +27,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { looksLikeATheme as themeNameGate } from "./theme-name.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -54,8 +55,9 @@ const EPOCH = "2020-01-01";
 // a token-balance HUD both embed the web UI and both ship `--dsw-*` CSS, so
 // stylesheet contents are not evidence of a skin. The repo has to say what it
 // is. Human triage is what turns a candidate into an entry.
-const THEME_NAME = /theme|skin|wallpaper|background|palette|colou?rscheme|配色|主题|皮肤|壁纸|背景|换肤|(^|[-_])bg([-_]|$)/i;
-const THEME_TEXT = /\b(theme|skin|colou?r ?scheme|palette|wallpaper|dark mode|light mode)\b|主题|皮肤|配色|壁纸|换肤/i;
+//
+// The gate itself lives in theme-name.mjs, because triage.mjs assumed it had
+// run and needed the same rule to say so.
 
 const read = (rel) => JSON.parse(readFileSync(join(ROOT, rel), "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -226,7 +228,7 @@ async function fromTopics() {
 function looksLikeATheme(c) {
   if (c.topics.includes("dsh-theme")) return true;
   const name = c.repo.split("/")[1] ?? "";
-  return THEME_NAME.test(name) && THEME_TEXT.test(`${name} ${c.description ?? ""}`);
+  return themeNameGate(name, `${name} ${c.description ?? ""}`);
 }
 
 function passesSpamGate(c) {
