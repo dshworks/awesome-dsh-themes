@@ -13,11 +13,19 @@
 // that from outside — but it is a claim a reader can click and check, which
 // `status: verified` on its own never was.
 //
-// The name gate stays where CONTRIBUTING.md put it: discover.mjs already
-// routes name-first, because a launcher and a token-balance HUD both embed the
-// Web UI and both ship `--dsw-*` CSS. This script does not re-open that
-// question; it asks the second one, which is whether the repo carries anything
-// that could restyle the UI at all.
+// The name gate lives in theme-name.mjs. This script used to say it did not
+// re-open that question because "discover.mjs already routes name-first" --
+// but routed rows, the ones the plugins registry hands over, skip the gate on
+// purpose ("the routing IS the gate"). So one whole lane arrived un-gated and
+// was admitted by a rule that assumed the gate had run: a bare
+// `package.json#dsh.bundle` proves the repo installs into dsh, never that it
+// restyles anything. `chenyangcun/dsh-command-palette` came in that way.
+//
+// So an install-path-only proof is now backed by one of two things before it
+// is admitted: a real restyle signal in the tree (a `--dsw-*` override, or the
+// ThemeRuntime), or the repo passing the same name gate discover.mjs uses.
+// Neither holds -> held for review, never rejected: a launcher and a skin can
+// look identical from outside, and that is a human's call.
 //
 // Usage:
 //   node scripts/triage.mjs                drain data/candidates.json
@@ -30,6 +38,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { looksLikeATheme } from "./theme-name.mjs";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -162,12 +171,20 @@ function proveFromPackage(pkg, path) {
       tokens: true,
     };
   }
-  if (pkg.dsh?.bundle) return { evidence: `${path}#dsh.bundle`, why: "dsh.bundle manifest" };
-  if (pkg.dsh) return { evidence: `${path}#dsh.${Object.keys(pkg.dsh).join("+")}`, why: "dsh manifest" };
+  // Injecting the ThemeRuntime is the same proof by a different door: a client
+  // manifest that names it is asking dsh to hand it the token layer.
+  if (pkg.dsh?.client?.inject?.includes?.(THEME_RUNTIME)) {
+    return { evidence: `${path}#dsh.client.inject.${THEME_RUNTIME}`, why: "injects ThemeRuntime", tokens: true };
+  }
+  // Everything below proves the repo installs into dsh. That is an install
+  // path, not a restyle path -- `install: true` says so, and decide() will not
+  // admit on it alone.
+  if (pkg.dsh?.bundle) return { evidence: `${path}#dsh.bundle`, why: "dsh.bundle manifest", install: true };
+  if (pkg.dsh) return { evidence: `${path}#dsh.${Object.keys(pkg.dsh).join("+")}`, why: "dsh manifest", install: true };
   const ds = deps.filter(([, d]) => d.startsWith("@deepseek-ai/"));
   if (ds.length) {
     const [section, name] = ds[0];
-    return { evidence: `${path}#${section}.${name}`, why: `depends on ${name}` };
+    return { evidence: `${path}#${section}.${name}`, why: `depends on ${name}`, install: true };
   }
   return null;
 }
@@ -239,13 +256,35 @@ async function proveDeep(repo) {
 
 const NO_PATH = "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet";
 
-async function decide(repo) {
+// `says` is everything the repo says about itself that we have at this point:
+// its name plus whatever description the discovery lane carried. Empty for
+// --prove, where the row is already listed and the gate is not the question.
+async function decide(repo, says = null) {
   const root = await proveRoot(repo);
-  if (root.proof) return { repo, verdict: "accept", ...root.proof, facts: root.facts };
+  if (root.proof && !root.proof.install) return { repo, verdict: "accept", ...root.proof, facts: root.facts };
 
   const deep = await proveDeep(repo);
   const facts = { ...root.facts, ...deep.facts };
-  if (deep.proof) return { repo, verdict: "accept", ...deep.proof, facts };
+  // A --dsw-* override or the ThemeRuntime found deeper in the tree outranks
+  // whatever install path the root package.json carried.
+  if (deep.proof && !deep.proof.install) return { repo, verdict: "accept", ...deep.proof, facts };
+
+  // An install path with no restyle signal anywhere in the tree. Admit it only
+  // if the repo itself claims to be a skin; otherwise a human decides.
+  if (root.proof || deep.proof) {
+    const proof = root.proof ?? deep.proof;
+    const name = repo.split("/")[1] ?? "";
+    const text = `${name} ${says ?? facts.pkgDesc ?? facts.readmeLede ?? ""}`;
+    if (says === null || looksLikeATheme(name, text)) {
+      return { repo, verdict: "accept", ...proof, facts };
+    }
+    return {
+      repo,
+      verdict: "review",
+      reason: `installs into dsh (${proof.evidence}) but nothing in the tree restyles it, and the repo does not call itself a skin`,
+      facts,
+    };
+  }
   if (facts.tree === "gone") return { repo, verdict: "reject", reason: "repo gone (404) at triage time", recheck: true, facts };
   if (facts.tree === "unreadable") return { repo, verdict: "reject", reason: "repo tree unreadable at triage time", recheck: true, facts };
 
@@ -401,7 +440,7 @@ const trace = [];
 
 for (const [i, c] of pending.entries()) {
   if (i && i % 25 === 0) console.error(`triage: decide ${i}/${pending.length} (api ${apiCalls})`);
-  const d = await decide(c.repo);
+  const d = await decide(c.repo, `${c.description ?? ""}`);
   trace.push(d);
 
   if (d.verdict === "reject") {

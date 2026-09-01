@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-09-01",
   "candidates": [
+    {
+      "repo": "chenyangcun/dsh-command-palette",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "A keyboard-first command palette for standard DeepSeek Harness",
+      "discovered": "2026-08-31",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it, and the repo does not call itself a skin"
+    },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
@@ -10,6 +20,16 @@
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "domitor-syh/dsh-ui-skin-switcher",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Model and reasoning-effort switcher: composer seat with an Off/Max effort slider over session.models / session.selectModel",
+      "discovered": "2026-09-01",
+      "note": "name says skin, package says otherwise: injects connection/ui-conversation/ui-slots, ships no stylesheet and no --dsw-* override. A model and reasoning-effort switcher. Held by hand — the name gate passed it on the word alone."
     }
   ]
 }
