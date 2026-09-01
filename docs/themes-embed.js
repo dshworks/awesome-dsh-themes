@@ -44,20 +44,6 @@ window.__THEMES__ = {
       "description": "Background plugin: durable background image/video preference, General settings row, and document presenter"
     },
     {
-      "name": "Catppuccin-dsh-theme",
-      "repo": "zhijun-dai/Catppuccin-dsh-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
-      "added": "2026-08-15",
-      "lastVerified": "2026-08-18",
-      "verifiedAgainst": "0.1.0-rc.6",
-      "description": "Soothing pastel theme for DeepSeek Harness: the four Catppuccin flavors (Latte, Frappé, Macchiato, Mocha) registered into the built-in theme runtime",
-      "preview": "https://raw.githubusercontent.com/zhijun-dai/Catppuccin-dsh-theme/HEAD/assets/preview.webp"
-    },
-    {
       "name": "chiral-pulse",
       "repo": "MoonShadow1976/chiral-pulse",
       "official": false,
@@ -546,7 +532,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-aqua",
-      "repo": "WYH66666666/DSH",
+      "repo": "WYH66666666/DSH-Transparent-UI-Plugin",
       "npm": "@deepseek-ai/dsh-client-ui-aqua",
       "official": false,
       "kind": "skin",
@@ -696,7 +682,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-background-carousel",
-      "repo": "manjiayu20071022/dsh-ui-background",
+      "repo": "MM071022/dsh-ui-background",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -820,7 +806,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-bg-image-mhwww",
-      "repo": "mhwww/dsh-bg-image",
+      "repo": "mhwww/DSH-Wallpaper-Engine",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -977,7 +963,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-catppuccin",
-      "repo": "zhijun-dai/dsh-Catppuccin",
+      "repo": "zhijun-dai/Catppuccin-dsh-theme",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -992,7 +978,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-catppuccin-nonamelego",
-      "repo": "NoNameLeGo/dsh-catppuccin",
+      "repo": "NoNameLeGo/dsh-catppuccin-theme",
       "npm": "dsh-catppuccin",
       "official": false,
       "kind": "skin",
@@ -1005,19 +991,6 @@ window.__THEMES__ = {
       "description": "Catppuccin themes for the DeepSeek Harness web GUI: Latte, Frappe, Macchiato and Mocha.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/NoNameLeGo/dsh-catppuccin/HEAD/assets/previews/latte.png"
-    },
-    {
-      "name": "dsh-catppuccin-theme",
-      "repo": "NoNameLeGo/dsh-catppuccin-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
-      "added": "2026-08-18",
-      "lastVerified": "2026-08-18",
-      "verifiedAgainst": "0.1.0-rc.6",
-      "description": "Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully remapping the --dsw-* token ladder, with adjustable frosted glass for the top bar, sidebar, composer, stats line and"
     },
     {
       "name": "dsh-cerrda-theme",
@@ -1117,7 +1090,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-client-ui-pet",
-      "repo": "Vulcan626/dsh-pet",
+      "repo": "ZhanboHua/dsh-pet",
       "official": false,
       "kind": "skin",
       "category": "companion",
@@ -1627,7 +1600,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-deepsea-theme",
-      "repo": "i1j/dsh-deepsea-theme",
+      "repo": "i1j/dsh-krill-theme",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -2226,22 +2199,6 @@ window.__THEMES__ = {
       "description": "Kimi no Na wa (Your Name) theme for DeepSeek Harness Web GUI — dynamic Cordis plugin source (host + client halves) plus an installable dsh bundle, with wallpaper/logo assets"
     },
     {
-      "name": "dsh-krill-theme",
-      "repo": "i1j/dsh-krill-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-15",
-      "lastVerified": "2026-08-18",
-      "verifiedAgainst": "0.1.0-rc.6",
-      "description": "Deep Sea (深海世界) + Shallow Sea (浅海世界) 双模式主题插件 —— 一个插件覆盖 DSH 深/亮两套外观：深海深色（亮度编码信息层级）+ 浅海亮色（清澈度编码），含浮游生物动画背景、深潜工作态增强、水母参数入口。",
-      "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/i1j/dsh-krill-theme/HEAD/assets/plankton-1.0.gif",
-      "previewCss": "https://raw.githubusercontent.com/i1j/dsh-krill-theme/HEAD/src/client/deepsea.css"
-    },
-    {
       "name": "dsh-kun-like-pet",
       "repo": "liyupi/dsh-kun-like-pet",
       "official": false,
@@ -2385,7 +2342,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-macos-theme",
-      "repo": "dataizu/dsh-macos-theme",
+      "repo": "dataizu/dsh-whale-aqua-theme",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -3082,7 +3039,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-plugin-background-image",
-      "repo": "Voyage-He/dsh-plugin-background-image",
+      "repo": "Voyage-He/dsh-background-image",
       "npm": "dsh-plugin-background-image",
       "official": false,
       "kind": "skin",
@@ -3608,7 +3565,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-skin-claude-code",
-      "repo": "LucasN0820/dsh-skin-claude-code",
+      "repo": "lucasx001/dsh-skin-claude-code",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -3636,19 +3593,6 @@ window.__THEMES__ = {
       "license": "BSD-3-Clause",
       "preview": "https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/HEAD/preview/dark.png",
       "previewCss": "https://raw.githubusercontent.com/le-soleil-se-couche/dsh-skin-claude-code/main/src/client/claude-code.module.css"
-    },
-    {
-      "name": "dsh-skin-claude-code-lucasx00",
-      "repo": "lucasx001/dsh-skin-claude-code",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
-      "added": "2026-08-20",
-      "lastVerified": "2026-08-20",
-      "verifiedAgainst": "0.1.0-rc.8",
-      "description": "A Claude Code-inspired skin for the DeepSeek Harness web GUI: warm charcoal/cream surfaces, terracotta accent, and monospace terminal typography."
     },
     {
       "name": "dsh-skin-collection",
@@ -3694,7 +3638,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-skin-engine",
-      "repo": "xylt369/dsh-skin-engine",
+      "repo": "xylt369/dsh-open-theme",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -4022,7 +3966,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-skin-prts",
-      "repo": "Entity-Him/dsh-skin-prts",
+      "repo": "QinpanWan/dsh-skin-prts",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -4031,19 +3975,6 @@ window.__THEMES__ = {
       "added": "2026-08-20",
       "lastVerified": "2026-08-20",
       "verifiedAgainst": "0.1.0-rc.8",
-      "description": "Arknights PRTS terminal skin for dsh Web UI — 深色工业终端 / 航空控制台，直角面板 + 硬阴影 + 青强调色"
-    },
-    {
-      "name": "dsh-skin-prts-qinpanwa",
-      "repo": "QinpanWan/dsh-skin-prts",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-28",
-      "lastVerified": "2026-08-28",
-      "verifiedAgainst": "0.1.1-rc.2",
       "description": "Arknights PRTS terminal skin for dsh Web UI — 深色工业终端 / 航空控制台，直角面板 + 硬阴影 + 青强调色"
     },
     {
@@ -4329,7 +4260,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-sky-skin",
-      "repo": "Entity-Him/dsh-sky-skin",
+      "repo": "QinpanWan/dsh-sky-skin",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -4339,19 +4270,6 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-25",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "光遇·遇境 (Sky: Children of the Light — Home Arena) 主题皮肤 — 星盘上的光之子、烛光与六门星图"
-    },
-    {
-      "name": "dsh-sky-skin-qinpanwa",
-      "repo": "QinpanWan/dsh-sky-skin",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-28",
-      "lastVerified": "2026-08-28",
-      "verifiedAgainst": "0.1.1-rc.2",
-      "description": "光遇·遇境 (Sky: Children of the Light) 主题皮肤 — 七大地图主题(遇境/晨岛/云野/雨林/霞谷/暮土/禁阁)随心切换,设置页一键热切换"
     },
     {
       "name": "dsh-spotify-theme",
@@ -5076,20 +4994,6 @@ window.__THEMES__ = {
       "description": "DSH web plugin: theme customization placed under the built-in Appearance (外观) settings. It reuses the Appearance light/dark switch and lets you adjust accent / background / foreground / contrast for the active theme, applied live through DSH theme token overrides."
     },
     {
-      "name": "dsh-theme-vscode-red",
-      "repo": "RainbowDashy/dsh-theme-vscode-red",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-14",
-      "lastVerified": "2026-08-18",
-      "verifiedAgainst": "0.1.0-rc.6",
-      "description": "VS Code Red --dsw-* token theme: deep maroon surfaces with a #cc3333 accent, applied from client JS.",
-      "license": "MIT"
-    },
-    {
       "name": "dsh-theme-whalegirl",
       "repo": "ZHOUcourier/dsh-theme-whalegirl",
       "official": false,
@@ -5445,19 +5349,6 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/omdsh-dev/dsh-ui-whale/main/docs/dsh-ui-whale-demo.gif"
     },
     {
-      "name": "dsh-uiskin-theme",
-      "repo": "chouxiaohuai/dsh-uiskin-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-20",
-      "lastVerified": "2026-08-20",
-      "verifiedAgainst": "0.1.0-rc.8",
-      "description": "Blue Glass Theme (ocean fantasy) for DeepSeek Harness Web — a static profile bundle. 海洋幻想主题：海洋背景、玻璃气泡、海洋侧边栏、鲸鱼设置按钮、炫彩模型文字。"
-    },
-    {
       "name": "dsh-unknown-theme",
       "repo": "ycqaq233/dsh-unknown-theme",
       "official": false,
@@ -5609,7 +5500,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-wallpaper-chinarxq",
-      "repo": "chinaRXQ/dsh-wallpaper",
+      "repo": "RexCue/dsh-wallpaper",
       "npm": "dsh-wallpaper",
       "official": false,
       "kind": "skin",
@@ -5673,19 +5564,6 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "One-click DSH background switcher backed by local Wallpaper Engine images/videos (WE Web API first, Steam workshop/myprojects directory scan fallback)"
-    },
-    {
-      "name": "DSH-Wallpaper-Engine-mhwww",
-      "repo": "mhwww/DSH-Wallpaper-Engine",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-25",
-      "lastVerified": "2026-08-25",
-      "verifiedAgainst": "0.1.0-rc.8",
-      "description": "Custom background image for the DeepSeek Harness web UI (theme token overlay + settings card)"
     },
     {
       "name": "dsh-wallpaper-engine-sakuraaa",
@@ -5791,19 +5669,6 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-26",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "DSH-Wallpaper: custom background wallpaper (image / local video / Wallpaper Engine sync) + system font picker for the DSH web UI. Pure client + host plugin, no DSH core modifications."
-    },
-    {
-      "name": "dsh-wallpaper-rexcue",
-      "repo": "RexCue/dsh-wallpaper",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-09-01",
-      "lastVerified": "2026-09-01",
-      "verifiedAgainst": "0.1.1-rc.2",
-      "description": "Wallpaper skin for the DeepSeek Harness web UI: image background with opacity, mask and blur controls."
     },
     {
       "name": "dsh-wallpaper-rnlao",
@@ -6003,7 +5868,7 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh-web-ui",
-      "repo": "zhu1090093659/dsh-web-ui",
+      "repo": "zhu1090093659/dsh-web",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -6113,22 +5978,6 @@ window.__THEMES__ = {
       "description": "Weniger — \"less, but better\": a Dieter Rams-inspired theme for the DeepSeek Harness Web GUI. Warm paper whites, hairline borders, one signal-orange accent, squared 0-4px geometry, flat surfaces, one Swiss type stack."
     },
     {
-      "name": "dsh-whale-aqua-theme",
-      "repo": "dataizu/dsh-whale-aqua-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "dsh-vision/package.json#dsh.client",
-      "added": "2026-08-15",
-      "lastVerified": "2026-08-18",
-      "verifiedAgainst": "0.1.0-rc.6",
-      "description": "「鲸蓝戏水」macOS theme + swimming whale aquarium background for the DeepSeek Harness Web GUI (dsh-plugin)",
-      "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/dataizu/dsh-whale-aqua-theme/HEAD/screenshots/whale-animation.gif",
-      "previewCss": "https://raw.githubusercontent.com/dataizu/dsh-whale-aqua-theme/HEAD/apple-style.css"
-    },
-    {
       "name": "dsh-whale-background",
       "repo": "tuogusa/dsh-whale-background",
       "npm": "dsh-whale-background",
@@ -6215,19 +6064,6 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Frame-wide 3D whale desktop pet with edge habitat, hover reactions, and smooth shape-aware dragging",
       "license": "MIT"
-    },
-    {
-      "name": "dsh-wishadel-theme",
-      "repo": "cdxDNRF/dsh-wishadel-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "skin",
-      "status": "verified",
-      "evidence": "package.json#dsh.bundle",
-      "added": "2026-08-25",
-      "lastVerified": "2026-08-25",
-      "verifiedAgainst": "0.1.0-rc.8",
-      "description": "Wishadel demolition-terminal skin + task board, git graph, project panel and settings center for DeepSeek Harness Web GUI"
     },
     {
       "name": "dsh-wx-skin",
@@ -6658,7 +6494,7 @@ window.__THEMES__ = {
     },
     {
       "name": "ui-song-theme",
-      "repo": "yunfei07/ui-song-theme",
+      "repo": "yunfei07/dsh-song-ui",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -6687,7 +6523,7 @@ window.__THEMES__ = {
     },
     {
       "name": "uiskin-theme",
-      "repo": "chouxiaohuai/uiskin-theme",
+      "repo": "chouxiaohuai/dsh-uiskin-theme",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -6754,7 +6590,7 @@ window.__THEMES__ = {
     },
     {
       "name": "whale-girl-plus",
-      "repo": "Henry91200/whale-girl-plus",
+      "repo": "Henryang777/whale-girl-plus",
       "official": false,
       "kind": "skin",
       "category": "companion",
@@ -6769,7 +6605,7 @@ window.__THEMES__ = {
     },
     {
       "name": "wishadel-theme",
-      "repo": "cdxDNRF/wishadel-theme",
+      "repo": "cdxDNRF/dsh-wishadel-theme",
       "official": false,
       "kind": "skin",
       "category": "skin",
