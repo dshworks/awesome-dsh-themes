@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 478 entries, 36 with live in-browser previews, 462 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 480 entries, 36 with live in-browser previews, 464 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -434,6 +434,20 @@ dsh plugin --profile web add github:chajiuqqq/dsh-claude-theme
 ```
 
 **Repo:** [chajiuqqq/dsh-claude-theme](https://github.com/chajiuqqq/dsh-claude-theme) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/chajiuqqq/dsh-claude-theme/blob/HEAD/package.json)
+
+### [dsh-client-background](https://github.com/imcp-pro/dsh-client-background)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-client-background&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-client-background preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-client-background&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Replaces the dsh Web client base background with a randomly switching public Unsplash image, revealed through translucent base surfaces.
+
+```sh
+dsh plugin --profile web add github:imcp-pro/dsh-client-background
+```
+
+**Repo:** [imcp-pro/dsh-client-background](https://github.com/imcp-pro/dsh-client-background) · **dsh:** 0.1.1-rc.2 · **Proof:** [src/client/background.ts#--dsw-tokens](https://github.com/imcp-pro/dsh-client-background/blob/HEAD/src/client/background.ts)
 
 ### [dsh-columbina-theme](https://github.com/hyposelen1a/dsh-columbina-theme)
 
@@ -1614,6 +1628,20 @@ dsh plugin --profile web add github:BeiZi6/dsh-theme-plugin
 ```
 
 **Repo:** [BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.bundle](https://github.com/BeiZi6/dsh-theme-plugin/blob/HEAD/package.json)
+
+### [dsh-theme-prts](https://github.com/ash-qw/dsh-theme-prts)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-prts&scheme=dark"><img src="https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/HEAD/tests/e2e/screenshots/prts-dark-1440.png" width="360" alt="dsh-theme-prts preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-prts&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Unofficial Arknights P.R.T.S.-inspired UI theme for DeepSeek Harness Web
+
+```sh
+dsh plugin --profile web add github:ash-qw/dsh-theme-prts
+```
+
+**Repo:** [ash-qw/dsh-theme-prts](https://github.com/ash-qw/dsh-theme-prts) · **dsh:** 0.1.1-rc.2 · **Proof:** [src/styles/prts.css#--dsw-tokens](https://github.com/ash-qw/dsh-theme-prts/blob/HEAD/src/styles/prts.css)
 
 ### [dsh-theme-spectrum](https://github.com/qipenglin/dsh-theme-spectrum)
 

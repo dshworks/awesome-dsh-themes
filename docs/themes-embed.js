@@ -1089,6 +1089,19 @@ window.__THEMES__ = {
       "description": "Claude 主题：Cherry Studio Claude 社区主题（igeekbb/Cherry-Studio-Claude-theme）移植到 DSH 变量体系——米白/炭灰配色、SF Pro Rounded + 霞鹜文楷字体、cordis 插件面板气泡卡片（尖角尾巴）+ 设置页开关。"
     },
     {
+      "name": "dsh-client-background",
+      "repo": "imcp-pro/dsh-client-background",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "src/client/background.ts#--dsw-tokens",
+      "added": "2026-09-02",
+      "lastVerified": "2026-09-02",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Replaces the dsh Web client base background with a randomly switching public Unsplash image, revealed through translucent base surfaces."
+    },
+    {
       "name": "dsh-client-ui-m3-theme",
       "repo": "DarkskyX15/dsh-client-ui-m3-theme",
       "official": false,
@@ -4856,6 +4869,20 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DSH Web GUI theme studio with presets and per-mode customization: accent, background, foreground, fonts, translucent sidebar, and contrast. Overrides CSS tokens in every served index.html via the official webServer.tapIndex seam.",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-theme-prts",
+      "repo": "ash-qw/dsh-theme-prts",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "src/styles/prts.css#--dsw-tokens",
+      "added": "2026-09-02",
+      "lastVerified": "2026-09-02",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Unofficial Arknights P.R.T.S.-inspired UI theme for DeepSeek Harness Web",
+      "preview": "https://raw.githubusercontent.com/ash-qw/dsh-theme-prts/HEAD/tests/e2e/screenshots/prts-dark-1440.png"
     },
     {
       "name": "dsh-theme-rheostat",
