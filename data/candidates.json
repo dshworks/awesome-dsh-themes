@@ -2,15 +2,6 @@
   "updated": "2026-09-02",
   "candidates": [
     {
-      "repo": "ash-qw/dsh-theme-prts",
-      "sources": [
-        "routed-from-plugins"
-      ],
-      "stars": 0,
-      "description": "Unofficial personal non-commercial Arknights P.R.T.S. fan UI for DeepSeek Harness",
-      "discovered": "2026-09-02"
-    },
-    {
       "repo": "chenyangcun/dsh-command-palette",
       "sources": [
         "github-topic"
@@ -29,14 +20,6 @@
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
-    },
-    {
-      "repo": "imcp-pro/dsh-client-background",
-      "sources": [
-        "routed-from-plugins"
-      ],
-      "stars": 0,
-      "discovered": "2026-09-02"
     },
     {
       "repo": "Sh1wu0814/dsh-chat-background",
