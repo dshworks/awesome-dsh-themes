@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "themes": [
     {
       "name": "arknits-background-plugin",
@@ -310,6 +310,19 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Theme manager for the dsh Web UI: a Settings Theme section with Forest Green and Ocean Blue alias-token skins, plus upload-and-switch for custom JS themes persisted on disk.",
       "license": "MIT"
+    },
+    {
+      "name": "diana-dsh-theme",
+      "repo": "lanmengSakura/diana-dsh-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "overlay/packages/client/ui-theme/src/styles/diana.css#--dsw-tokens",
+      "added": "2026-09-02",
+      "lastVerified": "2026-09-02",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Diana day and night source overlay for DeepSeek Harness."
     },
     {
       "name": "dph-endfield-theme",
@@ -2580,6 +2593,19 @@ window.__THEMES__ = {
       "description": "Hot-pluggable Minecraft Launcher pixel skin for the DeepSeek Harness Web GUI"
     },
     {
+      "name": "dsh-minimalist-themes",
+      "repo": "mykeura/dsh-minimalist-themes",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-02",
+      "lastVerified": "2026-09-02",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Minimalist Themes plugin: adapts the Minimalist theme collection palettes to the DSH --dsw-* token system and adds a picker card under Settings > Plugins"
+    },
+    {
       "name": "dsh-model-palette",
       "repo": "Jensen-Yao/dsh-model-palette",
       "official": false,
@@ -3126,19 +3152,6 @@ window.__THEMES__ = {
       "license": "MIT"
     },
     {
-      "name": "dsh-plugin-palette-board",
-      "repo": "zhm20001/dsh-plugin-palette-board",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "src/client/palette.module.css#--dsw-tokens",
-      "added": "2026-09-01",
-      "lastVerified": "2026-09-01",
-      "verifiedAgainst": "0.1.1-rc.2",
-      "description": "2D Palette Board & Application Drawer for DeepSeek Harness (dsh): a Raycast/Launchpad-style floating application grid, with the paletteHub service open to all client plugins"
-    },
-    {
       "name": "dsh-plugin-pet",
       "repo": "c-ling/dsh-plugin-pet",
       "official": false,
@@ -3499,9 +3512,9 @@ window.__THEMES__ = {
       "kind": "skin",
       "category": "tokens",
       "status": "verified",
-      "evidence": "yustia.module.css#--dsw-tokens",
+      "evidence": "client.js#--dsw-tokens",
       "added": "2026-09-01",
-      "lastVerified": "2026-09-01",
+      "lastVerified": "2026-09-02",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "棕色尘埃2 · 悠丝缇亚 — 象牙白与圣金辉映的圣剑骑士（昼夜双模式）",
       "preview": "https://raw.githubusercontent.com/JacoboJin/dsh-skin-bd2-yustia/HEAD/preview/dark.png"
@@ -3556,9 +3569,9 @@ window.__THEMES__ = {
       "kind": "skin",
       "category": "tokens",
       "status": "verified",
-      "evidence": "patches.css#--dsw-tokens",
+      "evidence": "skin.css#--dsw-tokens",
       "added": "2026-08-25",
-      "lastVerified": "2026-08-25",
+      "lastVerified": "2026-09-02",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "橙子 · 深海蓝调 — DSH Web 皮肤中心皮肤（纯资产目录）",
       "preview": "https://raw.githubusercontent.com/jer67107-cyber/dsh-skin-chengzi/HEAD/preview/dark.png"
@@ -4951,6 +4964,19 @@ window.__THEMES__ = {
       "preview": "https://raw.githubusercontent.com/Misaki14987/dsh-theme-taffy/main/assets/art-light.jpg"
     },
     {
+      "name": "dsh-theme-taojian",
+      "repo": "Waldsatte/dsh-theme-taojian",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "client.js#--dsw-tokens",
+      "added": "2026-09-02",
+      "lastVerified": "2026-09-02",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Taojian (陶笺) — Claude-inspired DSH theme: warm paper #F5F3EE, clay accent #DA7756, Noto Serif SC."
+    },
+    {
       "name": "dsh-theme-ti",
       "repo": "longyu065/dsh-theme-ti",
       "official": false,
@@ -6155,19 +6181,6 @@ window.__THEMES__ = {
       "description": "Chinese traditional color theme pack for DeepSeek Harness: 48 anchors times light/dark writing the full --dsw-* token vocabulary.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/nevertoday/dsh-theme-plugin/HEAD/docs/img/panel-light.png"
-    },
-    {
-      "name": "dshthemes",
-      "repo": "dshworks/dshthemes",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "src/chrome.css#--dsw-tokens",
-      "added": "2026-08-19",
-      "lastVerified": "2026-08-19",
-      "verifiedAgainst": "0.1.0-rc.7",
-      "description": "dshthemes.com — every DeepSeek Harness theme, in its own colours. A reader of dshworks/awesome-dsh-themes."
     },
     {
       "name": "dskin",

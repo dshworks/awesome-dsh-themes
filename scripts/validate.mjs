@@ -109,6 +109,7 @@ if (!Array.isArray(candidates.candidates)) {
     const slug = c.repo.toLowerCase();
     if (seenCandidates.has(slug)) errors.push(`${at}: duplicate candidate`);
     seenCandidates.add(slug);
+    if ("hold" in c && !(typeof c.hold === "string" && c.hold.trim())) errors.push(`${at}: hold must be a non-empty string saying why a human is keeping it`);
     if (registrySlugs.has(slug)) errors.push(`${at}: already in themes.json; drop it from the queue`);
     if (liveRejections.has(slug)) errors.push(`${at}: rejected and not yet expired; drop it from the queue`);
   });

@@ -21,11 +21,22 @@
 // `package.json#dsh.bundle` proves the repo installs into dsh, never that it
 // restyles anything. `chenyangcun/dsh-command-palette` came in that way.
 //
-// So an install-path-only proof is now backed by one of two things before it
-// is admitted: a real restyle signal in the tree (a `--dsw-*` override, or the
-// ThemeRuntime), or the repo passing the same name gate discover.mjs uses.
-// Neither holds -> held for review, never rejected: a launcher and a skin can
-// look identical from outside, and that is a human's call.
+// So an install-path-only proof is never admitted on its own. It is backed by
+// a real restyle signal in the tree (a `--dsw-*` override, or the ThemeRuntime)
+// or it is held for review, never rejected: a launcher and a skin can look
+// identical from outside, and that is a human's call. The name gate used to
+// stand in for that signal, but for the topic lane the gate is what queued the
+// row in the first place, so it proved nothing twice: on 2026-09-02 it admitted
+// a model switcher because "skin" was in the repo name.
+//
+// Two more things the same day taught this file:
+//   - a token *mention* is not an override. `var(--dsw-bg)` is a consumer; a
+//     skin writes `--dsw-bg:`. The regex now wants the declaration, and it is
+//     also run over scripts, because a skin that ships its sheet from
+//     client.js (`--dsw-font-family: ${SERIF}`) is still a skin.
+//   - a hand decision has to outlive the next run. A candidate carrying
+//     `hold: "<why>"` is a human's call already made; this script leaves it in
+//     the queue untouched instead of re-deciding it by machine.
 //
 // Usage:
 //   node scripts/triage.mjs                drain data/candidates.json
@@ -38,7 +49,6 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { looksLikeATheme } from "./theme-name.mjs";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -135,6 +145,11 @@ const SKIP_PATH = /(^|\/)(node_modules|dist|build|out|vendor|\.git|coverage|fixt
 // The registry's own subject: dsh's design tokens. A sheet that overrides
 // these is the only install path a pure-CSS skin has.
 const DSW_TOKEN = /--dsw-[a-z0-9-]+/i;
+// A declaration, not a mention: `--dsw-bg:` in a sheet, `"--dsw-bg":` in a
+// token map, `--dsw-bg: ${x}` in a template literal. `var(--dsw-bg)` is not it.
+const DSW_OVERRIDE = /--dsw-[a-z0-9-]+"?\s*:/i;
+const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|\.(test|spec)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -243,12 +258,21 @@ async function proveDeep(repo) {
   const sheets = paths.filter((p) => STYLE_FILE.test(p)).slice(0, 8);
   for (const p of sheets) {
     const text = await raw(repo, p);
-    if (text && DSW_TOKEN.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override", tokens: true }, facts };
+    if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override", tokens: true }, facts };
   }
 
   for (const p of paths.filter((x) => TOKEN_JSON.test(x)).slice(0, 6)) {
     const text = await raw(repo, p);
-    if (text && DSW_TOKEN.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token map", tokens: true }, facts };
+    if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token map", tokens: true }, facts };
+  }
+
+  // A sheet written from a script is still a sheet. Smallest files first: a
+  // skin's client.js is short and its bundle, if committed, is not.
+  const scripts = paths.filter((p) => SCRIPT_FILE.test(p) && !TEST_FILE.test(p))
+    .sort((a, b) => a.split("/").length - b.split("/").length || a.length - b.length).slice(0, 8);
+  for (const p of scripts) {
+    const text = await raw(repo, p);
+    if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override (css-in-js)", tokens: true }, facts };
   }
 
   return { proof: null, facts };
@@ -269,19 +293,16 @@ async function decide(repo, says = null) {
   // whatever install path the root package.json carried.
   if (deep.proof && !deep.proof.install) return { repo, verdict: "accept", ...deep.proof, facts };
 
-  // An install path with no restyle signal anywhere in the tree. Admit it only
-  // if the repo itself claims to be a skin; otherwise a human decides.
+  // An install path with no restyle signal anywhere in the tree. A human
+  // decides -- except under --prove, where the row is already listed and the
+  // question is whether its receipt still holds, not whether it is a skin.
   if (root.proof || deep.proof) {
     const proof = root.proof ?? deep.proof;
-    const name = repo.split("/")[1] ?? "";
-    const text = `${name} ${says ?? facts.pkgDesc ?? facts.readmeLede ?? ""}`;
-    if (says === null || looksLikeATheme(name, text)) {
-      return { repo, verdict: "accept", ...proof, facts };
-    }
+    if (says === null) return { repo, verdict: "accept", ...proof, facts };
     return {
       repo,
       verdict: "review",
-      reason: `installs into dsh (${proof.evidence}) but nothing in the tree restyles it, and the repo does not call itself a skin`,
+      reason: `installs into dsh (${proof.evidence}) but nothing in the tree restyles it`,
       facts,
     };
   }
@@ -430,8 +451,9 @@ if (PROVE) {
 
 // --- mode: drain the queue --------------------------------------------------
 
-const pending = queue.candidates.filter((c) => !listed.has(c.repo.toLowerCase())).slice(0, LIMIT);
-console.error(`triage: ${pending.length} candidate(s) to decide`);
+const byHand = queue.candidates.filter((c) => typeof c.hold === "string" && c.hold.trim());
+const pending = queue.candidates.filter((c) => !listed.has(c.repo.toLowerCase()) && !byHand.includes(c)).slice(0, LIMIT);
+console.error(`triage: ${pending.length} candidate(s) to decide${byHand.length ? `, ${byHand.length} held by hand and left alone` : ""}`);
 
 const admitted = [];
 const rejects = [];

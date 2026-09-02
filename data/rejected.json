@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-09-02",
   "rejected": [
+    {
+      "repo": "domitor-syh/dsh-ui-skin-switcher",
+      "reason": "a model and reasoning-effort switcher: no sheet, no --dsw-* declaration, no ThemeRuntime; 'skin' is in the repo name only. Listed in awesome-dsh-plugins.",
+      "date": "2026-09-02"
+    },
+    {
+      "repo": "dshworks/dshthemes",
+      "reason": "dshthemes.com is the gallery that reads this registry; its one sheet consumes --dsw-* for the site chrome and sets none. Not a theme.",
+      "date": "2026-09-02"
+    },
     {
       "repo": "GitNoHup/macaron-theme",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
@@ -65,6 +75,16 @@
       "repo": "wwxiaoqi/ui-theme-quota-show",
       "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",
       "date": "2026-08-15"
+    },
+    {
+      "repo": "zhangguiping-xydt/dsh-skin-studio",
+      "reason": "a skin authoring studio: a settings page whose one sheet consumes --dsw-* for its own panel and sets none. Its output would be a skin; the studio is a tool. Routed to awesome-dsh-plugins.",
+      "date": "2026-09-02"
+    },
+    {
+      "repo": "zhm20001/dsh-plugin-palette-board",
+      "reason": "a Raycast-style launcher that consumes --dsw-* for its own panel and sets none. Routed to awesome-dsh-plugins.",
+      "date": "2026-09-02"
     }
   ]
 }

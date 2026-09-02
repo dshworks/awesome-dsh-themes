@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "candidates": [
     {
       "repo": "chenyangcun/dsh-command-palette",
@@ -9,17 +9,7 @@
       "stars": 0,
       "description": "A keyboard-first command palette for standard DeepSeek Harness",
       "discovered": "2026-08-31",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it, and the repo does not call itself a skin"
-    },
-    {
-      "repo": "domitor-syh/dsh-ui-skin-switcher",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 1,
-      "description": "Model & reasoning-effort switcher plugin for DeepSeek Harness (DSH): composer seat with Off/Max effort slider. DSH 插件：模型与思考力度切换器。",
-      "discovered": "2026-09-01",
-      "note": "name says skin, package says otherwise: injects connection/ui-conversation/ui-slots, ships no stylesheet and no --dsw-* override. A model and reasoning-effort switcher. Held by hand — the name gate passed it on the word alone."
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
@@ -32,49 +22,14 @@
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
     },
     {
-      "repo": "lanmengSakura/diana-dsh-theme",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "description": "嘉然 Diana 的 DSH 日间/暗夜源码覆盖层与最小导入补丁（预发布）",
-      "discovered": "2026-09-01"
-    },
-    {
-      "repo": "mykeura/dsh-minimalist-themes",
-      "sources": [
-        "routed-from-plugins"
-      ],
-      "stars": 0,
-      "description": "18 minimalist color themes for DeepSeek Harness. Pick one with a single click — it's just another plugin.",
-      "discovered": "2026-09-01"
-    },
-    {
       "repo": "Sh1wu0814/dsh-chat-background",
       "sources": [
         "routed-from-plugins"
       ],
       "stars": 1,
       "description": "Chat background plugin for DeepSeek Harness - set an image as the chat view background, inspired by VSCode background extension.",
-      "discovered": "2026-09-01"
-    },
-    {
-      "repo": "Waldsatte/dsh-theme-taojian",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "description": "Taojian (陶笺) — Claude-inspired DSH theme",
-      "discovered": "2026-09-01"
-    },
-    {
-      "repo": "zhangguiping-xydt/dsh-skin-studio",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "description": "A visual, local-first skin authoring studio for DeepSeek Harness Web.",
-      "discovered": "2026-09-01"
+      "discovered": "2026-09-01",
+      "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
     }
   ]
 }
