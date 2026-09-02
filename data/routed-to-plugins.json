@@ -1,0 +1,21 @@
+{
+  "_comment": "Repos this registry opened and found to be plugins wearing a skin's name: launchers, palette boards, skin *authoring* tools. awesome-dsh-plugins reads this file as a discovery lane (source: routed-from-themes) and will not route them back here by name. A row here is also in rejected.json with the reason; this file is the forwarding address, that one is the verdict.",
+  "updated": "2026-09-02",
+  "count": 2,
+  "repos": [
+    {
+      "repo": "zhangguiping-xydt/dsh-skin-studio",
+      "description": "A visual, local-first skin authoring studio for DeepSeek Harness Web.",
+      "stars": 0,
+      "routed": "2026-09-02",
+      "note": "a plugin, not a skin; belongs in awesome-dsh-plugins"
+    },
+    {
+      "repo": "zhm20001/dsh-plugin-palette-board",
+      "description": "2D Palette Board & Application Drawer for DeepSeek Harness (dsh): a Raycast/Launchpad-style floating application grid, with the paletteHub service open to all client plugins",
+      "stars": 0,
+      "routed": "2026-09-02",
+      "note": "a plugin, not a skin; belongs in awesome-dsh-plugins"
+    }
+  ]
+}

@@ -78,16 +78,27 @@ repo's own files, and records where the proof was found in `evidence`:
 |---|---|
 | `package.json#dependencies.@deepseek-ai/dsh-client-ui-theme` | registers with the ThemeRuntime |
 | `package.json#dsh.bundle` | a dsh bundle manifest |
-| `<path>.css#--dsw-tokens` | a stylesheet overriding dsh's design tokens |
+| `<path>.css#--dsw-tokens` | a stylesheet declaring dsh's design tokens (`--dsw-bg:`), not merely reading them (`var(--dsw-bg)`) |
+| `client.js#--dsw-tokens` | the same declaration, written from a script (CSS-in-JS) |
 
-The name gate is not re-opened here — `discover.mjs` already routes name-first,
-because a launcher and a token-balance HUD both embed the Web UI and both ship
-`--dsw-*` CSS. This step asks the second question: does the repo carry anything
-that could restyle the UI at all.
+A bundle manifest proves the repo installs into dsh. It does not prove the repo
+restyles anything, and the repo's name proves even less: for the topic lane the
+name is what queued the row in the first place, so "it calls itself a skin" is
+the same fact counted twice (it admitted a model switcher on 2026-09-02 because
+`skin` was in the slug). So an install path with no restyle signal anywhere in
+the tree is **held for review, never admitted and never rejected** — a launcher
+and a skin look identical from outside, and that is a human's call.
 
 A candidate that can be proven becomes an entry carrying its `evidence`; one
 that cannot becomes a dated rejection with a recheck date; one that needs a
-human keeps its place in the queue with a note. Nothing is deleted by a script.
+human keeps its place in the queue with a `note`. A human who has looked and
+wants the row to stay parked writes `hold: "<why>"` on it — triage leaves such
+a row alone on every later run instead of re-deciding it by machine. A human
+who finds a plugin wearing a skin's name records the judgment in
+`rejected.json` **and** adds the repo to
+[`data/routed-to-plugins.json`](data/routed-to-plugins.json), which
+`awesome-dsh-plugins` reads as a discovery lane and will not route back here.
+Nothing is deleted by a script.
 
 `status: verified` **requires** `evidence` — `validate.mjs` rejects the entry
 otherwise. Re-prove the whole registry with `node scripts/triage.mjs --prove`;
