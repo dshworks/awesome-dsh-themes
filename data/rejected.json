@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "rejected": [
     {
       "repo": "domitor-syh/dsh-ui-skin-switcher",
@@ -46,6 +46,12 @@
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-20",
       "recheckAfter": "2026-10-04"
+    },
+    {
+      "repo": "sly7783/lively-wallpaper-guide",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-09-04",
+      "recheckAfter": "2026-10-19"
     },
     {
       "repo": "sujiu0616-art/DSH-CustomWallpapers-Glassmorphism-Theme",
