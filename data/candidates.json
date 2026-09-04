@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "candidates": [
+    {
+      "repo": "123twtd/dsh-skin-manager",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness (dsh) 可切换皮肤包管理器：皮肤包发现/激活/ZIP 导入，适配 0.1.x，含爱弥斯示例皮肤",
+      "discovered": "2026-09-03",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
     {
       "repo": "chenyangcun/dsh-command-palette",
       "sources": [
@@ -9,6 +19,16 @@
       "stars": 0,
       "description": "A keyboard-first command palette for standard DeepSeek Harness",
       "discovered": "2026-08-31",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "frank-fan-818/dsh-f1-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "An F1 Race Control themed skin for the DeepSeek Harness Web UI — Red Bull, Ferrari, McLaren & Mercedes team themes, broadcast-photo backdrops, and a native settings panel, in dark and light.",
+      "discovered": "2026-09-03",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -22,6 +42,15 @@
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
     },
     {
+      "repo": "qyjgg/dsh-plugin-skill-palette",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-09-03",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "Sh1wu0814/dsh-chat-background",
       "sources": [
         "routed-from-plugins"
@@ -30,6 +59,16 @@
       "description": "Chat background plugin for DeepSeek Harness - set an image as the chat view background, inspired by VSCode background extension.",
       "discovered": "2026-09-01",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "yunmin311/dsh-universal-palette",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Dense translucent-glass Universal Palette for DeepSeek Harness Web — federates Commands, Sessions, Models, Conversation Hits with rich secondary actions and deterministic context/frecency ranking.",
+      "discovered": "2026-09-03",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     }
   ]
 }

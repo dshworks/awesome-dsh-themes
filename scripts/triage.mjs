@@ -42,6 +42,8 @@
 //   node scripts/triage.mjs                drain data/candidates.json
 //   node scripts/triage.mjs --dry-run      decide everything, write nothing
 //   node scripts/triage.mjs --prove        re-prove entries already listed
+//   node scripts/triage.mjs --prove --evidence=test-engine
+//                                          re-prove only rows whose receipt matches
 //   node scripts/triage.mjs --limit 20     stop after 20 repos
 //   node scripts/triage.mjs --report f.json  write the full per-repo trace
 //
@@ -79,9 +81,19 @@ const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.1-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
-const opt = (f, d) => { const i = argv.indexOf(f); return i >= 0 && argv[i + 1] ? argv[i + 1] : d; };
+// Both spellings. `--evidence=x` used to parse as an unknown token and fall
+// back silently, which turns a targeted pass into a whole-registry one.
+const opt = (f, d) => {
+  const inline = argv.find((a) => a.startsWith(`${f}=`));
+  if (inline) return inline.slice(f.length + 1) || d;
+  const i = argv.indexOf(f);
+  return i >= 0 && argv[i + 1] ? argv[i + 1] : d;
+};
 const DRY = has("--dry-run");
 const PROVE = has("--prove");
+// A rule change invalidates a nameable slice, not the whole shelf. Re-proving
+// 486 rows to fix one re-dates 485 the change never touched.
+const EVIDENCE_FILTER = opt("--evidence", null);
 const LIMIT = Number(opt("--limit", Infinity));
 const REPORT = opt("--report", null);
 const CONCURRENCY = Number(opt("--concurrency", 6));
@@ -149,7 +161,13 @@ const DSW_TOKEN = /--dsw-[a-z0-9-]+/i;
 // token map, `--dsw-bg: ${x}` in a template literal. `var(--dsw-bg)` is not it.
 const DSW_OVERRIDE = /--dsw-[a-z0-9-]+"?\s*:/i;
 const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
-const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|\.(test|spec)\.[a-z]+$/i;
+// `test-engine.mjs` is a test and matched none of this: no `tests/` segment,
+// no `.test.` infix. It became the cited receipt for a real skin — the proof
+// was an `assert.match(client, /--dsw-alias-label-primary:/)`, a claim ABOUT
+// the code rather than the code. A registry that cites a test file is one step
+// removed from the thing it is vouching for. `latest-theme.css` and
+// `contest-ui.js` must not match, so the prefix form anchors on a separator.
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -401,7 +419,10 @@ const rejectedBy = new Map(ledger.rejected.map((r) => [r.repo.toLowerCase(), r])
 // or removes it.
 
 if (PROVE) {
-  const targets = registry.themes.filter((t) => !t.official).slice(0, LIMIT);
+  const targets = registry.themes
+    .filter((t) => !t.official)
+    .filter((t) => !EVIDENCE_FILTER || (t.evidence ?? "").includes(EVIDENCE_FILTER))
+    .slice(0, LIMIT);
   console.error(`triage: proving ${targets.length} listed themes (skipping ${registry.themes.length - targets.length} first-party/limited)`);
   const results = await pooled(targets, async (t) => {
     // An entry with a `path` names its own subdirectory: prove that, not the

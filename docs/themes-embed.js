@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "themes": [
     {
       "name": "arknits-background-plugin",
@@ -2576,8 +2576,8 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Hatsune Miku --dsw-* token skin: blue-purple-magenta gradients, frosted panels, custom wallpaper, light and dark.",
       "license": "BSD-3-Clause",
-      "preview": "https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png",
-      "notes": "repository returns 404 as of 2026-08-19"
+      "notes": "repository returns 404 as of 2026-08-19",
+      "preview": "https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png"
     },
     {
       "name": "dsh-minecraft-theme",
@@ -3891,8 +3891,8 @@ window.__THEMES__ = {
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Oil-painted whale-girl skin for the DeepSeek Harness web UI.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg",
-      "notes": "repository returns 404 as of 2026-08-19"
+      "notes": "repository returns 404 as of 2026-08-19",
+      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg"
     },
     {
       "name": "dsh-skin-nebula",
@@ -4326,6 +4326,19 @@ window.__THEMES__ = {
       "description": "Sprite-sheet desktop pet for the Web UI: import Codex-style pets, floating overlay render, library, and agent-state linkage.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/skr311/dsh-codex-pet/HEAD/docs/assets/screenshot-webui.png"
+    },
+    {
+      "name": "dsh-stardew-theme",
+      "repo": "JefferyShaw/dsh-stardew-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Stardew Valley style theme for the DeepSeek Harness Web UI — a cozy farmhouse dark palette of warm browns, harvest gold and grass green. · 星露谷物语风格 DSH 主题：暖棕、麦金与草绿的深夜农场深色配色。"
     },
     {
       "name": "dsh-taffy-theme",
@@ -4802,6 +4815,19 @@ window.__THEMES__ = {
       "previewCss": "https://raw.githubusercontent.com/drfccv/dsh-theme-neko/main/src/client/neko.module.css"
     },
     {
+      "name": "dsh-theme-nier-automata",
+      "repo": "marcemira/dsh-theme-nier-automata",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DSH web theme that recreates NieR:Automata's YoRHa UI — beige palette, grid texture, CRT FX, wipe-fill hover, and staff-line ornaments."
+    },
+    {
       "name": "dsh-theme-pack",
       "repo": "math-lrz/dsh-theme-pack",
       "official": false,
@@ -5058,6 +5084,20 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-24",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "DeepSeek-鲸鱼娘 (Whale Girl) theme for the DeepSeek Harness web GUI — ported from the DreamSkin skin package: full --dsw-* token remap on the native theme runtime, ambient whale-girl wallpaper behind a lightly frosted rose/periwinkle UI with user-adjustable glass strength, coffee-accent composer focus and soft pill"
+    },
+    {
+      "name": "dsh-theme-win98",
+      "repo": "FourTow/dsh-theme-win98",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "client.js#--dsw-tokens",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "DeepSeek Harness web theme: Windows 98 classic look. Silver 3D chrome, navy titles, MS Sans Serif, beveled controls, retro scrollbars, plus an optional teal desktop mode.",
+      "preview": "https://raw.githubusercontent.com/FourTow/dsh-theme-win98/HEAD/assets/screenshot.png"
     },
     {
       "name": "dsh-theme-xp",
@@ -5444,6 +5484,19 @@ window.__THEMES__ = {
       "description": "为 DSH（DeepSeek Harness）Web GUI 提供 Wallpaper Engine 壁纸背景：Scene 壁纸由 Three.js / WebGPU（wasm）在浏览器实时渲染，视频壁纸直接播放、Web 壁纸加载，其余回退 preview 图 + Ken Burns。"
     },
     {
+      "name": "dsh-v-theme",
+      "repo": "victor10035445/dsh-v-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "V CYBER — multi-theme plugin for the DeepSeek Harness Web client: NEON (cyber neon pink × electric blue) and TACTICAL (SOC dashboard + FUI cyan neon)"
+    },
+    {
       "name": "dsh-valley-pixel-skin",
       "repo": "EachSheep/dsh-valley-pixel-skin",
       "official": false,
@@ -5683,6 +5736,19 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-25",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "Wallpaper background for the DeepSeek Harness Web UI — built-in preset, custom URL, opacity control, auto-adapts to any screen"
+    },
+    {
+      "name": "dsh-wallpaper-kdzhangh",
+      "repo": "kdzhang-hub/dsh-wallpaper",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.bundle",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "Bring your local Wallpaper Engine library into DeepSeek Harness — adaptive glass backgrounds, one-click desktop switching, and Agent control."
     },
     {
       "name": "dsh-wallpaper-keke050",
@@ -6276,8 +6342,8 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Galgame-style Japanese interface skin: dusk curtains, gold corners, falling sakura.",
-      "install": "dsh plugin --profile web add github:Shmilyol/galgame-skin",
-      "notes": "repository returns 404 as of 2026-08-19"
+      "notes": "repository returns 404 as of 2026-08-19",
+      "install": "dsh plugin --profile web add github:Shmilyol/galgame-skin"
     },
     {
       "name": "Genshin-odette-skin-dsh",
@@ -6612,6 +6678,20 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-20",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "DeepSeek Harness web background settings plugin with solid color, image, and opacity controls."
+    },
+    {
+      "name": "weibo-wallpaper-dsh-plugin",
+      "repo": "Zhiye-Tang/weibo-wallpaper-dsh-plugin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "plugins/zly-wallpaper-engine/index.cjs#--dsw-tokens",
+      "added": "2026-09-04",
+      "lastVerified": "2026-09-04",
+      "verifiedAgainst": "0.1.1-rc.2",
+      "description": "把微博博主的相册内容变成 DSH(DeepSeek Harness)Web 界面壁纸的宿主插件(含多博主、按月归档、历史回填、三种显示模式)",
+      "preview": "https://raw.githubusercontent.com/Zhiye-Tang/weibo-wallpaper-dsh-plugin/HEAD/docs/social-preview.png"
     },
     {
       "name": "whale-girl",
