@@ -3,23 +3,23 @@
   "themes": 486,
   "preview": 162,
   "previewCss": 36,
-  "verifiedAgainst": "0.1.0-rc.6",
+  "verifiedAgainst": "0.1.1-rc.2",
   "verifiedSpread": [
     {
+      "version": "0.1.1-rc.2",
+      "count": 318
+    },
+    {
       "version": "0.1.0-rc.6",
-      "count": 320
+      "count": 138
     },
     {
       "version": "0.1.0-rc.8",
-      "count": 91
-    },
-    {
-      "version": "0.1.1-rc.2",
-      "count": 57
+      "count": 26
     },
     {
       "version": "0.1.0-rc.7",
-      "count": 18
+      "count": 4
     }
   ]
 }
