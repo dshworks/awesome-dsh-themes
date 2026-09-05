@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "candidates": [
+    {
+      "repo": "10086ggqq/dsh_theme_Minecraft",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "把 DeepSeek Harness 变成 Minecraft Java Edition 风格——WebGL 旋转全景主菜单、存档式会话选择、四种游戏模式对应 Agent 预设、世界内 HUD 聊天台、像素风工具卡片与审批面板、AI 思考时触发跑酷小游戏、8-bit 合成音效与自定义背景音乐、五类互动桌宠与红石粒子特效。零侵入 DSH 核心源码，经典界面一键切回。",
+      "discovered": "2026-09-05"
+    },
     {
       "repo": "123twtd/dsh-skin-manager",
       "sources": [
@@ -12,6 +21,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "Alphauni-x/dsh-ds-home-bg",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Deep-navy aurora background theme for the DeepSeek Harness web UI: layered radial glows, fine grid and a drifting halftone whale, following the host Appearance setting.",
+      "discovered": "2026-09-05"
+    },
+    {
       "repo": "chenyangcun/dsh-command-palette",
       "sources": [
         "github-topic"
@@ -20,6 +38,15 @@
       "description": "A keyboard-first command palette for standard DeepSeek Harness",
       "discovered": "2026-08-31",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "fengb3/dsh-theme-macintosh",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH 主题 · 经典麦金塔 Classic Macintosh(System 7 像素复古)",
+      "discovered": "2026-09-05"
     },
     {
       "repo": "frank-fan-818/dsh-f1-skin",
@@ -42,6 +69,24 @@
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
     },
     {
+      "repo": "HeShen-1/deepseek-whale-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "🐋 Live dot-matrix whale wallpaper plugin for the DeepSeek Harness (dsh) web UI — 1,750 breathing WebGL2 particles, pointer vortices, light/dark themes · 深度求索 Harness 点阵鲸鱼动态壁纸插件",
+      "discovered": "2026-09-05"
+    },
+    {
+      "repo": "leeseo39/dsh-we-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Wallpaper Engine assets as DeepSeek Harness dynamic background — upstream skin-center 0.3.14 source snapshot + self-built WE engine research",
+      "discovered": "2026-09-05"
+    },
+    {
       "repo": "qyjgg/dsh-plugin-skill-palette",
       "sources": [
         "github-topic"
@@ -49,6 +94,15 @@
       "stars": 0,
       "discovered": "2026-09-03",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "retmon2333/dsh-background",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness（DSH）背景壁纸更换（单图 / 文件夹轮播）模式，可调透明、模糊、遮罩与樱花／雪花特效，侧栏与输入框也能透出壁纸",
+      "discovered": "2026-09-05"
     },
     {
       "repo": "Sh1wu0814/dsh-chat-background",
@@ -59,6 +113,33 @@
       "description": "Chat background plugin for DeepSeek Harness - set an image as the chat view background, inspired by VSCode background extension.",
       "discovered": "2026-09-01",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "yangcanbin31-coder/dsh-skin-nazuna",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "NAZUNA · 彻夜之歌 — 为 DeepSeek Harness Web GUI 打造的毛玻璃立绘主题：深色夜城 / 浅色瓷白双主题、会话场景动画、右上角色状态卡 | A midnight-city glass skin for DeepSeek Harness, themed on Nazuna from Call of the Night",
+      "discovered": "2026-09-05"
+    },
+    {
+      "repo": "YrracOwl/dsh-theme-acid-noir",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "EN: Usability-first cyber-editorial themes for DSH Web. 中文：面向 DSH Web、重视可用性的赛博编辑主题。",
+      "discovered": "2026-09-05"
+    },
+    {
+      "repo": "YrracOwl/dsh-theme-cutout-clash",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "EN: Neo-brutalist and pop-art themes with calm reading surfaces for DSH Web. 中文：面向 DSH Web、兼顾安静阅读表面的新粗野主义与波普艺术主题。",
+      "discovered": "2026-09-05"
     },
     {
       "repo": "yunmin311/dsh-universal-palette",
