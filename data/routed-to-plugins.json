@@ -1,7 +1,7 @@
 {
   "_comment": "Repos this registry opened and found to be plugins wearing a skin's name: launchers, palette boards, skin *authoring* tools. awesome-dsh-plugins reads this file as a discovery lane (source: routed-from-themes) and will not route them back here by name. A row here is also in rejected.json with the reason; this file is the forwarding address, that one is the verdict.",
-  "updated": "2026-09-02",
-  "count": 2,
+  "updated": "2026-09-09",
+  "count": 5,
   "repos": [
     {
       "repo": "zhangguiping-xydt/dsh-skin-studio",
@@ -15,6 +15,27 @@
       "description": "2D Palette Board & Application Drawer for DeepSeek Harness (dsh): a Raycast/Launchpad-style floating application grid, with the paletteHub service open to all client plugins",
       "stars": 0,
       "routed": "2026-09-02",
+      "note": "a plugin, not a skin; belongs in awesome-dsh-plugins"
+    },
+    {
+      "repo": "123twtd/dsh-skin-manager",
+      "description": "DSH skin manager: a Skin row in Settings (native/skin-pack switching) plus discovery and persisted activation of dsh.skinpack packages.",
+      "stars": 0,
+      "routed": "2026-09-09",
+      "note": "a skin *manager*, not a skin — it ships no stylesheet of its own; belongs in awesome-dsh-plugins"
+    },
+    {
+      "repo": "chenyangcun/dsh-command-palette",
+      "description": "A keyboard-first command palette for DeepSeek Harness sessions, workspaces, settings, features, and reusable custom commands.",
+      "stars": 0,
+      "routed": "2026-09-09",
+      "note": "a plugin, not a skin; belongs in awesome-dsh-plugins"
+    },
+    {
+      "repo": "qyjgg/dsh-plugin-skill-palette",
+      "description": "Enhanced skill plugin for DeepSeek Harness (DSH): fuzzy slash search, interactive multi-skill palette and preset bundles.",
+      "stars": 0,
+      "routed": "2026-09-09",
       "note": "a plugin, not a skin; belongs in awesome-dsh-plugins"
     }
   ]

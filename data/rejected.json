@@ -91,6 +91,22 @@
       "repo": "zhm20001/dsh-plugin-palette-board",
       "reason": "a Raycast-style launcher that consumes --dsw-* for its own panel and sets none. Routed to awesome-dsh-plugins.",
       "date": "2026-09-02"
+    },
+    {
+      "repo": "123twtd/dsh-skin-manager",
+      "reason": "a skin *manager*, not a skin — it ships no stylesheet of its own; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
+    },
+    {
+      "repo": "chenyangcun/dsh-command-palette",
+      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
+    },
+    {
+      "repo": "qyjgg/dsh-plugin-skill-palette",
+      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
     }
-  ]
+  ],
+  "count": 19
 }

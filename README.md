@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 486 entries, 36 with live in-browser previews, 467 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 497 entries, 36 with live in-browser previews, 478 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -154,6 +154,20 @@ dsh plugin --profile web add github:orxz/deepseek-harness-themes
 ```
 
 **Repo:** [orxz/deepseek-harness-themes](https://github.com/orxz/deepseek-harness-themes/tree/HEAD/packages/ui) · **License:** MIT · **dsh:** 0.1.1-rc.2 · **Proof:** [packages/ui/package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/orxz/deepseek-harness-themes/blob/HEAD/packages/ui/package.json)
+
+### [deepseek-whale-wallpaper](https://github.com/HeShen-1/deepseek-whale-wallpaper)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=deepseek-whale-wallpaper&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="deepseek-whale-wallpaper preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=deepseek-whale-wallpaper&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DeepSeek Harness particle-whale wallpaper for the web client
+
+```sh
+dsh plugin --profile web add github:HeShen-1/deepseek-whale-wallpaper
+```
+
+**Repo:** [HeShen-1/deepseek-whale-wallpaper](https://github.com/HeShen-1/deepseek-whale-wallpaper) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/HeShen-1/deepseek-whale-wallpaper/blob/HEAD/package.json)
 
 ### [dhs-theme-plugin](https://github.com/kongxiangyiren/dhs-theme-plugin)
 
@@ -308,6 +322,20 @@ dsh plugin --profile web add github:breaker505/dsh-aurora-skin
 ```
 
 **Repo:** [breaker505/dsh-aurora-skin](https://github.com/breaker505/dsh-aurora-skin) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/breaker505/dsh-aurora-skin/blob/HEAD/package.json)
+
+### [dsh-background-retmon23](https://github.com/retmon2333/dsh-background)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-background-retmon23&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-background-retmon23 preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-background-retmon23&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DSH Web 自定义背景壁纸：本机单图／文件夹轮播、透明模糊遮罩、侧栏与输入框扩展、樱花／雪花特效
+
+```sh
+dsh plugin --profile web add github:retmon2333/dsh-background
+```
+
+**Repo:** [retmon2333/dsh-background](https://github.com/retmon2333/dsh-background) · **dsh:** 0.1.1-rc.2 · **Proof:** [lib/client.js#--dsw-tokens](https://github.com/retmon2333/dsh-background/blob/HEAD/lib/client.js)
 
 ### [dsh-beige-theme](https://github.com/SweetCandy-gift/dsh-beige-theme)
 
@@ -533,6 +561,20 @@ dsh plugin --profile web add github:ossFrankFrank/dsh-dracula-theme
 
 **Repo:** [ossFrankFrank/dsh-dracula-theme](https://github.com/ossFrankFrank/dsh-dracula-theme) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/ossFrankFrank/dsh-dracula-theme/blob/HEAD/package.json)
 
+### [dsh-ds-home-bg](https://github.com/Alphauni-x/dsh-ds-home-bg)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-ds-home-bg&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-ds-home-bg preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-ds-home-bg&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Deep-navy aurora background theme for the DeepSeek Harness web UI: layered radial glows, a fine grid and a drifting halftone whale, following the host Appearance setting.
+
+```sh
+dsh plugin --profile web add github:Alphauni-x/dsh-ds-home-bg
+```
+
+**Repo:** [Alphauni-x/dsh-ds-home-bg](https://github.com/Alphauni-x/dsh-ds-home-bg) · **dsh:** 0.1.1-rc.2 · **Proof:** [index.js#--dsw-tokens](https://github.com/Alphauni-x/dsh-ds-home-bg/blob/HEAD/index.js)
+
 ### [dsh-dynamic-background](https://github.com/njuptlzf/dsh-dynamic-background)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-dynamic-background&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-dynamic-background preview"></a>
@@ -616,6 +658,20 @@ dsh plugin --profile web add github:Cocowwy/dsh-plugin-eyecare-theme
 ```
 
 **Repo:** [Cocowwy/dsh-plugin-eyecare-theme](https://github.com/Cocowwy/dsh-plugin-eyecare-theme) · **License:** MIT · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/Cocowwy/dsh-plugin-eyecare-theme/blob/HEAD/package.json)
+
+### [dsh-f1-skin](https://github.com/frank-fan-818/dsh-f1-skin)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-f1-skin&scheme=dark"><img src="https://raw.githubusercontent.com/frank-fan-818/dsh-f1-skin/HEAD/docs/screenshots/settings-panel.png" width="360" alt="dsh-f1-skin preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-f1-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+F1 Race Control themed skin for the DeepSeek Harness Web UI — Red Bull / Ferrari / McLaren / Mercedes team themes with broadcast photo backdrops, native settings panel, dark & light.
+
+```sh
+dsh plugin --profile web add github:frank-fan-818/dsh-f1-skin
+```
+
+**Repo:** [frank-fan-818/dsh-f1-skin](https://github.com/frank-fan-818/dsh-f1-skin) · **dsh:** 0.1.1-rc.2 · **Proof:** [lib/client.js#--dsw-tokens](https://github.com/frank-fan-818/dsh-f1-skin/blob/HEAD/lib/client.js)
 
 ### [dsh-four-seasons-theme](https://github.com/czj527/dsh-four-seasons-theme)
 
@@ -854,6 +910,20 @@ dsh plugin --profile web add github:Nocehi/dsh-matugen
 ```
 
 **Repo:** [Nocehi/dsh-matugen](https://github.com/Nocehi/dsh-matugen) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.client](https://github.com/Nocehi/dsh-matugen/blob/HEAD/package.json)
+
+### [dsh-md3-theme](https://github.com/N3kOk0/dsh-md3-theme)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-md3-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-md3-theme preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-md3-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Material Design 3 (Material You) theme for the DSH Web GUI, seeded with DeepSeek blue. Re-tokens --dsw-* surfaces, labels, brand, states and adds MD3 shape / state-layer / elevation / motion via the official webServer.tapIndex seam.
+
+```sh
+dsh plugin --profile web add github:N3kOk0/dsh-md3-theme
+```
+
+**Repo:** [N3kOk0/dsh-md3-theme](https://github.com/N3kOk0/dsh-md3-theme) · **dsh:** 0.1.1-rc.2 · **Proof:** [lib/index.js#--dsw-tokens](https://github.com/N3kOk0/dsh-md3-theme/blob/HEAD/lib/index.js)
 
 ### [dsh-miku-skin](https://github.com/stushansusu/dsh-miku-skin)
 
@@ -1223,6 +1293,20 @@ dsh plugin --profile web add github:soarGuo/dsh-skin-lab
 
 **Repo:** [soarGuo/dsh-skin-lab](https://github.com/soarGuo/dsh-skin-lab) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/soarGuo/dsh-skin-lab/blob/HEAD/package.json)
 
+### [dsh-skin-nazuna](https://github.com/yangcanbin31-coder/dsh-skin-nazuna)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-nazuna&scheme=dark"><img src="https://raw.githubusercontent.com/yangcanbin31-coder/dsh-skin-nazuna/HEAD/preview/dark.png" width="360" alt="dsh-skin-nazuna preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-nazuna&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+NAZUNA skin for the dsh web GUI: a midnight-city theme inspired by Call of the Night — moonlit deep-blue night, soft violet moonlight, and quiet city-glow accents
+
+```sh
+dsh plugin --profile web add github:yangcanbin31-coder/dsh-skin-nazuna
+```
+
+**Repo:** [yangcanbin31-coder/dsh-skin-nazuna](https://github.com/yangcanbin31-coder/dsh-skin-nazuna) · **dsh:** 0.1.1-rc.2 · **Proof:** [src/client/nazuna.module.css#--dsw-tokens](https://github.com/yangcanbin31-coder/dsh-skin-nazuna/blob/HEAD/src/client/nazuna.module.css)
+
 ### [dsh-skin-pack](https://github.com/uckkk/dsh-skin-pack)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-pack&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-pack preview"></a>
@@ -1447,6 +1531,20 @@ dsh plugin --profile web add github:oil-oil/dsh-theme
 
 **Repo:** [oil-oil/dsh-theme](https://github.com/oil-oil/dsh-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/oil-oil/dsh-theme/blob/HEAD/package.json)
 
+### [dsh-theme-acid-noir](https://github.com/YrracOwl/dsh-theme-acid-noir)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-acid-noir&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-acid-noir preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-acid-noir&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+EN: Usability-first cyber-editorial themes for DeepSeek Harness Web with reversible lifecycle effects. ZH: 面向 DeepSeek Harness Web、重视可用性并支持可逆生命周期效果的赛博编辑主题。
+
+```sh
+dsh plugin --profile web add github:YrracOwl/dsh-theme-acid-noir
+```
+
+**Repo:** [YrracOwl/dsh-theme-acid-noir](https://github.com/YrracOwl/dsh-theme-acid-noir) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/YrracOwl/dsh-theme-acid-noir/blob/HEAD/package.json)
+
 ### [dsh-theme-blackgold](https://github.com/frostgao/dsh-theme-blackgold)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-blackgold&scheme=dark"><img src="https://raw.githubusercontent.com/frostgao/dsh-theme-blackgold/HEAD/screenshots/light.png" width="360" alt="dsh-theme-blackgold preview"></a>
@@ -1488,6 +1586,20 @@ dsh plugin --profile web add github:Leoq-bit/dsh-theme-bside-olivia-lin
 ```
 
 **Repo:** [Leoq-bit/dsh-theme-bside-olivia-lin](https://github.com/Leoq-bit/dsh-theme-bside-olivia-lin) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/Leoq-bit/dsh-theme-bside-olivia-lin/blob/HEAD/package.json)
+
+### [dsh-theme-cutout-clash](https://github.com/YrracOwl/dsh-theme-cutout-clash)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-cutout-clash&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-cutout-clash preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-cutout-clash&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+EN: Selectable neo-brutalist/pop-art themes for DeepSeek Harness Web with calm reading surfaces. ZH: 面向 DeepSeek Harness Web、兼顾安静阅读表面的新粗野主义与波普艺术主题。
+
+```sh
+dsh plugin --profile web add github:YrracOwl/dsh-theme-cutout-clash
+```
+
+**Repo:** [YrracOwl/dsh-theme-cutout-clash](https://github.com/YrracOwl/dsh-theme-cutout-clash) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/YrracOwl/dsh-theme-cutout-clash/blob/HEAD/package.json)
 
 ### [dsh-theme-cyberpunk](https://github.com/dlpufan/dsh-theme-cyberpunk/tree/HEAD/dsh-theme-cyberpunk)
 
@@ -1544,6 +1656,20 @@ dsh plugin --profile web add github:FAVKTOXIC/dsh-theme-liquid-glass
 ```
 
 **Repo:** [FAVKTOXIC/dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass/blob/HEAD/package.json)
+
+### [dsh-theme-macintosh](https://github.com/fengb3/dsh-theme-macintosh)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-macintosh&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-macintosh preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-macintosh&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DSH Macintosh 复古主题插件：System 7 像素语汇（ChiKareGo/Fusion Pixel 字体、桌面噪点画布、Finder 侧栏、月牙深浅切换、mcfx 闪烁、Kit 检视页），零构建 loader 格式常驻 bundle
+
+```sh
+dsh plugin --profile web add github:fengb3/dsh-theme-macintosh
+```
+
+**Repo:** [fengb3/dsh-theme-macintosh](https://github.com/fengb3/dsh-theme-macintosh) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/fengb3/dsh-theme-macintosh/blob/HEAD/package.json)
 
 ### [dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager)
 
@@ -1881,6 +2007,20 @@ dsh plugin --profile web add github:youzhoujiMrLiu/dsh-ui-wallpaper
 
 **Repo:** [youzhoujiMrLiu/dsh-ui-wallpaper](https://github.com/youzhoujiMrLiu/dsh-ui-wallpaper) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/youzhoujiMrLiu/dsh-ui-wallpaper/blob/HEAD/package.json)
 
+### [dsh-universal-palette](https://github.com/yunmin311/dsh-universal-palette)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-universal-palette&scheme=dark"><img src="https://raw.githubusercontent.com/yunmin311/dsh-universal-palette/HEAD/docs/assets/readme/hero.png" width="360" alt="dsh-universal-palette preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-universal-palette&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Dense translucent-glass Universal Palette for DeepSeek Harness Web — federates Commands, Models, Sessions and Conversation Hits with deterministic ranking and verified public-contract interoperability.
+
+```sh
+dsh plugin --profile web add github:yunmin311/dsh-universal-palette
+```
+
+**Repo:** [yunmin311/dsh-universal-palette](https://github.com/yunmin311/dsh-universal-palette) · **dsh:** 0.1.1-rc.2 · **Proof:** [src/client/UniversalPalette.module.css#--dsw-tokens](https://github.com/yunmin311/dsh-universal-palette/blob/HEAD/src/client/UniversalPalette.module.css)
+
 ### [dsh-v-theme](https://github.com/victor10035445/dsh-v-theme)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-v-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-v-theme preview"></a>
@@ -2048,6 +2188,20 @@ dsh plugin --profile web add github:licheng-ma/dsh-wechat-skin
 ```
 
 **Repo:** [licheng-ma/dsh-wechat-skin](https://github.com/licheng-ma/dsh-wechat-skin) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/licheng-ma/dsh-wechat-skin/blob/HEAD/package.json)
+
+### [dsh-window98-theme](https://github.com/lffrom0303/dsh-window98-theme)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-window98-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-window98-theme preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-window98-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+A faithful Windows 98 skin for the DeepSeek Harness web GUI: teal desktop, silver beveled panels, navy accents, pixelated MS Sans Serif, beveled buttons, sunken inputs and checkerboard scrollbars — derived from the classic 98.css design system.
+
+```sh
+dsh plugin --profile web add github:lffrom0303/dsh-window98-theme
+```
+
+**Repo:** [lffrom0303/dsh-window98-theme](https://github.com/lffrom0303/dsh-window98-theme) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/lffrom0303/dsh-window98-theme/blob/HEAD/package.json)
 
 ### [dsh-xiaoyao-skins](https://github.com/147228/dsh-xiaoyao-skins)
 
