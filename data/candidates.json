@@ -1,25 +1,61 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-12",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
       "sources": [
         "routed-from-plugins"
       ],
-      "stars": 1,
+      "stars": 2,
       "description": "把 DeepSeek Harness 变成 Minecraft Java Edition 风格——WebGL 旋转全景主菜单、存档式会话选择、四种游戏模式对应 Agent 预设、世界内 HUD 聊天台、像素风工具卡片与审批面板、AI 思考时触发跑酷小游戏、8-bit 合成音效与自定义背景音乐、五类互动桌宠与红石粒子特效。零侵入 DSH 核心源码，经典界面一键切回。",
       "discovered": "2026-09-08",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "ankhishtar2-lang/dsh-wallpaper-position",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "dsh-dream-skin satellite: per-image wallpaper position (X/Y px) settings row. Vibe-coded.",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "exmachina67/dsh-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness (DSH) Web UI beautify plugin: dark glass theme, accent color, background video/image.",
+      "discovered": "2026-09-12"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
         "github-topic"
       ],
-      "stars": 2,
+      "stars": 1,
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "it-kxw/dsh-ui-background",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH Web 背景切换插件：内置渐变/纯色预设、本地图片上传与路径引用，支持不透明度/模糊/填充调节，浅深配色自动适配，一条命令即可安装使用。",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "jiumengya/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness personalization plugin (dsh-wallpaper): Wallpaper Engine live-wallpaper integration",
+      "discovered": "2026-09-12"
     },
     {
       "repo": "leeseo39/dsh-we-wallpaper",
@@ -32,6 +68,33 @@
       "note": "installs into dsh (research/package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "Mauit06/dsh-jinhsi-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness webGUI的今汐主题，Jinhsi (Wuthering Waves) theme for the DeepSeek Harness web GUI",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "MistyRain-field/dsh-hu-tao-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "原神 · 胡桃（往生堂）界面美化 — DeepSeek Harness Web GUI 客户端插件皮肤 / Hu Tao (Wangsheng Funeral Parlor) skin for dsh web",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "online111111/whalechan-dsh-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 3,
+      "description": "Unofficial Whale-chan community fan-art theme for DeepSeek Harness",
+      "discovered": "2026-09-12"
+    },
+    {
       "repo": "pbadgpmeb22791-sketch/dsh-we-wallpaper",
       "sources": [
         "github-topic"
@@ -40,6 +103,33 @@
       "description": "Use your Wallpaper Engine library as the DeepSeek Harness (DSH) GUI background: video, web and scene wallpapers, with a native fullscreen HD cache for scene (.pkg) wallpapers. DSH 插件：把 Wallpaper Engin",
       "discovered": "2026-09-08",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Raylen-berry/dsh-desktop-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH Desktop「底图工坊」插件：按类型两级浏览换底图、2/3 不重复轮次随机、输入框琉璃卡面与对话框特效（流萤 / 极光 / 气泡）；设置页图库走 640px 派生图，新加入的图自动生成缩略；对话页固定宽度自 v1.3.0 起移交 dsh-cache-control。",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "readfish/dsh-client-theme-cyber",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 主题",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "seabiscuit29/dsh-ui-skin-wave",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH Web GUI skin plugin: six palettes (light/dark) plus a hex-grid ripple effect, toggleable at runtime",
+      "discovered": "2026-09-12"
     },
     {
       "repo": "Sh1wu0814/dsh-chat-background",
@@ -52,6 +142,50 @@
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
     },
     {
+      "repo": "StevenZha0/dsh-vae-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "《庐州月 · 许嵩》— DeepSeek Harness 国风水墨主题插件 | 夜色水墨长卷 · 金丝九宫格边框 · VAE 书法标志 · 全屏雨幕 · 国风歌词竖排轮播",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "suuuuunamei/dsh-kaze-tachinu-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "kaze tachinu theme for DSH Web GUI,thank you visit",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "sz1698/dsh-bg-new",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 20,
+      "description": "DSH 网页界面换背景：侧栏「壁纸」按钮弹出右侧抽屉，支持系统预设/纯色/渐变/图片/视频，滚轮+拖动小图同时管缩放与定位，毛玻璃质感，本地媒体伺服不走云端。DSH web background & wallpaper plugin with drawer UI, glassmorphism and local media serving.",
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "xerxescom/dsh-theme-inkstone",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-09-12"
+    },
+    {
+      "repo": "yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "NAZUNA (彻夜之歌) themed wallpaper-engine for DeepSeek Harness: 七草荠 mascot, moonlight-violet liquid glass. Derivative of elysia395/dsh-wallpaper-engine v0.7.1 (MIT).",
+      "discovered": "2026-09-12"
+    },
+    {
       "repo": "zampie/sakura-afternoon-skin",
       "sources": [
         "github-topic"
@@ -60,6 +194,15 @@
       "description": "Sakura-afternoon (樱色午后) pastel skin for the DSH Web UI — light/dark sakura palettes, falling-petal overlay, header toggle and settings switch.",
       "discovered": "2026-09-08",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "zxr2115-1/dsh-anime-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness (DSH) 二次元壁纸主题插件 · 随机动漫壁纸 / 四档铺满 / 边缘羽化 / 深浅色自适应 / 可拖动控制坞 ·  theme plugin for DeepSeek Harness",
+      "discovered": "2026-09-12"
     }
   ]
 }
