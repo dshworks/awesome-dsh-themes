@@ -1,25 +1,74 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-18",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
       "sources": [
         "routed-from-plugins"
       ],
-      "stars": 1,
+      "stars": 3,
       "description": "把 DeepSeek Harness 变成 Minecraft Java Edition 风格——WebGL 旋转全景主菜单、存档式会话选择、四种游戏模式对应 Agent 预设、世界内 HUD 聊天台、像素风工具卡片与审批面板、AI 思考时触发跑酷小游戏、8-bit 合成音效与自定义背景音乐、五类互动桌宠与红石粒子特效。零侵入 DSH 核心源码，经典界面一键切回。",
       "discovered": "2026-09-08",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "aklnaaw/dsh-claude-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Claude-style theme for the DeepSeek Harness Web GUI: warm cream canvas, serif reading text, coral accent — plus a clickable pixel Clawd crab.",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (brand-plugin/package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "ArimaKana-Akane/dsh-wallpaper-position",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "dsh-dream-skin satellite: per-image wallpaper position (X/Y px) settings row. Vibe-coded.",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "CosmerHomura/dsh-yoimiya-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "donwww/dsh-client-ui-skin-manager",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Skin manager for the DeepSeek Harness (dsh) web GUI: a Settings page that lists installed skins, picks the active one, and switches between the stock UI and a skin. Two-layer wiring, adopts skins othe",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
       "sources": [
         "github-topic"
       ],
-      "stars": 2,
+      "stars": 1,
       "description": "DeepSeek Harness Web 动态背景插件：多图导入、拖拽排序、自动轮换、融入度与主题自适应",
       "discovered": "2026-08-20",
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
+    },
+    {
+      "repo": "jiumengya/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness personalization plugin (dsh-wallpaper): Wallpaper Engine live-wallpaper integration",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (pkg/package.json#dsh.client) but nothing in the tree restyles it"
     },
     {
       "repo": "leeseo39/dsh-we-wallpaper",
@@ -50,6 +99,36 @@
       "description": "Chat background plugin for DeepSeek Harness - set an image as the chat view background, inspired by VSCode background extension.",
       "discovered": "2026-09-01",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "StevenZha0/dsh-vae-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "《庐州月 · 许嵩》— DeepSeek Harness 国风水墨主题插件 | 夜色水墨长卷 · 金丝九宫格边框 · VAE 书法标志 · 全屏雨幕 · 国风歌词竖排轮播",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "tippykafuu/dsh-client-ui-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Changes the wallpaper of the dsh Web GUI.",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "NAZUNA (彻夜之歌) themed wallpaper-engine for DeepSeek Harness: 七草荠 mascot, moonlight-violet liquid glass. Derivative of elysia395/dsh-wallpaper-engine v0.7.1 (MIT).",
+      "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "zampie/sakura-afternoon-skin",
