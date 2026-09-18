@@ -77,7 +77,16 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // no longer reach anything. That is why this registry records HOW a theme
 // reaches the UI and not just that it does: the bump is safe for the token
 // lane and explicitly is not a re-verification of the hash lane.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.1-rc.2";
+//
+// 2026-09-18: re-read at 0.1.5-rc.2 (npm `latest` since 2026-09-10) against
+// 0.1.1-rc.2. Token lane: packages/client/ui-theme/src/styles/ declares 357
+// `--dsw-*` tokens where it declared 350, and none of the 350 went away, so
+// every override written against the old set still names a real token; the
+// package is still @deepseek-ai/dsh-client-ui-theme. ThemeRuntime lane: still
+// `export class ThemeRuntime` in that package's client entry. Hash lane: 120
+// client `.module.css` files changed, so the caveat above applies with more
+// force — this bump says nothing about hash-targeting skins.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.5-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
