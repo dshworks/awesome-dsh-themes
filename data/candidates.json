@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -16,7 +16,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "Claude-style theme for the DeepSeek Harness Web GUI: warm cream canvas, serif reading text, coral accent — plus a clickable pixel Clawd crab.",
       "discovered": "2026-09-17",
       "note": "installs into dsh (brand-plugin/package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -61,6 +61,42 @@
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
     },
     {
+      "repo": "HaydenSmith1121/dsh-wallhaven-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 插件：从 wallhaven.cc 搜图并铺成 GUI 背景，图片全由宿主端取回（支持代理，浏览器无需能访问 wallhaven），可一键下载原图。零运行时依赖。",
+      "discovered": "2026-09-19"
+    },
+    {
+      "repo": "HaydenSmith1121/dsh-wallpaper-engine",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Wallpaper Engine Steam Workshop browser for DeepSeek Harness: anonymous search & browse the workshop from a sidebar panel, steam:// subscribe deep-links, Steam login detection.",
+      "discovered": "2026-09-19"
+    },
+    {
+      "repo": "hj01857655/dsh-theme-studio",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "dsh plugin: customize UI theme with presets, accent colors, density, radius, fonts, and custom CSS",
+      "discovered": "2026-09-19"
+    },
+    {
+      "repo": "Hwayn-pixel/dsh-image-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Universal image skin for the DSH (DeepSeek Harness) web UI - replace large UI regions and corner stickers with your own images, GIFs, or videos, from a settings submenu.",
+      "discovered": "2026-09-19"
+    },
+    {
       "repo": "jiumengya/dsh-wallpaper",
       "sources": [
         "github-topic"
@@ -79,6 +115,15 @@
       "description": "Wallpaper Engine assets as DeepSeek Harness dynamic background — upstream skin-center 0.3.14 source snapshot + self-built WE engine research",
       "discovered": "2026-09-08",
       "note": "installs into dsh (research/package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "mwilljx-web/dsh-plugin-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness web plugin: a cyberpunk skin for the sidebar and icon buttons, plus a custom background image - managed from the Settings panel.",
+      "discovered": "2026-09-19"
     },
     {
       "repo": "pbadgpmeb22791-sketch/dsh-we-wallpaper",
@@ -129,6 +174,14 @@
       "description": "NAZUNA (彻夜之歌) themed wallpaper-engine for DeepSeek Harness: 七草荠 mascot, moonlight-violet liquid glass. Derivative of elysia395/dsh-wallpaper-engine v0.7.1 (MIT).",
       "discovered": "2026-09-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "yq1930/dsh-skin-asuka-p01",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-09-19"
     },
     {
       "repo": "zampie/sakura-afternoon-skin",
