@@ -31,6 +31,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "DevTarlow/dsh-background-swapper",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "A DeepSeek Harness plugin that sets a photo as the harness background.",
+      "discovered": "2026-09-29"
+    },
+    {
       "repo": "donwww/dsh-client-ui-skin-manager",
       "sources": [
         "github-topic"
@@ -39,6 +48,24 @@
       "description": "Skin manager for the DeepSeek Harness (dsh) web GUI: a Settings page that lists installed skins, picks the active one, and switches between the stock UI and a skin. Two-layer wiring, adopts skins other installers wired, no duplicate mounts, live switching.",
       "discovered": "2026-09-17",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Fwkkk666/dsh-time-stop-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "JoJo-inspired time-stop transition for the DeepSeek Harness light/dark appearance switch",
+      "discovered": "2026-09-29"
+    },
+    {
+      "repo": "GIN0076/dsh-bg-changer",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 背景图插件：上传图片 + 布局裁剪 + 不透明度/模糊/暗化 + 界面半透明；零依赖零构建，含一键装回脚本",
+      "discovered": "2026-09-29"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
@@ -81,6 +108,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "huantest2024/dsh-anime-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "二次元主题插件 for DeepSeek Harness — anime wallpaper / glass panel / mascot widgets, installable via the official plugin manager",
+      "discovered": "2026-09-29"
+    },
+    {
       "repo": "johnsonspirit/ocean-wave-theme",
       "sources": [
         "github-topic"
@@ -91,6 +127,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "kviiinh/dsh-whale-particles-bg",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "Animated whale particle background for the DeepSeek Harness (dsh) Web UI - assembling from its scattered shell, breathing at idle, and being pushed around by the pointer",
+      "discovered": "2026-09-29"
+    },
+    {
+      "repo": "laohankk/dsh-crt-skins",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "Two retro terminal skins for the DeepSeek Harness Web UI: amber phosphor CRT and Fallout-style Pip-Boy green.",
+      "discovered": "2026-09-29"
+    },
+    {
       "repo": "leeseo39/dsh-we-wallpaper",
       "sources": [
         "github-topic"
@@ -99,6 +153,15 @@
       "description": "Wallpaper Engine assets as DeepSeek Harness dynamic background — upstream skin-center 0.3.14 source snapshot + self-built WE engine research",
       "discovered": "2026-09-08",
       "note": "installs into dsh (research/package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "liuliyisui/dsh-background",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "DeepSeek Harness Web GUI 的自定义背景插件：图片 / 动图 / 视频 / 内置极光渐变，磨砂玻璃质感，配浮动控制面板",
+      "discovered": "2026-09-29"
     },
     {
       "repo": "LoveIrishCoffee/dsh-effort-ultra-skin",
@@ -115,10 +178,19 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 2,
+      "stars": 3,
       "description": "替换“深度求索中”为任意你想要的文本，比如：少女祈祷中......",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "MicroSharpAnt/dsh-theme-presets",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "支持的主题：默认、Nord、Dracula、Catppuccin、Tokyo Night、One Dark、Gruvbox、Solarized、GitHub、Everforest、Kanagawa、Rosé Pine",
+      "discovered": "2026-09-29"
     },
     {
       "repo": "mwilljx-web/dsh-plugin-wallpaper",
@@ -131,6 +203,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "Neo65536-engineer/dsh-skin-whale-girl",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "An anime skin for DSH Desktop: full-bleed day/night artwork, mirrored twin characters, layered text backings for readability, a chibi mascot with random expressions, and lace ornaments — plus a zero-dependency safe-area engine so artwork never blocks clicks.",
+      "discovered": "2026-09-29"
+    },
+    {
       "repo": "pbadgpmeb22791-sketch/dsh-we-wallpaper",
       "sources": [
         "github-topic"
@@ -139,6 +220,15 @@
       "description": "Use your Wallpaper Engine library as the DeepSeek Harness (DSH) GUI background: video, web and scene wallpapers, with a native fullscreen HD cache for scene (.pkg) wallpapers. DSH 插件：把 Wallpaper Engine 壁纸接入 DeepSeek Harness。",
       "discovered": "2026-09-08",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "ReLuckyLucy/dsh-Rhine-Lab-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Arknights Rhine Lab (莱茵生命) skin for the DeepSeek Harness Web GUI",
+      "discovered": "2026-09-29"
     },
     {
       "repo": "Sh1wu0814/dsh-chat-background",
@@ -155,7 +245,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "Custom full-window wallpaper plugin for DeepSeek Harness (DSH): gradient presets, image URLs, local uploads, frosted glass, and a theme-aware top gradient.",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -181,6 +271,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "Wedomizing/Dsh_genshin_nicole_skin",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "来自世界之外的智慧所诞生的进步，每天都比过去一百年的积累更多",
+      "discovered": "2026-09-29"
+    },
+    {
+      "repo": "WTStarMark/dsh-myskin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH 皮肤插件：可视化自定义 + 实时预览 + 「皮肤管理」设置页。 非侵入式：不改 DSH 源码 / 配置、不改 DSH 进程；皮肤是完全可逆的覆盖层。  适配：DSH 0.1.7-rc.2 与 0.2.0-rc.1",
+      "discovered": "2026-09-29"
+    },
+    {
       "repo": "XINGRUYU33224/dsh-liquid-glass-wallpaper",
       "sources": [
         "github-topic"
@@ -189,6 +297,15 @@
       "description": "Liquid-glass Wallpaper Engine backdrop for the DeepSeek Harness Web GUI",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "xuyixi992/dsh-fish-theme",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness Web 主题：鲸鱼娘配色 · 双层水印 · 护眼绿浅色 · 终端风深色主题（源码 MIT / 图片 CC BY-NC-SA 4.0）",
+      "discovered": "2026-09-29"
     },
     {
       "repo": "yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
@@ -219,6 +336,23 @@
       "description": "豆包主题 — DeepSeek Harness Web 客户端主题插件。",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Zenolzx/deepseek-harness-desktop-themes",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "discovered": "2026-09-29"
+    },
+    {
+      "repo": "ZhaoAndy821/dsh-motion-background",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DSH WebUI 的动态背景插件：着色器型（GLSL 实时演算）与媒体型（MP4/WebM/GIF/图片）两类效果，每个效果是 mods/ 下的一个文件夹。Dynamic backdrops for the DeepSeek Harness WebUI.",
+      "discovered": "2026-09-29"
     }
   ]
 }
