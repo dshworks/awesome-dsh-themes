@@ -86,7 +86,27 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // `export class ThemeRuntime` in that package's client entry. Hash lane: 120
 // client `.module.css` files changed, so the caveat above applies with more
 // force — this bump says nothing about hash-targeting skins.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.5-rc.2";
+//
+// 2026-09-29: re-read at 0.1.7-rc.2 (npm `latest` since 2026-09-24) against
+// 0.1.5-rc.2. Token lane: styles/ declares 395 `--dsw-*` tokens where it
+// declared 357, and none of the 357 went away. But a name can stay declared
+// and stop being read, and two did: `--dsw-specific-tip` (queue dock, todo
+// panel, goal bar) and `--dsw-font-s-strong-14` (chat turn status) have no
+// reader left. Those three panels and the menus now paint from
+// `--dsw-specific-menu`, whose default moved from `var(--dsw-alias-bg-layer-3)`
+// to a literal translucent fill, and which `html[data-platform='darwin'] body`
+// sets again, beating a `body` override on the macOS desktop shell. On
+// dshthemes' frozen sheets, 48 of the 145 listed third-party sheets that
+// declare a token reached those surfaces only through bg-layer-3 or
+// specific-tip, so those surfaces go stock; no sheet relied on the dead tokens
+// alone. ThemeRuntime lane: still `export class ThemeRuntime` in the same
+// package. Install lane: the plugin manager still refuses a package without
+// `dsh.bundle`, and `dsh.client.inject` is still a list of package names.
+// Hash lane: 9 of 0.1.5-rc.2's 87 hashed module prefixes are gone (eight
+// module stylesheets deleted, PermissionSelect moved to ui-permission-presets);
+// 10 of the 42 frozen sheets aimed at a live 0.1.5-rc.2 class lose at least
+// one target, none lose all. The caveat above still stands for that lane.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.7-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
@@ -162,7 +182,11 @@ async function gh(path) {
 // --- the prover -------------------------------------------------------------
 
 const THEME_RUNTIME = "@deepseek-ai/dsh-client-ui-theme";
-const SKIP_PATH = /(^|\/)(node_modules|dist|build|out|vendor|\.git|coverage|fixtures?)\//;
+// `_upstream/` is dsh's own stock sheet copied in for a local preview
+// (as05104evergone-star/dsh-skin-haerin, 2026-09-29). It declares every token
+// because it IS the token table, so it reads as the strongest override there
+// is, and it sorts ahead of the skin's real sheet.
+const SKIP_PATH = /(^|\/)(node_modules|dist|build|out|vendor|_?upstream|\.git|coverage|fixtures?)\//;
 // The registry's own subject: dsh's design tokens. A sheet that overrides
 // these is the only install path a pure-CSS skin has.
 const DSW_TOKEN = /--dsw-[a-z0-9-]+/i;
@@ -176,7 +200,10 @@ const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
 // the code rather than the code. A registry that cites a test file is one step
 // removed from the thing it is vouching for. `latest-theme.css` and
 // `contest-ui.js` must not match, so the prefix form anchors on a separator.
-const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
+// `check.mjs` is the same thing under another name (lildanger/dsh-skin-win2000,
+// 2026-09-29): it loads client.js in a vm and asserts on it, and it tied with
+// client.js on depth and length and won on tree order.
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -235,12 +262,25 @@ function ledeFromReadme(text) {
   if (!text) return null;
   const body = text.slice(0, 8000)
     .replace(/<!--[\s\S]*?-->/g, "").replace(/```[\s\S]*?```/g, "").replace(/<[^>]+>/g, " ");
-  for (let line of body.split(/\r?\n/)) {
-    line = line.trim();
+  const lines = body.split(/\r?\n/);
+  // A line that starts a new block, so it cannot continue the paragraph above.
+  const BLOCK = /^([#>|]|[-*+]\s|\d+[.)]\s|!\[|[-*_]{3,}$)/;
+  const CJK_END = /[\u3000-\u9fff\uff00-\uffef]$/;
+  const CJK_START = /^[\u3000-\u9fff\uff00-\uffef]/;
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i].trim();
     if (!line) continue;
     if (/^#{1,6}\s/.test(line)) continue;
     if (/^[-*_]{3,}$/.test(line)) continue;
     if (/^[[!|>]/.test(line) && !/[.。！!？?]/.test(line)) continue;
+    // The lede is the paragraph, not its first line: a README hard-wrapped at
+    // ~90 columns published g2025942049-glitch/dsh-rhine-skin as "A terminal
+    // skin for the DeepSeek Harness Web GUI, built on" (2026-09-29). Chinese
+    // lines join without a space.
+    while (i + 1 < lines.length && lines[i + 1].trim() && !BLOCK.test(lines[i + 1].trim())) {
+      const next = lines[++i].trim();
+      line += CJK_END.test(line) && CJK_START.test(next) ? next : ` ${next}`;
+    }
     line = line.replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
       .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
       .replace(/[*_`]+/g, "").replace(/\s+/g, " ").trim();
@@ -277,9 +317,15 @@ async function proveDeep(repo) {
     .sort((a, b) => a.split("/").length - b.split("/").length || a.length - b.length)[0] ?? null;
   const facts = { tree: paths.length, preview };
 
+  // An install path in a nested package.json does not end the search either.
+  // It used to: aklnaaw/dsh-claude-theme was held from 2026-09-17 on
+  // `brand-plugin/package.json#dsh.bundle` while `claude/skin.css`, three
+  // directories over, declares 278 tokens. Keep the first one as the fallback.
+  let installOnly = null;
   for (const p of paths.filter((x) => x.endsWith("package.json") && x !== "package.json").slice(0, 15)) {
     const proof = proveFromPackage(parse(await raw(repo, p)), p);
-    if (proof) return { proof: { ...proof, path: dirname(p) }, facts };
+    if (proof && !proof.install) return { proof: { ...proof, path: dirname(p) }, facts };
+    if (proof && !installOnly) installOnly = { ...proof, path: dirname(p) };
   }
 
   const sheets = paths.filter((p) => STYLE_FILE.test(p)).slice(0, 8);
@@ -302,7 +348,7 @@ async function proveDeep(repo) {
     if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override (css-in-js)", tokens: true }, facts };
   }
 
-  return { proof: null, facts };
+  return { proof: installOnly, facts };
 }
 
 const NO_PATH = "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet";
@@ -359,8 +405,16 @@ function cleanDescription(input) {
   if (s.length < 8) return null;
   if (s.length > 320) {
     const cut = s.slice(0, 320);
-    const at = Math.max(cut.lastIndexOf("; "), cut.lastIndexOf("。"), cut.lastIndexOf("，"), cut.lastIndexOf(", "), cut.lastIndexOf(" · "), cut.lastIndexOf(" "));
-    s = (at > 200 ? cut.slice(0, at) : cut.slice(0, 317)).replace(/[\s,;·、，。]+$/, "");
+    // A clause boundary first. A bare space sat in this same max() and is
+    // nearly always the latest match, so the clause separators never won and
+    // a row ended "...rotates every 35 minutes), and a" (2026-09-29).
+    const clause = Math.max(cut.lastIndexOf("; "), cut.lastIndexOf("。"), cut.lastIndexOf("，"), cut.lastIndexOf(", "), cut.lastIndexOf(" · "), cut.lastIndexOf(" — "));
+    const at = clause > 200 ? clause : cut.lastIndexOf(" ");
+    // And say it was cut, unless the cut ends a sentence: the ellipsis is the
+    // difference between a short description and a broken one.
+    const head = at > 200 ? cut.slice(0, cut[at] === "。" ? at + 1 : at) : cut.slice(0, 317);
+    s = head.replace(/[\s,;·、，—]+$/, "");
+    if (!/[.!?。！？]$/.test(s)) s = `${s}…`;
   }
   return s;
 }
