@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-29",
   "rejected": [
+    {
+      "repo": "123twtd/dsh-skin-manager",
+      "reason": "a skin *manager*, not a skin — it ships no stylesheet of its own; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
+    },
+    {
+      "repo": "chenyangcun/dsh-command-palette",
+      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
+    },
     {
       "repo": "domitor-syh/dsh-ui-skin-switcher",
       "reason": "a model and reasoning-effort switcher: no sheet, no --dsw-* declaration, no ThemeRuntime; 'skin' is in the repo name only. Listed in awesome-dsh-plugins.",
@@ -30,6 +40,12 @@
       "recheckAfter": "2026-10-02"
     },
     {
+      "repo": "ISimon3/dsh-theme-skin",
+      "reason": "repo gone (404) at triage time",
+      "date": "2026-09-29",
+      "recheckAfter": "2026-11-13"
+    },
+    {
       "repo": "Junhousheng-Serena/celtic-adventure-skin",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-24",
@@ -40,6 +56,11 @@
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-19",
       "recheckAfter": "2026-10-03"
+    },
+    {
+      "repo": "qyjgg/dsh-plugin-skill-palette",
+      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
+      "date": "2026-09-09"
     },
     {
       "repo": "Renakoni/awesome-dsh-themes",
@@ -91,21 +112,6 @@
       "repo": "zhm20001/dsh-plugin-palette-board",
       "reason": "a Raycast-style launcher that consumes --dsw-* for its own panel and sets none. Routed to awesome-dsh-plugins.",
       "date": "2026-09-02"
-    },
-    {
-      "repo": "123twtd/dsh-skin-manager",
-      "reason": "a skin *manager*, not a skin — it ships no stylesheet of its own; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
-      "date": "2026-09-09"
-    },
-    {
-      "repo": "chenyangcun/dsh-command-palette",
-      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
-      "date": "2026-09-09"
-    },
-    {
-      "repo": "qyjgg/dsh-plugin-skill-palette",
-      "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
-      "date": "2026-09-09"
     }
   ],
   "count": 19

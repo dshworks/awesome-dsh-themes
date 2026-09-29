@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "updated": "2026-09-18",
+  "updated": "2026-09-29",
   "themes": [
     {
       "name": "Arknights-flavor-theme",
@@ -432,6 +432,19 @@
       "description": "1945 终战皮肤：陈坚《公元一九四五年九月九日九时》作为 DeepSeek Harness Web 背景"
     },
     {
+      "name": "dsh-adiv-theme",
+      "repo": "Age10-Moyu/dsh-adiv-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "A warm parchment theme for DeepSeek Harness: paper-toned canvas, burnt-orange accent, ring-based depth, and a serif/sans typographic split."
+    },
+    {
       "name": "dsh-ads",
       "repo": "Nagi-ovo/dsh-ads",
       "official": false,
@@ -473,6 +486,20 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Hot-pluggable Aemeath (Wuthering Waves fan) skin for the dsh web GUI: pink mecha palette, heart-shaped tacet mark, and user-provided wallpapers"
+    },
+    {
+      "name": "dsh-air-theme",
+      "repo": "Okazaki01/dsh-air-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "companion",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "《AIR》夏日青空 — 高定制动漫主题皮肤 for the DeepSeek Harness web GUI. Full-viewport 神尾观铃 (Misuzu) sky backdrop, Q版 mascot sidebar, feather-fall / cloud-drift ambience, magic-circle thinking hook, hot-swappable via dsh-skin-switch.",
+      "preview": "https://raw.githubusercontent.com/Okazaki01/dsh-air-theme/HEAD/preview/dark.png"
     },
     {
       "name": "dsh-amadeus-skin",
@@ -585,6 +612,19 @@
       "license": "MIT"
     },
     {
+      "name": "dsh-any-background-plus",
+      "repo": "lilcandi/dsh-any-background-plus",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Appearance plugin for DeepSeek Harness: custom theme color (PS-style color wheel), background wallpaper with opacity/blur controls, and separate main/settings interface opacity."
+    },
+    {
       "name": "dsh-aqua",
       "repo": "WYH66666666/DSH-Transparent-UI-Plugin",
       "npm": "@deepseek-ai/dsh-client-ui-aqua",
@@ -625,6 +665,33 @@
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "An original high-key prismatic memory theme for the DeepSeek Harness web UI."
+    },
+    {
+      "name": "dsh-arknights-theme",
+      "repo": "Theflowyears/dsh-arknights-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "assets/skin.css#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "为《明日方舟》玩家在 DSH Web 上构建沉浸感：12 张整屏壁纸（按画面自适应的边缘虚化）、按每张图解算的玻璃与文字色、罗德岛图标体系，以及签字式的授权与选择交互。 / Building immersion for Arknights players on the DSH Web GUI: twelve full-screen wallpapers with per-image edge blur, glass and ink solved from each picture, Rhodes Island iconography…",
+      "preview": "https://raw.githubusercontent.com/Theflowyears/dsh-arknights-theme/HEAD/assets/0d555849af53296a423101fb2319e4d3-preview.webp"
+    },
+    {
+      "name": "dsh-assistant-skin",
+      "repo": "zanechen6/dsh-assistant-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "为 DSH Web GUI 换上一套「助理皮肤」：黑蓝暗调主题 + 会话区形象（静图/循环片段）+ 形象切换 + 常驻与稀有触发的动作调度。不改 DSH 源码，卸载即还原。"
     },
     {
       "name": "dsh-asuka-school-theme",
@@ -1158,6 +1225,20 @@
       "preview": "https://raw.githubusercontent.com/heiyouhu/dsh-themes/main/assets/previews/nord-dark.png"
     },
     {
+      "name": "dsh-claude-style",
+      "repo": "Nwflower/dsh-claude-style",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "src/features/account/account-footer.css#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Claude Code Desktop theme for DeepSeek Harness (dsh) web GUI — visual & interaction overhaul",
+      "preview": "https://raw.githubusercontent.com/Nwflower/dsh-claude-style/HEAD/showcase/gifs/idle.gif"
+    },
+    {
       "name": "dsh-claude-theme",
       "repo": "chajiuqqq/dsh-claude-theme",
       "official": false,
@@ -1169,6 +1250,33 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Claude-style --dsw-* interface theme for the dsh Web UI."
+    },
+    {
+      "name": "dsh-claude-theme-aklnaaw",
+      "repo": "aklnaaw/dsh-claude-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "claude/skin.css#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Claude-style theme for the DeepSeek Harness Web GUI: warm cream canvas, serif reading text, coral accent — plus a clickable pixel Clawd crab.",
+      "preview": "https://raw.githubusercontent.com/aklnaaw/dsh-claude-theme/HEAD/claude/preview/dark.jpg"
+    },
+    {
+      "name": "dsh-claude-theme-jipika",
+      "repo": "jipika/dsh-claude-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Claude warm-ivory appearance for DeepSeek Harness: color tokens + serif typography, extracted verbatim from dsh-animation-optimization. Appearance only — no behavioral layer, so it coexists with dsh-smooth-stream."
     },
     {
       "name": "dsh-claude-theme-kc0ed",
@@ -2332,6 +2440,19 @@
       "description": "图片皮肤插件：导入 PNG/JPG/WebP 自动生成主题配色（背景/强调色/高亮跟随图片主色调），并可选生成 Q 版宠物（程序化或 AI 生图）"
     },
     {
+      "name": "dsh-image-skin-hwaynpix",
+      "repo": "Hwayn-pixel/dsh-image-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Region & sticker image skin for the DSH (DeepSeek Harness) web UI - paint the window, center, sidebar, welcome, right panel and composer with your own images, GIFs or videos, plus two draggable stickers, from a settings submenu."
+    },
+    {
       "name": "dsh-image-skin-youhui1",
       "repo": "YouHui1/dsh-image-skin",
       "official": false,
@@ -2948,6 +3069,19 @@
       "previewCss": "https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/main/styles/theme.css"
     },
     {
+      "name": "dsh-needy-skin",
+      "repo": "DESTINYwang0428/dsh-needy-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "random-wallpaper.mjs#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "DSH Web 界面美化小部件：随机壁纸背景 + 界面字样随机替换（默认内置《主播女孩重度依赖》成就文案，可自定义）"
+    },
+    {
       "name": "dsh-nene-theme",
       "repo": "mizuhara37/dsh-nene-theme",
       "official": false,
@@ -3374,6 +3508,19 @@
       "preview": "https://raw.githubusercontent.com/Civitasv/dsh-plugin-colorscheme/HEAD/docs/screenshots/catppuccin-mocha.png"
     },
     {
+      "name": "dsh-plugin-dracula-color-theme",
+      "repo": "HoodyHuo/dsh-plugin-dracula-color-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "DSH web plugin: a Dracula theme (draculatheme.com) with full alias + specific-layer token coverage, shiki syntax colors, and an override switch against the built-in theme preference."
+    },
+    {
       "name": "dsh-plugin-gemini-theme",
       "repo": "dingyi580/dsh-plugin-gemini-theme",
       "official": false,
@@ -3608,6 +3755,19 @@
       "description": "Raiden Inazuma Atelier / 稻妻雷电工房 — violet-gold acrylic DSH Web theme: light conservatory & dark electro stage, Raiden overlays, optional agent preset."
     },
     {
+      "name": "dsh-rhine-skin",
+      "repo": "g2025942049-glitch/dsh-rhine-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "src/centered-avoid/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "A terminal skin for the DeepSeek Harness Web GUI, built on the point cloud from the Arknights world page."
+    },
+    {
       "name": "dsh-rhine-theme",
       "repo": "mjn96/dsh-rhine-theme",
       "official": false,
@@ -3770,6 +3930,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "阿根廷·梅西 (Argentina · Messi) web skin for the DeepSeek Harness GUI: celeste/navy/gold alias-token theme, photo & gold backgrounds, roaming #10 badge."
+    },
+    {
+      "name": "dsh-skin-asuka-p01",
+      "repo": "yq1930/dsh-skin-asuka-p01",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "明日香绯色天际：精绘双立绘与城市穹顶，DeepSeek Harness 桌面皮肤"
     },
     {
       "name": "dsh-skin-background",
@@ -3997,6 +4170,20 @@
       "description": "Frosted-glass skin for the DeepSeek Harness web UI: pick any image as background, theme colors extracted from it, glassmorphism surfaces.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/noexcs/dsh-skin-glass/HEAD/screenshots/screenshot_1.jpg"
+    },
+    {
+      "name": "dsh-skin-haerin",
+      "repo": "as05104evergone-star/dsh-skin-haerin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "haerin-skin/haerin.css#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "海粼 Haerin · DSH Skin — light/dark skin for DeepSeek Harness: frosted glass, 8-bit pixel wallpaper, switchable in-app.",
+      "preview": "https://raw.githubusercontent.com/as05104evergone-star/dsh-skin-haerin/HEAD/screenshots/day.jpg"
     },
     {
       "name": "dsh-skin-huyanshe",
@@ -4270,6 +4457,19 @@
       "license": "MIT"
     },
     {
+      "name": "dsh-skin-pixel-anime",
+      "repo": "longgege-cd/dsh-skin-pixel-anime",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Pixel dynamic starfield theme for DeepSeek Harness: five palettes, four layered text schemes, five pixel fonts (one covering simplified Chinese), corner presets, a rotating pixel starfield with meteors, and a pixel clock — all configurable from its settings tab."
+    },
+    {
       "name": "dsh-skin-platform",
       "repo": "mhdfy1988/dsh-skin-platform",
       "path": "packages/runtime",
@@ -4530,6 +4730,20 @@
       "preview": "https://raw.githubusercontent.com/wei-806206088/dsh-skin/HEAD/images/preview-static.jpg"
     },
     {
+      "name": "dsh-skin-win2000",
+      "repo": "lildanger/dsh-skin-win2000",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Windows 2000 skin for the DSH Web GUI: metric-accurate grey chrome, two-tone gradient title bars, 1px bevels, square corners and a 16px scrollbar. 给 DSH Web GUI 换上 Windows 2000 经典外观。",
+      "preview": "https://raw.githubusercontent.com/lildanger/dsh-skin-win2000/HEAD/docs/screenshots/03-settings.png"
+    },
+    {
       "name": "dsh-skin-xuyuanwu",
       "repo": "elong16/dsh-skin-xuyuanwu",
       "official": false,
@@ -4602,6 +4816,19 @@
       "description": "dsh-skins pack with the Harbor dusk skin: alias-token themes plus optional AI-art backgrounds.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/Moeblack/dsh-skins/HEAD/docs/images/skin-harbor.jpg"
+    },
+    {
+      "name": "dsh-skins-zhu10900",
+      "repo": "zhu1090093659/dsh-skins",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "In-GUI skin center for the dsh web GUI — the single skin package: skins are pure asset directories (built-in plus $DSH_HOME/skins) loaded and rendered only by the skin center; live try-on and one-click apply switch atomically in the page (no reload, no cordis.patch.yml rewrite, no restart)"
     },
     {
       "name": "dsh-sky-skin",
@@ -4997,6 +5224,32 @@
       "description": "崩坏：星穹铁道 · 流萤主题 —— 立绘壁纸背景 + 萤火绿霓虹配色 + 开屏变身动画"
     },
     {
+      "name": "dsh-theme-gallery",
+      "repo": "renjie2026/dsh-theme-gallery",
+      "official": false,
+      "kind": "skin",
+      "category": "companion",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "A theme gallery for DeepSeek Harness (DSH): JSON-defined skins with full-screen coverage and sidebar scenery, a 15-swatch palette-picker card, a pet-widget card (7 registry-driven pets playing by the chat input), a mood-greeting card (a scrolling greeting on the title bar that rotates every 35 minutes)…"
+    },
+    {
+      "name": "dsh-theme-gallery-shanghew",
+      "repo": "shangheweibao/dsh-theme-gallery",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "A community theme gallery for DeepSeek Harness: JSON-defined skins with full-screen coverage, selectable from Settings, extendable without code"
+    },
+    {
       "name": "dsh-theme-hacker-terminal",
       "repo": "XiaoluoFoxington/dsh-theme-hacker-terminal",
       "official": false,
@@ -5034,6 +5287,20 @@
       "lastVerified": "2026-09-18",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Inkstone (砚) — a stone-ink and jade theme plugin for the DeepSeek Harness web client: remaps the --dsw-* palette through one token override layer, no build step required to run it."
+    },
+    {
+      "name": "DSH-THEME-KAMI",
+      "repo": "quaner1234-cmd/DSH-THEME-KAMI",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Kami-inspired editorial theme for the DeepSeek Harness web UI — warm parchment canvas, ink-blue accent, serif typography, hairline borders. Light & dark.",
+      "preview": "https://raw.githubusercontent.com/quaner1234-cmd/DSH-THEME-KAMI/HEAD/assets/preview-dark.png"
     },
     {
       "name": "dsh-theme-kit",
@@ -5182,6 +5449,21 @@
       "description": "30-theme pack for the DeepSeek Harness web UI — a zero-dependency DSH client plugin plus drop-in CSS themes."
     },
     {
+      "name": "dsh-theme-native",
+      "repo": "BarneyZhaoooo/dsh-theme-native",
+      "path": "plugin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "plugin/package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "A small, native theme plugin for the DeepSeek Harness Web GUI.",
+      "preview": "https://raw.githubusercontent.com/BarneyZhaoooo/dsh-theme-native/HEAD/docs/preview.jpg"
+    },
+    {
       "name": "dsh-theme-neko",
       "repo": "drfccv/dsh-theme-neko",
       "official": false,
@@ -5320,6 +5602,19 @@
       "description": "Sliding-rheostat theme: model + reasoning-effort driven accent, glow and gear dock for the dsh web GUI"
     },
     {
+      "name": "dsh-theme-songgrid",
+      "repo": "yefengliu1/dsh-theme-songgrid",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "宋律 Songgrid —— 宋代美学 × 瑞士国际主义设计语言的 DeepSeek Harness Web 主题：宣纸/夜墨双变体、汝窑天青功能色、青绿山水背景。Not affiliated with DeepSeek."
+    },
+    {
       "name": "dsh-theme-spectrum",
       "repo": "qipenglin/dsh-theme-spectrum",
       "official": false,
@@ -5357,6 +5652,19 @@
       "lastVerified": "2026-08-28",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Portable DSH theme overlay plugin: builtin palettes, preview, persistence, and General settings UI"
+    },
+    {
+      "name": "dsh-theme-studio-hj018576",
+      "repo": "hj01857655/dsh-theme-studio",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Customize the dsh UI theme: 12 accent presets, dark-mode aware accents with a contrast guard, density, font family, animation toggle, and raw design-token overrides."
     },
     {
       "name": "dsh-theme-switch",
@@ -6175,6 +6483,19 @@
       "description": "Wallpaper background for the DeepSeek Harness Web UI — built-in preset, custom URL, opacity control, auto-adapts to any screen"
     },
     {
+      "name": "dsh-wallpaper-jiumengy",
+      "repo": "jiumengya/dsh-wallpaper",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "pkg/lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "DeepSeek Harness personalization plugin (dsh-wallpaper): Wallpaper Engine live-wallpaper integration"
+    },
+    {
       "name": "dsh-wallpaper-kdzhangh",
       "repo": "kdzhang-hub/dsh-wallpaper",
       "official": false,
@@ -6299,6 +6620,19 @@
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Persistent wallpaper skin: static image or muted looping video background with translucent panels, path editable live from Settings Plugins.",
       "license": "MIT"
+    },
+    {
+      "name": "dsh-wallpaper-theme",
+      "repo": "2211431960/dsh-wallpaper-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Wallpaper-driven liquid glass theme for DeepSeek Harness: scan Wallpaper Engine or any folder, click to apply an image or video wallpaper, with adjustable wallpaper blur, surface opacity and glass blur."
     },
     {
       "name": "dsh-wallpaper-zypchloe",
@@ -6783,7 +7117,7 @@
     },
     {
       "name": "galgame-skin",
-      "repo": "Shmilyol/galgame-skin",
+      "repo": "Shmilyol/dsh-hiyori-web-ui",
       "official": false,
       "kind": "skin",
       "category": "skin",
@@ -6897,6 +7231,20 @@
       "previewCss": "https://raw.githubusercontent.com/LilycleHeart/liuli-theme/HEAD/src/client/denpa.css"
     },
     {
+      "name": "MahoutsukaiNoYoru-DSH-Skin",
+      "repo": "AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "skin/lib/client.js#--dsw-tokens",
+      "added": "2026-09-29",
+      "lastVerified": "2026-09-29",
+      "verifiedAgainst": "0.1.7-rc.2",
+      "description": "Witch on the Holy Night theme for the DeepSeek Harness Web UI - full-screen visual-novel skin with original-style menus, three characters with sprites and expressions, day/night BGM, and an ending sequence. 《魔法使之夜》DSH 皮肤。",
+      "preview": "https://raw.githubusercontent.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/HEAD/screenshots/03-start-page.jpg"
+    },
+    {
       "name": "majia7-dsh-skin",
       "repo": "Carlown/majia7-dsh-skin",
       "official": false,
@@ -6911,7 +7259,7 @@
     },
     {
       "name": "my-skin-for-DeepSeek-Harness",
-      "repo": "fthuu/my-skin-for-DeepSeek-Harness",
+      "repo": "EphoReal/my-skin-for-DeepSeek-Harness",
       "official": false,
       "kind": "skin",
       "category": "skin",
