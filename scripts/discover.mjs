@@ -298,7 +298,10 @@ for (const c of found) {
   const existing = queue.get(slug);
   if (existing) {
     existing.stars = c.stars;
-    if (c.description) existing.description = c.description.slice(0, 200);
+    // Whole, not clipped: triage falls back to this string when a repo has no
+    // root package.json description, and a 200-char clip reached the registry
+    // as "...and an ending seq" (2026-09-29). GitHub caps it at 350 anyway.
+    if (c.description) existing.description = c.description;
     continue;
   }
   if (!c.routed && !looksLikeATheme(c)) continue; // the sibling's triage already decided
@@ -310,7 +313,7 @@ for (const c of found) {
     // than inferred from a coincidence of dates.
     sources: [c.source ?? "github-topic"],
     stars: c.stars,
-    ...(c.description ? { description: c.description.slice(0, 200) } : {}),
+    ...(c.description ? { description: c.description } : {}),
     discovered: TODAY,
   });
   added += 1;
