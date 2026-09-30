@@ -26,14 +26,19 @@ for (const k of TOP) if (!(k in data)) errors.push(`registry: missing ${k}`);
 if (!DATE.test(data.updated ?? "")) errors.push(`registry: bad updated date`);
 if (!Array.isArray(data.themes)) errors.push("registry: themes must be an array");
 const seen = new Set();
+// dshthemes.com builds one page per theme at /t/<slug>/ and refuses to build
+// when two names collapse to one slug. `dsh_Rhine_Lab_theme` and
+// `dsh-Rhine-Lab-theme` differ as names and are the same page, so compare
+// what the site compares. (Same function as dshthemes' scripts/build.mjs.)
+const pageSlug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 (data.themes ?? []).forEach((t, i) => {
   const at = `themes[${i}] (${t?.name ?? "?"})`;
   for (const k of REQ) {
     if (t[k] == null || t[k] === "") errors.push(`${at}: missing ${k}`);
   }
   if (t.name) {
-    if (seen.has(t.name)) errors.push(`${at}: duplicate name`);
-    seen.add(t.name);
+    if (seen.has(pageSlug(t.name))) errors.push(`${at}: duplicate name (same /t/${pageSlug(t.name)}/ page as an earlier row)`);
+    seen.add(pageSlug(t.name));
   }
   if (t.repo && !SLUG.test(t.repo)) errors.push(`${at}: bad repo slug`);
   // Some upstream GitHub descriptions arrive already destroyed — the API

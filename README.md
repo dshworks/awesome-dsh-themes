@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 557 entries, 36 with live in-browser previews, 538 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 556 entries, 36 with live in-browser previews, 537 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -99,7 +99,7 @@ dsh plugin --profile web add github:RayYeung1989/claude-parchment-theme
 
 **Repo:** [RayYeung1989/claude-parchment-theme](https://github.com/RayYeung1989/claude-parchment-theme) · **License:** MIT · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#dsh.client](https://github.com/RayYeung1989/claude-parchment-theme/blob/HEAD/package.json)
 
-### [deepseek-harness-liquid-glass-theme](https://github.com/Rainpomelo/deepseek-harness-liquid-glass-theme)
+### [deepseek-harness-liquid-glass-theme](https://github.com/Rainpomelo/dsh-liquid-glass-theme)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=deepseek-harness-liquid-glass-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="deepseek-harness-liquid-glass-theme preview"></a>
 
@@ -108,10 +108,10 @@ dsh plugin --profile web add github:RayYeung1989/claude-parchment-theme
 Liquid Glass & Live Wallpaper: a physical Snell-refraction fluid glassmorphism theme and dynamic wallpaper engine for Web surface
 
 ```sh
-dsh plugin --profile web add github:Rainpomelo/deepseek-harness-liquid-glass-theme
+dsh plugin --profile web add github:Rainpomelo/dsh-liquid-glass-theme
 ```
 
-**Repo:** [Rainpomelo/deepseek-harness-liquid-glass-theme](https://github.com/Rainpomelo/deepseek-harness-liquid-glass-theme) · **dsh:** 0.1.0-rc.7 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/Rainpomelo/deepseek-harness-liquid-glass-theme/blob/HEAD/package.json)
+**Repo:** [Rainpomelo/dsh-liquid-glass-theme](https://github.com/Rainpomelo/dsh-liquid-glass-theme) · **dsh:** 0.1.0-rc.7 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/Rainpomelo/dsh-liquid-glass-theme/blob/HEAD/package.json)
 
 ### [deepseek-harness-liverpool-theme](https://github.com/pinkear/deepseek-harness-liverpool-theme)
 
@@ -1572,20 +1572,6 @@ dsh plugin --profile web add github:lengzhanbao/dsh-raiden-theme
 ```
 
 **Repo:** [lengzhanbao/dsh-raiden-theme](https://github.com/lengzhanbao/dsh-raiden-theme) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/lengzhanbao/dsh-raiden-theme/blob/HEAD/package.json)
-
-### [dsh-Rhine-Lab-theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme)
-
-<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-Rhine-Lab-theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-Rhine-Lab-theme preview"></a>
-
-**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-Rhine-Lab-theme&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
-
-Arknights Rhine Lab archive-terminal reconstruction for the DeepSeek Harness Web GUI, with reversible deep styling and restrained institutional HUD
-
-```sh
-dsh plugin --profile web add github:ReLuckyLucy/dsh-Rhine-Lab-theme
-```
-
-**Repo:** [ReLuckyLucy/dsh-Rhine-Lab-theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme) · **dsh:** 0.2.0-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme/blob/HEAD/package.json)
 
 ### [dsh-rhine-skin](https://github.com/g2025942049-glitch/dsh-rhine-skin)
 
@@ -3357,7 +3343,7 @@ dsh plugin --profile web add github:wenyixiaoqingnian/ds-mobile-skin
 
 **Repo:** [wenyixiaoqingnian/ds-mobile-skin](https://github.com/wenyixiaoqingnian/ds-mobile-skin/tree/HEAD/plugin) · **dsh:** 0.1.1-rc.2 · **Proof:** [plugin/package.json#dsh.bundle](https://github.com/wenyixiaoqingnian/ds-mobile-skin/blob/HEAD/plugin/package.json)
 
-### [dsh_Rhine_Lab_theme](https://github.com/ReLuckyLucy/dsh_Rhine_Lab_theme)
+### [dsh_Rhine_Lab_theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh_Rhine_Lab_theme&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh_Rhine_Lab_theme preview"></a>
 
@@ -3366,10 +3352,10 @@ dsh plugin --profile web add github:wenyixiaoqingnian/ds-mobile-skin
 Arknights Rhine Lab archive-terminal reconstruction for the DeepSeek Harness Web GUI, with reversible deep styling and restrained institutional HUD
 
 ```sh
-dsh plugin --profile web add github:ReLuckyLucy/dsh_Rhine_Lab_theme
+dsh plugin --profile web add github:ReLuckyLucy/dsh-Rhine-Lab-theme
 ```
 
-**Repo:** [ReLuckyLucy/dsh_Rhine_Lab_theme](https://github.com/ReLuckyLucy/dsh_Rhine_Lab_theme) · **dsh:** 0.1.1-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/ReLuckyLucy/dsh_Rhine_Lab_theme/blob/HEAD/package.json)
+**Repo:** [ReLuckyLucy/dsh-Rhine-Lab-theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme) · **dsh:** 0.2.0-rc.2 · **Proof:** [package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme](https://github.com/ReLuckyLucy/dsh-Rhine-Lab-theme/blob/HEAD/package.json)
 
 ### [dsh_theme_terraria](https://github.com/10086ggqq/dsh_theme_terraria)
 

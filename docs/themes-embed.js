@@ -169,7 +169,7 @@ window.__THEMES__ = {
     },
     {
       "name": "deepseek-harness-liquid-glass-theme",
-      "repo": "Rainpomelo/deepseek-harness-liquid-glass-theme",
+      "repo": "Rainpomelo/dsh-liquid-glass-theme",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -394,15 +394,15 @@ window.__THEMES__ = {
     },
     {
       "name": "dsh_Rhine_Lab_theme",
-      "repo": "ReLuckyLucy/dsh_Rhine_Lab_theme",
+      "repo": "ReLuckyLucy/dsh-Rhine-Lab-theme",
       "official": false,
       "kind": "skin",
       "category": "skin",
       "status": "verified",
       "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
       "added": "2026-08-18",
-      "lastVerified": "2026-09-04",
-      "verifiedAgainst": "0.1.1-rc.2",
+      "lastVerified": "2026-09-30",
+      "verifiedAgainst": "0.2.0-rc.2",
       "description": "Arknights Rhine Lab archive-terminal reconstruction for the DeepSeek Harness Web GUI, with reversible deep styling and restrained institutional HUD"
     },
     {
@@ -3833,19 +3833,6 @@ window.__THEMES__ = {
       "lastVerified": "2026-08-26",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Raiden Inazuma Atelier / 稻妻雷电工房 — violet-gold acrylic DSH Web theme: light conservatory & dark electro stage, Raiden overlays, optional agent preset."
-    },
-    {
-      "name": "dsh-Rhine-Lab-theme",
-      "repo": "ReLuckyLucy/dsh-Rhine-Lab-theme",
-      "official": false,
-      "kind": "skin",
-      "category": "tokens",
-      "status": "verified",
-      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
-      "added": "2026-09-30",
-      "lastVerified": "2026-09-30",
-      "verifiedAgainst": "0.2.0-rc.2",
-      "description": "Arknights Rhine Lab archive-terminal reconstruction for the DeepSeek Harness Web GUI, with reversible deep styling and restrained institutional HUD"
     },
     {
       "name": "dsh-rhine-skin",
