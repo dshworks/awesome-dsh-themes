@@ -518,16 +518,37 @@ function categoryFor(text, proof) {
   return "skin";
 }
 
+// `taken` holds page slugs, not lowercased names: dshthemes gives every theme
+// /t/<slug>/, and `a_b` and `a-b` are one page there. validate.mjs checks the
+// same key.
+const pageSlug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 function nameFor(repo, taken) {
   const [owner, base] = repo.split("/");
   const stem = base.replace(/\.git$/, "").slice(0, 64);
-  if (!taken.has(stem.toLowerCase())) { taken.add(stem.toLowerCase()); return stem; }
+  if (!taken.has(pageSlug(stem))) { taken.add(pageSlug(stem)); return stem; }
   const suffix = owner.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 8) || "x";
   let candidate = `${stem.slice(0, 63 - suffix.length)}-${suffix}`;
   let n = 2;
-  while (taken.has(candidate.toLowerCase())) candidate = `${stem.slice(0, 60 - suffix.length)}-${suffix}-${n++}`;
-  taken.add(candidate.toLowerCase());
+  while (taken.has(pageSlug(candidate))) candidate = `${stem.slice(0, 60 - suffix.length)}-${suffix}-${n++}`;
+  taken.add(pageSlug(candidate));
   return candidate;
+}
+
+// A candidate can be a listed theme under its new name. discover.mjs only
+// knows the renames scripts/renames.mjs has already recorded, and nothing runs
+// that between a rename and the next sweep: on 2026-09-30 this admitted
+// ReLuckyLucy/dsh-Rhine-Lab-theme beside its own old row. GitHub follows a
+// rename on the old slug, so ask each listed row from the same owner where it
+// lives now. A transfer to a new owner is not caught here; renames.mjs is.
+async function listedUnderOldName(repo) {
+  const owner = repo.split("/")[0].toLowerCase();
+  for (const t of registry.themes) {
+    if (t.repo.split("/")[0].toLowerCase() !== owner || t.repo.toLowerCase() === repo.toLowerCase()) continue;
+    const r = await gh(`/repos/${t.repo}`);
+    if (r?.full_name?.toLowerCase() === repo.toLowerCase()) return t;
+  }
+  return null;
 }
 
 // Key order matches the existing file so a diff shows what changed.
@@ -558,7 +579,7 @@ const queue = read("data/candidates.json");
 const ledger = read("data/rejected.json");
 
 const listed = new Set(registry.themes.map((t) => t.repo.toLowerCase()));
-const takenNames = new Set(registry.themes.map((t) => t.name.toLowerCase()));
+const takenNames = new Set(registry.themes.map((t) => pageSlug(t.name)));
 const rejectedBy = new Map(ledger.rejected.map((r) => [r.repo.toLowerCase(), r]));
 
 // --- mode: --prove ----------------------------------------------------------
@@ -666,6 +687,9 @@ for (const [i, c] of pending.entries()) {
     continue;
   }
   if (d.verdict === "review") { held.push({ ...c, note: d.reason }); continue; }
+
+  const moved = await listedUnderOldName(c.repo);
+  if (moved) { held.push({ ...c, note: `already listed as ${moved.name} (${moved.repo}), renamed; run scripts/renames.mjs` }); continue; }
 
   const description = cleanDescription(d.facts?.pkgDesc) ?? cleanDescription(c.description) ?? cleanDescription(d.facts?.readmeLede);
   if (!description) { held.push({ ...c, note: "restyle path proven, but no usable description upstream" }); continue; }
