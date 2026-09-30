@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -102,6 +102,12 @@
       "repo": "wwxiaoqi/ui-theme-quota-show",
       "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",
       "date": "2026-08-15"
+    },
+    {
+      "repo": "Zenolzx/deepseek-harness-desktop-themes",
+      "reason": "dsh 0.2.0-rc.2 refuses to install it: package.json peerDependencies {\"@deepseek-ai/dsh-settings\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-api-remotes\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-client-connection\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-client-runtime\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-client-ui-theme\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-client-ui-settings\":\"^0.1.0-rc.6\",\"@deepseek-ai/dsh-client-ui-slots\":\"^0.1.0-rc.6\"} exclude 0.2.0-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-09-30",
+      "recheckAfter": "2026-11-14"
     },
     {
       "repo": "zhangguiping-xydt/dsh-skin-studio",
