@@ -18,6 +18,9 @@
     "triage:dry": "node scripts/triage.mjs --dry-run",
     "prove": "node scripts/triage.mjs --prove"
   },
+  "dependencies": {
+    "semver": "7.8.5"
+  },
   "engines": {
     "node": ">=20"
   },

@@ -48,10 +48,12 @@
 //   node scripts/triage.mjs --report f.json  write the full per-repo trace
 //
 // Env: GITHUB_TOKEN (one tree call per unsettled repo; raw reads need none)
+// Needs `npm install` once: the peer gate uses the semver release dsh pins.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import semver from "semver";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -106,7 +108,30 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // module stylesheets deleted, PermissionSelect moved to ui-permission-presets);
 // 10 of the 42 frozen sheets aimed at a live 0.1.5-rc.2 class lose at least
 // one target, none lose all. The caveat above still stands for that lane.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.1.7-rc.2";
+//
+// 2026-09-30: re-read at 0.2.0-rc.2 (npm `latest` since 2026-09-29) against
+// 0.1.7-rc.2. Token lane: styles/ declares 403 `--dsw-*` tokens where it
+// declared 395, none went away, and no existing declaration changed value.
+// One name lost its only reader: `--dsw-alias-interactive-bg-hover-accent`
+// painted PDF-preview text selection, which now reads the new
+// `--dsw-alias-bg-document-selection`, a literal mix of static-blue-500. On
+// dshthemes' frozen sheets, 64 of 244 set the old token and 44 of those set
+// no static-blue-500, so their PDF selection goes stock. Four more surfaces
+// moved onto new tokens declared on `body` like the rest: the turn trigger
+// (`--dsw-alias-turn-trigger-bg[-hover]`, which defaults to markdown-code-block
+// in light but interactive-bg-hover in dark), the switch thumb, sticky menu
+// group headers, and the text shimmer (a gradient before, now a colour).
+// ThemeRuntime lane: client/index.ts is byte-identical, still `export class
+// ThemeRuntime`, same package name and exports. Install lane: profile.ts gains
+// one line (a shipped optional bundle), and plugin-compatibility.ts,
+// plugin-manager operations.ts and client/modules are byte-identical, so a
+// package without `dsh.bundle` is still refused and `dsh.client.inject` is
+// still a list of package names. Hash lane: 7 of 0.1.7-rc.2's 119 hashed
+// module prefixes are gone, all in dsh-client-ui-schedule; the 44 frozen
+// sheets aimed at a live 0.1.7-rc.2 class keep every target. What moved is
+// the install gate's reach: a caret on 0.x stops at the minor, so this bump is
+// only honest with `peerRefusal()` below, which this file lacked until today.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.0-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
@@ -203,7 +228,11 @@ const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
 // `check.mjs` is the same thing under another name (lildanger/dsh-skin-win2000,
 // 2026-09-29): it loads client.js in a vm and asserts on it, and it tied with
 // client.js on depth and length and won on tree order.
-const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
+// `verify` is the third name for it (2026-09-30): `verify.mjs` inlined a copy
+// of dsh's stock token table to test against, and `tools/verify-bundle.cjs`
+// asserts that the built sheet contains an override. Both were admitted as
+// the receipt, and neither is the thing a reader installs.
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check|verify)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -220,11 +249,64 @@ const DEP_SECTIONS = ["dependencies", "peerDependencies", "devDependencies"];
 const depsOf = (p) => DEP_SECTIONS.flatMap(
   (section) => Object.keys(p?.[section] ?? {}).map((name) => [section, name]));
 
+// dsh's install gate, the same port awesome-dsh-plugins' triage carries:
+// `evaluatePluginCompatibility` in
+// packages/boot/app-boot/src/plugin-compatibility.ts (0.1.7-rc.1 on,
+// byte-identical at 0.2.0-rc.2), with the semver release the harness pins.
+// Every `@deepseek-ai/dsh` or `@deepseek-ai/dsh-*` peer must satisfy the
+// running version under includePrerelease, or `dsh plugin add` refuses the
+// package before pnpm runs. A skin is installed the same way a plugin is, so
+// the gate is the same. This file never had it: every listed `^0.1.x` range
+// admitted 0.1.7-rc.2, so the gap was invisible until `latest` left 0.1.
+// Measured 2026-09-30 off each listed row's package.json (twice, zero fetch
+// failures): of 546 third-party rows, 505 have one and 173 declare dsh peers;
+// 0.1.7-rc.2 refuses 14 of them, 0.2.0-rc.2 refuses 106. Those rows keep the
+// version they were stamped with; this gate only stops a new stamp.
+// Returns the refused peers, or null.
+const HARNESS_DEP = /^@deepseek-ai\/dsh(-|$)/;
+const WORKSPACE_RANGES = new Set(["workspace:^", "workspace:~", "workspace:*"]);
+
+function peerRefusal(pkg, runtime = DSH_VERSION) {
+  if (!pkg || !Object.hasOwn(pkg, "peerDependencies")) return null;
+  const peers = pkg.peerDependencies;
+  if (typeof peers !== "object" || peers === null || Array.isArray(peers)) return { peerDependencies: peers };
+  const refused = {};
+  for (const [name, range] of Object.entries(peers)) {
+    if (typeof range !== "string") {
+      refused[name] = range;
+      continue;
+    }
+    if (!HARNESS_DEP.test(name)) continue;
+    const requirement = WORKSPACE_RANGES.has(range) ? runtime : range;
+    if (requirement.trim() === "" || !semver.satisfies(runtime, requirement, { includePrerelease: true })) {
+      refused[name] = range;
+    }
+  }
+  return Object.keys(refused).length ? refused : null;
+}
+
+// The rejection names the file and the field, because the author is the one
+// person who can fix it, and the fix is one range.
+const refusalReason = (evidence, refused) =>
+  `dsh ${DSH_VERSION} refuses to install it: ${evidence.replace(/#.*/, "")} `
+  + `peerDependencies ${JSON.stringify(refused)} exclude ${DSH_VERSION} `
+  + "(packages/boot/app-boot/src/plugin-compatibility.ts)";
+
 // A package.json proves a restyle path when it names the ThemeRuntime, or
 // declares a dsh bundle at all — the repo already passed the name gate, so a
 // bundle here is a bundle that calls itself a skin.
+//
+// Every proof it returns carries `refused` when dsh at DSH_VERSION would
+// refuse this very package. The path is still real, so the proof stands; what
+// the caller may not do is stamp DSH_VERSION on it.
 function proveFromPackage(pkg, path) {
   if (!pkg) return null;
+  const refused = peerRefusal(pkg) ?? undefined;
+  const proof = proveFromPackageFields(pkg, path);
+  return proof ? { ...proof, refused } : null;
+}
+
+function proveFromPackageFields(pkg, path) {
   const deps = depsOf(pkg);
   const sectionOf = (name) => (deps.find(([, d]) => d === name) || [])[0];
   const names = deps.map(([, d]) => d);
@@ -301,7 +383,9 @@ async function proveRoot(repo) {
     readmeMentionsTokens: readme ? DSW_TOKEN.test(readme) : false,
     empty: !pkg && !readme,
   };
-  return { proof: proveFromPackage(pkg, "package.json"), facts };
+  // A skin proven by a sheet deeper in the tree is still installed as the
+  // root package, so the root's peers are the ones dsh's gate reads.
+  return { proof: proveFromPackage(pkg, "package.json"), facts, refused: peerRefusal(pkg) ?? undefined };
 }
 
 // One tree call, then free reads of whatever it points at.
@@ -358,20 +442,23 @@ const NO_PATH = "no restyle path proven: no ThemeRuntime dependency, no dsh mani
 // --prove, where the row is already listed and the gate is not the question.
 async function decide(repo, says = null) {
   const root = await proveRoot(repo);
-  if (root.proof && !root.proof.install) return { repo, verdict: "accept", ...root.proof, facts: root.facts };
+  // A proof from a nested package.json names its own package; any other proof
+  // is installed as the root package, whose peers dsh's gate reads.
+  const gated = (proof) => ({ ...proof, refused: proof.path ? proof.refused : root.refused });
+  if (root.proof && !root.proof.install) return { repo, verdict: "accept", ...gated(root.proof), facts: root.facts };
 
   const deep = await proveDeep(repo);
   const facts = { ...root.facts, ...deep.facts };
   // A --dsw-* override or the ThemeRuntime found deeper in the tree outranks
   // whatever install path the root package.json carried.
-  if (deep.proof && !deep.proof.install) return { repo, verdict: "accept", ...deep.proof, facts };
+  if (deep.proof && !deep.proof.install) return { repo, verdict: "accept", ...gated(deep.proof), facts };
 
   // An install path with no restyle signal anywhere in the tree. A human
   // decides -- except under --prove, where the row is already listed and the
   // question is whether its receipt still holds, not whether it is a skin.
   if (root.proof || deep.proof) {
     const proof = root.proof ?? deep.proof;
-    if (says === null) return { repo, verdict: "accept", ...proof, facts };
+    if (says === null) return { repo, verdict: "accept", ...gated(proof), facts };
     return {
       repo,
       verdict: "review",
@@ -499,7 +586,11 @@ if (PROVE) {
 
   const proven = results.filter((r) => r.verdict === "accept");
   const gone = results.filter((r) => r.facts?.tree === "gone");
+  const refusedNow = proven.filter((r) => r.refused);
   console.error(`triage: proven ${proven.length}, unproven ${results.length - proven.length} of ${results.length}`);
+  if (refusedNow.length) {
+    console.error(`triage: ${refusedNow.length} proven row(s) carry dsh peers ${DSH_VERSION} refuses; their verifiedAgainst is left as it was`);
+  }
   if (gone.length) {
     console.error(`triage: ${gone.length} listed repo(s) now 404 - confirm on a second run before removing:`);
     for (const g of gone) console.error(`  - ${g.entry.repo} (${g.entry.name})`);
@@ -512,8 +603,12 @@ if (PROVE) {
     if (r.verdict === "accept") {
       t.evidence = r.evidence;
       t.status = "verified";
-      t.lastVerified = TODAY;
-      t.verifiedAgainst = DSH_VERSION;
+      // The file still proves a restyle path, but dsh at this version would
+      // refuse the package; stamping the version would say it installs.
+      if (!r.refused) {
+        t.lastVerified = TODAY;
+        t.verifiedAgainst = DSH_VERSION;
+      }
     } else {
       // Never delete a row on a machine's say-so - an unreadable tree and a
       // dead project look identical from here. Drop the claim, keep the row.
@@ -525,6 +620,7 @@ if (PROVE) {
   if (REPORT) {
     writeFileSync(REPORT, `${JSON.stringify(results.map((r) => ({
       repo: r.entry.repo, name: r.entry.name, verdict: r.verdict, evidence: r.evidence ?? null, reason: r.reason ?? null,
+      refused: r.refused ?? null,
     })), null, 2)}\n`);
   }
   if (DRY) { console.error("triage: --dry-run, nothing written"); process.exit(0); }
@@ -543,11 +639,20 @@ const admitted = [];
 const rejects = [];
 const held = [];
 const trace = [];
+let refusedByPeers = 0;
 
 for (const [i, c] of pending.entries()) {
   if (i && i % 25 === 0) console.error(`triage: decide ${i}/${pending.length} (api ${apiCalls})`);
   const d = await decide(c.repo, `${c.description ?? ""}`);
   trace.push(d);
+
+  // A real skin that dsh at DSH_VERSION would refuse to install is not
+  // listable against DSH_VERSION. It is a fact about one range, so it gets a
+  // recheck date: widen the range and the next sweep admits it.
+  if (d.verdict === "accept" && d.refused) {
+    Object.assign(d, { verdict: "reject", reason: refusalReason(d.evidence, d.refused), recheck: true });
+    refusedByPeers += 1;
+  }
 
   if (d.verdict === "reject") {
     rejects.push({
@@ -586,7 +691,7 @@ for (const [i, c] of pending.entries()) {
   }));
 }
 
-console.error(`triage: ${admitted.length} admitted, ${rejects.length} rejected, ${held.length} held for review (api ${apiCalls})`);
+console.error(`triage: ${admitted.length} admitted, ${rejects.length} rejected (${refusedByPeers} by dsh ${DSH_VERSION}'s peer gate), ${held.length} held for review (api ${apiCalls})`);
 
 if (REPORT) {
   writeFileSync(REPORT, `${JSON.stringify({ admitted, rejects, held, trace }, null, 2)}\n`);

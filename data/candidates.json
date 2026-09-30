@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -31,6 +31,16 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "DevTarlow/dsh-background-swapper",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "A DeepSeek Harness plugin that sets a photo as the harness background.",
+      "discovered": "2026-09-29",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "donwww/dsh-client-ui-skin-manager",
       "sources": [
         "github-topic"
@@ -39,6 +49,16 @@
       "description": "Skin manager for the DeepSeek Harness (dsh) web GUI: a Settings page that lists installed skins, picks the active one, and switches between the stock UI and a skin. Two-layer wiring, adopts skins other installers wired, no duplicate mounts, live switching.",
       "discovered": "2026-09-17",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "GIN0076/dsh-bg-changer",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 背景图插件：上传图片 + 布局裁剪 + 不透明度/模糊/暗化 + 界面半透明；零依赖零构建，含一键装回脚本",
+      "discovered": "2026-09-29",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
@@ -91,6 +111,16 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "kviiinh/dsh-whale-particles-bg",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "Animated whale particle background for the DeepSeek Harness (dsh) Web UI - assembling from its scattered shell, breathing at idle, and being pushed around by the pointer",
+      "discovered": "2026-09-29",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "leeseo39/dsh-we-wallpaper",
       "sources": [
         "github-topic"
@@ -115,7 +145,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 2,
+      "stars": 3,
       "description": "替换“深度求索中”为任意你想要的文本，比如：少女祈祷中......",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -155,7 +185,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "Custom full-window wallpaper plugin for DeepSeek Harness (DSH): gradient presets, image URLs, local uploads, frosted glass, and a theme-aware top gradient.",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -178,6 +208,16 @@
       "stars": 0,
       "description": "Changes the wallpaper of the dsh Web GUI.",
       "discovered": "2026-09-17",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Wedomizing/Dsh_genshin_nicole_skin",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "来自世界之外的智慧所诞生的进步，每天都比过去一百年的积累更多",
+      "discovered": "2026-09-29",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
