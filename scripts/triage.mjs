@@ -232,7 +232,13 @@ const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
 // of dsh's stock token table to test against, and `tools/verify-bundle.cjs`
 // asserts that the built sheet contains an override. Both were admitted as
 // the receipt, and neither is the thing a reader installs.
-const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check|verify)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
+// `smoke` is the fourth (2026-10-05): wsj060618/dsh-skin-studio's `smoke.mjs`
+// asserts `--dsw-alias-bg-base:rgba(...)` on the output. Same day, the filter
+// turned out to guard scripts only: War-God0108/dsh-dt-bg was admitted on
+// `test/theme-tokens.css`, a copy of dsh's stock table its tests render
+// against, while the plugin itself only reads the tokens. Sheets and token
+// maps go through it too now.
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check|verify|smoke)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -412,13 +418,13 @@ async function proveDeep(repo) {
     if (proof && !installOnly) installOnly = { ...proof, path: dirname(p) };
   }
 
-  const sheets = paths.filter((p) => STYLE_FILE.test(p)).slice(0, 8);
+  const sheets = paths.filter((p) => STYLE_FILE.test(p) && !TEST_FILE.test(p)).slice(0, 8);
   for (const p of sheets) {
     const text = await raw(repo, p);
     if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override", tokens: true }, facts };
   }
 
-  for (const p of paths.filter((x) => TOKEN_JSON.test(x)).slice(0, 6)) {
+  for (const p of paths.filter((x) => TOKEN_JSON.test(x) && !TEST_FILE.test(x)).slice(0, 6)) {
     const text = await raw(repo, p);
     if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token map", tokens: true }, facts };
   }
@@ -728,7 +734,14 @@ if (admitted.length) {
   registry.updated = TODAY;
   write("data/themes.json", registry);
 }
-if (rejects.length) {
+// Admitted, so a rejection on file for the same repo has been overturned. An
+// expired `recheckAfter` re-queues the repo, and the plugins registry learned
+// on 2026-08-25 that admitting it leaves the old row behind and `validate`
+// finds the repo in both files. This prover hit the same thing on 2026-10-05:
+// wangkaxds/dsh-aurora-wallpaper, rejected 2026-08-18, proves a sheet today.
+const overturned = admitted.filter((a) => rejectedBy.delete(a.repo.toLowerCase()));
+if (overturned.length) console.error(`triage: ${overturned.length} rejection(s) overturned`);
+if (rejects.length || overturned.length) {
   for (const r of rejects) rejectedBy.set(r.repo.toLowerCase(), r);
   ledger.rejected = [...rejectedBy.values()].sort((a, b) => a.repo.localeCompare(b.repo));
   ledger.updated = TODAY;

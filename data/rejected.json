@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-05",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -36,8 +36,8 @@
     {
       "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-18",
-      "recheckAfter": "2026-10-02"
+      "date": "2026-10-05",
+      "recheckAfter": "2026-11-19"
     },
     {
       "repo": "ISimon3/dsh-theme-skin",
@@ -65,8 +65,8 @@
     {
       "repo": "Renakoni/awesome-dsh-themes",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-20",
-      "recheckAfter": "2026-10-04"
+      "date": "2026-10-05",
+      "recheckAfter": "2026-11-19"
     },
     {
       "repo": "sly7783/lively-wallpaper-guide",
@@ -91,12 +91,6 @@
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-26",
       "recheckAfter": "2026-10-10"
-    },
-    {
-      "repo": "wangkaxds/dsh-aurora-wallpaper",
-      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-18",
-      "recheckAfter": "2026-10-02"
     },
     {
       "repo": "wwxiaoqi/ui-theme-quota-show",
