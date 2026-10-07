@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-07",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -95,7 +95,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 18,
+      "stars": 22,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -175,7 +175,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 1,
+      "stars": 3,
       "description": "DeepSeek Harness 桌面壁纸：和你的大肥鱼一起生活吧！/DeepSeek Harness wallpaper——live with your whale girl!",
       "discovered": "2026-10-05",
       "note": "installs into dsh (bridge/package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -259,6 +259,16 @@
       "description": "Chat background plugin for DeepSeek Harness - set an image as the chat view background, inspired by VSCode background extension.",
       "discovered": "2026-09-01",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Sorphone/dsh-eyecare-bg",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "给 DeepSeek Harness（DSH）换护眼绿背景的插件：覆盖 31 个背景 token（画布/卡片/侧栏/输入框/代码块…），自带设置面板并注册进 DSH 设置页。零依赖、无客户端构建、不改 app.asar。",
+      "discovered": "2026-10-06",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "Sostay/dsh-wallpaper",

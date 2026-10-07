@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "updated": "2026-10-05",
+  "updated": "2026-10-07",
   "themes": [
     {
       "name": "Arknights-flavor-theme",
@@ -853,6 +853,19 @@
       "description": "Background settings plugin: upload a local image or switch aurora, ember, and paper presets, with live opacity, mask, blur, and fit controls.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/leavestring/awesome-dsh-background-plugin/main/screenshots/dark-mode-image.png"
+    },
+    {
+      "name": "dsh-background-by-model",
+      "repo": "HarmlessFunny/dsh-background-by-model",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-07",
+      "lastVerified": "2026-10-07",
+      "verifiedAgainst": "0.2.0-rc.2",
+      "description": "Appearance plugin for DeepSeek Harness: an ordered list of model rules, each carrying its own wallpapers — every image with its own framing and theme color — plus layout mode, opacity and blur; the background follows the model you switch to, and a rule can rotate through several images on its own rhythm."
     },
     {
       "name": "dsh-background-carousel",
@@ -2140,6 +2153,19 @@
       "lastVerified": "2026-08-24",
       "verifiedAgainst": "0.1.0-rc.8",
       "description": "DeepSeek Harness (DSH) 动态背景切换插件：上传 GIF/WebP 动图与静态图、内置 12 色纯色调色板，定时丝滑交叉淡入淡出切换页面背景，聊天区自动叠加主题色保护层。"
+    },
+    {
+      "name": "dsh-dynamic-bg",
+      "repo": "mengjiemy/dsh-dynamic-bg",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-10-07",
+      "lastVerified": "2026-10-07",
+      "verifiedAgainst": "0.2.0-rc.2",
+      "description": "给 DSH 铺整屏动态背景：静态图 / GIF / 视频三种都支持，配可调蒙版、模糊、不透明度与面板半透明。只改 CSS 变量、不碰哈希类名。"
     },
     {
       "name": "dsh-dynamic-wallpaper",
@@ -4100,6 +4126,20 @@
       "license": "MIT"
     },
     {
+      "name": "dsh-skin-abyssal",
+      "repo": "tenebris173/dsh-skin-abyssal",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-10-07",
+      "lastVerified": "2026-10-07",
+      "verifiedAgainst": "0.2.0-rc.2",
+      "description": "「深渊」—— 深海底玻璃拟态皮肤：单一生物荧光光源 + 发丝线分层，可在设置里切换底色 / 强调色 / 圆角密度 / 极光强度。",
+      "preview": "https://raw.githubusercontent.com/tenebris173/dsh-skin-abyssal/HEAD/preview/abyssal-matrix.png"
+    },
+    {
       "name": "dsh-skin-alphacoders",
       "repo": "sakka6868/dsh-skin",
       "npm": "dsh-skin-alphacoders",
@@ -4791,6 +4831,20 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Arknights PRTS terminal skin for dsh Web UI — 深色工业终端 / 航空控制台，直角面板 + 硬阴影 + 青强调色"
+    },
+    {
+      "name": "dsh-skin-prts-tenebris",
+      "repo": "tenebris173/dsh-skin-prts",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-10-07",
+      "lastVerified": "2026-10-07",
+      "verifiedAgainst": "0.2.0-rc.2",
+      "description": "「PRTS」—— 罗德岛终端风格皮肤：直角切角 + 黑色发丝线 + 黄黑警示条 + 四角登记标记；亮/暗两套底可跟随应用主题。",
+      "preview": "https://raw.githubusercontent.com/tenebris173/dsh-skin-prts/HEAD/preview/prts-matrix.png"
     },
     {
       "name": "dsh-skin-sakura",
@@ -7524,6 +7578,19 @@
       "description": "Chinese traditional color theme pack for DeepSeek Harness: 48 anchors times light/dark writing the full --dsw-* token vocabulary.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/nevertoday/dsh-theme-plugin/HEAD/docs/img/panel-light.png"
+    },
+    {
+      "name": "dsh-zhuang-fangyi",
+      "repo": "yangwenjie1231/dsh-zhuang-fangyi",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-07",
+      "lastVerified": "2026-10-07",
+      "verifiedAgainst": "0.2.0-rc.2",
+      "description": "庄方宜主题 for DeepSeek Harness —— 接入官方 ctx.theme 体系（4 套配色 × 浅色/深色完整适配），附皮肤层（观测台官方右栏标签页 + 浮层兜底 / 头像气泡重绘）、官方素材壁纸与强调色色相自选。官方素材量化取色，非官方同人作品。"
     },
     {
       "name": "dskin",
