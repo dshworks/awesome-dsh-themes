@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-10",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -12,6 +12,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "acdsh4869/DSH-Transparent-UI-Plugin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Aqua glassmorphism theme plugin for DeepSeek Harness (DSH v0.2.x / desktop v0.22.3+) — original by WYH66666666, adapted for 0.2.x",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "Alicex7777/dsh-theme-colors",
       "sources": [
         "github-topic"
@@ -20,6 +29,15 @@
       "description": "DSH Web theme plugin: per-region colors, OKLCH depth/vividness, 26 day+night schemes, 3-state text colors with a free gamut picker",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Ansellwan/DSH-Custom-Wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "可以自定义Harness的壁纸，比如透明度和虚化之类的。可以尝试一下哦",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "Antiboday/dsh-plugin-bg-studio",
@@ -40,6 +58,32 @@
       "description": "dsh-dream-skin satellite: per-image wallpaper position (X/Y px) settings row. Vibe-coded.",
       "discovered": "2026-09-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Bancott/dsh-yexueqing-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "berhbro/dsh-cyrene-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Cyrene theme dsh plugin",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "catEatRabbit/dsh-light-green-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH 浅绿主题",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "cloud0-long/dsh-anime-skins",
@@ -81,6 +125,15 @@
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
     },
     {
+      "repo": "dqws597-afk/dsh-background-computer-use",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "给 DeepSeek Harness (DSH) 加「后台操作」能力：不抢焦点、不弹窗地驱动 Windows 桌面与浏览器。含配置模板与操作纪律。Background computer-use setup for DSH.",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "DSH-EAC/dsh-ui-skin-loader-convention",
       "sources": [
         "github-topic"
@@ -95,10 +148,28 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 22,
+      "stars": 25,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "dugujun3-cloud/dsh-wallpaper",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 2,
+      "description": "DSH web plugin: whole-app background wallpaper - local library, wallhaven online search, local import, right-click actions",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "Firefly-Star/dsh-mini-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH skin plugin: stylesheet-only theming with a self-contained skin library (per-mode dark/light presets, import/export, one settings section)",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "GIN0076/dsh-bg-changer",
@@ -109,6 +180,15 @@
       "description": "DeepSeek Harness 背景图插件：上传图片 + 布局裁剪 + 不透明度/模糊/暗化 + 界面半透明；零依赖零构建，含一键装回脚本",
       "discovered": "2026-09-29",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "hanhan1137/theme-coach-dsh",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "theme-coach-dsh: DSH (DeepSeek Harness) adapted UI theme coach - Q&A guided theme design, official-asset wayfinding, palette derivation, contrast checks (based on openclaw-ui-theme-coach v1.5.0)",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
@@ -141,6 +221,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "hello-heyongping/dsh-helloai-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DeepSeek Harness 主题插件：十款内置配色 + 自建主题编辑器，可选玻璃质感与逐 token 覆盖",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "hgp005/dsh-winterskin",
       "sources": [
         "github-topic"
@@ -151,6 +240,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "I-QX-I/dsh-plugin-skins",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "玻璃皮肤 / Glass Skins — Independent DeepSeek Harness appearance plugin. Nine themes, liquid/frosted glass, 中文/English, simple ZIP installation.",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "iasiv5/dsh-skins",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "DSH 插件：DeepSeek Harness 界面主题与皮肤管理组件，可自由切换多款界面视觉风格。",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "johnsonspirit/ocean-wave-theme",
       "sources": [
         "github-topic"
@@ -159,6 +266,14 @@
       "description": "Animated ocean waves with a whale swimming behind the page, plus translucent surfaces.",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Junhousheng-Serena/celtic-adventure-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-10-10"
     },
     {
       "repo": "kviiinh/dsh-whale-particles-bg",
@@ -185,7 +300,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "把 Wallpaper Engine 的壁纸真正铺满 DeepSeek Harness 网页界面：跟随 dsh-plugin-wallpaper-engine 的选择，UI 面层半透明，不依赖桌面壳 extended 模式。",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -209,6 +324,15 @@
       "description": "DSH 推理档位皮肤：把推理等级控件重绘成蓝紫渐变、带星点与流光的档位条 / Blue-violet Ultra skin for the DeepSeek Harness reasoning-tier control",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "luoyuejun9/dsh-skin-rotation",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "Random skin rotation for DeepSeek Harness: a different installed skin on every launch, with an on/off switch inside Settings -> Skins.",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "Menghuan1918/dsh-deep-diving-skin",
@@ -291,6 +415,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "sujiu0616-art/DSH-CustomWallpapers-Glassmorphism-Theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "dsh可自定义壁纸玻璃风主题",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "tenebris173/dsh-skin-strata",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "STRATA · 地层 — DSH UI 皮肤：工业网格 + 等高线背景，浅色纸面 / 深色终端两套底",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "tippykafuu/dsh-client-ui-wallpaper",
       "sources": [
         "github-topic"
@@ -301,6 +443,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "tuibe/dsh-deepseek-theme-studio",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DSH Web GUI client theme plugin — frosted glass / fluid / quantised effects in DeepSeek's visual language. 100 adjustable parameters.",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "uckkk/dsh-color-palette",
       "sources": [
         "github-topic"
@@ -309,6 +460,24 @@
       "description": "配色方案生成",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "vanhungbui-11/dsh-wallpaper-bridge",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "Wallpaper Engine bridge for DeepSeek Harness (DSH) on Windows",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "vb2250158/dsh-theme-blue",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Private blue theme foundation for the DeepSeek Harness web client",
+      "discovered": "2026-10-10"
     },
     {
       "repo": "War-God0108/dsh-dt-bg",
@@ -331,6 +500,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "whf-jx/dsh-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "DSH Web GUI 本地壁纸插件:上传本地图片/视频、手动切换、定时轮换与随机播放,带清晰度/压暗/模糊/填充调节",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "wsj060618/dsh-skin-studio",
       "sources": [
         "github-topic"
@@ -340,11 +518,29 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "xiaotuchu/dsh-theme-eye-care",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "Eye-care palettes — three switchable low-glare themes for the DeepSeek Harness GUI.",
+      "discovered": "2026-10-10"
+    },
+    {
+      "repo": "xikan0/dsh-outerwilds-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "以《星际拓荒》为主题的 DSH Web 与 DSH Desktop 外观插件",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "XINGRUYU33224/dsh-liquid-glass-wallpaper",
       "sources": [
         "github-topic"
       ],
-      "stars": 1,
+      "stars": 2,
       "description": "Liquid-glass Wallpaper Engine backdrop for the DeepSeek Harness Web GUI",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -370,6 +566,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "YorenZZZ/DeepseekHarness-Desktop-Skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 桌面版皮肤 —— 白骑士（非官方外部插件）",
+      "discovered": "2026-10-10"
+    },
+    {
       "repo": "zampie/sakura-afternoon-skin",
       "sources": [
         "github-topic"
@@ -388,6 +593,15 @@
       "description": "豆包主题 — DeepSeek Harness Web 客户端主题插件。",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "ZZH0503/deepseek-harness-aventurine-skin",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 砂金·戏浪主题皮肤插件：深海洋底配色、多层景深、沉浸式双立绘、桌宠台词气泡、全屏开屏动画（非商用同人作品）",
+      "discovered": "2026-10-10"
     }
   ]
 }
