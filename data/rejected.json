@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-17",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -17,6 +17,12 @@
       "date": "2026-09-02"
     },
     {
+      "repo": "dqws597-afk/dsh-background-computer-use",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-10-17",
+      "recheckAfter": "2026-12-01"
+    },
+    {
       "repo": "dshworks/dshthemes",
       "reason": "dshthemes.com is the gallery that reads this registry; its one sheet consumes --dsw-* for the site chrome and sets none. Not a theme.",
       "date": "2026-09-02"
@@ -24,14 +30,14 @@
     {
       "repo": "GitNoHup/macaron-theme",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-28",
-      "recheckAfter": "2026-10-12"
+      "date": "2026-10-17",
+      "recheckAfter": "2026-12-01"
     },
     {
       "repo": "hanhan1137/theme-coach-dsh",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-26",
-      "recheckAfter": "2026-10-10"
+      "date": "2026-10-17",
+      "recheckAfter": "2026-12-01"
     },
     {
       "repo": "hardcandydemoralisation573/dsh-xiaoyao-skins",
@@ -44,12 +50,6 @@
       "reason": "repo gone (404) at triage time",
       "date": "2026-09-29",
       "recheckAfter": "2026-11-13"
-    },
-    {
-      "repo": "Junhousheng-Serena/celtic-adventure-skin",
-      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-24",
-      "recheckAfter": "2026-10-08"
     },
     {
       "repo": "lucky01222/dsh-workbench-theme",
@@ -81,22 +81,16 @@
       "recheckAfter": "2026-10-19"
     },
     {
-      "repo": "sujiu0616-art/DSH-CustomWallpapers-Glassmorphism-Theme",
-      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-24",
-      "recheckAfter": "2026-10-08"
-    },
-    {
       "repo": "uckkk/dsh-color-palette",
       "reason": "repo tree unreadable at triage time",
       "date": "2026-08-18",
       "recheckAfter": "2026-10-02"
     },
     {
-      "repo": "vanhungbui-11/dsh-wallpaper-bridge",
-      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-08-26",
-      "recheckAfter": "2026-10-10"
+      "repo": "vb2250158/dsh-theme-blue",
+      "reason": "dsh 0.2.0-rc.2 refuses to install it: package.json peerDependencies {\"@deepseek-ai/dsh-client-ui-theme\":\">=0.2.1-alpha.1 <0.3.0\",\"@deepseek-ai/dsh-api-remotes\":\">=0.2.1-alpha.1 <0.3.0\",\"@deepseek-ai/dsh-api-session-controller\":\">=0.2.1-alpha.1 <0.3.0\",\"@deepseek-ai/dsh-client-ui-renderer\":\">=0.2.1-alpha.1 <0.3.0\",\"@deepseek-ai/dsh-client-ui-session\":\">=0.2.1-alpha.1 <0.3.0\",\"@deepseek-ai/dsh-client-ui-settings\":\">=0.2.1-alpha.1 <0.3.0\"} exclude 0.2.0-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-10-17",
+      "recheckAfter": "2026-12-01"
     },
     {
       "repo": "wwxiaoqi/ui-theme-quota-show",
