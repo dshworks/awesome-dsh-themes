@@ -71,6 +71,15 @@
       "note": "installs into dsh (dsh-wallpaper/package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "Bainianzzz/dsh-bg-switcher",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "Switch the Harness window background to a preset or a custom image URL",
+      "discovered": "2026-10-17"
+    },
+    {
       "repo": "baizz-520/dsh-theme-studio",
       "sources": [
         "github-topic"
@@ -144,7 +153,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 29,
+      "stars": 30,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -168,6 +177,15 @@
       "description": "DeepSeek Harness 背景图插件：上传图片 + 布局裁剪 + 不透明度/模糊/暗化 + 界面半透明；零依赖零构建，含一键装回脚本",
       "discovered": "2026-09-29",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "haihaiaicode/dsh-cutesnowgirl-background",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "Video workspace background with a translucent composer for DeepSeek Harness.",
+      "discovered": "2026-10-17"
     },
     {
       "repo": "hanzhaoxuan2991479447-del/deepseek-harness-custom-bg",
@@ -210,6 +228,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "huangfuren/dsh-bg-plugin",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DSH plugin: persistent full-window background image - upload, live preview, opacity/brightness/mask/blur/position/fit, config persisted to disk. Two packages: host + client.",
+      "discovered": "2026-10-17"
+    },
+    {
       "repo": "johnsonspirit/ocean-wave-theme",
       "sources": [
         "github-topic"
@@ -218,6 +245,15 @@
       "description": "Animated ocean waves with a whale swimming behind the page, plus translucent surfaces.",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "km5473/dsh-custom-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH自定义主题：可自行修改背景图片，主题色，表情包与文案。基于[dsh-vesna-theme](https://github.com/Mahiru0427/dsh-vesna-theme)",
+      "discovered": "2026-10-17"
     },
     {
       "repo": "kviiinh/dsh-whale-particles-bg",
@@ -260,6 +296,15 @@
       "note": "installs into dsh (research/package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "liuyaguang8023/dsh-jcc-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "金铲铲同人风格的 DSH Web 主题：原创海克斯竞技场背景、金色铲影、四套强化色、氛围光效与圆润/锐利棱角。 Unofficial Golden Spatula fan theme for DeepSeek Harness.",
+      "discovered": "2026-10-17"
+    },
+    {
       "repo": "LoveIrishCoffee/dsh-effort-ultra-skin",
       "sources": [
         "github-topic"
@@ -298,6 +343,14 @@
       "description": "DeepSeek Harness web plugin: a cyberpunk skin for the sidebar and icon buttons, plus a custom background image - managed from the Settings panel.",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Nektropy/dsh-starry-sky-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-10-17"
     },
     {
       "repo": "pbadgpmeb22791-sketch/dsh-we-wallpaper",
@@ -447,6 +500,15 @@
       "description": "2005-era IM skin for DeepSeek Harness (unofficial, original artwork only)QQ2005DSH皮肤",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "YOGEMOW/dsh-custom-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DSH 自定义主题：多套主题、配色、壁纸、背景音乐、首屏立绘与多条文案。 · Custom theme studio for DeepSeek Harness.",
+      "discovered": "2026-10-17"
     },
     {
       "repo": "YorenZZZ/DeepseekHarness-Desktop-Skin",
