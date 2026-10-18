@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -56,6 +56,12 @@
       "reason": "dsh 0.2.0-rc.2 refuses to install it: package.json peerDependencies {\"@deepseek-ai/dsh\":\"0.1.7-rc.2\"} exclude 0.2.0-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
       "date": "2026-10-07",
       "recheckAfter": "2026-11-21"
+    },
+    {
+      "repo": "luongthimydieu/dsh-client-ui-skin-kitty",
+      "reason": "dsh 0.2.0-rc.2 refuses to install it: theme.css peerDependencies {\"@deepseek-ai/dsh-client-runtime\":\">=0.1.2-alpha.1 <0.2.0-0 || >=0.2.1-rc.1 <0.3.0-0\",\"@deepseek-ai/dsh-client-ui-slots\":\">=0.1.2-alpha.1 <0.2.0-0 || >=0.2.1-rc.1 <0.3.0-0\"} exclude 0.2.0-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-10-18",
+      "recheckAfter": "2026-12-02"
     },
     {
       "repo": "PixelGeek325/DSH-High-Contrast-Theme",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -144,7 +144,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 29,
+      "stars": 30,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -217,6 +217,16 @@
       "stars": 0,
       "description": "Animated ocean waves with a whale swimming behind the page, plus translucent surfaces.",
       "discovered": "2026-09-28",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "kjx-talesofai/dsh-plugin-session-palette",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Make Cmd+K open a Spotlight-style session palette instead of focusing the sidebar search box — with in-place renaming and up to three tags per session.",
+      "discovered": "2026-10-18",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -297,6 +307,16 @@
       "stars": 0,
       "description": "DeepSeek Harness web plugin: a cyberpunk skin for the sidebar and icon buttons, plus a custom background image - managed from the Settings panel.",
       "discovered": "2026-09-28",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "nu0y4/dsh-manual-bg",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "One-click move a running shell command to the background in DeepSeek Harness: a run tool whose card carries a small SVG U-turn button.",
+      "discovered": "2026-10-18",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
