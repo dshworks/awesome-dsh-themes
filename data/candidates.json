@@ -12,6 +12,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "165890/dsh-claude-code-desktop-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Claude Code desktop theme for the DeepSeek Harness Web GUI: warm surfaces, serif UI, HUD, diff review drawer and usage overview card.",
+      "discovered": "2026-10-18"
+    },
+    {
+      "repo": "AidenWanggitgit/paper-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "A scholarly journal-desk skin for DeepSeek Harness: Nature, Science, IEEE and Elsevier covers, manuscript stages, and an editorial letter behind the conversation.",
+      "discovered": "2026-10-18"
+    },
+    {
       "repo": "ailixiya24865-alt/dsh-jellyfish-theme",
       "sources": [
         "github-topic"
@@ -79,6 +97,15 @@
       "description": "DSH 主题工坊 — 可自定义背景色/背景图、字体、输入框、边栏颜色的 DeepSeek Harness 主题插件（实时生效，43 项测试）",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Cherryxxh/DSH-One-Dark-Pro-Theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "One Dark Pro (classic) theme for the DeepSeek Harness Web GUI: a Settings -> General switcher with a full 156-token override layer, 1:1 colors from the VS Code extension.",
+      "discovered": "2026-10-18"
     },
     {
       "repo": "cloud0-long/dsh-anime-skins",
@@ -210,6 +237,24 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "jeweis/dsh-skin-lab",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 主题插件：10 套内置主题，自由搭配配色、背景与风格，支持自定义图片和一键恢复官方外观。",
+      "discovered": "2026-10-18"
+    },
+    {
+      "repo": "jiabei20031104/dsh_theme_terraria",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Terraria pixel theme for DeepSeek Harness (Desktop + Web)",
+      "discovered": "2026-10-18"
+    },
+    {
       "repo": "johnsonspirit/ocean-wave-theme",
       "sources": [
         "github-topic"
@@ -228,6 +273,15 @@
       "description": "Make Cmd+K open a Spotlight-style session palette instead of focusing the sidebar search box — with in-place renaming and up to three tags per session.",
       "discovered": "2026-10-18",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "km5473/dsh-customizable-theme",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "DSH自定义主题：可自行修改背景图片，主题色，表情包与文案。基于[dsh-vesna-theme](https://github.com/Mahiru0427/dsh-vesna-theme)",
+      "discovered": "2026-10-18"
     },
     {
       "repo": "kviiinh/dsh-whale-particles-bg",
@@ -300,6 +354,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "MilkySnowWay123/dsh-client-ui-skin-tianlight",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "为 DeepSeek Harness Web 界面打造的天光皮肤：4K 视频/图片壁纸、本地上传与自动轮播、可选 WebWallGL 场景、液态玻璃外观，以及薄荷猫桌面伙伴。",
+      "discovered": "2026-10-18"
+    },
+    {
       "repo": "mwilljx-web/dsh-plugin-wallpaper",
       "sources": [
         "github-topic"
@@ -338,6 +401,15 @@
       "description": "DeepSeek Harness 插件：AI 绘制并审查 Minecraft 皮肤 —— 面板 + lint 质量评分 + 多视角多姿态渲染",
       "discovered": "2026-10-05",
       "note": "installs into dsh (plugin/dsh-mcskin-studio/package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "RichardDou0607/dsh-theme-admech",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Forge-Cathedral tech-gothic theme for DeepSeek Harness. Unofficial fan-made skin, original SVG art, provided gear-skull emblem. 机械神教 · 铸炉圣殿 DSH 外观插件。",
+      "discovered": "2026-10-18"
     },
     {
       "repo": "Sh1wu0814/dsh-chat-background",
@@ -408,6 +480,14 @@
       "description": "配色方案生成",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "wangjiaxi/dsh-chat-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-10-18"
     },
     {
       "repo": "War-God0108/dsh-dt-bg",
