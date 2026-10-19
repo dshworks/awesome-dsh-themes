@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -410,6 +410,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "wangjiaxi/dsh-chat-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "discovered": "2026-10-18",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "War-God0108/dsh-dt-bg",
       "sources": [
         "github-topic"
@@ -497,6 +506,16 @@
       "description": "豆包主题 — DeepSeek Harness Web 客户端主题插件。",
       "discovered": "2026-09-28",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "jiabei20031104/dsh_theme_terraria",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Terraria pixel theme for DeepSeek Harness (Desktop + Web): a self-contained themed frontend served by the Host plus an index-injected pixel skin and Desktop takeover layer that cannot break the official UI",
+      "discovered": "2026-10-18",
+      "hold": "a copy of the listed 10086ggqq/dsh_theme_terraria: skin/terraria.css is byte-identical (sha256 caee13ca...), same package name dsh-theme-terraria, 39 files each; listing it would count one skin twice. List it if the owner says it is a maintained successor."
     }
   ]
 }

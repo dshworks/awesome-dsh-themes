@@ -131,7 +131,25 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // sheets aimed at a live 0.1.7-rc.2 class keep every target. What moved is
 // the install gate's reach: a caret on 0.x stops at the minor, so this bump is
 // only honest with `peerRefusal()` below, which this file lacked until today.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.0-rc.2";
+//
+// 2026-10-19: re-read at 0.2.1-rc.2 (npm `latest` since 2026-10-19, npm
+// time.modified 06:29:58Z) against 0.2.0-rc.2. Token lane: styles/ declares 403
+// `--dsw-*` tokens at both, none added, none removed. Two value changes, both
+// for the new font settings: base.css declares `--dsw-font-family` on `body`
+// as well as `:root` (so a skin's `:root`/`html` override no longer reaches the
+// page; dshthemes /notes/dsh-021-font-token-and-engines), and the markdown code
+// fonts follow `--dsh-code-font-size`. ThemeRuntime lane: client/index.ts
+// moved (font settings group, size shortcuts) but still `export class
+// ThemeRuntime`, same package name, one export added (`./locale/*.json`).
+// Install lane: the plugin manager still refuses a package without
+// `dsh.bundle`, and `dsh.client.inject` is still a list of package names
+// (client/modules manifest.ts only gained a release identity). The gate file
+// is the one `peerRefusal()` below already ports (sha256 3aaddccc...): an own
+// `engines.dsh` decides alone. Hash lane: all 115 of 0.2.0-rc.2's hashed
+// module prefixes kept, 13 new (dshthemes scripts/skin-contract.mjs,
+// 2026-10-17). As with every bump, rows already listed keep their stamp
+// (precedent #104, #117, #63); this one only dates proofs made from now on.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.1-rc.2";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);

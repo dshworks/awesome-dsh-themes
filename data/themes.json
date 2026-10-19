@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "themes": [
     {
       "name": "Arknights-flavor-theme",
@@ -206,6 +206,19 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DeepSeek Harness Web 界面自定义背景插件：主界面/边栏/顶栏三区域独立背景、拖拽定位、不透明度 0-100、主题色、圆角、缩放，附健壮定位与内置诊断",
       "license": "MIT"
+    },
+    {
+      "name": "deepseek-harness-desktop-themes",
+      "repo": "Zenolzx/deepseek-harness-desktop-themes",
+      "official": false,
+      "kind": "skin",
+      "category": "companion",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "DeepSeek Harness Desktop Themes — an installable, configurable, uninstallable desktop appearance plugin: six signature themes, font presets, live particle/glow effects, durable custom wallpaper, glassmorphism, custom color themes, and a draggable desktop pet with a quick-switch menu."
     },
     {
       "name": "deepseek-harness-liquid-glass-theme",
@@ -1409,6 +1422,19 @@
       "preview": "https://raw.githubusercontent.com/heiyouhu/dsh-themes/main/assets/previews/nord-dark.png"
     },
     {
+      "name": "dsh-claude-code-desktop-theme",
+      "repo": "165890/dsh-claude-code-desktop-theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Claude Code desktop look for the DeepSeek Harness Web GUI: warm cream surfaces, terracotta accent, serif interface, Absolutely code palette, real session status dots, composer HUD, diff review drawer and the merged usage overview card."
+    },
+    {
       "name": "dsh-claude-code-theme",
       "repo": "Klop233/dsh-claude-code-theme",
       "official": false,
@@ -1638,6 +1664,19 @@
       "description": "Jarvis blue-tech HUD skin for the DSH web GUI: deep blue-black palette, ice-cyan neon tokens, glass panels, HUD corners, and a breathing J.A.R.V.I.S. watermark that answers FOR YOU, SIR, ALWAYS while the agent thinks."
     },
     {
+      "name": "dsh-client-ui-skin-kitty",
+      "repo": "luongthimydieu/dsh-client-ui-skin-kitty",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "theme.css#--dsw-tokens",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Hello Kitty (凯蒂猫) theme skin for the DeepSeek Harness (DSH) Web UI — pink alias-token palette with a custom wallpaper. Static profile plugin: the theme and wallpaper restore automatically on every Harness start."
+    },
+    {
       "name": "dsh-client-ui-skin-priestess",
       "repo": "Sealessland/dsh-client-ui-skin-priestess",
       "official": false,
@@ -1678,6 +1717,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Real Madrid dual-mode skin for DeepSeek Harness: Bernabéu night stadium for dark, white-kit pinstripes with crest and 1902 layers for light. Unofficial fan work."
+    },
+    {
+      "name": "dsh-client-ui-skin-tianlight",
+      "repo": "MilkySnowWay123/dsh-client-ui-skin-tianlight",
+      "official": false,
+      "kind": "skin",
+      "category": "companion",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Tianlight skin for the dsh web GUI: Makoto Shinkai daylight skies, a looping video wallpaper, a wallpaper library with upload/rotation, optional WebWallGL scene support, and a draggable Mint chibi-cat desktop companion"
     },
     {
       "name": "dsh-client-ui-skin-verdandi",
@@ -2017,7 +2069,7 @@
     },
     {
       "name": "dsh-custom-theme-km5473",
-      "repo": "km5473/dsh-custom-theme",
+      "repo": "km5473/dsh-customizable-theme",
       "official": false,
       "kind": "skin",
       "category": "tokens",
@@ -3772,6 +3824,19 @@
       "preview": "https://raw.githubusercontent.com/zhxqc/dsh-oh-my-theme/HEAD/docs/assets/md-preview.png"
     },
     {
+      "name": "DSH-One-Dark-Pro-Theme",
+      "repo": "Cherryxxh/DSH-One-Dark-Pro-Theme",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "One Dark Pro (classic) theme for the DeepSeek Harness Web GUI: a full alias-token override layer plus a Settings -> General switcher, matched 1:1 to the VS Code theme."
+    },
+    {
       "name": "dsh-opencode-palette",
       "repo": "FeatherHunter/dsh-opencode-palette",
       "official": false,
@@ -4946,6 +5011,19 @@
       "description": "Skin Lab for the DSH Web GUI: official token browser, live try-on (theme override layers), theme freeze, spectrum presets with SVG backdrops and custom backdrop upload for skin authors. Everything is a plugin."
     },
     {
+      "name": "dsh-skin-lab-jeweis",
+      "repo": "jeweis/dsh-skin-lab",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Themes for DeepSeek Harness: palette x background artwork x structural elements, applied through one ctx.theme.overrideTokens layer."
+    },
+    {
       "name": "dsh-skin-leg",
       "repo": "lovetpy/dsh-skin-leg",
       "official": false,
@@ -5743,6 +5821,19 @@
       "description": "EN: Usability-first cyber-editorial themes for DeepSeek Harness Web with reversible lifecycle effects. ZH: 面向 DeepSeek Harness Web、重视可用性并支持可逆生命周期效果的赛博编辑主题。"
     },
     {
+      "name": "dsh-theme-admech",
+      "repo": "RichardDou0607/dsh-theme-admech",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Pure Forge-Cathedral tech-gothic theme for DSH. v0.7.16 adds a standalone vector tech-priest reconstruction asset. v0.7.0: Windows 11 verification pass — DPI-aware hairlines for 125%/150% scaling, density-corrected filigree strokes, host-aligned scrollbar width, Windows caption-row awareness, Contrast Themes support…"
+    },
+    {
       "name": "dsh-theme-aemath",
       "repo": "yll86/dsh-theme-aemath",
       "official": false,
@@ -5825,6 +5916,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Black hole theme plugin for the DeepSeek Harness Web UI: WebGL Schwarzschild black hole background with deep-space glass panels, switchable from Settings > General > 主题-黑洞. Install into a web profile: dsh plugin --profile web add <path-to-this-package>"
+    },
+    {
+      "name": "dsh-theme-blue",
+      "repo": "vb2250158/dsh-theme-blue",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "Private blue theme foundation for the DeepSeek Harness web client"
     },
     {
       "name": "dsh-theme-brick",
@@ -8562,6 +8666,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Realtime WebGPU ocean skin for DeepSeek Harness, Chrome, and Edge"
+    },
+    {
+      "name": "paper-skin",
+      "repo": "AidenWanggitgit/paper-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "package.json#dsh.client.inject.@deepseek-ai/dsh-client-ui-theme",
+      "added": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "description": "A scholarly journal-desk skin for DeepSeek Harness: Nature, Science, IEEE and Elsevier covers, manuscript stages, and a professional editorial letter behind the conversation."
     },
     {
       "name": "particle-background",
