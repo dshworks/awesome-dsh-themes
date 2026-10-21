@@ -3353,7 +3353,7 @@ dsh plugin --profile web add github:math-lrz/dsh-theme-pack
 
 ### [dsh-theme-palette](https://github.com/zuoyunlai/dsh-theme-palette)
 
-<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-palette&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-theme-palette preview"></a>
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-palette&scheme=dark"><img src="https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/main/assets/screenshot-settings.png" width="360" alt="dsh-theme-palette preview"></a>
 
 **[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-palette&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
