@@ -1,6 +1,6 @@
 window.__THEMES__ = {
   "$schema": "./schema.json",
-  "updated": "2026-10-19",
+  "updated": "2026-10-21",
   "themes": [
     {
       "name": "Arknights-flavor-theme",
@@ -6572,6 +6572,21 @@ window.__THEMES__ = {
       "description": "Sixteen Web GUI token skins: Catppuccin, Gruvbox, Everforest, Rose Pine, Solarized, Kanagawa, Tokyo Night, Nord, Dracula, and more.",
       "license": "MIT",
       "preview": "https://raw.githubusercontent.com/math-lrz/dsh-theme-pack/main/previews/nord.png"
+    },
+    {
+      "name": "dsh-theme-palette",
+      "repo": "zuoyunlai/dsh-theme-palette",
+      "description": "Four palettes (mono, warm sand, indigo, moss) across light and dark, rebuilt in OKLCH with an sRGB gamut clamp and per-palette contrast solving on the real surfaces. Adjustable text tint, sidebar depth, Markdown emphasis and code-block fill.",
+      "license": "MIT",
+      "kind": "skin",
+      "category": "tokens",
+      "evidence": "client.js#--dsw-tokens",
+      "npm": "dsh-theme-palette",
+      "verifiedAgainst": "0.2.1-rc.2",
+      "added": "2026-10-21",
+      "lastVerified": "2026-10-21",
+      "status": "verified",
+      "preview": "https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/main/assets/screenshot-settings-light.png"
     },
     {
       "name": "dsh-theme-palettes",

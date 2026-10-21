@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 653 entries, 36 with live in-browser previews, 634 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 654 entries, 36 with live in-browser previews, 635 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -3350,6 +3350,20 @@ dsh plugin --profile web add github:math-lrz/dsh-theme-pack
 ```
 
 **Repo:** [math-lrz/dsh-theme-pack](https://github.com/math-lrz/dsh-theme-pack) · **License:** MIT · **dsh:** 0.1.1-rc.2 · **Proof:** [lib/themes.json#--dsw-tokens](https://github.com/math-lrz/dsh-theme-pack/blob/HEAD/lib/themes.json)
+
+### [dsh-theme-palette](https://github.com/zuoyunlai/dsh-theme-palette)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-palette&scheme=dark"><img src="https://raw.githubusercontent.com/zuoyunlai/dsh-theme-palette/main/assets/screenshot-settings-light.png" width="360" alt="dsh-theme-palette preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-theme-palette&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Four palettes (mono, warm sand, indigo, moss) across light and dark, rebuilt in OKLCH with an sRGB gamut clamp and per-palette contrast solving on the real surfaces. Adjustable text tint, sidebar depth, Markdown emphasis and code-block fill.
+
+```sh
+dsh plugin --profile web add github:zuoyunlai/dsh-theme-palette
+```
+
+**Repo:** [zuoyunlai/dsh-theme-palette](https://github.com/zuoyunlai/dsh-theme-palette) · **License:** MIT · **Package:** [`dsh-theme-palette`](https://www.npmjs.com/package/dsh-theme-palette) · **dsh:** 0.2.1-rc.2 · **Proof:** [client.js#--dsw-tokens](https://github.com/zuoyunlai/dsh-theme-palette/blob/HEAD/client.js)
 
 ### [dsh-theme-palettes](https://github.com/RainbowDashy/dsh-theme-palettes)
 
