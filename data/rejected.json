@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -23,6 +23,12 @@
       "recheckAfter": "2026-12-01"
     },
     {
+      "repo": "DSH-EAC/dsh-ui-skin-loader-convention",
+      "reason": "repo gone (404) at triage time",
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
+    },
+    {
       "repo": "dshworks/dshthemes",
       "reason": "dshthemes.com is the gallery that reads this registry; its one sheet consumes --dsw-* for the site chrome and sets none. Not a theme.",
       "date": "2026-09-02"
@@ -32,6 +38,12 @@
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-10-17",
       "recheckAfter": "2026-12-01"
+    },
+    {
+      "repo": "gulagala001/dsh-theme-plugin",
+      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json {\"engines.dsh\":\"0.2.1-rc.3\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
     },
     {
       "repo": "hanhan1137/theme-coach-dsh",
@@ -52,10 +64,22 @@
       "recheckAfter": "2026-11-13"
     },
     {
+      "repo": "late-autumn-gif/dsh-wallpaper-bridge",
+      "reason": "repo gone (404) at triage time",
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
+    },
+    {
       "repo": "lucky01222/dsh-workbench-theme",
       "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json {\"engines.dsh\":\"0.1.7-rc.2 || 0.2.0-rc.2\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
       "date": "2026-10-19",
       "recheckAfter": "2026-12-03"
+    },
+    {
+      "repo": "phoenixlucky/dsh-theme",
+      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json {\"engines.dsh\":\">=0.2.1-rc.3 <0.3.0\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
     },
     {
       "repo": "PixelGeek325/DSH-High-Contrast-Theme",
@@ -77,8 +101,8 @@
     {
       "repo": "sly7783/lively-wallpaper-guide",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
-      "date": "2026-09-04",
-      "recheckAfter": "2026-10-19"
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
     },
     {
       "repo": "uckkk/dsh-color-palette",
@@ -90,6 +114,12 @@
       "repo": "wwxiaoqi/ui-theme-quota-show",
       "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",
       "date": "2026-08-15"
+    },
+    {
+      "repo": "Zeppeli777/dsh-stardew-skin",
+      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json peerDependencies {\"@deepseek-ai/dsh-client-ui-theme\":\"^0.1.2-rc.1 || ^0.1.5-rc.1 || ^0.1.7-rc.2 || ^0.2.1-rc.3\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-10-26",
+      "recheckAfter": "2026-12-10"
     },
     {
       "repo": "zhangguiping-xydt/dsh-skin-studio",
