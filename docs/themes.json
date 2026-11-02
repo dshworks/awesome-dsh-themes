@@ -603,8 +603,7 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Aemeath desktop pet for the DeepSeek Harness web GUI: a pixel-art companion that idles, works, waits, and reacts alongside the agent.",
-      "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/culture-flask/dsh-aemeath-pet/HEAD/assets/spritesheet-v2-r2.webp"
+      "license": "MIT"
     },
     {
       "name": "dsh-aemeath-skin",
@@ -1645,7 +1644,7 @@
       "lastVerified": "2026-09-29",
       "verifiedAgainst": "0.1.7-rc.2",
       "description": "Claude Code Desktop theme for DeepSeek Harness (dsh) web GUI — visual & interaction overhaul",
-      "preview": "https://raw.githubusercontent.com/Nwflower/dsh-claude-style/HEAD/showcase/gifs/idle.gif"
+      "preview": "https://raw.githubusercontent.com/Nwflower/dsh-claude-style/HEAD/docs/screenshots/claude-home-dark.png"
     },
     {
       "name": "dsh-claude-theme",
@@ -1777,8 +1776,7 @@
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "DeepSeek whale overlay pet: in-place swim, session-state frames, drag, and a click-open API stats panel.",
-      "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/Vulcan626/dsh-pet/main/docs/assets/deepseek-pet-idle.png"
+      "license": "MIT"
     },
     {
       "name": "dsh-client-ui-skin-bayern",
@@ -3596,7 +3594,7 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "An opt-in adaptive reasoning slider skin for DeepSeek Harness.",
-      "preview": "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/HEAD/docs/demo.gif",
+      "preview": "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/HEAD/docs/preview.png",
       "previewCss": "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/main/src/client/skin.css"
     },
     {
@@ -3778,7 +3776,7 @@
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Floating maid desktop pet for the dsh Web UI with idle breathing and random actions.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/master/dsh-pet/assets/preview/%E5%BE%85%E6%9C%BA%E5%91%BC%E5%90%B8%E4%BC%91%E9%97%B2.gif"
+      "preview": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/dsh-pet/assets/preview/lu-mao.gif"
     },
     {
       "name": "dsh-mamba-theme",
@@ -3967,8 +3965,7 @@
       "lastVerified": "2026-08-14",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Customizable independent-process desktop pet that stays quiet by default and pings at key moments.",
-      "notes": "repository returns 404 as of 2026-10-26",
-      "preview": "https://raw.githubusercontent.com/omdsh-dev/dsh-meep/HEAD/pet/expressions/gif/meep/meep.gif"
+      "notes": "repository returns 404 as of 2026-10-26"
     },
     {
       "name": "dsh-meow-cat",
@@ -3997,8 +3994,7 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Hatsune Miku --dsw-* token skin: blue-purple-magenta gradients, frosted panels, custom wallpaper, light and dark.",
       "license": "BSD-3-Clause",
-      "notes": "repository returns 404 as of 2026-08-19",
-      "preview": "https://raw.githubusercontent.com/stushansusu/dsh-miku-skin/main/preview/dark.png"
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-mimo-skin",
@@ -4707,7 +4703,7 @@
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Pixel skin for DeepSeek Harness with four palettes, pixel fonts, and CRT scanlines.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/HEAD/assets/screenshot-paper-chat.png"
+      "preview": "https://raw.githubusercontent.com/zhang66633/dsh-pixel-ui/HEAD/assets/preview-marble.png"
     },
     {
       "name": "dsh-plugin-background",
@@ -4846,7 +4842,7 @@
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Gouden Leeuw moonlit sanctuary theme for the dsh Web UI.",
-      "preview": "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-gouden-leeuw-theme/main/assets/gouden-leeuw.png",
+      "preview": "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-gouden-leeuw-theme/HEAD/gui-test-screenshots/t3-hero-original-main-portrait.png",
       "previewCss": "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-gouden-leeuw-theme/main/src/client/theme.css"
     },
     {
@@ -5388,8 +5384,7 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Eight built-in DeepSeek Harness appearance presets plus custom wallpaper with opacity and blur.",
       "license": "MIT",
-      "notes": "repository returns 404 as of 2026-10-26",
-      "preview": "https://raw.githubusercontent.com/Vim0x3c/dsh-skin-appearance/HEAD/assets/screenshots/deepsea-whale.jpg"
+      "notes": "repository returns 404 as of 2026-10-26"
     },
     {
       "name": "dsh-skin-argentina",
@@ -5753,7 +5748,7 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Kawaii 2000s --dsw-* token skin: candy pink and baby blue for the dsh Web UI.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/shunkwon/dsh-skin-kawaii2000/main/screenshots/dark.png",
+      "preview": "https://raw.githubusercontent.com/shunkwon/dsh-skin-kawaii2000/HEAD/screenshots/dark.jpg",
       "previewCss": "https://raw.githubusercontent.com/shunkwon/dsh-skin-kawaii2000/main/lib/skin.css"
     },
     {
@@ -5982,8 +5977,7 @@
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Oil-painted whale-girl skin for the DeepSeek Harness web UI.",
       "license": "MIT",
-      "notes": "repository returns 404 as of 2026-08-19",
-      "preview": "https://raw.githubusercontent.com/Gyanano/dsh-skin-mojing/HEAD/docs/screenshots/home-dawn.jpg"
+      "notes": "repository returns 404 as of 2026-08-19"
     },
     {
       "name": "dsh-skin-nazuna",
@@ -6162,8 +6156,7 @@
       "lastVerified": "2026-10-18",
       "verifiedAgainst": "0.2.0-rc.2",
       "description": "DSH skin · 樱花坂道 (sakura-street) — Kato Megumi sakura-street illustration, rose-glass panels, day/night backdrops",
-      "notes": "repository returns 404 as of 2026-10-26",
-      "preview": "https://raw.githubusercontent.com/SereneJi/dsh-skin-sakura-street/HEAD/preview/dark.jpg"
+      "notes": "repository returns 404 as of 2026-10-26"
     },
     {
       "name": "dsh-skin-schierke",
@@ -9801,8 +9794,7 @@
       "lastVerified": "2026-08-18",
       "verifiedAgainst": "0.1.0-rc.6",
       "description": "Chinese traditional color theme pack for DeepSeek Harness: 48 anchors times light/dark writing the full --dsw-* token vocabulary.",
-      "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/nevertoday/dsh-theme-plugin/HEAD/docs/img/panel-light.png"
+      "license": "MIT"
     },
     {
       "name": "dsh-zhuang-fangyi",
@@ -9923,8 +9915,7 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "dsh theme studio: OKLCH theme proposals and a designer that persists across restarts.",
-      "license": "BSD-3-Clause",
-      "preview": "https://raw.githubusercontent.com/suzike/freestyle-dsh-theme/main/docs/images/screenshot-designer.png"
+      "license": "BSD-3-Clause"
     },
     {
       "name": "furina-dsh-theme",
