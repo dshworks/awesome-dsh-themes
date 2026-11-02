@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -40,12 +40,6 @@
       "recheckAfter": "2026-12-01"
     },
     {
-      "repo": "gulagala001/dsh-theme-plugin",
-      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json {\"engines.dsh\":\"0.2.1-rc.3\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
-      "date": "2026-10-26",
-      "recheckAfter": "2026-12-10"
-    },
-    {
       "repo": "hanhan1137/theme-coach-dsh",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-10-17",
@@ -76,12 +70,6 @@
       "recheckAfter": "2026-12-03"
     },
     {
-      "repo": "phoenixlucky/dsh-theme",
-      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json {\"engines.dsh\":\">=0.2.1-rc.3 <0.3.0\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
-      "date": "2026-10-26",
-      "recheckAfter": "2026-12-10"
-    },
-    {
       "repo": "PixelGeek325/DSH-High-Contrast-Theme",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-08-19",
@@ -99,6 +87,12 @@
       "recheckAfter": "2026-11-19"
     },
     {
+      "repo": "rmyou/wallpaper-engine-static",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-11-02",
+      "recheckAfter": "2026-12-17"
+    },
+    {
       "repo": "sly7783/lively-wallpaper-guide",
       "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
       "date": "2026-10-26",
@@ -114,12 +108,6 @@
       "repo": "wwxiaoqi/ui-theme-quota-show",
       "reason": "API balance card in the sidebar; ui-theme-* naming, not a skin",
       "date": "2026-08-15"
-    },
-    {
-      "repo": "Zeppeli777/dsh-stardew-skin",
-      "reason": "dsh 0.2.1-rc.2 refuses to install it: package.json peerDependencies {\"@deepseek-ai/dsh-client-ui-theme\":\"^0.1.2-rc.1 || ^0.1.5-rc.1 || ^0.1.7-rc.2 || ^0.2.1-rc.3\"} exclude 0.2.1-rc.2 (packages/boot/app-boot/src/plugin-compatibility.ts)",
-      "date": "2026-10-26",
-      "recheckAfter": "2026-12-10"
     },
     {
       "repo": "zhangguiping-xydt/dsh-skin-studio",

@@ -1,9 +1,9 @@
 {
   "_comment": "Repositories that answered under a new name. GitHub's API follows a rename and returns the current full_name, so every prover here keeps passing on a stale `repo` field while discovery meets the same repository under its new name and lists it again. `renames` had their `repo` field updated -- a refresh, not a re-listing. `merged` were the same repository listed twice; the older row survives and the dropped name is kept here so an inbound link is still traceable. `held` are repositories two or more listed themes were renamed into, which is an author archiving both, not a rename, and needs a person. `lastVerified` and `evidence` are never touched: a rename does not move files. Written by scripts/renames.mjs.",
-  "detected": "2026-10-26",
+  "detected": "2026-11-02",
   "counts": {
     "renames": 1,
-    "merged": 0,
+    "merged": 1,
     "held": 2
   },
   "renames": [
@@ -97,6 +97,13 @@
       "ownerChanged": false,
       "name": "freestyle-dsh-theme",
       "on": "2026-10-26"
+    },
+    {
+      "from": "milkly909-code/dsh-space-background",
+      "to": "milkly909-code/dsh-plugin-starlight-protocol",
+      "ownerChanged": false,
+      "name": "dsh-space-background",
+      "on": "2026-11-02"
     }
   ],
   "merged": [
@@ -197,6 +204,13 @@
       "keptName": "dsh_Rhine_Lab_theme",
       "droppedName": "dsh-Rhine-Lab-theme",
       "on": "2026-09-30"
+    },
+    {
+      "was": "NonchalantLudens/dsh-skin-collection",
+      "now": "flyingludens/dsh-skin-collection",
+      "keptName": "dsh-skin-collection",
+      "droppedName": "dsh-skin-collection-flyinglu",
+      "on": "2026-11-02"
     }
   ],
   "held": [
