@@ -149,7 +149,19 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // module prefixes kept, 13 new (dshthemes scripts/skin-contract.mjs,
 // 2026-10-17). As with every bump, rows already listed keep their stamp
 // (precedent #104, #117, #63); this one only dates proofs made from now on.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.1-rc.2";
+//
+// 2026-11-02: re-read at 0.2.1-rc.5 (npm `latest` and `next` since 2026-10-29,
+// npm time 14:15:23Z) against 0.2.1-rc.2. rc.5 is rc.3 plus 13 UI/ACP fixes.
+// Token lane: styles/ is byte-identical; the ui-theme package moved only its
+// version. ThemeRuntime lane: client/index.ts byte-identical. Install lane:
+// plugin-compatibility.ts (sha256 3aaddccc...), plugin-manager index.ts and
+// operations.ts, and profile.ts byte-identical. Hash lane: all 128 of rc.2's
+// hashed module prefixes kept, one new (`T3y5qq_`, dsh-client-ui-entry-
+// customization); the 44 frozen sheets that hit a live class keep every
+// target. What moves is the runtime the ranges are read against: of 707
+// readable manifests, rc.2 refuses 104 and rc.5 refuses 99. Nine ranges that
+// start at rc.3 or rc.5 now pass; four that pin rc.2 exactly now fail.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.1-rc.5";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
