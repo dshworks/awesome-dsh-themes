@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -96,7 +96,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 17,
+      "stars": 19,
       "description": "A theme that completely replaces the Web interface of DeepSeek Harness with the H.D.D terminal theme of \"Fairy\" from the game \"Zenless Zone Zero\", including the boot animation",
       "discovered": "2026-10-26",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -119,6 +119,16 @@
       "description": "DSH 主题工坊 — 可自定义背景色/背景图、字体、输入框、边栏颜色的 DeepSeek Harness 主题插件（实时生效，43 项测试）",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "chenxinmengY/wechatagent-background-voice-adapter",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "WeChatAgent background native voice-message adapter for DSH. Independent adaptation, not an upstream fork or official distribution.",
+      "discovered": "2026-11-02",
+      "note": "installs into dsh (plugins/dsh-social-bridge-plugin/package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "cloud0-long/dsh-anime-skins",
@@ -145,9 +155,18 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 4,
+      "stars": 5,
       "discovered": "2026-09-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "dev-HuTao/dsh-plugin-landscape-bg",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "discovered": "2026-11-02",
+      "note": "restyle path proven, but no usable description upstream"
     },
     {
       "repo": "DevTarlow/dsh-background-swapper",
@@ -204,7 +223,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 37,
+      "stars": 36,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -290,6 +309,16 @@
       "note": "README names --dsw-* tokens but no sheet in the tree carries them"
     },
     {
+      "repo": "HaoQian-vary/dsh-wallpaper-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Wallpaper backgrounds for DeepSeek Harness with manual Wallpaper Engine sync",
+      "discovered": "2026-11-02",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "HaydenSmith1121/dsh-wallhaven-wallpaper",
       "sources": [
         "github-topic"
@@ -348,6 +377,16 @@
       "description": "Terraria pixel theme for DeepSeek Harness (Desktop + Web)",
       "discovered": "2026-10-18",
       "hold": "a copy of the listed 10086ggqq/dsh_theme_terraria: skin/terraria.css is byte-identical (sha256 caee13ca...), same package name dsh-theme-terraria, 39 files each; listing it would count one skin twice. List it if the owner says it is a maintained successor."
+    },
+    {
+      "repo": "Jisiyong-A/dsh-plugin-background-compaction",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "description": "Zero-latency compaction for DeepSeek Harness: background speculative summaries cut the compaction stall from 16 s to 7 ms for ~2% extra tokens (measured). 零等待上下文压缩——16s 降到 7ms，只多花 2% token。",
+      "discovered": "2026-11-02",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "john-walks-slow/dsh-os",
@@ -480,6 +519,16 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "OZONGO/dsh-background-compaction",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "Background context compaction for DeepSeek Harness: summarize ahead of the threshold, swap in on the next turn.",
+      "discovered": "2026-11-02",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "panan3562-svg/pangu-desktop-theme",
       "sources": [
         "github-topic"
@@ -585,7 +634,7 @@
         "github-topic"
       ],
       "stars": 3,
-      "description": "Apple-style liquid glass theme for DeepSeek Harness: composer edge glow, per-surface scope switches, a stroke-order handwritten hello opening, and a centred blue particle sphere after switching models. Settings-only controls. Background untouched.",
+      "description": "Apple-style liquid glass theme for DeepSeek Harness with a Dynamic Island, stroke-order hello, compact model-switch particle orb, composer glow and per-surface scope switches. Settings-only controls.",
       "discovered": "2026-11-01",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
@@ -626,6 +675,16 @@
       "stars": 0,
       "description": "DSH 背景替换插件 v2：给 DeepSeek Harness 桌面端换上图片/纯色壁纸，并让侧边栏、内容区、输入框一起透出壁纸（自动挂载，装完即用）",
       "discovered": "2026-10-05",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "waterc07/dsh-background",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 界面背景图插件：任意图片铺满整窗，侧边栏等大块表面自动半透明，支持选择/恢复默认/移除并持久保存。",
+      "discovered": "2026-11-02",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -744,6 +803,15 @@
       ],
       "stars": 1,
       "discovered": "2026-10-26",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "zdt3476/dsh-tide-theme",
+      "sources": [
+        "routed-from-plugins"
+      ],
+      "stars": 1,
+      "discovered": "2026-11-02",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
