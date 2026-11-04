@@ -228,8 +228,13 @@ async function gh(path) {
       await sleep(Math.min(Math.max(5000, reset - Date.now() + 2000), 65000));
       continue;
     }
+    // A 5xx is GitHub failing, not an answer about the repo. Returning null on
+    // the first one rejected five readable repos as "tree unreadable" on
+    // 2026-11-04, each parked for 45 days. The body read retries too: the
+    // timeout covers it, and a slow recursive tree can stall mid-stream.
+    if (res.status >= 500) { await sleep(1500 * (attempt + 1)); continue; }
     if (!res.ok) return null;
-    return res.json();
+    try { return await res.json(); } catch { await sleep(1500 * (attempt + 1)); continue; }
   }
   return null;
 }
