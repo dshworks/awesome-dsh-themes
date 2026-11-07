@@ -279,7 +279,14 @@ const SKIP_PATH = /(^|\/)(node_modules|dist|build|out|vendor|_?upstream|\.git|co
 const DSW_TOKEN = /--dsw-[a-z0-9-]+/i;
 // A declaration, not a mention: `--dsw-bg:` in a sheet, `"--dsw-bg":` in a
 // token map, `--dsw-bg: ${x}` in a template literal. `var(--dsw-bg)` is not it.
-const DSW_OVERRIDE = /--dsw-[a-z0-9-]+"?\s*:/i;
+// `'--dsw-bg':` too: a JS token map is written with single quotes as often as
+// double, and until 2026-11-07 the regex held 30 such skins as install-only
+// (forget6610/dsh-theme-clove passes a 33-key map to overrideTokens()).
+const DSW_OVERRIDE = /--dsw-[a-z0-9-]+["']?\s*:/i;
+// ThemeRuntime's token layer, called by its public name. A skin that builds
+// its map at runtime (presets, a picker) declares no `--dsw-x:` anywhere, but
+// pushing a layer onto the ThemeRuntime is a restyle by definition.
+const THEME_OVERRIDE_CALL = /\btheme\??\.overrideTokens\s*\(/;
 const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
 // `test-engine.mjs` is a test and matched none of this: no `tests/` segment,
 // no `.test.` infix. It became the cited receipt for a real skin — the proof
@@ -300,7 +307,10 @@ const SCRIPT_FILE = /\.(js|mjs|cjs|ts|tsx|jsx)$/i;
 // `test/theme-tokens.css`, a copy of dsh's stock table its tests render
 // against, while the plugin itself only reads the tokens. Sheets and token
 // maps go through it too now.
-const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check|verify|smoke)[-_.][^/]*$|[-_.](test|spec)\.[a-z]+$/i;
+// The suffix form takes the same five words (2026-11-07): once a single-quoted
+// key counted, AtlacherCoder/dsh-wallpaper was admitted on
+// `tools/client-syntax-check.mjs`, whose hit is `/'--dsw-x':/g` in an assert.
+const TEST_FILE = /(^|\/)(tests?|__tests__|spec)\/|(^|\/)(test|spec|check|verify|smoke)[-_.][^/]*$|[-_.](test|spec|check|verify|smoke)\.[a-z]+$/i;
 const STYLE_FILE = /\.(css|scss|less)$/i;
 // Token skins ship as JSON override maps as often as stylesheets.
 const TOKEN_JSON = /(theme|skin|token|palette|colou?rs?)[^/]*\.json$/i;
@@ -516,10 +526,15 @@ async function proveDeep(repo) {
   // skin's client.js is short and its bundle, if committed, is not.
   const scripts = paths.filter((p) => SCRIPT_FILE.test(p) && !TEST_FILE.test(p))
     .sort((a, b) => a.split("/").length - b.split("/").length || a.length - b.length).slice(0, 8);
+  // A declaration anywhere in the lane outranks a bare call, so a receipt
+  // already written as `#--dsw-tokens` keeps that key.
+  let caller = null;
   for (const p of scripts) {
     const text = await raw(repo, p);
     if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override (css-in-js)", tokens: true }, facts };
+    if (!caller && text && THEME_OVERRIDE_CALL.test(text)) caller = p;
   }
+  if (caller) return { proof: { evidence: `${caller}#theme.overrideTokens`, why: "pushes a ThemeRuntime token layer", tokens: true }, facts };
 
   return { proof: installOnly, facts };
 }
@@ -760,7 +775,10 @@ for (const [i, c] of pending.entries()) {
   // listable against DSH_VERSION. It is a fact about one range, so it gets a
   // recheck date: widen the range and the next sweep admits it.
   if (d.verdict === "accept" && d.refused) {
-    Object.assign(d, { verdict: "reject", reason: refusalReason(d.evidence, d.refused), recheck: true });
+    // The manifest the gate read, not the receipt: a sheet or script proof is
+    // gated on the root package.json (see `gated` in decide()).
+    const manifest = d.path ? `${d.path}/package.json` : "package.json";
+    Object.assign(d, { verdict: "reject", reason: refusalReason(manifest, d.refused), recheck: true });
     refusedByPeers += 1;
   }
 
