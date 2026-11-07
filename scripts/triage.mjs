@@ -161,7 +161,34 @@ const TOKEN = process.env.GITHUB_TOKEN ?? "";
 // target. What moves is the runtime the ranges are read against: of 707
 // readable manifests, rc.2 refuses 104 and rc.5 refuses 99. Nine ranges that
 // start at rc.3 or rc.5 now pass; four that pin rc.2 exactly now fail.
-const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.1-rc.5";
+//
+// 2026-11-07: re-read at 0.2.2-rc.1 (npm `latest` and `next` since 2026-11-04,
+// npm time 09:20:32Z, tag dsh-v0.2.2-rc.1) against 0.2.1-rc.5. Token lane:
+// styles/ declares 414 `--dsw-*` tokens where it declared 403. Twelve added
+// (six `--dsw-alias-illustration-*`, `--dsw-alias-state-done-primary`, five
+// statics); `--dsw-menu-surface-fill` changed value in both schemes. One gone:
+// `--dsw-specific-sidebar-nav-item-hover`, whose only reader, the settings nav
+// hover (ui-settings-general SettingsRoot), now paints from
+// `--dsw-alias-interactive-bg-hover`. Of dshthemes' 279 frozen sheets that
+// declare a token, 125 set the gone one and 8 of those set no
+// interactive-bg-hover, so their settings nav hover goes stock. ThemeRuntime
+// lane: still `export class ThemeRuntime`, same package name and exports; a
+// theme definition may now carry `icons` (SVG replacements), which is additive.
+// Install lane: plugin-compatibility.ts is byte-identical (sha256 3aaddccc...);
+// the plugin manager still refuses a package without `dsh.bundle`;
+// `dsh.client.inject` is still a list of package names; the `web` profile
+// template moved to @deepseek-ai/dsh-official-bundles with the same bundles.
+// New in this lane: `dsh.bundle.platforms` (app-boot bundle-platform.ts). A
+// list that excludes the host installs but is not activated (exit 1); a
+// malformed one fails the install on every host. No listed or queued row
+// declares it (888 readable manifests, 2026-11-07), so it is not ported; port
+// it when one does. Hash lane: 127 of rc.5's 129 hashed module prefixes kept
+// (`Qg_5Eq_` ui-workspace and `lyqg2a_` sidebar-documentpreview gone, one
+// new); the 54 frozen sheets that hit a live rc.5 class keep every target.
+// Runtime: of 757 readable listed manifests, rc.5 refuses 103 and rc.1
+// refuses 100. Seven ranges that start at 0.2.2-alpha.3 or rc.1 now pass;
+// four that cap below 0.2.2 or pin earlier releases exactly now fail.
+const DSH_VERSION = process.env.DSH_VERSION ?? "0.2.2-rc.1";
 
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
@@ -800,6 +827,8 @@ if (overturned.length) console.error(`triage: ${overturned.length} rejection(s) 
 if (rejects.length || overturned.length) {
   for (const r of rejects) rejectedBy.set(r.repo.toLowerCase(), r);
   ledger.rejected = [...rejectedBy.values()].sort((a, b) => a.repo.localeCompare(b.repo));
+  // Hand-kept until 2026-11-07, and stale after every triage that wrote here.
+  ledger.count = ledger.rejected.length;
   ledger.updated = TODAY;
   write("data/rejected.json", ledger);
 }
