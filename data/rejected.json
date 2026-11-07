@@ -99,6 +99,12 @@
       "recheckAfter": "2026-12-10"
     },
     {
+      "repo": "ssf13546/dsh-delta-theme",
+      "reason": "dsh 0.2.2-rc.1 refuses to install it: package.json {\"engines.dsh\":\"0.2.1-rc.5\"} exclude 0.2.2-rc.1 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-11-07",
+      "recheckAfter": "2026-12-22"
+    },
+    {
       "repo": "uckkk/dsh-color-palette",
       "reason": "repo tree unreadable at triage time",
       "date": "2026-08-18",
@@ -126,5 +132,5 @@
       "recheckAfter": "2026-12-22"
     }
   ],
-  "count": 22
+  "count": 23
 }
