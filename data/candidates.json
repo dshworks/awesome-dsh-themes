@@ -62,6 +62,15 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "andy-7-andy/dsh-theme-retro-press",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "十二套复古配色主题：木刻朱印到显像管磷光，各配纸纹/扫描线、字体重排与深色模式磷光代码块 / A retro theme workshop for DeepSeek Harness: twelve palettes, each a complete typographic decision.",
+      "discovered": "2026-11-07"
+    },
+    {
       "repo": "Ansellwan/DSH-Custom-Wallpaper",
       "sources": [
         "github-topic"
@@ -117,7 +126,7 @@
         "github-topic"
       ],
       "stars": 0,
-      "description": "DeepSeek Harness 皮肤管理器，轻松切换主题、调整手机导航与个性化外观",
+      "description": "主题管理已整合到新版主题中；本仓库保留旧版兼容与迁移说明，新用户请使用初音未来主题。",
       "discovered": "2026-11-06",
       "hold": "hand check 2026-11-07: a skin manager, not a skin. package.json injects @deepseek-ai/dsh-client-ui-theme, which is what admitted it, but lib/client.js declares no --dsw-* token, never calls the ThemeRuntime, and styles only its own .ekko-* panel and a mobile nav. Its README calls it a legacy compatibility entry and tells users to remove it and install the same author's dsh-plugin-miku-theme (listed 2026-11-07). Same shape as the rejected 123twtd/dsh-skin-manager; a person decides."
     },
@@ -186,7 +195,7 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 36,
+      "stars": 37,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-17",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -320,6 +329,15 @@
       "description": "DeepSeek Harness (DSH) 二次元暗色主题 · 进击的巨人 / 死神 / Re:Zero / 紫罗兰永恒花园：巨人剪影、千本樱、卍解角标、人物海报、可换壁纸（Anime dark skin for the DSH Web GUI）",
       "discovered": "2026-11-03",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "Iris-change/dsh-eva-skins",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "DeepSeek Harness 桌面客户端的 EVA 皮肤合集：二号机 / 零号机 / 初号机 / 八号机，一个插件四套主题，开机动画可跳过，随时切回默认。含粉丝创作素材，不主张权利，见 LICENSE。",
+      "discovered": "2026-11-07"
     },
     {
       "repo": "jiabei20031104/dsh_theme_terraria",
@@ -658,6 +676,15 @@
       "description": "面向 DeepSeek Harness 的《战争雷霆》自定义涂装插件：四边形拾取器、声明式图层、支持 4K DDS 纹理与.blk 文件导出。本项目由DeepSeek在DSH上完成。War Thunder user-skin studio for DSH: quad picker, declarative layers, 4K DDS + .blk export.",
       "discovered": "2026-10-26",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "wzuu/dsh-theme-studio",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Five studio styles plus 43 reference themes for DeepSeek Harness, with a left-sidebar entry and Pixel mode.",
+      "discovered": "2026-11-07"
     },
     {
       "repo": "xiaoqiangch/dsh-preview-theme-dark",
