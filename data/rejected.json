@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-07",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -118,7 +118,13 @@
       "repo": "zhm20001/dsh-plugin-palette-board",
       "reason": "a Raycast-style launcher that consumes --dsw-* for its own panel and sets none. Routed to awesome-dsh-plugins.",
       "date": "2026-09-02"
+    },
+    {
+      "repo": "zkb-1271/workbuddy-skin-dsh",
+      "reason": "no restyle path proven: no ThemeRuntime dependency, no dsh manifest, no --dsw-* override in any sheet",
+      "date": "2026-11-07",
+      "recheckAfter": "2026-12-22"
     }
   ],
-  "count": 21
+  "count": 22
 }
