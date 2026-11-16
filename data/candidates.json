@@ -32,16 +32,6 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
-      "repo": "ai-written/dsh-custom-background",
-      "sources": [
-        "routed-from-plugins"
-      ],
-      "stars": 0,
-      "description": "Background image with site-wide frosted glass for the DeepSeek Harness web GUI",
-      "discovered": "2026-11-03",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
       "repo": "alexmaze/dsh-session-palette",
       "sources": [
         "github-topic"
@@ -122,16 +112,6 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
-      "repo": "bigm4ngo/dsh-skin",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 3,
-      "description": "Skins for DeepSeek Harness Web — image or video wallpapers, translucent panels, custom colours, logo and wordmark, ambient audio. Drop a folder in, pick it in Settings.",
-      "discovered": "2026-11-15",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
       "repo": "byteuser1977/ColaMD-themes",
       "sources": [
         "github-topic"
@@ -180,16 +160,6 @@
       "description": "DeepSeek Harness (DSH) 客户端皮肤插件：樱花黄昏 / 天空之岛，含设置内切换的皮肤系统（壁纸图层 + 磨砂侧栏 + 明暗双主题）",
       "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.client) but nothing in the tree restyles it"
-    },
-    {
-      "repo": "DevTarlow/dsh-background-swapper",
-      "sources": [
-        "routed-from-plugins"
-      ],
-      "stars": 1,
-      "description": "A DeepSeek Harness plugin that sets a photo as the harness background.",
-      "discovered": "2026-09-29",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
       "repo": "donwww/dsh-client-ui-skin-manager",
@@ -512,16 +482,6 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
-      "repo": "MisakaChino/dsh-wallpaper-glass",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "description": "把 Wallpaper Engine 动态壁纸接到 DeepSeek Harness 界面",
-      "discovered": "2026-11-15",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
       "repo": "mwilljx-web/dsh-plugin-wallpaper",
       "sources": [
         "github-topic"
@@ -708,15 +668,6 @@
       "stars": 0,
       "description": "AI 娘壁纸皮肤：65 张壁纸，一键设为 Harness 编辑器背景，或设为 Windows 桌面壁纸。",
       "discovered": "2026-11-15",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
-      "repo": "wsj060618/dsh-skin-studio",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "discovered": "2026-10-05",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {

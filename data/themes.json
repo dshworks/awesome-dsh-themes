@@ -1293,6 +1293,20 @@
       "preview": "https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/HEAD/screenshots/canvas-custom.jpg"
     },
     {
+      "name": "dsh-background-swapper",
+      "repo": "DevTarlow/dsh-background-swapper",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "client.js#--dsw-tokens",
+      "added": "2026-11-16",
+      "lastVerified": "2026-11-16",
+      "verifiedAgainst": "0.2.2-rc.1",
+      "description": "DeepSeek Harness plugin: set a photo as the harness background, name and paginate a library of them, and tint, blur or fade the interface on top.",
+      "preview": "https://raw.githubusercontent.com/DevTarlow/dsh-background-swapper/HEAD/screenshot.png"
+    },
+    {
       "name": "dsh-background-wenhaoli",
       "repo": "wenhaolin-svg/dsh-background",
       "official": false,
@@ -2597,6 +2611,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "自定义 DSH WebUI 背景：图库随机、自由拉伸裁切框、不透明度、高斯模糊、面板透明、多图交叉淡化轮播。"
+    },
+    {
+      "name": "dsh-custom-background-aiwritte",
+      "repo": "ai-written/dsh-custom-background",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/index.js#--dsw-tokens",
+      "added": "2026-11-16",
+      "lastVerified": "2026-11-16",
+      "verifiedAgainst": "0.2.2-rc.1",
+      "description": "Background image with site-wide frosted glass for the DeepSeek Harness web GUI"
     },
     {
       "name": "dsh-custom-skin",
@@ -6632,6 +6659,20 @@
       "preview": "https://raw.githubusercontent.com/JacoboJin/dsh-skin-bd2-yustia/HEAD/preview/dark.png"
     },
     {
+      "name": "dsh-skin-bigm4ngo",
+      "repo": "bigm4ngo/dsh-skin",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-11-16",
+      "lastVerified": "2026-11-16",
+      "verifiedAgainst": "0.2.2-rc.1",
+      "description": "Folder-based skins for DeepSeek Harness Web: image/video backgrounds, token colours, logo, ambient audio.",
+      "preview": "https://raw.githubusercontent.com/bigm4ngo/dsh-skin/HEAD/screenshots/applied.png"
+    },
+    {
       "name": "dsh-skin-blue-whale",
       "repo": "zenghuizhu69-hub/dsh-skin-blue-whale",
       "npm": "dsh-skin-blue-whale",
@@ -7563,6 +7604,19 @@
       "lastVerified": "2026-09-04",
       "verifiedAgainst": "0.1.1-rc.2",
       "description": "Vibrant, switchable application skins for DeepSeek Harness"
+    },
+    {
+      "name": "dsh-skin-studio-wsj06061",
+      "repo": "wsj060618/dsh-skin-studio",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-11-16",
+      "lastVerified": "2026-11-16",
+      "verifiedAgainst": "0.2.2-rc.1",
+      "description": "DeepSeek Harness enhancement plugin: a custom background image with a frosted-glass scrim (backdrop blur), leaving the original theme untouched."
     },
     {
       "name": "dsh-skin-study",
@@ -11101,6 +11155,20 @@
       "verifiedAgainst": "0.2.2-rc.1",
       "description": "Reveal the local desktop wallpaper behind a translucent, auto-adapting DeepSeek Harness UI. · 把本地系统壁纸显示在 DSH 界面背后，界面自动半透明并随壁纸明暗自适应。",
       "preview": "https://raw.githubusercontent.com/talulra/dsh-wallpaper-glass/HEAD/assets/screenshot-1.png"
+    },
+    {
+      "name": "dsh-wallpaper-glass-misakach",
+      "repo": "MisakaChino/dsh-wallpaper-glass",
+      "official": false,
+      "kind": "skin",
+      "category": "tokens",
+      "status": "verified",
+      "evidence": "lib/client.js#--dsw-tokens",
+      "added": "2026-11-16",
+      "lastVerified": "2026-11-16",
+      "verifiedAgainst": "0.2.2-rc.1",
+      "description": "Live Wallpaper Engine wallpaper behind the DeepSeek Harness GUI, dark glass surfaces and neon accents, with an optional acrylic desktop window.",
+      "preview": "https://raw.githubusercontent.com/MisakaChino/dsh-wallpaper-glass/HEAD/docs/preview-main.png"
     },
     {
       "name": "dsh-wallpaper-intro",

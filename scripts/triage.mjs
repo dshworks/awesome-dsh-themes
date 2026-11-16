@@ -283,6 +283,14 @@ const DSW_TOKEN = /--dsw-[a-z0-9-]+/i;
 // double, and until 2026-11-07 the regex held 30 such skins as install-only
 // (forget6610/dsh-theme-clove passes a 33-key map to overrideTokens()).
 const DSW_OVERRIDE = /--dsw-[a-z0-9-]+["']?\s*:/i;
+// The same map written as entry tuples: `["--dsw-x", value]`, then applied
+// with setProperty or joined into a sheet as `${token}: ${value}`. Neither
+// form carries a literal `--dsw-x:`, so until 2026-11-16 the regex above held
+// 5 such skins as install-only (MisakaChino/dsh-wallpaper-glass sets
+// `[name, value]` pairs on body). A list of token NAMES is a consumer, not a
+// map, so a second element that is itself a token name does not count; the
+// lookahead skips whitespace itself, or `\s*` backtracks past it.
+const DSW_TUPLE = /\[\s*(["'`])--dsw-[a-z0-9-]+\1\s*,(?!\s*["'`]--dsw-)/i;
 // ThemeRuntime's token layer, called by its public name. A skin that builds
 // its map at runtime (presets, a picker) declares no `--dsw-x:` anywhere, but
 // pushing a layer onto the ThemeRuntime is a restyle by definition.
@@ -531,7 +539,7 @@ async function proveDeep(repo) {
   let caller = null;
   for (const p of scripts) {
     const text = await raw(repo, p);
-    if (text && DSW_OVERRIDE.test(text)) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override (css-in-js)", tokens: true }, facts };
+    if (text && (DSW_OVERRIDE.test(text) || DSW_TUPLE.test(text))) return { proof: { evidence: `${p}#--dsw-tokens`, why: "dsw token override (css-in-js)", tokens: true }, facts };
     if (!caller && text && THEME_OVERRIDE_CALL.test(text)) caller = p;
   }
   if (caller) return { proof: { evidence: `${caller}#theme.overrideTokens`, why: "pushes a ThemeRuntime token layer", tokens: true }, facts };

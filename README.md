@@ -8,7 +8,7 @@
   <img src="docs/assets/banner.svg" alt="A whale diving through a bioluminescent sea of dsh themes" width="800">
 </p>
 
-A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 953 entries, 36 with live in-browser previews, 920 verified against a dsh release.
+A curated list of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) themes and `--dsw-*` token skins — 958 entries, 36 with live in-browser previews, 925 verified against a dsh release.
 
 **[Open the live gallery](https://dsh.works/awesome-dsh-themes/)** — wild whales, token seas, and a little ❤️. Welcome.
 
@@ -815,6 +815,20 @@ dsh plugin --profile web add github:SoulZhou/dsh-background-studio
 
 **Repo:** [SoulZhou/dsh-background-studio](https://github.com/SoulZhou/dsh-background-studio) · **dsh:** 0.2.1-rc.5 · **Proof:** [client.js#--dsw-tokens](https://github.com/SoulZhou/dsh-background-studio/blob/HEAD/client.js)
 
+### [dsh-background-swapper](https://github.com/DevTarlow/dsh-background-swapper)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-background-swapper&scheme=dark"><img src="https://raw.githubusercontent.com/DevTarlow/dsh-background-swapper/HEAD/screenshot.png" width="360" alt="dsh-background-swapper preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-background-swapper&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DeepSeek Harness plugin: set a photo as the harness background, name and paginate a library of them, and tint, blur or fade the interface on top.
+
+```sh
+dsh plugin --profile web add github:DevTarlow/dsh-background-swapper
+```
+
+**Repo:** [DevTarlow/dsh-background-swapper](https://github.com/DevTarlow/dsh-background-swapper) · **dsh:** 0.2.2-rc.1 · **Proof:** [client.js#--dsw-tokens](https://github.com/DevTarlow/dsh-background-swapper/blob/HEAD/client.js)
+
 ### [dsh-background-wenhaoli](https://github.com/wenhaolin-svg/dsh-background)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-background-wenhaoli&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-background-wenhaoli preview"></a>
@@ -1618,6 +1632,20 @@ dsh plugin --profile web add github:auki-zy/dsh-cursor-theme
 ```
 
 **Repo:** [auki-zy/dsh-cursor-theme](https://github.com/auki-zy/dsh-cursor-theme) · **dsh:** 0.1.0-rc.8 · **Proof:** [package.json#peerDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/auki-zy/dsh-cursor-theme/blob/HEAD/package.json)
+
+### [dsh-custom-background-aiwritte](https://github.com/ai-written/dsh-custom-background)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-custom-background-aiwritte&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-custom-background-aiwritte preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-custom-background-aiwritte&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Background image with site-wide frosted glass for the DeepSeek Harness web GUI
+
+```sh
+dsh plugin --profile web add github:ai-written/dsh-custom-background
+```
+
+**Repo:** [ai-written/dsh-custom-background](https://github.com/ai-written/dsh-custom-background) · **dsh:** 0.2.2-rc.1 · **Proof:** [lib/index.js#--dsw-tokens](https://github.com/ai-written/dsh-custom-background/blob/HEAD/lib/index.js)
 
 ### [dsh-custom-theme](https://github.com/Sparrived/dsh-custom-theme)
 
@@ -4217,6 +4245,20 @@ dsh plugin --profile web add github:JacoboJin/dsh-skin-bd2-yustia
 
 **Repo:** [JacoboJin/dsh-skin-bd2-yustia](https://github.com/JacoboJin/dsh-skin-bd2-yustia) · **dsh:** 0.1.1-rc.2 · **Proof:** [client.js#--dsw-tokens](https://github.com/JacoboJin/dsh-skin-bd2-yustia/blob/HEAD/client.js)
 
+### [dsh-skin-bigm4ngo](https://github.com/bigm4ngo/dsh-skin)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-bigm4ngo&scheme=dark"><img src="https://raw.githubusercontent.com/bigm4ngo/dsh-skin/HEAD/screenshots/applied.png" width="360" alt="dsh-skin-bigm4ngo preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-bigm4ngo&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Folder-based skins for DeepSeek Harness Web: image/video backgrounds, token colours, logo, ambient audio.
+
+```sh
+dsh plugin --profile web add github:bigm4ngo/dsh-skin
+```
+
+**Repo:** [bigm4ngo/dsh-skin](https://github.com/bigm4ngo/dsh-skin) · **dsh:** 0.2.2-rc.1 · **Proof:** [lib/client.js#--dsw-tokens](https://github.com/bigm4ngo/dsh-skin/blob/HEAD/lib/client.js)
+
 ### [dsh-skin-bubu](https://github.com/ruirui0701/dsh-skin-bubu)
 
 <a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-bubu&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-bubu preview"></a>
@@ -4806,6 +4848,20 @@ dsh plugin --profile web add github:realMisakaMikoto/dsh-skin-studio
 ```
 
 **Repo:** [realMisakaMikoto/dsh-skin-studio](https://github.com/realMisakaMikoto/dsh-skin-studio) · **dsh:** 0.1.0-rc.6 · **Proof:** [package.json#devDependencies.@deepseek-ai/dsh-client-ui-theme](https://github.com/realMisakaMikoto/dsh-skin-studio/blob/HEAD/package.json)
+
+### [dsh-skin-studio-wsj06061](https://github.com/wsj060618/dsh-skin-studio)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-studio-wsj06061&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-skin-studio-wsj06061 preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-skin-studio-wsj06061&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+DeepSeek Harness enhancement plugin: a custom background image with a frosted-glass scrim (backdrop blur), leaving the original theme untouched.
+
+```sh
+dsh plugin --profile web add github:wsj060618/dsh-skin-studio
+```
+
+**Repo:** [wsj060618/dsh-skin-studio](https://github.com/wsj060618/dsh-skin-studio) · **dsh:** 0.2.2-rc.1 · **Proof:** [lib/client.js#--dsw-tokens](https://github.com/wsj060618/dsh-skin-studio/blob/HEAD/lib/client.js)
 
 ### [dsh-skin-swiss-typographic](https://github.com/0xmrxp/dsh-skin-swiss-typographic)
 
@@ -7326,6 +7382,20 @@ dsh plugin --profile web add github:talulra/dsh-wallpaper-glass
 ```
 
 **Repo:** [talulra/dsh-wallpaper-glass](https://github.com/talulra/dsh-wallpaper-glass) · **dsh:** 0.2.2-rc.1 · **Proof:** [client/client.js#--dsw-tokens](https://github.com/talulra/dsh-wallpaper-glass/blob/HEAD/client/client.js)
+
+### [dsh-wallpaper-glass-misakach](https://github.com/MisakaChino/dsh-wallpaper-glass)
+
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-wallpaper-glass-misakach&scheme=dark"><img src="https://raw.githubusercontent.com/MisakaChino/dsh-wallpaper-glass/HEAD/docs/preview-main.png" width="360" alt="dsh-wallpaper-glass-misakach preview"></a>
+
+**[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-wallpaper-glass-misakach&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
+
+Live Wallpaper Engine wallpaper behind the DeepSeek Harness GUI, dark glass surfaces and neon accents, with an optional acrylic desktop window.
+
+```sh
+dsh plugin --profile web add github:MisakaChino/dsh-wallpaper-glass
+```
+
+**Repo:** [MisakaChino/dsh-wallpaper-glass](https://github.com/MisakaChino/dsh-wallpaper-glass) · **dsh:** 0.2.2-rc.1 · **Proof:** [lib/client.js#--dsw-tokens](https://github.com/MisakaChino/dsh-wallpaper-glass/blob/HEAD/lib/client.js)
 
 ### [dsh-wallpaper-intro](https://github.com/fengyevvv/dsh-wallpaper-intro)
 

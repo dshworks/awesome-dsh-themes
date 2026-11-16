@@ -79,7 +79,7 @@ repo's own files, and records where the proof was found in `evidence`:
 | `package.json#dependencies.@deepseek-ai/dsh-client-ui-theme` | registers with the ThemeRuntime |
 | `package.json#dsh.bundle` | a dsh bundle manifest |
 | `<path>.css#--dsw-tokens` | a stylesheet declaring dsh's design tokens (`--dsw-bg:`), not merely reading them (`var(--dsw-bg)`) |
-| `client.js#--dsw-tokens` | the same declaration, written from a script (CSS-in-JS) |
+| `client.js#--dsw-tokens` | the same declaration, written from a script (CSS-in-JS, a token map, or `["--dsw-bg", value]` entries) |
 
 A bundle manifest proves the repo installs into dsh. It does not prove the repo
 restyles anything, and the repo's name proves even less: for the topic lane the
