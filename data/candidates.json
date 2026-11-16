@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-16",
   "candidates": [
     {
       "repo": "10086ggqq/dsh_theme_Minecraft",
@@ -19,6 +19,16 @@
       "stars": 0,
       "description": "WIP — Ren'Py skin, sprite stage, palette and VN loader for DSH",
       "discovered": "2026-10-26",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "A-Zee029/dsh-model-palette",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Keyboard-driven model & reasoning-effort palette plugin for DeepSeek Harness (Ctrl+L)",
+      "discovered": "2026-11-15",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -102,6 +112,36 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "asdw159632/dsh-daynight-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "昼夜壁纸 / Day & Night Wallpaper：跟着真实时钟走的 DSH 壁纸插件（雪峰 / 东京两套取景，可蒙皮，皮肤可让位）",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "bigm4ngo/dsh-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 3,
+      "description": "Skins for DeepSeek Harness Web — image or video wallpapers, translucent panels, custom colours, logo and wordmark, ambient audio. Drop a folder in, pick it in Settings.",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "byteuser1977/ColaMD-themes",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 1,
+      "description": "Theme development tool for ColaMD - extract formatting from URLs, DOCX, PDF and convert to CSS theme files",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "chenxinmengY/wechatagent-background-voice-adapter",
       "sources": [
         "routed-from-plugins"
@@ -112,12 +152,22 @@
       "note": "installs into dsh (plugins/dsh-social-bridge-plugin/package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "chokingson/dsh-travel-wallpaper",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 2,
+      "description": "旅行壁纸：带上喜欢的角色，每天前往一个新世界。DSH 插件。",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager",
       "sources": [
         "github-topic"
       ],
       "stars": 0,
-      "description": "DeepSeek Harness 皮肤管理器，轻松切换主题、调整手机导航与个性化外观",
+      "description": "三主题套装的旧版管理器兼容与迁移入口；新用户请直接安装 dsh-plugin-miku-theme",
       "discovered": "2026-11-06",
       "hold": "hand check 2026-11-07: a skin manager, not a skin. package.json injects @deepseek-ai/dsh-client-ui-theme, which is what admitted it, but lib/client.js declares no --dsw-* token, never calls the ThemeRuntime, and styles only its own .ekko-* panel and a mobile nav. Its README calls it a legacy compatibility entry and tells users to remove it and install the same author's dsh-plugin-miku-theme (listed 2026-11-07). Same shape as the rejected 123twtd/dsh-skin-manager; a person decides."
     },
@@ -186,19 +236,9 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 36,
+      "stars": 39,
       "description": "DSH UI Skin Loader / DSH UI 皮肤加载器",
       "discovered": "2026-10-17",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
-      "repo": "FelixJiashengFu/dsh-preview-theme",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 1,
-      "description": "Document preview color themes for DeepSeek Harness: PDF, Office, and spreadsheets.",
-      "discovered": "2026-10-26",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -352,6 +392,16 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "jokerkenny00137/dsh-plugin-wallpaper-cleanup",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "Wallpaper Engine workshop cleanup for DeepSeek Harness: compare a subscription screenshot with the workshop folder and move non-subscribed wallpapers to the Recycle Bin. Settings page + floating modal.",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "kjx-talesofai/dsh-plugin-session-palette",
       "sources": [
         "github-topic"
@@ -406,7 +456,7 @@
       "sources": [
         "routed-from-plugins"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "给 DeepSeek Harness 桌面端换背景：背景图/轮换分组/四层遮罩（深浅色可分开）/输入栏背景条/任务进度条/Token 用量",
       "discovered": "2026-11-03",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
@@ -456,9 +506,19 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 4,
+      "stars": 5,
       "description": "替换“深度求索中”为任意你想要的文本，比如：少女祈祷中......",
       "discovered": "2026-09-28",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
+      "repo": "MisakaChino/dsh-wallpaper-glass",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "把 Wallpaper Engine 动态壁纸接到 DeepSeek Harness 界面",
+      "discovered": "2026-11-15",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
@@ -641,6 +701,16 @@
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
+      "repo": "WPH666-py/ai-new-skin",
+      "sources": [
+        "github-topic"
+      ],
+      "stars": 0,
+      "description": "AI 娘壁纸皮肤：65 张壁纸，一键设为 Harness 编辑器背景，或设为 Windows 桌面壁纸。",
+      "discovered": "2026-11-15",
+      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
+    },
+    {
       "repo": "wsj060618/dsh-skin-studio",
       "sources": [
         "github-topic"
@@ -654,19 +724,9 @@
       "sources": [
         "github-topic"
       ],
-      "stars": 0,
+      "stars": 1,
       "description": "面向 DeepSeek Harness 的《战争雷霆》自定义涂装插件：四边形拾取器、声明式图层、支持 4K DDS 纹理与.blk 文件导出。本项目由DeepSeek在DSH上完成。War Thunder user-skin studio for DSH: quad picker, declarative layers, 4K DDS + .blk export.",
       "discovered": "2026-10-26",
-      "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
-    },
-    {
-      "repo": "xiaoqiangch/dsh-preview-theme-dark",
-      "sources": [
-        "github-topic"
-      ],
-      "stars": 0,
-      "description": "DeepSeek Harness 文档预览深色模式插件：标题栏一键浅/深切换、跟随系统外观、浅深两侧配色分别记忆（MIT，独立增强版）",
-      "discovered": "2026-11-06",
       "note": "installs into dsh (package.json#dsh.bundle) but nothing in the tree restyles it"
     },
     {
