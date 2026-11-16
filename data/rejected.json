@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-16",
   "rejected": [
     {
       "repo": "123twtd/dsh-skin-manager",
@@ -10,6 +10,12 @@
       "repo": "chenyangcun/dsh-command-palette",
       "reason": "a plugin, not a skin; belongs in awesome-dsh-plugins — routed there via data/routed-to-plugins.json",
       "date": "2026-09-09"
+    },
+    {
+      "repo": "daybreakcold/dsh-theme-nebula-glass",
+      "reason": "dsh 0.2.2-rc.1 refuses to install it: package.json {\"engines.dsh\":\">=0.2.2-rc.3 <0.3.0-0\"} exclude 0.2.2-rc.1 (packages/boot/app-boot/src/plugin-compatibility.ts)",
+      "date": "2026-11-16",
+      "recheckAfter": "2026-12-31"
     },
     {
       "repo": "domitor-syh/dsh-ui-skin-switcher",
@@ -132,5 +138,5 @@
       "recheckAfter": "2026-12-22"
     }
   ],
-  "count": 23
+  "count": 24
 }
