@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "themes": 958,
-  "preview": 302,
+  "preview": 303,
   "previewCss": 36,
   "verifiedAgainst": "0.1.1-rc.2",
   "verifiedSpread": [
     {
       "version": "0.1.1-rc.2",
-      "count": 352
+      "count": 351
     },
     {
       "version": "0.1.0-rc.6",
@@ -40,6 +40,10 @@
     {
       "version": "0.1.0-rc.7",
       "count": 4
+    },
+    {
+      "version": "0.2.2-rc.3",
+      "count": 1
     }
   ]
 }

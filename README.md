@@ -9877,17 +9877,19 @@ dsh plugin --profile web add github:EachSheep/dsh-mario-pixel-skin
 
 ### [dsh-matrix-skin](https://github.com/emeryxu1-blip/dsh-matrix-skin)
 
-<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-matrix-skin&scheme=dark"><img src="docs/assets/whale-mark.svg" width="360" alt="dsh-matrix-skin preview"></a>
+<a href="https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-matrix-skin&scheme=dark"><img src="https://raw.githubusercontent.com/emeryxu1-blip/dsh-matrix-skin/v0.3.1/docs/images/matrix-chat.png" width="360" alt="dsh-matrix-skin preview"></a>
 
 **[Live preview](https://dsh.works/awesome-dsh-themes/preview.html?theme=dsh-matrix-skin&scheme=dark)** — full-page dsh web chrome (0.1.0-rc.6 hashed classes + `--dsw-*` tokens).
 
-Black-first Matrix hacker skin for DeepSeek Harness (DSH) Web with session-powered code rain and readable provider reasoning.
+Session-powered Matrix code rain for DeepSeek Harness Desktop and Web, with original rain motion, color and intensity during normal use, native typography and controls, and masks that keep text clear.
 
 ```sh
-dsh plugin --profile web add github:emeryxu1-blip/dsh-matrix-skin
+Desktop: open Plugins → Add plugin, enter github:emeryxu1-blip/dsh-matrix-skin#v0.3.1, then install and enable. Restart if requested.
 ```
 
-**Repo:** [emeryxu1-blip/dsh-matrix-skin](https://github.com/emeryxu1-blip/dsh-matrix-skin) · **dsh:** 0.1.1-rc.2 · **Proof:** [styles/matrix.css#--dsw-tokens](https://github.com/emeryxu1-blip/dsh-matrix-skin/blob/HEAD/styles/matrix.css)
+**Repo:** [emeryxu1-blip/dsh-matrix-skin](https://github.com/emeryxu1-blip/dsh-matrix-skin) · **License:** MIT · **dsh:** 0.2.2-rc.3 · **Proof:** [styles/matrix.css#--dsh-matrix-accent](https://github.com/emeryxu1-blip/dsh-matrix-skin/blob/HEAD/styles/matrix.css)
+
+*Version 0.3.1 restores the original rain renderer across normal use with content masks for readability. Captures show actual DSH 0.2.2-rc.3 Web UI on macOS in an isolated fictional profile. Desktop and Web keep separate plugin installations.*
 
 ### [dsh-matrix-skin-nicecx](https://github.com/nicecx/dsh-matrix-skin)
 
