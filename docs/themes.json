@@ -4621,11 +4621,11 @@
       "added": "2026-08-25",
       "lastVerified": "2026-11-18",
       "verifiedAgainst": "0.2.2-rc.3",
-      "description": "Readable Matrix-inspired skin for DeepSeek Harness Desktop and Web, with quiet green accents, clear dark surfaces, native typography and controls, and restrained code rain on the empty chat screen.",
+      "description": "Session-powered Matrix code rain for DeepSeek Harness Desktop and Web, with original rain motion, color and intensity during normal use, native typography and controls, and masks that keep text clear.",
       "license": "MIT",
-      "preview": "https://raw.githubusercontent.com/emeryxu1-blip/dsh-matrix-skin/main/docs/images/matrix-chat.png",
-      "install": "Desktop: open Plugins → Add plugin, enter github:emeryxu1-blip/dsh-matrix-skin, then install and enable. Restart if requested.",
-      "notes": "Version 0.3.0 tested on macOS with DSH Desktop 0.2.2-rc.3 and matching Web. Desktop and Web keep separate plugin installations. Screenshot: actual DSH 0.2.2-rc.3 Web UI captured on macOS in an isolated fictional profile."
+      "preview": "https://raw.githubusercontent.com/emeryxu1-blip/dsh-matrix-skin/v0.3.1/docs/images/matrix-chat.png",
+      "install": "Desktop: open Plugins → Add plugin, enter github:emeryxu1-blip/dsh-matrix-skin#v0.3.1, then install and enable. Restart if requested.",
+      "notes": "Version 0.3.1 restores the original rain renderer across normal use with content masks for readability. Captures show actual DSH 0.2.2-rc.3 Web UI on macOS in an isolated fictional profile. Desktop and Web keep separate plugin installations."
     },
     {
       "name": "dsh-matrix-skin-nicecx",
