@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "themes": [
     {
       "name": "Arknights-flavor-theme",
@@ -4617,11 +4617,15 @@
       "kind": "skin",
       "category": "skin",
       "status": "verified",
-      "evidence": "styles/matrix.css#--dsw-tokens",
+      "evidence": "styles/matrix.css#--dsh-matrix-accent",
       "added": "2026-08-25",
-      "lastVerified": "2026-09-04",
-      "verifiedAgainst": "0.1.1-rc.2",
-      "description": "Black-first Matrix hacker skin for DeepSeek Harness (DSH) Web with session-powered code rain and readable provider reasoning."
+      "lastVerified": "2026-11-18",
+      "verifiedAgainst": "0.2.2-rc.3",
+      "description": "Readable Matrix-inspired skin for DeepSeek Harness Desktop and Web, with quiet green accents, clear dark surfaces, native typography and controls, and restrained code rain on the empty chat screen.",
+      "license": "MIT",
+      "preview": "https://raw.githubusercontent.com/emeryxu1-blip/dsh-matrix-skin/main/docs/images/matrix-chat.png",
+      "install": "Desktop: open Plugins → Add plugin, enter github:emeryxu1-blip/dsh-matrix-skin, then install and enable. Restart if requested.",
+      "notes": "Version 0.3.0 tested on macOS with DSH Desktop 0.2.2-rc.3 and matching Web. Desktop and Web keep separate plugin installations. Screenshot: actual DSH 0.2.2-rc.3 Web UI captured on macOS in an isolated fictional profile."
     },
     {
       "name": "dsh-matrix-skin-nicecx",
